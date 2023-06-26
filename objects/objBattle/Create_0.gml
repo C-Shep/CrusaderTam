@@ -1,0 +1,102 @@
+/// @desc 
+listLength = array_length(objEnemyList.list);
+randomNum = irandom_range(0,listLength-1);
+enemy = objEnemyList.list[randomNum];
+player = objStats.playerStats;
+
+isEnemyTurn = false;
+combatEnd = false;
+endMessages = false;
+
+messageX = 16;
+messageY = 16;
+
+enemyGoFirst = false;
+randomSpeedEnemy = irandom_range(0,99)+enemy.spd;
+randomSpeedPlayer = irandom_range(0,99)+player.spd;
+
+if(randomSpeedEnemy > randomSpeedPlayer)
+{
+	isEnemyTurn = true;	
+	control = false;
+}
+
+//For final messages
+messageCounter = 0;
+
+//Combat Menu
+menu[0] = "Attack";
+menu[1] = "Spells";
+menu[2] = "Items";
+menu[3] = "Defend";
+menu[4] = "Flee";
+menuLength = array_length(menu);
+menuX = 16;
+menuY = 16;
+menuHeight = 16;
+colour = c_white;
+control = true;
+selected = 0;
+
+spell = objStats.playerSpell;
+
+rewardsGiven = false;
+
+//spell[0] = "Heal";
+//spell[1] = "Scorch";
+//spell[2] = "Freeze";
+//spell[3] = "Counter";
+//spell[4] = "Crucify";
+spellLength = array_length(spell);
+spellSelected = 0;
+spellControl = false;
+
+inv = objStats.inv;
+invLength = ds_list_size(inv);
+invSelected = 0;
+invControl = false;
+
+
+actionMessage = "";
+
+//Functions
+
+//player or enemy dead? end combat
+checkForEnd = function (){
+	if(enemy.hp <= 0 || player.hp <= 0)
+	{
+		combatEnd = true;
+	}
+}
+
+combatMessage = function (msg){
+	draw_text_colour(
+	messageX,
+	messageY,
+	msg,
+	colour,colour,colour,colour,1);
+}
+
+playerAttack = function (bonus){
+	var dmg = round((player.atk+bonus) - (round(enemy.def/2))/2)
+	enemy.hp -= dmg;
+	alarm[1] = 60;
+	spellControl = false;
+	invControl = false;
+	control = false;
+	return dmg;
+}
+
+playerHeal = function (healNum){
+	player.hp += healNum;
+	alarm[1] = 60;
+	spellControl = false;
+	invControl = false;
+	control = false;
+	return healNum;
+}
+
+battleMessage = function (msg){
+	
+}
+
