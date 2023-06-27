@@ -35,6 +35,18 @@ groovedog = {
 	gld:3
 }
 
+thistleta = {
+	name_: "Thistleta",
+	sprite: sprThistleta,
+	hp:8,
+	maxhp:8,
+	atk:4,
+	def:8,
+	spd:5,
+	xp:10,
+	gld:5
+}
+
 switch(global.area)
 {
 	case "Goblin":
@@ -43,6 +55,6 @@ switch(global.area)
 		break;
 	case "Groove":
 	list[0] = groovedog;
-	list[1] = groovedog;
+	list[1] = thistleta;
 		break;
 }

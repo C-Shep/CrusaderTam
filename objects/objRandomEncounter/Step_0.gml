@@ -28,8 +28,7 @@ if(timer>=setTime)
 		room_goto(rmBattle);
 	}
 	
-	
-	
+	//Reset Random Encounter Timer
 	timer = 0;
 	setTime = irandom_range(2, 6);
 }
