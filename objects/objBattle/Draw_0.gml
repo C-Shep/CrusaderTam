@@ -103,6 +103,7 @@ if(!endMessages)
 			{
 				player.currentXp += enemy.xp;
 				player.currentGld += enemy.gld;
+				
 				rewardsGiven = true;
 			}
 			#endregion
@@ -112,6 +113,8 @@ if(!endMessages)
 			combatMessage("You gain " + string(enemy.xp) + " xp");
 		}else if(messageCounter == 2){	//Gold Message
 			combatMessage("You gain " + string(enemy.gld) + " gold");
+		}else if(messageCounter == 3){	//Level Message
+			combatMessage("You levelled up!");
 		}
 	}
 	else if(player.hp <= 0)

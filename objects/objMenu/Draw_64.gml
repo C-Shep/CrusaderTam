@@ -71,9 +71,7 @@ else if(invControl)
 	#endregion
 }
 
-
-
-#region Draw Hp and Mp
+#region Draw Hp and Mp and Xp and Gold and Level
 if(control || spellControl || invControl)
 {
 	//Display HP and MP	
@@ -82,15 +80,23 @@ if(control || spellControl || invControl)
 	
 	//Draw Box
 	draw_sprite_stretched(sprBox,0,0,h-136,w,64);
+	draw_sprite_stretched(sprBox,0,0,h-72,256,64);
 
+	//Draw Stats
 	var hpMsg = "hp: " + string(player.hp) + "/" + string(player.maxhp);
 	var mpMsg = "mp: " + string(player.mp) + "/" + string(player.maxmp);
+	var xpMsg = "xp: " + string(player.currentXp);
+	var gldMsg = "gld: " + string(player.currentGld);
+	var lvlMsg = "lvl: " + string(player.lvl)
 	draw_text_transformed_colour(menuX,h-128,hpMsg,textSize,textSize,0,colour,colour,colour,colour,1);
-	draw_text_transformed_colour(menuX+384,h-128,mpMsg,textSize,textSize,0,colour,colour,colour,colour,1);
+	draw_text_transformed_colour(menuX+320,h-128,mpMsg,textSize,textSize,0,colour,colour,colour,colour,1);
+	draw_text_transformed_colour(menuX+640,h-128,xpMsg,textSize,textSize,0,colour,colour,colour,colour,1);
+	draw_text_transformed_colour(menuX+896,h-128,gldMsg,textSize,textSize,0,colour,colour,colour,colour,1);
+	draw_text_transformed_colour(menuX,h-64,lvlMsg,textSize,textSize,0,colour,colour,colour,colour,1);
 }
 #endregion
 
-//action message
+#region Display messages
 if(currentlyDisplaying)
 {
 	
@@ -107,4 +113,4 @@ if(currentlyDisplaying)
 	//Display the actual text
 	displayMessage(actionMessage);
 }
-
+#endregion

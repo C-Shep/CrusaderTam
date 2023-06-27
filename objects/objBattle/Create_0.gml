@@ -41,7 +41,7 @@ colour = c_white;
 control = true;
 selected = 0;
 
-//Battle Rewards
+//Battle Rewardss
 rewardsGiven = false;
 
 //Spells

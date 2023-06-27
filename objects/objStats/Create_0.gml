@@ -11,6 +11,7 @@ playerStats = {
 	currentGld:0
 }
 
+//Player learns heal at lvl 1
 playerSpell[0] = "Heal";
 
 //Inventory

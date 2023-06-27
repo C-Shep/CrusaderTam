@@ -10,3 +10,6 @@ if(playerControl)
 	inputX = 0;
 	inputY = 0;
 }
+
+//trust me this is stupid but works
+global.hasLevelled = false;
