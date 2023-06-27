@@ -6,11 +6,16 @@ function nextLevel(level)
 	var baseXp = 10;
 	return floor(baseXp*(power(level,exponent)));
 }
-show_debug_message(string(nextLevel(playerStats.lvl)));
+
+//Level up
 if(playerStats.currentXp > nextLevel(playerStats.lvl))
 {
 	playerStats.lvl++;
 }
+
+//Keep hp & mp clamped
+if(playerStats.hp > playerStats.maxhp) playerStats.hp = playerStats.maxhp;
+if(playerStats.mp > playerStats.maxmp) playerStats.mp = playerStats.maxmp;
 
 //Learing Spells From Levelling Up
 if(playerStats.lvl >= 2)

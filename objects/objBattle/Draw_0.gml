@@ -12,17 +12,17 @@ draw_text_colour(menuX+64,160,"mp: " + string(player.mp),colour,colour,colour,co
 draw_sprite(sprGrassBG,0,middleX,middleY);
 #endregion
 
+#region draw enemy sprite
+if(enemy.hp > 0)
+{
+	draw_sprite(enemy.sprite,0,middleX-16,middleY-16);
+}
+#endregion
+
 if(!endMessages)
 {
-	#region draw enemy sprite
-	if(enemy.hp > 0)
-	{
-		draw_sprite(enemy.sprite,0,middleX-16,middleY-16);
-	}
-	#endregion
 	if(!isEnemyTurn)
 	{
-		
 		if(control)
 		{
 			#region// draw normal menu

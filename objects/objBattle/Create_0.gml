@@ -1,17 +1,20 @@
 /// @desc 
+//player and enemy
 listLength = array_length(objEnemyList.list);
 randomNum = irandom_range(0,listLength-1);
 enemy = objEnemyList.list[randomNum];
 player = objStats.playerStats;
 
+//phases of combat
 isEnemyTurn = false;
 combatEnd = false;
 endMessages = false;
 
+//coords for messages
 messageX = 16;
 messageY = 16;
 
-enemyGoFirst = false;
+//Initiative
 randomSpeedEnemy = irandom_range(0,99)+enemy.spd;
 randomSpeedPlayer = irandom_range(0,99)+player.spd;
 
@@ -38,25 +41,22 @@ colour = c_white;
 control = true;
 selected = 0;
 
-spell = objStats.playerSpell;
-
+//Battle Rewards
 rewardsGiven = false;
 
-//spell[0] = "Heal";
-//spell[1] = "Scorch";
-//spell[2] = "Freeze";
-//spell[3] = "Counter";
-//spell[4] = "Crucify";
+//Spells
+spell = objStats.playerSpell;
 spellLength = array_length(spell);
 spellSelected = 0;
 spellControl = false;
 
+//Inventory
 inv = objStats.inv;
 invLength = ds_list_size(inv);
 invSelected = 0;
 invControl = false;
 
-
+//What message will be displayed
 actionMessage = "";
 
 //Functions
@@ -94,9 +94,5 @@ playerHeal = function (healNum){
 	invControl = false;
 	control = false;
 	return healNum;
-}
-
-battleMessage = function (msg){
-	
 }
 

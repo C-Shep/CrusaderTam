@@ -13,4 +13,8 @@ states = {
 	down: sprTamDown
 }
 
+playerControl = true;
+
 state = states.down;
+
+instance_create_layer(0,0,"UI",objMenu);

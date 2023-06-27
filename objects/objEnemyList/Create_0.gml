@@ -23,4 +23,26 @@ goblin = {
 	gld:1
 }
 
-list[0] = goblin;
+groovedog = {
+	name_: "Groovedog",
+	sprite: sprGrooveDog,
+	hp:6,
+	maxhp:6,
+	atk:3,
+	def:4,
+	spd:30,
+	xp:5,
+	gld:3
+}
+
+switch(global.area)
+{
+	case "Goblin":
+	list[0] = goblin;
+	list[1] = goblin;
+		break;
+	case "Groove":
+	list[0] = groovedog;
+	list[1] = groovedog;
+		break;
+}
