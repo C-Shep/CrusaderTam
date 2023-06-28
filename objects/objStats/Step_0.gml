@@ -3,7 +3,7 @@
 function nextLevel(level)
 {
 	var exponent = 1.5;	//normal is 1.5
-	var baseXp = 10;	//normal is 10
+	var baseXp = 1;	//normal is 10
 	return floor(baseXp*(power(level,exponent)));
 }
 

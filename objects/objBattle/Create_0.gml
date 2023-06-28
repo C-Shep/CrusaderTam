@@ -41,8 +41,10 @@ colour = c_white;
 control = true;
 selected = 0;
 
-//Battle Rewardss
+//Battle Rewards
 rewardsGiven = false;
+dropChance = 100; //percent chance out of 100
+dropDropped = false;
 
 //Spells
 spell = objStats.playerSpell;

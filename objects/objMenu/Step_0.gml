@@ -102,7 +102,7 @@ if(control)
 	#region//Spell Control
 	if(mouse_check_button_pressed(mb_left) && !currentlyDisplaying)
 	{
-		switch(spell[selected])
+		switch(spell[spellSelected])
 		{
 			case "Heal":
 				if(player.mp >= 3)
@@ -115,9 +115,14 @@ if(control)
 				}
 				break;
 			case "Scorch":
-
+					actionMessage = "It's real hot!";
 				break;
-				
+			case "Freeze":
+					actionMessage = "A bit chilly!";
+				break;
+			case "Counter":
+					actionMessage = "Stop enemy spells!";
+				break;
 			default:
 					actionMessage = "Doesn't do anything";
 		}
@@ -174,6 +179,8 @@ else if(invControl)
 				actionMessage = "Good Zaza!";
 				//ds_list_delete(inv,invSelected);
 				break;
+			default:
+					actionMessage = "Doesn't do anything";
 		}
 		currentlyDisplaying = true;
 	}

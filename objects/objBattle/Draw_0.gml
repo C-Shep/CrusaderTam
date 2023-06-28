@@ -99,10 +99,21 @@ if(!endMessages)
 		if(messageCounter == 0)	//Victory Message
 		{
 			#region rewards
+			
+			
 			if(rewardsGiven == false)
 			{
 				player.currentXp += enemy.xp;
 				player.currentGld += enemy.gld;
+				
+				//Random Drops
+				var willDrop = irandom(99)+1;
+				show_debug_message(willDrop);
+				if(willDrop <= dropChance)
+				{
+					ds_list_add(objStats.inv,enemy.drop);
+					dropDropped = true;
+				}
 				
 				rewardsGiven = true;
 			}
@@ -113,7 +124,14 @@ if(!endMessages)
 			combatMessage("You gain " + string(enemy.xp) + " xp");
 		}else if(messageCounter == 2){	//Gold Message
 			combatMessage("You gain " + string(enemy.gld) + " gold");
-		}else if(messageCounter == 3){	//Level Message
+		}else if(messageCounter == 3){	//Item Message / Level Message
+			if(dropDropped)
+			{	
+				combatMessage("The " + string(enemy.name_) + " dropped a " + string(enemy.drop));
+			}else if(global.hasLevelled){
+				combatMessage("You levelled up!");
+			}
+		}else if(messageCounter == 4){	//Level Message if Item has Dropped
 			combatMessage("You levelled up!");
 		}
 	}

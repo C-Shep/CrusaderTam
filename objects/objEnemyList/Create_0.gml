@@ -8,7 +8,8 @@ defaultEnemy = {
 	def:1,
 	spd:1,
 	xp:1,
-	gld:1
+	gld:1,
+	drop: "Herb"
 }
 
 goblin = {
@@ -20,7 +21,8 @@ goblin = {
 	def:3,
 	spd:15,
 	xp:1,
-	gld:1
+	gld:1,
+	drop: "Herb"
 }
 
 groovedog = {
@@ -32,7 +34,8 @@ groovedog = {
 	def:4,
 	spd:30,
 	xp:5,
-	gld:3
+	gld:3,
+	drop: "Weed"
 }
 
 thistleta = {
@@ -44,7 +47,8 @@ thistleta = {
 	def:8,
 	spd:5,
 	xp:10,
-	gld:5
+	gld:5,
+	drop: "Herb"
 }
 
 switch(global.area)
