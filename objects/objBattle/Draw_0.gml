@@ -15,7 +15,15 @@ draw_sprite(sprGrassBG,0,middleX,middleY);
 #region draw enemy sprite
 if(enemy.hp > 0)
 {
-	draw_sprite(enemy.sprite,0,middleX-16,middleY-16);
+	if(hitEnemy > 0)
+	{
+		gpu_set_fog(true,c_red,0,0);
+		draw_sprite(enemy.sprite,0,middleX-16,middleY-16);
+		gpu_set_fog(false,c_red,0,0);
+		hitEnemy--;
+	}else{
+		draw_sprite(enemy.sprite,0,middleX-16,middleY-16);
+	}
 }
 #endregion
 
@@ -36,7 +44,6 @@ if(!endMessages)
 				}
 			}
 			#endregion
-		
 		}
 		else if(spellControl)
 		{

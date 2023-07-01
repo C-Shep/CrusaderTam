@@ -52,6 +52,9 @@ spellLength = array_length(spell);
 spellSelected = 0;
 spellControl = false;
 
+//Attack Shader
+hitEnemy = 0;
+
 //Inventory
 inv = objStats.inv;
 invLength = ds_list_size(inv);
@@ -86,6 +89,9 @@ playerAttack = function (bonus){
 	spellControl = false;
 	invControl = false;
 	control = false;
+	
+	hitEnemy = 6;
+	
 	return dmg;
 }
 

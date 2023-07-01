@@ -4,7 +4,7 @@ playerStats = {
 	mp:10,
 	maxmp:10,
 	lvl:1,
-	atk:6,
+	atk:3, //default 3
 	def:1,
 	spd:16,
 	currentXp:0,
