@@ -26,6 +26,7 @@
     {"id":{"name":"sprTamRight","path":"sprites/sprTamRight/sprTamRight.yy",},"order":2,},
     {"id":{"name":"Macro","path":"scripts/Macro/Macro.yy",},"order":0,},
     {"id":{"name":"sprThistleta","path":"sprites/sprThistleta/sprThistleta.yy",},"order":2,},
+    {"id":{"name":"objEquipment","path":"objects/objEquipment/objEquipment.yy",},"order":5,},
     {"id":{"name":"tlsWorld","path":"tilesets/tlsWorld/tlsWorld.yy",},"order":0,},
     {"id":{"name":"objChest","path":"objects/objChest/objChest.yy",},"order":1,},
     {"id":{"name":"objEncounterArea","path":"objects/objEncounterArea/objEncounterArea.yy",},"order":3,},

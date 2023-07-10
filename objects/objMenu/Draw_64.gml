@@ -70,6 +70,73 @@ else if(invControl)
 	}
 	#endregion
 }
+else if(equipControl)
+{
+	#region// draw equip menu
+	
+	//Draw Box
+	draw_sprite_stretched(sprBox,0,menuX-16,menuY,384,menuHeight*8);
+	
+	//Draw weapon stats
+	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,80);
+	
+	var equipmentNow = ds_list_find_value(equip,equipSelected);
+	var equipmentStatsMessage = "!";
+	
+	for(var j = 0; j<array_length(objEquipment.equipment)-1;j++)
+	{
+		var e = objEquipment.equipment;
+		if(equipmentNow == e[j].name_)
+			{
+				//is a weapon
+				if(e[j].atk != 0 && e[j].def == 0)//no defence
+				{
+					equipmentStatsMessage = "Atk:" + string(e[j].atk);	
+				}else if(e[j].atk == 0 && e[j].def != 0)//no attack
+				{
+					equipmentStatsMessage = "Def:" + string(e[j].def);	
+				}else//both
+				{
+					equipmentStatsMessage = "Atk:" + string(e[j].atk) + " Def:" + string(e[j].def);	
+				}
+			}
+	}
+	
+	
+	//if(objEquipment)
+	
+	displayMessage(equipmentStatsMessage);
+	
+	if(equipSelected != 0)
+	{
+		draw_text_transformed_color(menuX+16,menuY+menuHeight-16,">",textSize,textSize,90,colour,colour,colour,colour,1); 
+	}
+			
+	if(equipSelected < equipLength-5)
+	{
+		draw_text_transformed_color(menuX+16,menuY+(menuHeight*7)+32,"<",textSize,textSize,90,colour,colour,colour,colour,1); 
+	}
+			
+	for(var i = 0; i < equipLength; i++)
+	{
+		var currentInv = ds_list_find_value(equip,i);
+		
+		if(i == weaponPlace || i == shieldPlace || i == armourPlace || i == trinketPlace)
+		{
+			colour = c_yellow;
+		}
+		
+		if(i==equipSelected)
+		{
+			draw_text_transformed_color(menuX,menuY+menuHeight,">" + string(currentInv),textSize,textSize,0,colour,colour,colour,colour,1); 
+		}else if(i <= equipSelected + 5 && i > equipSelected){
+			draw_text_transformed_color(menuX,menuY+menuHeight*(i - (equipSelected-1)),string(currentInv),textSize,textSize,0,colour,colour,colour,colour,1);
+		}
+		
+		colour = c_white;
+	}
+	#endregion
+}
 
 #region Draw Hp and Mp and Xp and Gold and Level
 if(control || spellControl || invControl)
