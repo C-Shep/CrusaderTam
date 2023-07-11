@@ -6,6 +6,7 @@ player = objStats.playerStats;
 choice[0] = "Spells"
 choice[1] = "Inventory"
 choice[2] = "Equip"
+choice[3] = "Stats"
 choiceLength = array_length(choice);
 selected = 0;
 control = false;
@@ -25,18 +26,19 @@ invControl = false;
 //Equip Menu
 equip = ds_list_create();
 
+//check everything in the inv and see if they are equipment
+//then add them to a equipment list
 for(var i=0;i<invLength;i++)
 {
-	//this is aweful but i kinda coded myself into a corner here
-	var currentInvItem = ds_list_find_value(inv,i);
-	switch(currentInvItem)
+	for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 	{
-		case "Sword":
-		case "Shield":
-		case "Chainmail":
-		case "Amulet":
+		var currentInvItem = ds_list_find_value(inv,i);
+		var e = objEquipment.equipment;
+		var eName = ds_list_find_value(e,j).name_;
+		if(currentInvItem == eName)
+		{
 			ds_list_add(equip,currentInvItem);
-			break;
+		}
 	}
 }
 
@@ -48,6 +50,9 @@ weaponPlace = noone;
 armourPlace = noone;
 shieldPlace = noone;
 trinketPlace = noone;
+
+//Stats
+statsControl = false;
 
 //Coords and Sizes
 menuX = 16;

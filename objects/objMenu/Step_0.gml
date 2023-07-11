@@ -64,16 +64,26 @@ if(control)
 				spellControl = true;
 				invControl = false;
 				equipControl = false;
+				statsControl = false;
 				control = false;
 				break;
 			case "Inventory":
 				invControl = true;
 				spellControl = false;
 				equipControl = false;
+				statsControl = false;
 				control = false;
 				break;
 			case "Equip":
 				equipControl = true;
+				invControl = false;
+				spellControl = false;
+				statsControl = false;
+				control = false;
+				break;
+			case "Stats":
+				statsControl = true;
+				equipControl = false;
 				invControl = false;
 				spellControl = false;
 				control = false;
@@ -195,7 +205,8 @@ else if(invControl)
 		currentlyDisplaying = true;
 	}
 	#endregion
-}else if(equipControl)
+}
+else if(equipControl)
 {
 	//Lock Player
 	objTam.playerControl = false;
@@ -233,31 +244,61 @@ else if(invControl)
 	if(mouse_check_button_pressed(mb_left))
 	{
 		var selectedEquip = ds_list_find_value(equip,equipSelected);
-
-		//Equipping and Unequipping
-		switch(selectedEquip)
+		
+		for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 		{
-			case "Sword":
-				if(selectedEquip != global.weaponE)
+			var e = ds_list_find_value(objEquipment.equipment,j);
+		
+			//Equipping and Unequipping
+			if(selectedEquip == e.name_)
+			{
+				switch(e.type_)
 				{
-					global.weaponE = selectedEquip;
-					weaponPlace = equipSelected;
-				}else{
-					global.weaponE = noone;
-					weaponPlace = noone;
-				}
-				break;
+					case "Weapon":
+						if(selectedEquip != global.weaponE)
+						{
+							global.weaponE = selectedEquip;
+							weaponPlace = equipSelected;
+						}else{
+							global.weaponE = noone;
+							weaponPlace = noone;
+						}
+						break;
 				
-			case "Shield":
-				if(selectedEquip != global.shieldE)
-				{
-					global.shieldE = selectedEquip;
-					shieldPlace = equipSelected;
-				}else{
-					global.shieldE = noone;
-					shieldPlace = noone;
+					case "Shield":
+						if(selectedEquip != global.shieldE)
+						{
+							global.shieldE = selectedEquip;
+							shieldPlace = equipSelected;
+						}else{
+							global.shieldE = noone;
+							shieldPlace = noone;
+						}
+						break;
+				
+					case "Armour":
+						if(selectedEquip != global.shieldE)
+						{
+							global.armourE = selectedEquip;
+							armourPlace = equipSelected;
+						}else{
+							global.armourE = noone;
+							armourPlace = noone;
+						}
+						break;
+				
+					case "Trinket":
+						if(selectedEquip != global.shieldE)
+						{
+							global.trinketE = selectedEquip;
+							trinketPlace = equipSelected;
+						}else{
+							global.trinketE = noone;
+							trinketPlace = noone;
+						}
+						break;
 				}
-				break;
+			}
 		}
 		
 		
@@ -279,6 +320,21 @@ else if(invControl)
 		}*/
 		//currentlyDisplaying = true;
 	}
+	#endregion
+}
+else if(statsControl)
+{
+	//Lock Player
+	objTam.playerControl = false;
+	
+	#region//Go back to normal menu
+			
+	if(mouse_check_button_pressed(mb_right))
+	{
+		statsControl = false;
+		control = true;
+	}
+			
 	#endregion
 }
 else

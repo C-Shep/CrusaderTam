@@ -27,3 +27,5 @@ ds_list_add(inv,"Weed");
 ds_list_add(inv,"Love");
 ds_list_add(inv,"Herb");
 ds_list_add(inv,"Spear");
+ds_list_add(inv,"Chainmail");
+ds_list_add(inv,"Amulet");

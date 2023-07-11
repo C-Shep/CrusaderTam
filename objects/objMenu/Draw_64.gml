@@ -83,21 +83,23 @@ else if(equipControl)
 	var equipmentNow = ds_list_find_value(equip,equipSelected);
 	var equipmentStatsMessage = "!";
 	
-	for(var j = 0; j<array_length(objEquipment.equipment)-1;j++)
+	for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 	{
 		var e = objEquipment.equipment;
-		if(equipmentNow == e[j].name_)
+		var eCurrent =  ds_list_find_value(e,j);
+		var eName = eCurrent.name_;
+		if(equipmentNow == eName)
 			{
 				//is a weapon
-				if(e[j].atk != 0 && e[j].def == 0)//no defence
+				if(eCurrent.atk != 0 && eCurrent.def == 0)//no defence
 				{
-					equipmentStatsMessage = "Atk:" + string(e[j].atk);	
-				}else if(e[j].atk == 0 && e[j].def != 0)//no attack
+					equipmentStatsMessage = "Atk:" + string(eCurrent.atk);	
+				}else if(eCurrent.atk == 0 && eCurrent.def != 0)//no attack
 				{
-					equipmentStatsMessage = "Def:" + string(e[j].def);	
+					equipmentStatsMessage = "Def:" + string(eCurrent.def);	
 				}else//both
 				{
-					equipmentStatsMessage = "Atk:" + string(e[j].atk) + " Def:" + string(e[j].def);	
+					equipmentStatsMessage = "Atk:" + string(eCurrent.atk) + " Def:" + string(eCurrent.def);	
 				}
 			}
 	}
@@ -137,9 +139,23 @@ else if(equipControl)
 	}
 	#endregion
 }
+else if(statsControl)
+{
+	#region// draw stats menu
+	
+	//Draw Box
+	draw_sprite_stretched(sprBox,0,menuX-16,menuY+32,384,menuHeight*(choiceLength+1));
+
+	//Draw Stats
+	draw_text_transformed_color(menuX,menuY+(1*menuHeight),"Atk - " + string(player.atk),textSize,textSize,0,colour,colour,colour,colour,1); 
+	draw_text_transformed_color(menuX,menuY+(2*menuHeight),"Def - " + string(player.def),textSize,textSize,0,colour,colour,colour,colour,1); 
+
+
+	#endregion
+}
 
 #region Draw Hp and Mp and Xp and Gold and Level
-if(control || spellControl || invControl)
+if(control || spellControl || invControl || equipControl || statsControl)
 {
 	//Display HP and MP	
 	var w = display_get_gui_width();

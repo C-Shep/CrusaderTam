@@ -27,6 +27,10 @@ if(playerStats.currentXp > nextLevel(playerStats.lvl))
 if(playerStats.hp > playerStats.maxhp) playerStats.hp = playerStats.maxhp;
 if(playerStats.mp > playerStats.maxmp) playerStats.mp = playerStats.maxmp;
 
+//Use Equipment TODO
+//var totalAtk = playerStats.atk + global.weaponE;
+//playerStats.atk = totalAtk;
+
 //Learing Spells From Levelling Up
 if(playerStats.lvl >= 1)
 {
