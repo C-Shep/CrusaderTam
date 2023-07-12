@@ -196,11 +196,12 @@ else if(invControl)
 				ds_list_delete(inv,invSelected);
 				break;
 			case "Weed":
-				actionMessage = "Good Zaza!";
-				//ds_list_delete(inv,invSelected);
+				var restoreNum = playerRestore(10);
+				actionMessage = "You restore " + string(restoreNum) + " magic!";
+				ds_list_delete(inv,invSelected);
 				break;
 			default:
-					actionMessage = "Doesn't do anything";
+				actionMessage = "Doesn't do anything";
 		}
 		currentlyDisplaying = true;
 	}

@@ -149,6 +149,11 @@ if(!combatEnd)
 						actionMessage = "You heal for " + string(healNum) + " health!";
 						ds_list_delete(inv,invSelected);
 						break;
+					case "Weed":
+						var restoreNum = playerRestore(10)
+						actionMessage = "You restore  " + string(restoreNum) + " magic!";
+						ds_list_delete(inv,invSelected);
+						break;
 				}
 			}
 			#endregion

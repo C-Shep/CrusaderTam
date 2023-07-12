@@ -86,5 +86,11 @@ playerHeal = function (healNum){
 	return healNum;
 }
 
+playerRestore = function (restoreNum){
+	player.mp += restoreNum;
+	return restoreNum;
+}
+
+
 
 

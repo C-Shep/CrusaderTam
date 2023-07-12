@@ -104,3 +104,12 @@ playerHeal = function (healNum){
 	return healNum;
 }
 
+playerRestore = function (restoreNum){
+	player.mp += restoreNum;
+	alarm[1] = 60;
+	spellControl = false;
+	invControl = false;
+	control = false;
+	return restoreNum;
+}
+
