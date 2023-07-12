@@ -46,10 +46,7 @@ equipLength = ds_list_size(equip);
 equipSelected = 0;
 equipControl = false;
 
-weaponPlace = noone;
-armourPlace = noone;
-shieldPlace = noone;
-trinketPlace = noone;
+
 
 //Stats
 statsControl = false;

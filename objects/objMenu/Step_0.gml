@@ -258,10 +258,10 @@ else if(equipControl)
 						if(selectedEquip != global.weaponE)
 						{
 							global.weaponE = selectedEquip;
-							weaponPlace = equipSelected;
+							global.weaponPlace = equipSelected;
 						}else{
 							global.weaponE = noone;
-							weaponPlace = noone;
+							global.weaponPlace = noone;
 						}
 						break;
 				
@@ -269,32 +269,32 @@ else if(equipControl)
 						if(selectedEquip != global.shieldE)
 						{
 							global.shieldE = selectedEquip;
-							shieldPlace = equipSelected;
+							global.shieldPlace = equipSelected;
 						}else{
 							global.shieldE = noone;
-							shieldPlace = noone;
+							global.shieldPlace = noone;
 						}
 						break;
 				
 					case "Armour":
-						if(selectedEquip != global.shieldE)
+						if(selectedEquip != global.armourE)
 						{
 							global.armourE = selectedEquip;
-							armourPlace = equipSelected;
+							global.armourPlace = equipSelected;
 						}else{
 							global.armourE = noone;
-							armourPlace = noone;
+							global.armourPlace = noone;
 						}
 						break;
 				
 					case "Trinket":
-						if(selectedEquip != global.shieldE)
+						if(selectedEquip != global.trinketE)
 						{
 							global.trinketE = selectedEquip;
-							trinketPlace = equipSelected;
+							global.trinketPlace = equipSelected;
 						}else{
 							global.trinketE = noone;
-							trinketPlace = noone;
+							global.trinketPlace = noone;
 						}
 						break;
 				}

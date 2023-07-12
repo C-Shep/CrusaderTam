@@ -105,8 +105,6 @@ else if(equipControl)
 	}
 	
 	
-	//if(objEquipment)
-	
 	displayMessage(equipmentStatsMessage);
 	
 	if(equipSelected != 0)
@@ -123,7 +121,7 @@ else if(equipControl)
 	{
 		var currentInv = ds_list_find_value(equip,i);
 		
-		if(i == weaponPlace || i == shieldPlace || i == armourPlace || i == trinketPlace)
+		if(i == global.weaponPlace || i == global.shieldPlace || i == global.armourPlace || i == global.trinketPlace)
 		{
 			colour = c_yellow;
 		}
@@ -182,7 +180,6 @@ if(control || spellControl || invControl || equipControl || statsControl)
 #region Display messages
 if(currentlyDisplaying)
 {
-	
 	//Only show one message at a time, count down from 1 second
 	if(startDisplayTimer)
 	{

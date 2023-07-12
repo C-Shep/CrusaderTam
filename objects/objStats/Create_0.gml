@@ -5,11 +5,20 @@ playerStats = {
 	maxmp:10,
 	lvl:1,
 	atk:3, //default 3
+	baseAtk:3,
 	def:1,
+	baseDef:1,
 	spd:16,
 	currentXp:0,
 	currentGld:0
 }
+
+//Stats have changed from equipment
+oldWeapon = global.weaponE;
+oldShield = global.shieldE;
+oldArmour = global.armourE;
+oldTrinket = global.trinketE;
+
 
 //Player learns heal at lvl 1
 playerSpell[0] = "Heal";

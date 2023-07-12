@@ -10,8 +10,8 @@ function nextLevel(level)
 //Level up
 if(playerStats.currentXp > nextLevel(playerStats.lvl))
 {
-	playerStats.atk+=1;
-	playerStats.def+=1;
+	playerStats.baseAtk+=1;
+	playerStats.baseDef+=1;
 	playerStats.spd+=1;
 	var hpIncrease = irandom_range(2,4);
 	var mpIncrease = irandom_range(3,4);
@@ -27,9 +27,50 @@ if(playerStats.currentXp > nextLevel(playerStats.lvl))
 if(playerStats.hp > playerStats.maxhp) playerStats.hp = playerStats.maxhp;
 if(playerStats.mp > playerStats.maxmp) playerStats.mp = playerStats.maxmp;
 
-//Use Equipment TODO
-//var totalAtk = playerStats.atk + global.weaponE;
-//playerStats.atk = totalAtk;
+//Attack and Defence updates for Equipping stuff, where final atk stat is calculated
+playerStats.atk = playerStats.baseAtk;
+playerStats.def = playerStats.baseDef;
+
+for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
+{
+	var e = objEquipment.equipment;
+	var eCurrent =  ds_list_find_value(e,j);
+	var eName = eCurrent.name_;
+	
+	#region Weapons
+	if(global.weaponE != noone && global.weaponE == eName)
+	{
+		playerStats.atk += eCurrent.atk;
+		playerStats.def += eCurrent.def;
+	}
+
+	#endregion
+	
+	#region Armour
+	if(global.armourE != noone && global.armourE == eName)
+	{
+		playerStats.atk += eCurrent.atk;
+		playerStats.def += eCurrent.def;
+	}
+	#endregion
+	
+	#region Shield
+	if(global.shieldE != noone && global.shieldE == eName)
+	{
+		playerStats.atk += eCurrent.atk;
+		playerStats.def += eCurrent.def;
+	}
+	#endregion
+	
+	#region Trinket
+	if(global.trinketE != noone && global.trinketE == eName)
+	{
+		playerStats.atk += eCurrent.atk;
+		playerStats.def += eCurrent.def;
+	}
+	#endregion
+}
+
 
 //Learing Spells From Levelling Up
 if(playerStats.lvl >= 1)
