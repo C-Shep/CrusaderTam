@@ -5,7 +5,7 @@ inputY = 0;
 moveSpd = 1;
 
 moving = false;
-moveDir = 0;
+
 targetX = x;
 targetY = y;
 

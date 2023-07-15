@@ -8,6 +8,9 @@ function collision(tileX,tileY){
 	var roomY_ = toRoom(tileY);
 
 	if(position_meeting(roomX_,roomY_, objCollision)) return true;
+	
+	//NPCs
+	if(position_meeting(roomX_,roomY_, objCharParent)) return true;
 
 	return false;
 }
