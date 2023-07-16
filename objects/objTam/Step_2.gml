@@ -6,7 +6,7 @@ var facingCellX = x+lengthdir_x(len,dir_);
 var facingCellY = y+lengthdir_y(len,dir_);
 
 //Check for an npc
-var npc = instance_position(facingCellX,facingCellY,objNpcParent)
+var npc = instance_position(facingCellX,facingCellY,objNpcParent);
 
 if(npc != noone && !instance_exists(objTextbox))
 {
@@ -14,6 +14,8 @@ if(npc != noone && !instance_exists(objTextbox))
 	
 	if(mouse_check_button_pressed(INTERACT))
 	{
+		//make npc face the player
+		npc.moveDir = point_direction(npc.x,npc.y,x,y);
 		createTextbox(npc.dialog);	
 	}
 }

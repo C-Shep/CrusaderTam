@@ -1,4 +1,4 @@
 /// @desc 
 follow = objTam;
-xx = 16;
-yy = 16;
+xx = 64;
+yy = 64;

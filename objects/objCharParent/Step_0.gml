@@ -1,6 +1,9 @@
 /// @desc 
 //input
 
+//look in move dir
+sprite_index = getSprite(moveDir);
+
 //pause
 if(global.paused)
 {
@@ -55,4 +58,3 @@ if(moving)
 	image_speed = 0;
 }
 
-sprite_index = getSprite(moveDir);

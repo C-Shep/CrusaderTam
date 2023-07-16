@@ -9,8 +9,6 @@ moving = false;
 targetX = x;
 targetY = y;
 
-
-
 //Functions
 getSprite = function (dir){
 	if(dir == 0) return states.right;
