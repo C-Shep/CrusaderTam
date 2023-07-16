@@ -1,4 +1,8 @@
-/// @desc 
+/// @desc
+
+//pause
+global.paused = false;
+
 var w_ = global.res.width;
 var h_ = global.res.height;
 

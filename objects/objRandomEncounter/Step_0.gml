@@ -1,5 +1,5 @@
 // @desc random encounter code
-if(objTam.moving)
+if(objTam.moving && !global.paused)
 {
 	timer+=1*dt;
 }
@@ -10,9 +10,6 @@ tam = objTam;
 var currentTileX_ = toTile(tam.x);
 var currentTileY_ = toTile(tam.y);
 		
-
-
-
 if(timer>=setTime)
 {
 

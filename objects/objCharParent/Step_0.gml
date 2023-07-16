@@ -1,5 +1,12 @@
 /// @desc 
 //input
+
+//pause
+if(global.paused)
+{
+	exit;	
+}
+
 if(inputX != 0 || inputY != 0)
 {
 	//if still
