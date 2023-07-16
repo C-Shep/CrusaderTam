@@ -1,8 +1,9 @@
 global.textboxSequence = -1;
 
-function createTextbox(){
+function createTextbox(dialogArray){
 	//create textbox
 	var textbox = instance_create_layer(0,0,"UI",objTextbox);
+	textbox.start(dialogArray);
 	
 	var camX = camera_get_view_x(view_camera);
 	var camY = camera_get_view_y(view_camera);
@@ -19,4 +20,7 @@ function closeTextbox()
 	
 	//unpause
 	global.paused = false;
+	
+	//clear the interact button so you dont get stuck in dialog
+	mouse_clear(INTERACT);
 }

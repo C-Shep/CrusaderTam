@@ -2,6 +2,7 @@
 #macro TILE_HEIGHT 16
 #macro TILE_SIZE 16
 #macro dt delta_time/1000000
+#macro INTERACT mb_left
 	
 enum directions{
 	RIGHT,

@@ -1,6 +1,6 @@
 /// @desc 
 //if no exist
-if(!instance_exists(objBoxName))
+if(!instance_exists(objBoxName) || (!started))
 {
 	exit;
 }
@@ -9,6 +9,12 @@ draw_set_font(fntMain);
 
 var name_ = "Marv";
 var message_ = "Hello brave hero. You must stop the wizard!"
+
+var messageData = dialog[messageIndex];
+var name_ = messageData.speaker.name_;
+var message_ = messageData.message_;
+
+message_ = string_copy(message_,0,characters);
 
 //draw name
 draw_text(objBoxName.x,objBoxName.y,name_);
