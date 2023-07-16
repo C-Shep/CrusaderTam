@@ -11,7 +11,7 @@ var name_ = "Marv";
 var message_ = "Hello brave hero. You must stop the wizard!"
 
 var messageData = dialog[messageIndex];
-var name_ = messageData.speaker.name_;
+var name_ = messageData.speaker;
 var message_ = messageData.message_;
 
 message_ = string_copy(message_,0,characters);

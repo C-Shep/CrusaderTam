@@ -1,7 +1,12 @@
-var speakers = {
+var speakers_ = {
 	tam:{name_: "Tam"},	
 	marv:{name_: "Marv"},
 	lucy:{name_: "Lucy"},
+}
+
+var speakers = {
+	marv: "Marv",
+	lucy: "Lucy",
 }
 
 global.dialog = {};
