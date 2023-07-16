@@ -1,4 +1,9 @@
 /// @desc Menu Control
+if(global.paused)
+{
+	exit;	
+}
+
 #region //Open and Close Menu
 if(keyboard_check_pressed(vk_tab))
 {

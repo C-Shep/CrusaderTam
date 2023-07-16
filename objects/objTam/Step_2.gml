@@ -8,7 +8,7 @@ var facingCellY = y+lengthdir_y(len,dir_);
 //Check for an npc
 var npc = instance_position(facingCellX,facingCellY,objNpcParent);
 
-if(npc != noone && !instance_exists(objTextbox))
+if(npc != noone && !instance_exists(objTextbox) && playerControl)
 {
 	npc.showMessageIcon = true;
 	
