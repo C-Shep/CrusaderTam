@@ -1,7 +1,8 @@
-function Fade(goToBattle_,fadeToBlack_){
+function Fade(goToRoom_,fadeToBlack_,targetRoom_){
 	var fade = instance_create_layer(0,0,"UI",objFade);
-	fade.goToBattle = goToBattle_;
+	fade.goToRoom = goToRoom_;
 	fade.fadeToBlack = fadeToBlack_;
+	fade.targetRoom = targetRoom_;
 
 	if(fadeToBlack_)
 	{

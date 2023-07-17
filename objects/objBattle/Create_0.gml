@@ -64,6 +64,9 @@ invControl = false;
 //What message will be displayed
 actionMessage = "";
 
+//Fade into battle
+Fade(false,false,rmTest);
+
 //Functions
 
 //player or enemy dead? end combat

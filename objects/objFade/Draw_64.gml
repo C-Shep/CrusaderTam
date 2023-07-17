@@ -4,7 +4,7 @@ draw_set_alpha(finalFade);
 
 if(fadeToBlack)
 {
-	if(goToBattle)
+	if(goToRoom)
 	{
 		global.paused = true;
 	}
@@ -13,9 +13,9 @@ if(fadeToBlack)
 	{
 		image_alpha += fadeSpeed;
 	}else{
-		if(goToBattle)
+		if(goToRoom)
 		{
-			room_goto(rmBattle);
+			room_goto(targetRoom);
 		}else{
 			instance_destroy();
 		}

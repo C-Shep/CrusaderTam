@@ -23,7 +23,7 @@ if(timer>=setTime)
 		//Go to Battle
 		show_debug_message("Random Encounter");
 		//start each room with a fade in
-		Fade(true,true);
+		Fade(true,true,rmBattle);
 	}	
 	
 	//Reset Random Encounter Timer

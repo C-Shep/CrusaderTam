@@ -33,4 +33,4 @@ for(var xx=0;xx<gridWidth;xx++)
 }
 
 //start each room with a fade in
-Fade(false,false);
+Fade(false,false,rmTest);
