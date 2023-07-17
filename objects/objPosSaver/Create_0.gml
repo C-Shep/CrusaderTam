@@ -1,4 +1,4 @@
 /// @desc 
 follow = objTam;
-xx = 64;
-yy = 64;
+xx = global.lastX;
+yy = global.lastY;

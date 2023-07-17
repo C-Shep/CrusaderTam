@@ -15,4 +15,9 @@ global.armourPlace = noone;
 global.shieldPlace = noone;
 global.trinketPlace = noone;
 
+//For Multiple Rooms
+global.lastRoom = rmTest;
+global.lastX = 64;
+global.lastY = 64;
+
 room_goto(rmTest);

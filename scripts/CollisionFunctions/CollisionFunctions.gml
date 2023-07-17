@@ -14,3 +14,18 @@ function collision(tileX,tileY){
 
 	return false;
 }
+
+function goToTargetRoom(tileX,tileY){
+	var tilemap_ = objRoomManager.colTilemap;
+	
+	//objects
+	var roomX_ = toRoom(tileX);
+	var roomY_ = toRoom(tileY);
+
+	if(position_meeting(roomX_,roomY_, objCollision)) return true;
+	
+	//NPCs
+	if(position_meeting(roomX_,roomY_, objCharParent)) return true;
+
+	return false;
+}

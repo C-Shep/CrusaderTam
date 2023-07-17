@@ -22,6 +22,10 @@ if(timer>=setTime)
 		
 		//Go to Battle
 		show_debug_message("Random Encounter");
+		
+		//save the room
+		global.lastRoom = room;
+		
 		//start each room with a fade in
 		Fade(true,true,rmBattle);
 	}	

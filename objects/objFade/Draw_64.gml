@@ -1,6 +1,5 @@
 /// @desc 
-draw_set_color(c_black);
-draw_set_alpha(finalFade);
+
 
 if(fadeToBlack)
 {
@@ -40,6 +39,8 @@ if(fadeToBlack)
 	else finalFade = 0.25;
 }
 
+draw_set_color(c_black);
+draw_set_alpha(finalFade);
 
 draw_rectangle(0,0,view_wport*2,view_hport*2,false);
 
