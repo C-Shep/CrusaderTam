@@ -27,7 +27,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "GUI",
-    "path": "folders/Objects/GUI.yy",
+    "name": "Textbox",
+    "path": "folders/Objects/GUI/Textbox.yy",
   },
 }

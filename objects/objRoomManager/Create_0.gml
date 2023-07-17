@@ -1,6 +1,6 @@
 /// @desc
 
-//pause
+//unpause at start of room
 global.paused = false;
 
 var w_ = global.res.width;
@@ -31,3 +31,6 @@ for(var xx=0;xx<gridWidth;xx++)
 		if(col) mp_grid_add_cell(global.AIGrid,xx,yy);
 	}
 }
+
+//start each room with a fade in
+Fade(false,false);
