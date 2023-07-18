@@ -9,7 +9,7 @@ choice[2] = "Equip"
 choice[3] = "Stats"
 choiceLength = array_length(choice);
 selected = 0;
-control = false;
+control = true;
 
 //Spells
 spell = objStats.playerSpell;
@@ -46,8 +46,6 @@ equipLength = ds_list_size(equip);
 equipSelected = 0;
 equipControl = false;
 
-
-
 //Stats
 statsControl = false;
 
@@ -66,7 +64,6 @@ messageY = 80;
 actionMessage = "";
 currentlyDisplaying = false;
 startDisplayTimer = true;
-
 
 
 //Functions

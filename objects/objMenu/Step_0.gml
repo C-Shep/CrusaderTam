@@ -4,29 +4,22 @@ if(global.paused)
 	exit;	
 }
 
-#region //Open and Close Menu
+#region //Close Menu
 if(keyboard_check_pressed(vk_tab))
 {
-	if((!control && (spellControl || invControl)) || (control))
-	{
-		control = false;
-		spellControl = false;
-		invControl = false;
-		selected = 0;
-	}else if(!control){
-		control = true;
-		spellControl = false;
-		invControl = false;
-	}else{
-		control = false;
-		spellControl = false;
-		invControl = false;	
-		selected = 0;
-	}
+	control = false;
+	spellControl = false;
+	invControl = false;
+	equipControl = false;
+	selected = 0;
+	objTam.playerControl = true;
+	keyboard_clear(vk_tab);
+	instance_destroy();
 }
 #endregion
 
 //set the size of the inventory
+inv = objStats.inv;
 invLength = ds_list_size(inv);
 equipLength = ds_list_size(equip);
 
@@ -56,6 +49,8 @@ if(control)
 		invControl = false;
 		equipControl = false;
 		selected = 0;
+		instance_destroy();
+		
 	}
 			
 	#endregion

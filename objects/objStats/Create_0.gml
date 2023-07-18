@@ -10,15 +10,8 @@ playerStats = {
 	baseDef:1,
 	spd:16,
 	currentXp:0,
-	currentGld:0
+	currentGld:100
 }
-
-//Stats have changed from equipment
-oldWeapon = global.weaponE;
-oldShield = global.shieldE;
-oldArmour = global.armourE;
-oldTrinket = global.trinketE;
-
 
 //Player learns heal at lvl 1
 playerSpell[0] = "Heal";
@@ -29,11 +22,7 @@ ds_list_add(inv,"Herb");
 ds_list_add(inv,"Sword");
 ds_list_add(inv,"Herb");
 ds_list_add(inv,"Shield");
-ds_list_add(inv,"Gun");
-ds_list_add(inv,"Love");
-ds_list_add(inv,"Man");
 ds_list_add(inv,"Weed");
-ds_list_add(inv,"Love");
 ds_list_add(inv,"Herb");
 ds_list_add(inv,"Spear");
 ds_list_add(inv,"Chainmail");

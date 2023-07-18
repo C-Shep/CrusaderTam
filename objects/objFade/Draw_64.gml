@@ -10,7 +10,7 @@ if(fadeToBlack)
 	
 	if(image_alpha < 1)
 	{
-		image_alpha += fadeSpeed;
+		image_alpha += fadeSpeed*dt;
 	}else{
 		if(goToRoom)
 		{
@@ -28,7 +28,7 @@ if(fadeToBlack)
 }else{//fade from black
 	if(image_alpha > 0)
 	{
-		image_alpha -= fadeSpeed;
+		image_alpha -= fadeSpeed*dt;
 	}else{
 		instance_destroy();
 	}
