@@ -10,6 +10,7 @@ if(keyboard_check_pressed(vk_tab) && !instance_exists(objMenu) && !instance_exis
 }
 
 //DEBUG Open Shop
+/*
 if(keyboard_check_pressed(vk_space) && !instance_exists(objShop))
 {
 	var shop = instance_create_layer(0,0,"UI",objShop)
@@ -17,7 +18,7 @@ if(keyboard_check_pressed(vk_space) && !instance_exists(objShop))
 	ds_list_add(shop.stock,"Weed");
 	ds_list_add(shop.stock,"Sword");
 	keyboard_clear(vk_space);
-}
+}*/
 
 if(playerControl)
 {

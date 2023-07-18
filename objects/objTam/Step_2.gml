@@ -18,7 +18,20 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 	{
 		//make npc face the player
 		npc.moveDir = point_direction(npc.x,npc.y,x,y);
-		createTextbox(npc.dialog);	
+		
+		//Talk to npc if they arent a shopkeep, otherwise open the shop
+		switch(npc.shopkeep)
+		{
+			case "No":
+				createTextbox(npc.dialog);	
+				break;
+			case "Town1":
+				var shop = instance_create_layer(0,0,"UI",objShop)
+				ds_list_add(shop.stock,"Herb");
+				ds_list_add(shop.stock,"Weed");
+				ds_list_add(shop.stock,"Sword");
+				break;
+		}
 	}
 }
 
