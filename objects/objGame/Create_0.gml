@@ -20,4 +20,8 @@ global.lastRoom = rmTest;
 global.lastX = 64;
 global.lastY = 64;
 
+//Chests
+global.openChestList = ds_list_create();
+ds_list_add(global.openChestList,0);
+
 room_goto(rmTest);

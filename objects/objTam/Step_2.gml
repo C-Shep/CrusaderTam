@@ -11,7 +11,10 @@ var npc = instance_position(facingCellX,facingCellY,objNpcParent);
 if(npc != noone && !instance_exists(objTextbox) && playerControl)
 {
 	//show message icon above npc
-	npc.showMessageIcon = true;
+	if(npc.sprite_index != sprSign)
+	{
+		npc.showMessageIcon = true;
+	}
 	
 	//talk to npc
 	if(mouse_check_button_pressed(INTERACT))
@@ -32,6 +35,23 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 				ds_list_add(shop.stock,"Sword");
 				break;
 		}
+	}
+}
+
+//Check for a chest
+var chest = instance_position(facingCellX,facingCellY,objChest);
+
+if(chest != noone && !instance_exists(objTextbox) && playerControl)
+{
+	//talk to npc
+	if(mouse_check_button_pressed(INTERACT) && !chest.open)// && !ds_list_find_value(objGame.openChestList, chest.id))
+	{
+		ds_list_add(global.openChestList,chest.chestID);
+		lootGrabbed = chest.loot;
+		ds_list_add(objStats.inv,chest.loot);
+		chest.image_index = 1;
+		chest.open = true;
+		alarm[0] = 120;
 	}
 }
 

@@ -16,7 +16,12 @@
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
   ],
   "layers": [
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI","instances":[],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"UI","instances":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6DAE18E3","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"chestID","path":"objects/objChest/objChest.yy",},"objectId":{"name":"objChest","path":"objects/objChest/objChest.yy",},"value":"2",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"loot","path":"objects/objChest/objChest.yy",},"objectId":{"name":"objChest","path":"objects/objChest/objChest.yy",},"value":"Sword",},
+          ],"isDnd":false,"objectId":{"name":"objChest","path":"objects/objChest/objChest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":144.0,"y":64.0,},
+      ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_D63662D_1","properties":[],"isDnd":false,"objectId":{"name":"objRandomEncounter","path":"objects/objRandomEncounter/objRandomEncounter.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":64.0,"y":16.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7F6CE22C_1","properties":[],"isDnd":false,"objectId":{"name":"objRoomManager","path":"objects/objRoomManager/objRoomManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":48.0,"y":16.0,},
@@ -52,6 +57,7 @@
     {"name":"Goblin_1","path":"rooms/rmWorld/rmWorld.yy",},
     {"name":"Groove_1","path":"rooms/rmWorld/rmWorld.yy",},
     {"name":"inst_216974EC","path":"rooms/rmWorld/rmWorld.yy",},
+    {"name":"inst_6DAE18E3","path":"rooms/rmWorld/rmWorld.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

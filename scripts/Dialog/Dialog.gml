@@ -1,12 +1,7 @@
-var speakers_ = {
-	tam:{name_: "Tam"},	
-	marv:{name_: "Marv"},
-	lucy:{name_: "Lucy"},
-}
-
 var speakers = {
 	marv: "Marv",
 	lucy: "Lucy",
+	sign_: "Sign",
 }
 
 global.dialog = {};
@@ -30,5 +25,12 @@ global.dialog.lucyTalk = [
 	{
 		speaker: speakers.lucy,
 		message_: "The monsters out there pack a punch!"
+	}
+]
+
+global.dialog.gazSign = [
+	{
+		speaker: speakers.sign_,
+		message_: "Gaz's General Wares"
 	}
 ]
