@@ -24,8 +24,15 @@ if(randomSpeedEnemy > randomSpeedPlayer)
 	control = false;
 }
 
+//Defending
+isDefending = false;
+totalDefence = player.def;
+
 //Fleeing
 isFleeing = false;
+
+//Damage Numbers
+enemyDamage = 0;
 
 //For final messages
 messageCounter = 0;

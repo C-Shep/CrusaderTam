@@ -46,7 +46,10 @@ if(!combatEnd)
 						control = false;
 						break;
 					case "Defend":
+						isDefending = true;
+						totalDefence = (player.def*10);
 						alarm[1] = 60;
+						actionMessage = "You defend!";
 						control = false;
 						break;
 					case "Flee":
@@ -171,7 +174,9 @@ if(!combatEnd)
 		if(alarm[0] == -1)
 		{
 			alarm[0] = 60;
-			player.hp -= round(enemy.atk - (round(player.def/2))/2);
+			enemyDamage = max(round(enemy.atk - (round(totalDefence/2))/2),0);
+			
+			player.hp -= enemyDamage;
 		}
 		#endregion
 	}

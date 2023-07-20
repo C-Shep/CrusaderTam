@@ -97,7 +97,7 @@ if(!endMessages)
 		#region//enemy turn, currently just attacks. Work on this soon!
 		if(alarm[0] != -1)
 		{
-			combatMessage(string(enemy.name_) + " attacks you for " + string((round(enemy.atk - (round(player.def/2))/2))) + " damage!",);
+			combatMessage(string(enemy.name_) + " attacks you for " + string(enemyDamage) + " damage!",);
 		}
 		#endregion
 	}
