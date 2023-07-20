@@ -24,6 +24,9 @@ if(randomSpeedEnemy > randomSpeedPlayer)
 	control = false;
 }
 
+//Fleeing
+isFleeing = false;
+
 //For final messages
 messageCounter = 0;
 
@@ -116,3 +119,16 @@ playerRestore = function (restoreNum){
 	return restoreNum;
 }
 
+playerFlee = function()
+{
+	var randomFleeEnemy = irandom_range(0,99)+enemy.spd;
+	var randomFleePlayer = irandom_range(0,99)+player.spd;
+
+	if(randomFleePlayer >= randomFleeEnemy)
+	{
+		isFleeing = true;
+		alarm[2] = 120;
+	}
+	
+	return isFleeing;
+}	

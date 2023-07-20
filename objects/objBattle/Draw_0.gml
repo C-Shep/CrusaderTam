@@ -31,6 +31,7 @@ if(!endMessages)
 {
 	if(!isEnemyTurn)
 	{
+		//Draw Menus
 		if(control)
 		{
 			#region// draw normal menu
@@ -101,50 +102,55 @@ if(!endMessages)
 		#endregion
 	}
 }else{
-	if(enemy.hp <= 0)
+	if(!isFleeing)
 	{
-		if(messageCounter == 0)	//Victory Message
+		if(enemy.hp <= 0)
 		{
-			#region rewards
-			
-			
-			if(rewardsGiven == false)
+			if(messageCounter == 0)	//Victory Message
 			{
-				player.currentXp += enemy.xp;
-				player.currentGld += enemy.gld;
-				
-				//Random Drops
-				var willDrop = irandom(99)+1;
-				show_debug_message(willDrop);
-				if(willDrop <= dropChance)
-				{
-					ds_list_add(objStats.inv,enemy.drop);
-					dropDropped = true;
-				}
-				
-				rewardsGiven = true;
-			}
-			#endregion
+				#region rewards
 			
-			combatMessage("You defeated the " + string(enemy.name_) + "!");
-		}else if(messageCounter == 1){	//Xp message
-			combatMessage("You gain " + string(enemy.xp) + " xp");
-		}else if(messageCounter == 2){	//Gold Message
-			combatMessage("You gain " + string(enemy.gld) + " gold");
-		}else if(messageCounter == 3){	//Item Message / Level Message
-			if(dropDropped)
-			{	
-				combatMessage("The " + string(enemy.name_) + " dropped a " + string(enemy.drop));
-			}else if(global.hasLevelled){
+			
+				if(rewardsGiven == false)
+				{
+					player.currentXp += enemy.xp;
+					player.currentGld += enemy.gld;
+				
+					//Random Drops
+					var willDrop = irandom(99)+1;
+					show_debug_message(willDrop);
+					if(willDrop <= dropChance)
+					{
+						ds_list_add(objStats.inv,enemy.drop);
+						dropDropped = true;
+					}
+				
+					rewardsGiven = true;
+				}
+				#endregion
+			
+				combatMessage("You defeated the " + string(enemy.name_) + "!");
+			}else if(messageCounter == 1){	//Xp message
+				combatMessage("You gain " + string(enemy.xp) + " xp");
+			}else if(messageCounter == 2){	//Gold Message
+				combatMessage("You gain " + string(enemy.gld) + " gold");
+			}else if(messageCounter == 3){	//Item Message / Level Message
+				if(dropDropped)
+				{	
+					combatMessage("The " + string(enemy.name_) + " dropped a " + string(enemy.drop));
+				}else if(global.hasLevelled){
+					combatMessage("You levelled up!");
+				}
+			}else if(messageCounter == 4){	//Level Message if Item has Dropped
 				combatMessage("You levelled up!");
 			}
-		}else if(messageCounter == 4){	//Level Message if Item has Dropped
-			combatMessage("You levelled up!");
 		}
-	}
-	else if(player.hp <= 0)
-	{
-		combatMessage("You have been defeated...");
+		else if(player.hp <= 0)
+		{
+			combatMessage("You have been defeated...");
+		}
+	}else{//Fleeing Code
+		combatMessage("Escaped!");
 	}
 	
 }

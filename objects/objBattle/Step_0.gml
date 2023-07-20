@@ -50,7 +50,15 @@ if(!combatEnd)
 						control = false;
 						break;
 					case "Flee":
-				
+						if(playerFlee())
+						{
+							actionMessage = "Escaped!";
+						}else{
+							actionMessage = "Could not escape!";
+							alarm[1] = 60;
+						}	
+						control = false;
+						
 						break;
 				}
 			}
