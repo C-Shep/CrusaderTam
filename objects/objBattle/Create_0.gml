@@ -4,6 +4,7 @@ listLength = array_length(objEnemyList.list);
 randomNum = irandom_range(0,listLength-1);
 enemy = objEnemyList.list[randomNum];
 player = objStats.playerStats;
+oldHp = player.hp;
 
 //phases of combat
 isEnemyTurn = false;
@@ -48,6 +49,8 @@ menuX = 16;
 menuY = 16;
 menuHeight = 16;
 colour = c_white;
+baseColour = c_white;
+hurtColour = c_orange;
 control = true;
 selected = 0;
 

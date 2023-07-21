@@ -6,7 +6,17 @@ var middleY = room_height/2;
 draw_set_font(fntMain);
 
 #region //draw player stats and background
+
+if(player.hp > ceil(player.maxhp/4)) baseColour = c_white;
+else baseColour = hurtColour;
+
+//colour hp red when damage is taken
+if(player.hp < oldHp)
+{
+	colour = c_red;
+}
 draw_text_colour(menuX,160,"hp: " + string(player.hp),colour,colour,colour,colour,1);
+colour = baseColour;
 draw_text_colour(menuX+64,160,"mp: " + string(player.mp),colour,colour,colour,colour,1);
 
 draw_sprite(sprGrassBG,0,middleX,middleY);

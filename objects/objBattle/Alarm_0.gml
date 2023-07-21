@@ -6,5 +6,6 @@ control = true;
 isDefending = false;
 totalDefence = player.def;
 enemyDamage = 0;
+oldHp = player.hp;
 
 checkForEnd();
