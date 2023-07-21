@@ -174,9 +174,30 @@ if(!combatEnd)
 		if(alarm[0] == -1)
 		{
 			alarm[0] = 60;
-			enemyDamage = max(round(enemy.atk - (round(totalDefence/2))/2),0);
+			
+			
+			var randomMove = irandom(numberOfMoves-1);
+			var enemyMove = ds_list_find_value(enemy.moves, randomMove);
+			
+			switch(enemyMove)
+			{
+				case "Attack": 	
+					enemyDamage = enemyBasicAttack(0);
+					
+					actionMessage = (string(enemy.name_) + " attacks you for " + string(enemyDamage) + " damage!");
+				break;
+				case "Stab": 	
+					enemyDamage = enemyBasicAttack(1);
+					
+					actionMessage = (string(enemy.name_) + " stabs you for " + string(enemyDamage) + " damage!");
+				break;
+				default:
+					actionMessage = "???";
+			}
 			
 			player.hp -= enemyDamage;
+			
+			
 		}
 		#endregion
 	}

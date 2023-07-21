@@ -9,9 +9,13 @@ defaultEnemy = {
 	spd:1,
 	xp:1,
 	gld:1,
-	drop: "Herb"
+	drop: "Herb",
+	moves: ds_list_create()
 }
+	
+ds_list_add(defaultEnemy.moves,"Attack");	
 
+//Goblin
 goblin = {
 	name_: "Goblin",
 	sprite: sprGoblin,
@@ -22,9 +26,15 @@ goblin = {
 	spd:15,
 	xp:1,
 	gld:1,
-	drop: "Herb"
+	drop: "Herb",
+	moves: ds_list_create()
 }
 
+//Goblin Moves
+ds_list_add(goblin.moves,"Attack");
+ds_list_add(goblin.moves,"Stab");
+
+//Groovedog
 groovedog = {
 	name_: "Groovedog",
 	sprite: sprGrooveDog,
@@ -35,9 +45,14 @@ groovedog = {
 	spd:30,
 	xp:5,
 	gld:3,
-	drop: "Weed"
+	drop: "Weed",
+	moves: ds_list_create()
 }
 
+//Groovedog Moves
+ds_list_add(groovedog.moves,"Attack");
+
+//Thistleta
 thistleta = {
 	name_: "Thistleta",
 	sprite: sprThistleta,
@@ -48,8 +63,12 @@ thistleta = {
 	spd:5,
 	xp:10,
 	gld:5,
-	drop: "Herb"
+	drop: "Herb",
+	moves: ds_list_create()
 }
+
+//Thistleta Moves
+ds_list_add(thistleta.moves,"Attack");
 
 switch(global.area)
 {

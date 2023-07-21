@@ -77,6 +77,9 @@ actionMessage = "";
 //Fade into battle
 Fade(false,false,rmTest);
 
+//Enemy Moves
+numberOfMoves = ds_list_size(enemy.moves);
+
 //Functions
 
 //player or enemy dead? end combat
@@ -96,7 +99,7 @@ combatMessage = function (msg){
 }
 
 playerAttack = function (bonus){
-	var dmg = round((player.atk+bonus) - (round(enemy.def/2))/2)
+	var dmg = max(ceil((player.atk+bonus) - (floor(enemy.def/2))),1)
 	enemy.hp -= dmg;
 	alarm[1] = 60;
 	spellControl = false;
@@ -139,3 +142,9 @@ playerFlee = function()
 	
 	return isFleeing;
 }	
+
+enemyBasicAttack = function(bonus)
+{	
+	var dmgNum = max((round(enemy.atk+bonus)) - (round(totalDefence/2)),1);
+	return dmgNum;
+}
