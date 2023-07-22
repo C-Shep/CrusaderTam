@@ -28,7 +28,15 @@ function SaveTam(){
 		{
 			obj : object_get_name(object_index),
 			stats : playerStats,
-			itemList : ds_list_write(inv)
+			itemList : ds_list_write(inv),
+			weapon : global.weaponE,
+			shield : global.shieldE,
+			armour : global.armourE,
+			trinket : global.trinketE,
+			weaponPlace : global.weaponPlace,
+			shieldPlace : global.shieldPlace,
+			armourPlace : global.armourPlace,
+			trinketPlace : global.trinketPlace
 		}
 
 		array_push(saveData,statsSaveEntity);
@@ -86,6 +94,14 @@ function Load(){
 						//haha callum you are fucking my strings
 						ds_list_clear(inv);
 						ds_list_read(inv,loadEntity.itemList);
+						global.weaponE = loadEntity.weapon; 
+						global.shieldE = loadEntity.shield;
+						global.armourE = loadEntity.armour;
+						global.trinketE = loadEntity.trinket;
+						global.weaponPlace = loadEntity.weaponPlace;
+						global.shieldPlace = loadEntity.shieldPlace;
+						global.armourPlace = loadEntity.armourPlace;
+						global.trinketPlace = loadEntity.trinketPlace;
 
 					}
 					break;
