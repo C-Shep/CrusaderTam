@@ -71,7 +71,6 @@ for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 	#endregion
 }
 
-
 //Learing Spells From Levelling Up
 if(playerStats.lvl >= 1)
 {
@@ -98,6 +97,7 @@ if(playerStats.lvl >= 5)
 	playerSpell[4] = "Crucify";
 }
 
+//DEBUG TAKE THIS OUT LATER
 if(keyboard_check_pressed(ord("F")))
 {
 	playerStats.lvl++;
