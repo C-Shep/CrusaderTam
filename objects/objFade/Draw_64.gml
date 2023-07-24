@@ -15,6 +15,9 @@ if(fadeToBlack)
 		if(goToRoom)
 		{
 			room_goto(targetRoom);
+		}else if(fadeBackIn)
+		{
+			fadeToBlack = false;
 		}else{
 			instance_destroy();
 		}

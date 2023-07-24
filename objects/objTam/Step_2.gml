@@ -26,7 +26,6 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 		switch(npc.shopkeep)
 		{
 			case "No":
-				createTextbox(npc.dialog);	
 				break;
 			case "Town1":
 				var shop = instance_create_layer(0,0,"UI",objShop)
@@ -35,6 +34,19 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 				ds_list_add(shop.stock,"Sword");
 				break;
 		}
+		
+		//Talk to npc if they arent a shopkeep, otherwise open the shop
+		switch(npc.innkeep)
+		{
+			case "No":
+				break;
+			case "Town1":
+				var inn = instance_create_layer(0,0,"UI",objInn)
+				inn.cost = 30;
+				break;
+		}
+		
+		if(npc.shopkeep == "No" && npc.innkeep == "No") createTextbox(npc.dialog);	
 	}
 }
 

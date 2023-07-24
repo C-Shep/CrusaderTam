@@ -28,6 +28,7 @@
     {"id":{"name":"sprMessage","path":"sprites/sprMessage/sprMessage.yy",},"order":1,},
     {"id":{"name":"objBoxMessage","path":"objects/objBoxMessage/objBoxMessage.yy",},"order":3,},
     {"id":{"name":"sprWoman1Down","path":"sprites/sprWoman1Down/sprWoman1Down.yy",},"order":1,},
+    {"id":{"name":"objInn","path":"objects/objInn/objInn.yy",},"order":4,},
     {"id":{"name":"sprSign","path":"sprites/sprSign/sprSign.yy",},"order":1,},
     {"id":{"name":"rmBattle","path":"rooms/rmBattle/rmBattle.yy",},"order":1,},
     {"id":{"name":"objShop","path":"objects/objShop/objShop.yy",},"order":3,},
