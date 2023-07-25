@@ -33,9 +33,17 @@ if(!combatEnd)
 				switch(menu[selected])
 				{
 					case "Attack":
-						var dmg = playerAttack(0);
 						//actionMessage = dmg;
-						actionMessage = "You attack the " + string(enemy.name_) + " for " + string(dmg) + " damage!";
+						var chance = irandom(99);
+						if(chance == 0){
+							actionMessage = "You Missed!";
+						}else if(chance == 99){
+							var dmg = playerAttack(0,2);
+							actionMessage = "You crit the " + string(enemy.name_) + " for " + string(dmg) + " damage!";
+						}else{
+							var dmg = playerAttack(0);
+							actionMessage = "You attack the " + string(enemy.name_) + " for " + string(dmg) + " damage!";
+						}
 						break;
 					case "Spells":
 						spellControl = true;

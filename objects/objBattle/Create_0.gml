@@ -101,8 +101,8 @@ combatMessage = function (msg){
 	colour,colour,colour,colour,1);
 }
 
-playerAttack = function (bonus){
-	var dmg = max(ceil((player.atk+bonus) - (floor(enemy.def/2))),1)
+playerAttack = function (bonus,multi=1){
+	var dmg = max(ceil(((player.atk+bonus)*multi) - (floor(enemy.def/2))),1);
 	enemy.hp -= dmg;
 	alarm[1] = 60;
 	spellControl = false;
