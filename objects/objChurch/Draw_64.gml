@@ -18,19 +18,12 @@ if(control)
 		switch(selectedItem)
 		{
 			case "Rest":
-				messageX = 416;
-				messageY = 80;
-				draw_text_transformed_colour(messageX,messageY,"Your gold: " + string(player.currentGld) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
 				description = "A room for the night costs " + string(cost) + "g. Would you like to stay?";
-				break;
-			case "Save":
-				messageX = 416;
-				messageY = (80-128);
-				description = "Shall I save your game for you?";
 				break;
 		}
 		
-		//Draw the cost and descrpton	
+		//Draw the cost and descrpton
+		draw_text_transformed_colour(messageX,messageY,"Your gold: " + string(player.currentGld) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
 		draw_text_ext_transformed_colour(messageX,messageY+128,description,16,200,textSize,textSize,0,colour,colour,colour,colour,1);
 		
 		
@@ -38,8 +31,6 @@ if(control)
 		if(i==selected)
 		{
 			draw_text_transformed_color(menuX,menuY+menuHeight,">" + string(currentSelection),textSize,textSize,0,colour,colour,colour,colour,1); 
-		}else{
-			draw_text_transformed_color(menuX,menuY+menuHeight+64,string(currentSelection),textSize,textSize,0,colour,colour,colour,colour,1);
 		}
 	}
 	#endregion

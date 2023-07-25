@@ -3,7 +3,6 @@ player = objStats.playerStats;
 
 //normal menu
 choice[0] = "Rest"
-choice[1] = "Save"
 choiceLength = array_length(choice);
 selected = 0;
 control = true;

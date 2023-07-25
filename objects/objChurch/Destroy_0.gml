@@ -1,0 +1,2 @@
+/// @desc 
+objTam.playerControl = true;

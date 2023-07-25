@@ -26,32 +26,19 @@ if(control)
 		selected -= 1;
 	}
 	
-	if(selected<0) selected = choiceLength-1;
-	if(selected>=choiceLength) selected = 0;
-	
-	//selected = clamp(selected, 0,choiceLength-1);
+	selected = clamp(selected, 0,choiceLength-1);
 	#endregion
 	
 	#region//Normal Control
-	if(mouse_check_button_pressed(mb_left))
+	if(mouse_check_button_pressed(mb_left) && player.currentGld >= cost)
 	{
 		switch(choice[selected])
 		{
 			case "Rest":
-				if(player.currentGld >= cost)
-				{
-					player.hp = player.maxhp;
-					player.mp = player.maxmp;
-					player.currentGld -= cost;
-					Fade(false,true,rmTest,true);
-					control = false;
-					selected = 0;
-					mouse_clear(INTERACT);
-					instance_destroy();
-				}
-				break;
-			case "Save":
-				SaveTam();
+				player.hp = player.maxhp;
+				player.mp = player.maxmp;
+				player.currentGld -= cost;
+				Fade(false,true,rmTest,true);
 				control = false;
 				selected = 0;
 				mouse_clear(INTERACT);

@@ -24,4 +24,4 @@ global.lastY = 64;
 global.openChestList = ds_list_create();
 ds_list_add(global.openChestList,0);
 
-room_goto(rmTest);
+room_goto(rmMenu);

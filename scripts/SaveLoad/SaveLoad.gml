@@ -19,6 +19,7 @@ function SaveTam(){
 			room : room
 		}
 		array_push(saveData,tamSaveEntity);
+		instance_create_layer(0,0,"UI",objSaveMessage);
 	}
 	
 	with(objStats)
@@ -36,7 +37,8 @@ function SaveTam(){
 			weaponPlace : global.weaponPlace,
 			shieldPlace : global.shieldPlace,
 			armourPlace : global.armourPlace,
-			trinketPlace : global.trinketPlace
+			trinketPlace : global.trinketPlace,
+			chests : ds_list_write(global.openChestList)
 		}
 
 		array_push(saveData,statsSaveEntity);
@@ -73,7 +75,7 @@ function Load(){
 					with(objTam)
 					{
 						room = loadEntity.room;
-						
+
 						global.lastX = loadEntity.x_;
 						global.lastY = loadEntity.y_;
 						x = floor(loadEntity.x/16)*16;
@@ -102,6 +104,8 @@ function Load(){
 						global.shieldPlace = loadEntity.shieldPlace;
 						global.armourPlace = loadEntity.armourPlace;
 						global.trinketPlace = loadEntity.trinketPlace;
+						ds_list_clear(global.openChestList);
+						ds_list_read(global.openChestList,loadEntity.chests);
 
 					}
 					break;
