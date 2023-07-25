@@ -19,3 +19,12 @@ state = states.down;
 
 //for opening chests (the display)
 lootGrabbed = "";
+
+//respawn
+me = objStats.playerStats;
+if(me.hp <= 0)
+{
+	me.currentGld = ceil(me.currentGld/2);
+	me.hp = me.maxhp;
+	me.mp = me.maxmp;
+}

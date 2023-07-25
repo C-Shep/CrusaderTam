@@ -38,7 +38,10 @@ function SaveTam(){
 			shieldPlace : global.shieldPlace,
 			armourPlace : global.armourPlace,
 			trinketPlace : global.trinketPlace,
-			chests : ds_list_write(global.openChestList)
+			chests : ds_list_write(global.openChestList),
+			respawnX : global.respawnX,
+			respawnY : global.respawnY,
+			respawnRoom : global.respawnRoom
 		}
 
 		array_push(saveData,statsSaveEntity);
@@ -106,6 +109,9 @@ function Load(){
 						global.trinketPlace = loadEntity.trinketPlace;
 						ds_list_clear(global.openChestList);
 						ds_list_read(global.openChestList,loadEntity.chests);
+						global.respawnX = loadEntity.respawnX;
+						global.respawnY = loadEntity.respawnY;
+						global.respawnRoom = loadEntity.respawnRoom;
 
 					}
 					break;

@@ -24,4 +24,11 @@ global.lastY = 64;
 global.openChestList = ds_list_create();
 ds_list_add(global.openChestList,0);
 
+//Death
+global.lastInn = "Town1";
+global.respawnX = 0;
+global.respawnY = 0;
+global.respawnRoom = rmTest;
+
+
 room_goto(rmMenu);

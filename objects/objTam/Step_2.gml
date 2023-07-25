@@ -22,7 +22,7 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 		//make npc face the player
 		npc.moveDir = point_direction(npc.x,npc.y,x,y);
 		
-		//Talk to npc if they arent a shopkeep, otherwise open the shop
+		//Shopkeep
 		switch(npc.shopkeep)
 		{
 			case "No":
@@ -35,7 +35,7 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 				break;
 		}
 		
-		//Talk to npc if they arent a shopkeep, otherwise open the shop
+		//Innkeep
 		switch(npc.innkeep)
 		{
 			case "No":
@@ -46,6 +46,17 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 				break;
 		}
 		
+		//Set respawn point
+		if(npc.innkeep != "No"){
+			global.respawnX = x;
+			global.respawnY = y;
+			global.respawnRoom = room;
+			show_debug_message(global.respawnX);
+			show_debug_message(global.respawnY);
+			show_debug_message(global.respawnRoom);
+		}
+		
+		//talk to the npc if they aint a shopkeep or innkeep
 		if(npc.shopkeep == "No" && npc.innkeep == "No") createTextbox(npc.dialog);	
 	}
 }
