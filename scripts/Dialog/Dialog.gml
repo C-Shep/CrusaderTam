@@ -2,6 +2,8 @@ var speakers = {
 	marv: "Marv",
 	lucy: "Lucy",
 	sign_: "Sign",
+	gaz:"Gaz",
+	martine:"Martine",
 }
 
 global.dialog = {};
@@ -33,4 +35,22 @@ global.dialog.gazSign = [
 		speaker: speakers.sign_,
 		message_: "Gaz's General Wares"
 	}
+]
+
+global.dialog.gazTalk = [
+	{
+		speaker: speakers.gaz,
+		message_: "Alright mate? Got some good wares here"
+	},
+	{
+		speaker: speakers.gaz,
+		message_: "They should help an adventurer like yourself"
+	}
+]
+
+global.dialog.martineTalk = [
+	{
+		speaker: speakers.martine,
+		message_: "Hiya love, will you be spending the night or are you just passing through?"
+	},
 ]
