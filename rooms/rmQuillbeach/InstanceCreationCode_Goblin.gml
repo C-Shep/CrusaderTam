@@ -1,0 +1,1 @@
+areaType = "Goblin";

@@ -17,8 +17,8 @@ global.trinketPlace = noone;
 
 //For Multiple Rooms
 global.lastRoom = rmTest;
-global.lastX = 64;
-global.lastY = 64;
+global.lastX = 256;
+global.lastY = 256;
 
 //Chests
 global.openChestList = ds_list_create();
