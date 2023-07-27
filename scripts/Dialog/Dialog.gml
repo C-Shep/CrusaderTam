@@ -4,9 +4,18 @@ var speakers = {
 	sign_: "Sign",
 	gaz:"Gaz",
 	martine:"Martine",
+	lana:"Lana",
+	hario:"Hario",
+	jose:"Jose",
+	suelo:"Suelo",
+	dolores:"Dolores",
+	
+	
 }
 
 global.dialog = {};
+
+#region Dialogue
 
 global.dialog.marvTalk = [
 	{
@@ -30,13 +39,6 @@ global.dialog.lucyTalk = [
 	}
 ]
 
-global.dialog.gazSign = [
-	{
-		speaker: speakers.sign_,
-		message_: "Gaz's General Wares"
-	}
-]
-
 global.dialog.gazTalk = [
 	{
 		speaker: speakers.gaz,
@@ -54,3 +56,70 @@ global.dialog.martineTalk = [
 		message_: "Hiya love, will you be spending the night or are you just passing through?"
 	},
 ]
+
+global.dialog.lanaTalk = [
+	{
+		speaker: speakers.lana,
+		message_: "Welcome to the inn. That was one nasty storm, I hope you're doing well."
+	},
+]
+
+global.dialog.harioTalk = [
+	{
+		speaker: speakers.hario,
+		message_: "This is Quillbeach."
+	},
+	{
+		speaker: speakers.hario,
+		message_: "The most tranquil town in all of Lucidia!"
+	}
+]
+
+global.dialog.joseTalk = [
+	{
+		speaker: speakers.jose,
+		message_: "You look pretty tough, how much can you bench?"
+	},
+]
+
+global.dialog.sueloTalk = [
+	{
+		speaker: speakers.suelo,
+		message_: "I've been a fisherman for my whole life."
+	},
+	{
+		speaker: speakers.suelo,
+		message_: "The waters here are great for catching fish!"
+	}
+]
+
+global.dialog.doloresTalk = [
+	{
+		speaker: speakers.dolores,
+		message_: "Did you know that goblins can drop herbs?"
+	},
+	{
+		speaker: speakers.dolores,
+		message_: "I wonder why they never use them..."
+	}
+]
+
+#endregion
+
+#region Signs
+
+global.dialog.gazSign = [
+	{
+		speaker: speakers.sign_,
+		message_: "Gaz's General Wares"
+	}
+]
+
+global.dialog.lanaSign = [
+	{
+		speaker: speakers.sign_,
+		message_: "Lana's Inn"
+	}
+]
+
+#endregion

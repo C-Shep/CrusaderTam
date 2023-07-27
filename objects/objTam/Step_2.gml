@@ -26,7 +26,7 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 		{
 			case "No":
 				break;
-			case "Town1":
+			case "Quillbeach":
 				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"Herb");
 				ds_list_add(shop.stock,"Weed");
@@ -39,9 +39,9 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 		{
 			case "No":
 				break;
-			case "Town1":
+			case "Quillbeach":
 				var inn = instance_create_layer(0,0,"UI",objInn)
-				inn.cost = 30;
+				inn.cost = 5;
 				break;
 		}	
 		
