@@ -19,7 +19,7 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 	if(mouse_check_button_pressed(INTERACT))
 	{
 		//make npc face the player and display icon
-		overCounterNpc.moveDir = point_direction(overCounterNpc.x,overCounterNpc.y,x,y);	
+		if(overCounterNpc.shouldTurn) overCounterNpc.moveDir = point_direction(overCounterNpc.x,overCounterNpc.y,x,y);	
 		
 		//Shopkeep
 		switch(overCounterNpc.shopkeep)
@@ -71,7 +71,7 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 	if(mouse_check_button_pressed(INTERACT))
 	{
 		//make npc face the player
-		npc.moveDir = point_direction(npc.x,npc.y,x,y);
+		if(npc.shouldTurn) npc.moveDir = point_direction(npc.x,npc.y,x,y);
 		
 		//talk to the npc
 		createTextbox(npc.dialog);	

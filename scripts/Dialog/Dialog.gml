@@ -9,7 +9,10 @@ var speakers = {
 	jose:"Jose",
 	suelo:"Suelo",
 	dolores:"Dolores",
-	
+	adalina:"Adalina",
+	pedro:"Pedro",
+	simon:"Simon",
+	elicia:"Elicia",
 	
 }
 
@@ -101,6 +104,32 @@ global.dialog.doloresTalk = [
 	{
 		speaker: speakers.dolores,
 		message_: "I wonder why they never use them..."
+	}
+]
+
+global.dialog.adalinaPedroTalk = [
+	{
+		speaker: speakers.adalina,
+		message_: "I almost caught a swordfish yesterday"
+	},
+	{
+		speaker: speakers.pedro,
+		message_: "Dude swordfish aren't real"
+	},
+	{
+		speaker: speakers.adalina,
+		message_: "What? Yeah they are, I saw one. It had a big sword."
+	},
+]
+
+global.dialog.eliciaTalk = [
+	{
+		speaker: speakers.elicia,
+		message_: "Quillbeach is named after how tranquil it is."
+	},
+	{
+		speaker: speakers.elicia,
+		message_: "What a lovely town."
 	}
 ]
 
