@@ -60,8 +60,10 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 }
 #endregion
 
+if(startAlarm > 0) startAlarm--// else playerControl = true;
+
 #region Normal Npcs
-if(npc != noone && !instance_exists(objTextbox) && playerControl)
+if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm <= 0 && startTalk)))
 {
 	//show message icon above npc
 	if(npc.sprite_index != sprSign)
@@ -70,8 +72,9 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 	}
 	
 	//talk to npc
-	if(mouse_check_button_pressed(INTERACT))
+	if(mouse_check_button_pressed(INTERACT) || startTalk)
 	{
+		startTalk = false;
 		//make npc face the player
 		if(npc.shouldTurn) npc.moveDir = point_direction(npc.x,npc.y,x,y);
 		
@@ -81,6 +84,7 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 		switch(npc.id)
 		{
 			case sofiaBeach:
+				playerControl = false;
 				endAction = "Sofia Walk";
 			break;
 			case sofiaHouse:

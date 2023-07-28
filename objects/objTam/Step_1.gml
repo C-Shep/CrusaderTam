@@ -10,7 +10,7 @@ if(keyboard_check_pressed(vk_tab) && !instance_exists(objTextbox) && !instance_e
 }
 
 //Control Menu
-if(playerControl)
+if(playerControl && startAlarm<=0 && !startTalk)
 {
 	inputX = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 	inputY = keyboard_check(ord("S")) - keyboard_check(ord("W"));

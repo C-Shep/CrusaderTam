@@ -28,3 +28,14 @@ if(me.hp <= 0)
 	me.hp = me.maxhp;
 	me.mp = me.maxmp;
 }
+
+startTalk = false;
+startAlarm = 2;
+
+if(!global.quest.sofiaTalked && room == rmQuillbeach)
+{
+	playerControl = false;
+	moveDir = 90;
+	startTalk = true;
+}
+

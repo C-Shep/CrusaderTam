@@ -2,7 +2,7 @@
 event_inherited();
 
 //Random Movement
-alarm[0] = 1;
+alarm[0] = irandom_range(minMoveTime,maxMoveTime);
 
 //Path
 path = path_add();
