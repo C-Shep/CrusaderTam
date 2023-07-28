@@ -13,7 +13,7 @@ var speakers = {
 	pedro:"Pedro",
 	simon:"Simon",
 	elicia:"Elicia",
-	
+	sofia:"Sofia",
 }
 
 global.dialog = {};
