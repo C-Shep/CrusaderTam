@@ -28,8 +28,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7af8c78b-d524-450c-bcd5-00ac0646fa2f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"86e13434-d554-4a91-bcf5-8575942ffec1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e246a41e-0f07-499a-9d50-3083d4089eb9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8c227fef-e61c-4fc7-9c42-6826ca3fdca3",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"9d19dfdc-9311-4d40-96d9-8b1b083f59a6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7af8c78b-d524-450c-bcd5-00ac0646fa2f","path":"sprites/sprSofiaDown/sprSofiaDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"c144065d-ac45-4a54-a063-e966e11a90c4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"86e13434-d554-4a91-bcf5-8575942ffec1","path":"sprites/sprSofiaDown/sprSofiaDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"57b2873c-7ca2-4dc6-bdc6-158ceb3fb326","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e246a41e-0f07-499a-9d50-3083d4089eb9","path":"sprites/sprSofiaDown/sprSofiaDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"59927b11-8e32-4785-8775-43c4a9ba7423","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8c227fef-e61c-4fc7-9c42-6826ca3fdca3","path":"sprites/sprSofiaDown/sprSofiaDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

@@ -41,7 +41,8 @@ function SaveTam(){
 			chests : ds_list_write(global.openChestList),
 			respawnX : global.respawnX,
 			respawnY : global.respawnY,
-			respawnRoom : global.respawnRoom
+			respawnRoom : global.respawnRoom,
+			quests : global.quest,
 		}
 
 		array_push(saveData,statsSaveEntity);
@@ -112,6 +113,7 @@ function Load(){
 						global.respawnX = loadEntity.respawnX;
 						global.respawnY = loadEntity.respawnY;
 						global.respawnRoom = loadEntity.respawnRoom;
+						global.quest = loadEntity.quests;
 
 					}
 					break;

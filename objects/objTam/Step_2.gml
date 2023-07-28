@@ -15,7 +15,9 @@ var overCounterNpc = instance_position(facingCellXExtra,facingCellYExtra,objNpcP
 #region Shopping and Inns, talking over the counter
 if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && playerControl)
 {
-	overCounterNpc.showMessageIcon = true;
+	//only show speech icon for shopkeeps and innkeeps over counters
+	if(overCounterNpc.innkeep != "No" || overCounterNpc.shopkeep != "No") overCounterNpc.showMessageIcon = true;
+	
 	if(mouse_check_button_pressed(INTERACT))
 	{
 		//make npc face the player and display icon
@@ -73,8 +75,19 @@ if(npc != noone && !instance_exists(objTextbox) && playerControl)
 		//make npc face the player
 		if(npc.shouldTurn) npc.moveDir = point_direction(npc.x,npc.y,x,y);
 		
+		var endAction = "None";
+	
 		//talk to the npc
-		createTextbox(npc.dialog);	
+		switch(npc.id)
+		{
+			case sofiaBeach:
+				endAction = "Sofia Walk";
+			break;
+			case sofiaHouse:
+			if(!global.quest.sofiaGiven) endAction = "Sofia Give";
+			break;
+		}
+		createTextbox(npc.dialog,endAction);
 	}
 }
 #endregion

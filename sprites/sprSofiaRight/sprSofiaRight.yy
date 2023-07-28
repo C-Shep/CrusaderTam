@@ -29,7 +29,7 @@
   "gridY": 0,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7af8c78b-d524-450c-bcd5-00ac0646fa2f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9577e4cd-f903-444c-9254-b93fcb4400eb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f023c48-e663-4a06-ba73-ae66fec0dfaa",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"36ad58c6-5324-4b2b-917a-1c8b1b9f74d0","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7af8c78b-d524-450c-bcd5-00ac0646fa2f","path":"sprites/sprSofiaRight/sprSofiaRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"918e7cd7-5f57-4ce1-927a-3cf724340292","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9577e4cd-f903-444c-9254-b93fcb4400eb","path":"sprites/sprSofiaRight/sprSofiaRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"caca33e3-1018-4ac3-b9b6-c4e5eda2b338","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7af8c78b-d524-450c-bcd5-00ac0646fa2f","path":"sprites/sprSofiaRight/sprSofiaRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ff8e51a6-a76e-4b94-ab02-fdc68b9dd515","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3f023c48-e663-4a06-ba73-ae66fec0dfaa","path":"sprites/sprSofiaRight/sprSofiaRight.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

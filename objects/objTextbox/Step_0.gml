@@ -9,6 +9,9 @@ if(characters < string_length(message_))
 {
 	//increase char count
 	characters += textSpeed;
+	
+	//skip text
+	if(mouse_check_button_pressed(INTERACT)) characters = string_length(message_);
 }else{
 	//message finisjed
 	if(mouse_check_button_pressed(INTERACT))	
@@ -18,7 +21,7 @@ if(characters < string_length(message_))
 			nextMessage();
 		}
 		else{
-			closeTextbox();
+			closeTextbox(endEvent);
 		}
 	}
 }

@@ -7,7 +7,6 @@ messageIndex = 0;
 characters = 0;
 
 //functions
-
 start = function (dialogArray)
 {
 	dialog = dialogArray;

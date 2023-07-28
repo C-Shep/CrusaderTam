@@ -30,5 +30,11 @@ global.respawnX = 0;
 global.respawnY = 0;
 global.respawnRoom = rmTest;
 
+//Quests
+global.quest = {
+	sofiaTalked : false,
+	sofiaGiven : false,
+}
+
 
 room_goto(rmMenu);

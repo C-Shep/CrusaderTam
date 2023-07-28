@@ -1,4 +1,5 @@
 var speakers = {
+	none: "",
 	marv: "Marv",
 	lucy: "Lucy",
 	sign_: "Sign",
@@ -131,6 +132,83 @@ global.dialog.eliciaTalk = [
 		speaker: speakers.elicia,
 		message_: "What a lovely town."
 	}
+]
+
+#endregion
+
+#region Main Quest
+
+global.dialog.sofiaTalk = [
+	{
+		speaker: speakers.sofia,
+		message_: "Hey!"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "Hey! Are you ok?"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "That was a really bad storm huh?"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "You must have fallen off your boat and washed up on our beach by the looks of it"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "My name's Sofia. I live here in Quillbeach."
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "If you need any help at all, visit my house by the east exit to the village."
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "See you!"
+	}
+]
+
+global.dialog.sofiaGive = [
+	{
+		speaker: speakers.sofia,
+		message_: "Oh Hello!"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "I hope you're doing alright, I've got something for you."
+	},
+	{
+		speaker: speakers.none,
+		message_: "You recived an Amulet!"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "You seem like an adventurer so I though this amulet might help out"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "Say, I heard that the King of Valiburgh was seeking out brave heroes"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "Maybe you should go there?"
+	},
+]
+
+global.dialog.sofiaChat = [
+	{
+		speaker: speakers.sofia,
+		message_: "Have you visited Valiburgh yet? It's just northeast of here"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "I heard the King was looking for a brave hero, sounds like you fit the bill"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "Good luck!"
+	},
 ]
 
 #endregion

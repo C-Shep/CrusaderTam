@@ -26,4 +26,4 @@ ds_list_add(inv,"Shield");
 ds_list_add(inv,"Sword");
 ds_list_add(inv,"Spear");
 ds_list_add(inv,"Chainmail");
-ds_list_add(inv,"Amulet");
+//ds_list_add(inv,"Amulet");
