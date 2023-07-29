@@ -191,13 +191,23 @@ if(!combatEnd)
 			{
 				case "Attack": 	
 					enemyDamage = enemyBasicAttack(0);
-					
+					show_debug_message(enemy.atk);
 					actionMessage = (string(enemy.name_) + " attacks you for " + string(enemyDamage) + " damage!");
 				break;
 				case "Stab": 	
 					enemyDamage = enemyBasicAttack(1);
 					
 					actionMessage = (string(enemy.name_) + " stabs you for " + string(enemyDamage) + " damage!");
+				break;
+				case "Headbutt": 	
+					enemyDamage = enemyBasicAttack(1);
+					
+					actionMessage = (string(enemy.name_) + " headbutts you for " + string(enemyDamage) + " damage!");
+				break;
+				case "Sharpen": 	
+					enemy.atk+=1;
+					show_debug_message(enemy.atk);
+					actionMessage = (string(enemy.name_) + " sharpens its scythe!");
 				break;
 				default:
 					actionMessage = "???";

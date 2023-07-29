@@ -4,13 +4,13 @@ playerStats = {
 	mp:10,
 	maxmp:10,
 	lvl:1,
-	atk:3, //default 3
-	baseAtk:3,
+	atk:1, //default 3
+	baseAtk:1,
 	def:1,
 	baseDef:1,
 	spd:16,
 	currentXp:0,
-	currentGld:100
+	currentGld:10
 }
 
 //Player learns heal at lvl 1
@@ -18,6 +18,7 @@ playerSpell[0] = "Heal";
 
 //Inventory
 inv = ds_list_create();
+/*
 ds_list_add(inv,"Herb");
 ds_list_add(inv,"Herb");
 ds_list_add(inv,"Herb");

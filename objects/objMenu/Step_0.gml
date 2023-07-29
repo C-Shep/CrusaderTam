@@ -301,25 +301,6 @@ else if(equipControl)
 				}
 			}
 		}
-		
-		
-		
-		
-		/*switch(selectedItem)
-		{
-			case "Herb":
-				var healNum = playerHeal(8);
-				actionMessage = "You heal for " + string(healNum) + " health!";
-				ds_list_delete(inv,invSelected);
-				break;
-			case "Weed":
-				actionMessage = "Good Zaza!";
-				//ds_list_delete(inv,invSelected);
-				break;
-			default:
-					actionMessage = "Doesn't do anything";
-		}*/
-		//currentlyDisplaying = true;
 	}
 	#endregion
 }

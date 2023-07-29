@@ -105,23 +105,8 @@ else if(buyControl)
 	if(mouse_check_button_pressed(mb_left))
 	{
 		var selectedItem = ds_list_find_value(stock,buySelected);
-
-	/*	switch(selectedItem)
-		{
-			case "Herb":
-				cost = 3;
-				description = "Eat to heal 8 health";
-				break;
-			case "Weed":
-				cost = 10;
-				description = "Smoke to restore 10 magic";
-				break;
-			case "Sword":
-				cost = 20;
-				description = "Steel sword, +2 atk";
-				break;
-		}*/
 		
+		//Buy the item
 		if(player.currentGld >= cost)
 		{
 			ds_list_add(objStats.inv,selectedItem);

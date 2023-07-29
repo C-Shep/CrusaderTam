@@ -25,7 +25,7 @@ else if(buyControl)
 	#region// draw stock menu
 	
 	//Draw the description box
-	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,240);
+	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,272);
 	
 	//Draw Box
 	draw_sprite_stretched(sprBox,0,menuX-16,menuY,384,menuHeight*8);
@@ -47,6 +47,7 @@ else if(buyControl)
 		
 		switch(selectedItem)
 		{
+			#region Items
 			case "Herb":
 				cost = 3;
 				description = "Eat to heal 8 health";
@@ -55,16 +56,40 @@ else if(buyControl)
 				cost = 10;
 				description = "Smoke to restore 10 magic";
 				break;
-			case "Sword":
-				cost = 20;
-				description = "Steel sword, +2 atk";
+			#endregion
+			#region Weapons
+			case "Knife":
+				cost = 10;
+				description = "Knife made of copper. +1 atk";
 				break;
+			case "Sword":
+				cost = 10;
+				break;
+			case "Spear":
+				cost = 11;
+				break;
+			#endregion
+			#region Shields
+			case "Shield":
+				cost = 5;
+				break;
+			#endregion
+			#region Armour
+			case "Chainmail":
+				cost = 10;
+				break;
+			#endregion
+			#region Trinkets
+			case "Amulet":
+				cost = 5;
+				break;
+			#endregion
 		}
 		
 		//Draw the cost and descrpton
 		draw_text_transformed_colour(messageX,messageY,"Your gold: " + string(player.currentGld) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
 		draw_text_transformed_colour(messageX,messageY+64,string(cost) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
-		draw_text_transformed_colour(messageX,messageY+128,description,textSize,textSize,0,colour,colour,colour,colour,1);
+		draw_text_ext_transformed_colour(messageX,messageY+128,description,16,200,textSize,textSize,0,colour,colour,colour,colour,1);
 		
 		
 		//Draw the stock list
@@ -104,11 +129,17 @@ else if(sellControl)
 		
 		switch(selectedItem)
 		{
+			#region Items
 			case "Herb":
 				cost = 1;
 				break;
 			case "Weed":
-				cost = 5;
+				cost = 2;
+				break;
+			#endregion
+			#region Weapons
+			case "Knife":
+				cost = 10;
 				break;
 			case "Sword":
 				cost = 10;
@@ -116,15 +147,22 @@ else if(sellControl)
 			case "Spear":
 				cost = 11;
 				break;
+			#endregion
+			#region Shields
 			case "Shield":
 				cost = 5;
 				break;
+			#endregion
+			#region Armour
 			case "Chainmail":
 				cost = 10;
 				break;
+			#endregion
+			#region Trinkets
 			case "Amulet":
 				cost = 5;
 				break;
+			#endregion
 		}
 		
 		//Draw the cost and descrpton

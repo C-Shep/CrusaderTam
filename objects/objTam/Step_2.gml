@@ -32,7 +32,7 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"Herb");
 				ds_list_add(shop.stock,"Weed");
-				ds_list_add(shop.stock,"Sword");
+				ds_list_add(shop.stock,"Knife");
 				break;
 		}
 		
