@@ -1,8 +1,11 @@
 /// @desc 
 //player and enemy
-listLength = array_length(objEnemyList.list);
+listLength = ds_list_size(objEnemyList.list)
+//listLength = array_length(objEnemyList.list);
 randomNum = irandom_range(0,listLength-1);
-enemy = objEnemyList.list[randomNum];
+enemy = ds_list_find_value(objEnemyList.list, randomNum);
+ds_list_clear(objEnemyList.list);
+//enemy = objEnemyList.list[randomNum];
 player = objStats.playerStats;
 oldHp = player.hp;
 

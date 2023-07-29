@@ -14,6 +14,7 @@ view_visible[0] = true;
 view_set_camera(0,cam);
 
 colTilemap = layer_tilemap_get_id("Walls");
+waterTilemap = layer_tilemap_get_id("Water");
 
 //Create Grid
 var gridWidth = toTile(room_width);
@@ -27,8 +28,10 @@ for(var xx=0;xx<gridWidth;xx++)
 {
 	for(var yy=0;yy<gridHeight;yy++)
 	{
-		var col=tilemap_get(colTilemap,xx,yy);
+		var col = tilemap_get(colTilemap,xx,yy);
+		var water = tilemap_get(waterTilemap,xx,yy);
 		if(col) mp_grid_add_cell(global.AIGrid,xx,yy);
+		if(water) mp_grid_add_cell(global.AIGrid,xx,yy);
 	}
 }
 

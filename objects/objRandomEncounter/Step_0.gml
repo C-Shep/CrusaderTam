@@ -1,4 +1,5 @@
 // @desc random encounter code
+//might change this to only when touching an encounter area?
 if(objTam.moving && !global.paused)
 {
 	timer+=1*dt;

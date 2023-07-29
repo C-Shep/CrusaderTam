@@ -82,7 +82,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetRoom","path":"objects/objDoor/objDoor.yy",},"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"value":"rmQuillbeach",},
           ],"isDnd":false,"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":480.0,"y":576.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Walls","tilesetId":{"name":"tlsWorld","path":"tilesets/tlsWorld/tlsWorld.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":48,"SerialiseHeight":48,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Walls","tilesetId":{"name":"tlsBuilding","path":"tilesets/tlsBuilding/tlsBuilding.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":48,"SerialiseHeight":48,"TileCompressedData":[
 -38,0,-10,-2147483648,-40,0,-8,-2147483648,-40,0,-8,-2147483648,-28,0,-6,1,-6,0,-8,-2147483648,-5,0,-12,1,-11,0,6,1,32,40,8,16,1,-6,0,-8,-2147483648,-5,0,1,1,-6,0,5,1,24,0,24,
 1,-11,0,1,1,-4,0,1,1,-6,0,-8,-2147483648,-5,0,2,1,0,-3,18,-6,0,1,1,-11,0,2,1,0,-3,18,1,1,-6,0,-8,-2147483648,-5,0,1,1,-10,0,1,1,-11,0,1,
 1,-4,0,1,1,-6,0,-8,-2147483648,-5,0,1,1,-10,0,1,1,-11,0,1,1,-4,0,1,1,-6,0,-8,-2147483648,-5,0,2,1,25,-5,0,5,1,24,0,24,1,-11,0,6,1,25,25,
@@ -94,7 +94,7 @@
 -8,-2147483648,-27,0,7,1,0,18,18,0,0,1,-6,0,-8,-2147483648,-27,0,1,1,-4,0,2,25,1,-6,0,-8,-2147483648,-27,0,1,1,-4,0,2,25,1,-6,0,-8,-2147483648,-27,0,-3,1,1,0,
 -3,1,-6,0,-8,-2147483648,-40,0,-8,-2147483648,-40,0,-10,-2147483648,-38,0,-392,-2147483648,],},"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Areas","instances":[],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Ground","tilesetId":{"name":"tlsWorld","path":"tilesets/tlsWorld/tlsWorld.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":48,"SerialiseHeight":48,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Ground","tilesetId":{"name":"tlsBuilding","path":"tilesets/tlsBuilding/tlsBuilding.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":48,"SerialiseHeight":48,"TileCompressedData":[
 -221,2,-5,19,-20,2,-6,19,1,2,-3,19,-13,2,-5,19,-20,2,-10,19,-13,2,-5,19,-20,2,-10,19,-13,2,-5,19,-20,2,-10,19,-13,2,-5,19,-20,2,-6,19,1,2,-3,19,
 -13,2,-5,19,-22,2,1,3,-22,2,1,3,-408,2,-5,19,-15,2,-5,19,-23,2,-4,19,1,49,-15,2,-5,19,-23,2,-3,19,2,0,19,-15,2,-5,19,-23,2,-4,19,1,49,-15,
 2,-5,19,1,3,-22,2,-5,19,-15,2,-3,19,2,49,19,-25,2,1,3,-19,2,1,0,-333,2,-4,19,1,0,-43,2,5,19,49,49,19,0,-43,2,-5,19,-43,2,5,19,49,49,

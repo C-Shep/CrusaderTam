@@ -70,14 +70,15 @@ thistleta = {
 //Thistleta Moves
 ds_list_add(thistleta.moves,"Attack");
 
+list = ds_list_create();
+
 switch(global.area)
 {
-	case "Goblin":
-	list[0] = goblin;
-	list[1] = goblin;
+	case "Early Forest":
+	ds_list_add(list,goblin);
 		break;
-	case "Groove":
-	list[0] = groovedog;
-	list[1] = thistleta;
+	case "Early Hills":
+	ds_list_add(list,groovedog);
+	ds_list_add(list,thistleta);
 		break;
 }

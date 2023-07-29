@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objEncounterArea",
   "spriteId": {
-    "name": "sprGrassBG",
-    "path": "sprites/sprGrassBG/sprGrassBG.yy",
+    "name": "sprEncounter",
+    "path": "sprites/sprEncounter/sprEncounter.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,7 +27,12 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"areaType","varType":6,"value":"\"Early Forest\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
+        "\"Early Forest\"",
+        "\"Early Hills\"",
+      ],"multiselect":false,"filters":[],},
+  ],
   "overriddenProperties": [],
   "parent": {
     "name": "Battles",

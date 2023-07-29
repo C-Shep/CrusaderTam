@@ -1,10 +1,10 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "tlsWorld",
+  "name": "tlsBuilding",
   "spriteId": {
-    "name": "World",
-    "path": "sprites/World/World.yy",
+    "name": "Building",
+    "path": "sprites/Building/Building.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,
