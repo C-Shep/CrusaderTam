@@ -15,7 +15,7 @@ defaultEnemy = {
 	
 ds_list_add(defaultEnemy.moves,"Attack");	
 
-//Goblin
+//Goblin -----------------------------
 goblin = {
 	name_: "Goblin",
 	sprite: sprGoblin,
@@ -34,7 +34,7 @@ goblin = {
 ds_list_add(goblin.moves,"Attack");
 ds_list_add(goblin.moves,"Stab");
 
-//Evil Goat
+//Evil Goat -----------------------------
 evilgoat = {
 	name_: "Evil Goat",
 	sprite: sprEvilGoat,
@@ -44,7 +44,7 @@ evilgoat = {
 	def:3,
 	spd:30,
 	xp:3,
-	gld:1,
+	gld:2,
 	drop: "Weed",
 	moves: ds_list_create()
 }
@@ -53,7 +53,7 @@ evilgoat = {
 ds_list_add(evilgoat.moves,"Attack");
 ds_list_add(evilgoat.moves,"Headbutt");
 
-//Scarecrow
+//Scarecrow -----------------------------
 scarecrow = {
 	name_: "Scarecrow",
 	sprite: sprScarecrow,
@@ -63,7 +63,7 @@ scarecrow = {
 	def:3,
 	spd:5,
 	xp:3,
-	gld:2,
+	gld:3,
 	drop: "Herb",
 	moves: ds_list_create()
 }
@@ -72,7 +72,46 @@ scarecrow = {
 ds_list_add(scarecrow.moves,"Attack");
 ds_list_add(scarecrow.moves,"Sharpen");
 
-//Groovedog
+//Wolf -----------------------------
+wolf = {
+	name_: "Wolf",
+	sprite: sprWolf,
+	hp:7,
+	maxhp:7,
+	atk:4,
+	def:0,
+	spd:40,
+	xp:4,
+	gld:3,
+	drop: "Herb",
+	moves: ds_list_create()
+}
+
+//Wolf Moves
+ds_list_add(wolf.moves,"Scratch");
+ds_list_add(wolf.moves,"Attack");
+ds_list_add(wolf.moves,"Ravage");
+
+//Nightcap -----------------------------
+nightcap = {
+	name_: "Nightcap",
+	sprite: sprNightcap,
+	hp:7,
+	maxhp:7,
+	atk:3,
+	def:2,
+	spd:10,
+	xp:5,
+	gld:6,
+	drop: "Weed",
+	moves: ds_list_create()
+}
+
+//Nightcap Moves
+ds_list_add(nightcap.moves,"Spore");
+ds_list_add(nightcap.moves,"Attack");
+
+//Groovedog -----------------------------
 groovedog = {
 	name_: "Groovedog",
 	sprite: sprGrooveDog,
@@ -90,7 +129,7 @@ groovedog = {
 //Groovedog Moves
 ds_list_add(groovedog.moves,"Attack");
 
-//Thistleta
+//Thistleta -----------------------------
 thistleta = {
 	name_: "Thistleta",
 	sprite: sprThistleta,
@@ -108,6 +147,7 @@ thistleta = {
 //Thistleta Moves
 ds_list_add(thistleta.moves,"Attack");
 
+//Area Lists -----------------------------
 list = ds_list_create();
 
 switch(global.area)
@@ -116,9 +156,13 @@ switch(global.area)
 	ds_list_add(list,goblin);
 	ds_list_add(list,evilgoat);
 	ds_list_add(list,scarecrow);
+	ds_list_add(list,wolf);
 		break;
 	case "Early Hills":
-	ds_list_add(list,groovedog);
-	ds_list_add(list,thistleta);
+	ds_list_add(list,nightcap);
+	ds_list_add(list,nightcap);
+	ds_list_add(list,evilgoat);
+	ds_list_add(list,wolf);
+	ds_list_add(list,wolf);
 		break;
 }

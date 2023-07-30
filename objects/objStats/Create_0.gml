@@ -10,7 +10,7 @@ playerStats = {
 	baseDef:1,
 	spd:16,
 	currentXp:0,
-	currentGld:10
+	currentGld:100
 }
 
 //Player learns heal at lvl 1
@@ -18,6 +18,12 @@ playerSpell[0] = "Heal";
 
 //Inventory
 inv = ds_list_create();
+invLength = ds_list_size(inv);
+
+//Max Healing
+healCount = 0;
+maxHeals = 5;
+
 /*
 ds_list_add(inv,"Herb");
 ds_list_add(inv,"Herb");

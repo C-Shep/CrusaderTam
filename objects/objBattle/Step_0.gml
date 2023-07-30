@@ -11,9 +11,18 @@ invLength = ds_list_size(inv);
 if(!combatEnd)
 {
 	if(!isEnemyTurn)
-	{
+	{	
 		if(control)
 		{
+			if(sleep)
+			{
+				actionMessage = "You are asleep!";
+				spellControl = false;
+				invControl = false;
+				control = false;
+				alarm[1] = 60;
+			}
+			
 			#region//Scroll Control for Normal
 			
 			if(mouse_wheel_down() || keyboard_check_pressed(ord("S")))
@@ -177,10 +186,18 @@ if(!combatEnd)
 			}
 			#endregion
 		}
-	}else{		
-		#region //enemy turn
+	//}else if (sleep){	//Sleep
+		
+	}else{
+		#region	//Enemy turn
 		if(alarm[0] == -1)
 		{
+			if (sleep)
+			{
+				var awakenChance = irandom(1);	
+				show_debug_message(awakenChance);
+				if (awakenChance == 1) sleep = false;
+			}
 			alarm[0] = 60;
 			
 			
@@ -191,31 +208,44 @@ if(!combatEnd)
 			{
 				case "Attack": 	
 					enemyDamage = enemyBasicAttack(0);
-					show_debug_message(enemy.atk);
 					actionMessage = (string(enemy.name_) + " attacks you for " + string(enemyDamage) + " damage!");
 				break;
 				case "Stab": 	
 					enemyDamage = enemyBasicAttack(1);
-					
 					actionMessage = (string(enemy.name_) + " stabs you for " + string(enemyDamage) + " damage!");
 				break;
 				case "Headbutt": 	
 					enemyDamage = enemyBasicAttack(1);
-					
 					actionMessage = (string(enemy.name_) + " headbutts you for " + string(enemyDamage) + " damage!");
 				break;
 				case "Sharpen": 	
 					enemy.atk+=1;
-					show_debug_message(enemy.atk);
 					actionMessage = (string(enemy.name_) + " sharpens its scythe!");
+				break;
+				case "Scratch": 	
+					enemyDamage = enemyBasicAttack(-2);
+					actionMessage = (string(enemy.name_) + " scratches you for " + string(enemyDamage) + " damage!");
+				break;
+				case "Ravage": 	
+					enemyDamage = enemyBasicAttack(1);
+					actionMessage = (string(enemy.name_) + " ravages you for " + string(enemyDamage) + " damage!");
+				break;
+				case "Spore": 	
+					if(!sleep)
+					{
+						actionMessage = (string(enemy.name_) + " spreads it's spores around!");
+						var sleepchance = irandom(2);
+						if(sleepchance != 2) sleep = true;
+					}else{
+						enemyMove = "Attack";
+					}
+					
 				break;
 				default:
 					actionMessage = "???";
 			}
 			
 			player.hp -= enemyDamage;
-			
-			
 		}
 		#endregion
 	}

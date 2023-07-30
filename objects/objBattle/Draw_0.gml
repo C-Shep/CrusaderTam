@@ -120,8 +120,7 @@ if(!endMessages)
 			if(messageCounter == 0)	//Victory Message
 			{
 				#region rewards
-			
-			
+
 				if(rewardsGiven == false)
 				{
 					player.currentXp += enemy.xp;
@@ -132,8 +131,11 @@ if(!endMessages)
 					show_debug_message(willDrop);
 					if(willDrop <= dropChance)
 					{
-						ds_list_add(objStats.inv,enemy.drop);
-						dropDropped = true;
+						if((objStats.healCount < objStats.maxHeals && enemy.drop == "Herb") || enemy.drop != "Herb")
+						{
+							ds_list_add(objStats.inv,enemy.drop);
+							dropDropped = true;
+						}
 					}
 				
 					rewardsGiven = true;

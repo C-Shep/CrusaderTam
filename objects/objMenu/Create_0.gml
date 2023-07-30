@@ -65,7 +65,6 @@ actionMessage = "";
 currentlyDisplaying = false;
 startDisplayTimer = true;
 
-
 //Functions
 displayMessage = function (msg){
 	draw_text_transformed_colour(

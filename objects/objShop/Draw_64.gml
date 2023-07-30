@@ -89,8 +89,12 @@ else if(buyControl)
 		//Draw the cost and descrpton
 		draw_text_transformed_colour(messageX,messageY,"Your gold: " + string(player.currentGld) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
 		draw_text_transformed_colour(messageX,messageY+64,string(cost) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
-		draw_text_ext_transformed_colour(messageX,messageY+128,description,16,200,textSize,textSize,0,colour,colour,colour,colour,1);
-		
+		if(selectedItem == "Herb")
+		{
+			draw_text_ext_transformed_colour(messageX,messageY+128,string(objStats.healCount)+"/"+string(objStats.maxHeals)+" "+description,16,200,textSize,textSize,0,colour,colour,colour,colour,1);
+		}else{
+			draw_text_ext_transformed_colour(messageX,messageY+128,description,16,200,textSize,textSize,0,colour,colour,colour,colour,1);
+		}
 		
 		//Draw the stock list
 		if(i==buySelected)
