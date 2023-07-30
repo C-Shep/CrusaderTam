@@ -67,6 +67,7 @@
     {"id":{"name":"objMenu","path":"objects/objMenu/objMenu.yy",},"order":2,},
     {"id":{"name":"Building","path":"sprites/Building/Building.yy",},"order":0,},
     {"id":{"name":"sprNightcap","path":"sprites/sprNightcap/sprNightcap.yy",},"order":4,},
+    {"id":{"name":"rmValburghNew","path":"rooms/rmValburghNew/rmValburghNew.yy",},"order":8,},
     {"id":{"name":"sprMan1Up","path":"sprites/sprMan1Up/sprMan1Up.yy",},"order":3,},
     {"id":{"name":"sprTamRight","path":"sprites/sprTamRight/sprTamRight.yy",},"order":2,},
     {"id":{"name":"Macro","path":"scripts/Macro/Macro.yy",},"order":0,},
@@ -122,6 +123,7 @@
     {"roomId":{"name":"rmQuillbeach","path":"rooms/rmQuillbeach/rmQuillbeach.yy",},},
     {"roomId":{"name":"rmQuillbeachInside","path":"rooms/rmQuillbeachInside/rmQuillbeachInside.yy",},},
     {"roomId":{"name":"rmValburgh","path":"rooms/rmValburgh/rmValburgh.yy",},},
+    {"roomId":{"name":"rmValburghNew","path":"rooms/rmValburghNew/rmValburghNew.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},

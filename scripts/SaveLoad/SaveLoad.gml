@@ -59,7 +59,6 @@ function SaveTam(){
 
 function Load(){
 	//erase current game state
-	//with()
 	
 	if(file_exists("savedtam.sav"))
 	{
