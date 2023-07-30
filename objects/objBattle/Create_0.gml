@@ -62,7 +62,7 @@ selected = 0;
 
 //Battle Rewards
 rewardsGiven = false; //has the battle rewards like gold n shit been given yet?
-dropChance = 100; //percent chance out of 100, probably do something more interesting with this
+dropChance = 5; //percent chance out of 100, probably do something more interesting with this
 dropDropped = false; //has the drop dropped? will the player get the item is what i mean
 
 //Spells

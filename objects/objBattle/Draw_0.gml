@@ -155,7 +155,7 @@ if(!endMessages)
 					combatMessage("You levelled up!");
 				}
 			}else if(messageCounter == 4){	//Level Message if Item has Dropped
-				combatMessage("You levelled up!");
+				if(global.hasLevelled) combatMessage("You levelled up!");
 			}
 		}
 		else if(player.hp <= 0)
