@@ -229,4 +229,11 @@ global.dialog.lanaSign = [
 	}
 ]
 
+global.dialog.wearyWyvernSign = [
+	{
+		speaker: speakers.sign_,
+		message_: "The Weary Wyvern Inn"
+	}
+]
+
 #endregion

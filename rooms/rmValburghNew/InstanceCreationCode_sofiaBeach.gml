@@ -1,1 +1,0 @@
-if(global.quest.sofiaTalked) instance_destroy();

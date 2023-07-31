@@ -66,7 +66,7 @@ if(startAlarm > 0) startAlarm--// else playerControl = true;
 if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm <= 0 && startTalk)))
 {
 	//show message icon above npc
-	if(npc.sprite_index != sprSign)
+	if(npc.sprite_index != sprSign && npc.sprite_index != sprGrave)
 	{
 		npc.showMessageIcon = true;
 	}
