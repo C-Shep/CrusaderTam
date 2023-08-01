@@ -20,6 +20,7 @@ if(mouse_check_button_pressed(mb_left))
 		case "New Game":
 			control = false;
 			room_goto(rmQuillbeach);
+			//room_goto(rmValiburgh);
 			break;
 
 	}

@@ -45,6 +45,10 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 				var inn = instance_create_layer(0,0,"UI",objInn)
 				inn.cost = 5;
 				break;
+			case "Valiburgh":
+				var inn = instance_create_layer(0,0,"UI",objInn)
+				inn.cost = 7;
+				break;
 		}	
 		
 		//Set respawn point
@@ -81,14 +85,17 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 		var endAction = "None";
 	
 		//talk to the npc
-		switch(npc.id)
+		switch(npc.id)//quest npcs
 		{
 			case sofiaBeach:
 				playerControl = false;
 				endAction = "Sofia Walk";
 			break;
 			case sofiaHouse:
-			if(!global.quest.sofiaGiven) endAction = "Sofia Give";
+				if(!global.quest.sofiaGiven) endAction = "Sofia Give";
+			break;
+			case catoValiburgh:
+				if(global.quest.carryFound && !global.quest.carryTalked) endAction = "Carry Give Scarf";
 			break;
 		}
 		createTextbox(npc.dialog,endAction);

@@ -34,6 +34,11 @@ function closeTextbox(endEvent_ = "None")
 			global.quest.sofiaGiven = true;
 			break;
 		default:
+		case "Carry Give Scarf":
+			ds_list_add(objStats.inv,"SwiftScarf");
+			global.quest.carryTalked = true;
+			break;
+		default:
 			//usually nothing
 	}
 	

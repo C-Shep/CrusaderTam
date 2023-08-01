@@ -29,6 +29,7 @@ if(me.hp <= 0)
 	me.mp = me.maxmp;
 }
 
+//starting position
 startTalk = false;
 startAlarm = 2;
 

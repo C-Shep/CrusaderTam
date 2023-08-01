@@ -78,10 +78,11 @@ else if(equipControl)
 	draw_sprite_stretched(sprBox,0,menuX-16,menuY,384,menuHeight*8);
 	
 	//Draw weapon stats
-	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,80);
+	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,192);
 	
 	var equipmentNow = ds_list_find_value(equip,equipSelected);
-	var equipmentStatsMessage = "!";
+	var equipmentStatsMessage = "";
+	var equipmentDescMessage = "";
 	
 	for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 	{
@@ -90,7 +91,7 @@ else if(equipControl)
 		var eName = eCurrent.name_;
 		if(equipmentNow == eName)
 			{
-				//is a weapon
+				/*/is a weapon
 				if(eCurrent.atk != 0 && eCurrent.def == 0)//no defence
 				{
 					equipmentStatsMessage = "Atk:" + string(eCurrent.atk);	
@@ -100,12 +101,30 @@ else if(equipControl)
 				}else//both
 				{
 					equipmentStatsMessage = "Atk:" + string(eCurrent.atk) + " Def:" + string(eCurrent.def);	
+				}*/
+				
+				//Not a weapon
+				if(eCurrent.atk != 0)
+				{
+					equipmentStatsMessage += "Atk:" + string(eCurrent.atk) + "  ";
 				}
+				
+				if(eCurrent.def != 0)
+				{
+					equipmentStatsMessage += "Def:" + string(eCurrent.def) + "  ";
+				}
+				
+				if(eCurrent.spd != 0)
+				{
+					equipmentStatsMessage += "Spd:" + string(eCurrent.spd) + "  ";
+				}
+				
+				equipmentDescMessage = eCurrent.desc;
+				
 			}
 	}
 	
-	
-	displayMessage(equipmentStatsMessage);
+	displayEquipment(equipmentStatsMessage,equipmentDescMessage);
 	
 	if(equipSelected != 0)
 	{

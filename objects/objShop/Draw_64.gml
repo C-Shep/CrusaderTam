@@ -47,6 +47,7 @@ else if(buyControl)
 		
 		switch(selectedItem)
 		{
+			//only need unique descriptions for items, equipment description is done in the equipment object
 			#region Items
 			case "Herb":
 				cost = 3;
@@ -60,7 +61,6 @@ else if(buyControl)
 			#region Weapons
 			case "Knife":
 				cost = 10;
-				description = "Knife made of copper. +1 atk";
 				break;
 			case "Sword":
 				cost = 10;
@@ -84,6 +84,17 @@ else if(buyControl)
 				cost = 5;
 				break;
 			#endregion
+		}
+		
+		//Descriptions for Equipment
+		for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
+		{
+			var e = objEquipment.equipment;
+			var eName = ds_list_find_value(e,j).name_;
+			if(selectedItem == eName)
+			{
+				description = ds_list_find_value(e,j).desc;
+			}
 		}
 		
 		//Draw the cost and descrpton

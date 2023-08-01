@@ -77,6 +77,29 @@ displayMessage = function (msg){
 	colour,colour,colour,colour,1);
 }
 
+displayEquipment = function(statMsg,descMsg)
+{
+	draw_text_transformed_colour(
+	messageX,
+	messageY,
+	statMsg,
+	textSize,
+	textSize,
+	0,
+	colour,colour,colour,colour,1);
+	
+	draw_text_ext_transformed_colour(
+	messageX,
+	messageY+48,
+	descMsg,
+	12,
+	200,
+	textSize,
+	textSize,
+	0,
+	colour,colour,colour,colour,1);
+}
+
 playerHeal = function (healNum){
 	player.hp += healNum;
 	return healNum;

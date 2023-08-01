@@ -1,5 +1,6 @@
 var speakers = {
 	none: "",
+	unknown:"???",
 	marv: "Marv",
 	lucy: "Lucy",
 	sign_: "Sign",
@@ -15,6 +16,15 @@ var speakers = {
 	simon:"Simon",
 	elicia:"Elicia",
 	sofia:"Sofia",
+	gilbert:"Giblert",
+	soldier:"Soldier",
+	susannah:"Susannah",
+	godfrey:"Godfrey",
+	oriel:"Oriel",
+	margery:"Margery",
+	hilbert:"Hilbert",
+	carry:"Carry",
+	
 }
 
 global.dialog = {};
@@ -134,25 +144,124 @@ global.dialog.eliciaTalk = [
 	}
 ]
 
+global.dialog.simonTalk = [
+	{
+		speaker: speakers.simon,
+		message_: "The drinks here are a little pricey but sure are worth it!"
+	}
+]
+
+global.dialog.susannahTalk = [
+	{
+		speaker: speakers.susannah,
+		message_: "Have you ever fought a nightcap?"
+	},
+	{
+		speaker: speakers.susannah,
+		message_: "They shake their spores about to put you to sleep then beat you up while you take a kip!"
+	}
+]
+
+global.dialog.gilbertTalk = [
+	{
+		speaker: speakers.gilbert,
+		message_: "The land down south is pretty dangerous"
+	},
+	{
+		speaker: speakers.gilbert,
+		message_: "Make sure that you're prepared when you travel all the way down there"
+	}
+]
+
+global.dialog.valiburghInnSoldier1Talk = [
+	{
+		speaker: speakers.soldier,
+		message_: "My father was a guard here, so was his father"
+	}
+]
+
+global.dialog.valiburghInnSoldier2Talk = [
+	{
+		speaker: speakers.soldier,
+		message_: "I think the Emma the gardener was looking for some new fancy compost"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "Something about mushrooms I think"
+	},
+]
+
+global.dialog.valiburghInnSoldier3Talk = [
+	{
+		speaker: speakers.soldier,
+		message_: "We meet up here every day after our shift"
+	}
+]
+
+global.dialog.godfreyTalk = [
+	{
+		speaker: speakers.godfrey,
+		message_: "I'm travelling to Torgale at the moment, it's quite far away but I'll make it"
+	}
+]
+
+global.dialog.orielTalk = [
+	{
+		speaker: speakers.oriel,
+		message_: "It's a good idea to have a few herbs on you at all times"
+	},
+	{
+		speaker: speakers.oriel,
+		message_: "You never know when you might need them"
+	},
+]
+
+global.dialog.margeryTalk = [
+	{
+		speaker: speakers.margery,
+		message_: "Welcome to the weary wyvern, dearie!"
+	},
+	{
+		speaker: speakers.margery,
+		message_: "I'm sure an adventurer like yourself will find our beds comfy as can be!"
+	},
+	{
+		speaker: speakers.margery,
+		message_: "If you ever need anything, just ask me or my husband"
+	},
+]
+
+global.dialog.hilbertTalk = [
+	{
+		speaker: speakers.hilbert,
+		message_: "Torgale is a town on a mountain down south. They worship the great wyvern there."
+	},
+	{
+		speaker: speakers.hilbert,
+		message_: "That's where me and my wife are from!"
+	},
+]
+
+
 #endregion
 
 #region Main Quest
 
 global.dialog.sofiaTalk = [
 	{
-		speaker: speakers.sofia,
+		speaker: speakers.unknown,
 		message_: "Hey!"
 	},
 	{
-		speaker: speakers.sofia,
+		speaker: speakers.unknown,
 		message_: "Hey! Are you ok?"
 	},
 	{
-		speaker: speakers.sofia,
+		speaker: speakers.unknown,
 		message_: "That was a really bad storm huh?"
 	},
 	{
-		speaker: speakers.sofia,
+		speaker: speakers.unknown,
 		message_: "You must have fallen off your boat and washed up on our beach by the looks of it"
 	},
 	{
@@ -192,14 +301,14 @@ global.dialog.sofiaGive = [
 	},
 	{
 		speaker: speakers.sofia,
-		message_: "Maybe you should go there?"
+		message_: "Maybe you should go there? It's just northwest of here"
 	},
 ]
 
 global.dialog.sofiaChat = [
 	{
 		speaker: speakers.sofia,
-		message_: "Have you visited Valiburgh yet? It's just northeast of here"
+		message_: "Have you visited Valiburgh yet? It's just northwest of here"
 	},
 	{
 		speaker: speakers.sofia,
@@ -210,6 +319,65 @@ global.dialog.sofiaChat = [
 		message_: "Good luck!"
 	},
 ]
+
+#endregion
+
+#region Side Quests
+
+global.dialog.carryHelp = [
+	{
+		speaker: speakers.carry,
+		message_: "Oh no! oh no! oh no! This can't be!"
+	},
+	{
+		speaker: speakers.carry,
+		message_: "I've lost a very important letter I was supposed to deliver to the gaffer of Torgale"
+	},
+	{
+		speaker: speakers.carry,
+		message_: "I must have dropped it somewhere about town but I have no idea where!"
+	},
+]
+
+global.dialog.carryFound = [
+	{
+		speaker: speakers.carry,
+		message_: "How could I be so foolish!?"
+	},
+	{
+		speaker: speakers.carry,
+		message_: "Wait a minute...?"
+	},
+	{
+		speaker: speakers.carry,
+		message_: "That envelope you have, thats my letter!"
+	},
+	{
+		speaker: speakers.carry,
+		message_: "Here! I'll trade you my scarf for it!"
+	},
+	{
+		speaker: speakers.none,
+		message_: "You recived a Swift Scarf!"
+	},
+	{
+		speaker: speakers.carry,
+		message_: "Thank you so much, adventurer!"
+	},
+]
+
+global.dialog.carryChat = [
+	{
+		speaker: speakers.carry,
+		message_: "You really saved my behind, adventurer"
+	},
+	{
+		speaker: speakers.carry,
+		message_: "I'll be going to Torgale to deliver this mail, I hope we meet again soon!"
+	}
+
+]
+
 
 #endregion
 

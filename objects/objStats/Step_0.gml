@@ -13,8 +13,8 @@ if(playerStats.currentXp > nextLevel(playerStats.lvl))
 	playerStats.baseAtk+=1;
 	playerStats.spd+=1;
 	//Removed defence up, might find another solution later
-	var hpIncrease = irandom_range(2,4);
-	var mpIncrease = irandom_range(3,4);
+	var hpIncrease = irandom_range(2,3);
+	var mpIncrease = irandom_range(2,3);
 	playerStats.hp+=hpIncrease;
 	playerStats.mp+=mpIncrease;
 	playerStats.maxhp+=hpIncrease;

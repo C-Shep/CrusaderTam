@@ -25,15 +25,17 @@ global.openChestList = ds_list_create();
 ds_list_add(global.openChestList,0);
 
 //Death
-global.lastInn = "Town1";
-global.respawnX = 0;
-global.respawnY = 0;
-global.respawnRoom = rmTest;
+global.lastInn = "Quillbeach";
+global.respawnX = 264;
+global.respawnY = 264;
+global.respawnRoom = rmQuillbeach;
 
 //Quests
 global.quest = {
 	sofiaTalked : false,
 	sofiaGiven : false,
+	carryFound : false,
+	carryTalked : false,
 }
 
 
