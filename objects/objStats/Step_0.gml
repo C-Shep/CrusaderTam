@@ -11,7 +11,7 @@ function nextLevel(level)
 if(playerStats.currentXp > nextLevel(playerStats.lvl))
 {
 	playerStats.baseAtk+=1;
-	playerStats.spd+=1;
+	playerStats.baseSpd+=1;
 	//Removed defence up, might find another solution later
 	var hpIncrease = irandom_range(2,3);
 	var mpIncrease = irandom_range(2,3);
@@ -27,9 +27,10 @@ if(playerStats.currentXp > nextLevel(playerStats.lvl))
 if(playerStats.hp > playerStats.maxhp) playerStats.hp = playerStats.maxhp;
 if(playerStats.mp > playerStats.maxmp) playerStats.mp = playerStats.maxmp;
 
-//Attack and Defence updates for Equipping stuff, where final atk stat is calculated
+//Attack and Defence and Speed updates for Equipping stuff, where final atk stat is calculated
 playerStats.atk = playerStats.baseAtk;
 playerStats.def = playerStats.baseDef;
+playerStats.spd = playerStats.baseSpd;
 
 for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 {
@@ -42,6 +43,7 @@ for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 	{
 		playerStats.atk += eCurrent.atk;
 		playerStats.def += eCurrent.def;
+		playerStats.spd += eCurrent.spd;
 	}
 
 	#endregion
@@ -51,6 +53,7 @@ for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 	{
 		playerStats.atk += eCurrent.atk;
 		playerStats.def += eCurrent.def;
+		playerStats.spd += eCurrent.spd;
 	}
 	#endregion
 	
@@ -59,6 +62,7 @@ for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 	{
 		playerStats.atk += eCurrent.atk;
 		playerStats.def += eCurrent.def;
+		playerStats.spd += eCurrent.spd;
 	}
 	#endregion
 	
@@ -67,6 +71,7 @@ for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 	{
 		playerStats.atk += eCurrent.atk;
 		playerStats.def += eCurrent.def;
+		playerStats.spd += eCurrent.spd;
 	}
 	#endregion
 }

@@ -9,6 +9,7 @@ playerStats = {
 	def:1,
 	baseDef:1,
 	spd:16,
+	baseSpd:16,
 	currentXp:0,
 	currentGld:100
 }

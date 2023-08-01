@@ -91,19 +91,7 @@ else if(equipControl)
 		var eName = eCurrent.name_;
 		if(equipmentNow == eName)
 			{
-				/*/is a weapon
-				if(eCurrent.atk != 0 && eCurrent.def == 0)//no defence
-				{
-					equipmentStatsMessage = "Atk:" + string(eCurrent.atk);	
-				}else if(eCurrent.atk == 0 && eCurrent.def != 0)//no attack
-				{
-					equipmentStatsMessage = "Def:" + string(eCurrent.def);	
-				}else//both
-				{
-					equipmentStatsMessage = "Atk:" + string(eCurrent.atk) + " Def:" + string(eCurrent.def);	
-				}*/
-				
-				//Not a weapon
+				//Display equipment stats
 				if(eCurrent.atk != 0)
 				{
 					equipmentStatsMessage += "Atk:" + string(eCurrent.atk) + "  ";
@@ -119,6 +107,7 @@ else if(equipControl)
 					equipmentStatsMessage += "Spd:" + string(eCurrent.spd) + "  ";
 				}
 				
+				//and description
 				equipmentDescMessage = eCurrent.desc;
 				
 			}
@@ -166,6 +155,7 @@ else if(statsControl)
 	//Draw Stats
 	draw_text_transformed_color(menuX,menuY+(1*menuHeight),"Atk - " + string(player.atk),textSize,textSize,0,colour,colour,colour,colour,1); 
 	draw_text_transformed_color(menuX,menuY+(2*menuHeight),"Def - " + string(player.def),textSize,textSize,0,colour,colour,colour,colour,1); 
+	draw_text_transformed_color(menuX,menuY+(3*menuHeight),"Spd - " + string(player.spd),textSize,textSize,0,colour,colour,colour,colour,1);
 
 
 	#endregion
