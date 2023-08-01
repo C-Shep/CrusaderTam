@@ -23,7 +23,7 @@ var speakers = {
 	oriel:"Oriel",
 	margery:"Margery",
 	hilbert:"Hilbert",
-	carry:"Carry",
+	postino:"Postino",
 	
 }
 
@@ -324,36 +324,36 @@ global.dialog.sofiaChat = [
 
 #region Side Quests
 
-global.dialog.carryHelp = [
+global.dialog.postinoHelp = [
 	{
-		speaker: speakers.carry,
+		speaker: speakers.postino,
 		message_: "Oh no! oh no! oh no! This can't be!"
 	},
 	{
-		speaker: speakers.carry,
+		speaker: speakers.postino,
 		message_: "I've lost a very important letter I was supposed to deliver to the gaffer of Torgale"
 	},
 	{
-		speaker: speakers.carry,
+		speaker: speakers.postino,
 		message_: "I must have dropped it somewhere about town but I have no idea where!"
 	},
 ]
 
-global.dialog.carryFound = [
+global.dialog.postinoFound = [
 	{
-		speaker: speakers.carry,
+		speaker: speakers.postino,
 		message_: "How could I be so foolish!?"
 	},
 	{
-		speaker: speakers.carry,
+		speaker: speakers.postino,
 		message_: "Wait a minute...?"
 	},
 	{
-		speaker: speakers.carry,
+		speaker: speakers.postino,
 		message_: "That envelope you have, thats my letter!"
 	},
 	{
-		speaker: speakers.carry,
+		speaker: speakers.postino,
 		message_: "Here! I'll trade you my scarf for it!"
 	},
 	{
@@ -361,18 +361,18 @@ global.dialog.carryFound = [
 		message_: "You recived a Swift Scarf!"
 	},
 	{
-		speaker: speakers.carry,
+		speaker: speakers.postino,
 		message_: "Thank you so much, adventurer!"
 	},
 ]
 
-global.dialog.carryChat = [
+global.dialog.postinoChat = [
 	{
-		speaker: speakers.carry,
+		speaker: speakers.postino,
 		message_: "You really saved my behind, adventurer"
 	},
 	{
-		speaker: speakers.carry,
+		speaker: speakers.postino,
 		message_: "I'll be going to Torgale to deliver this mail, I hope we meet again soon!"
 	}
 

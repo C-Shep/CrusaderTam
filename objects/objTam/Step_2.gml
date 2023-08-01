@@ -99,12 +99,10 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 				{
 					var itemName = ds_list_find_value(objStats.inv, i);
 					if(itemName == "Letter"){
-						//global.quest.carryFound = true;
-						//global.quest.carryTalked = false;
 						ds_list_delete(objStats.inv,i);
 					}
 				}
-				if(global.quest.carryFound && !global.quest.carryTalked) endAction = "Carry Give Scarf";
+				if(global.quest.postinoFound && !global.quest.postinoTalked) endAction = "Postino Give Scarf";
 			break;
 		}
 		createTextbox(npc.dialog,endAction);

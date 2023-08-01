@@ -1,4 +1,4 @@
-if(global.quest.carryFound)
+if(global.quest.postinoTalked)
 {
-	//instance_destroy();
+	instance_destroy();
 }

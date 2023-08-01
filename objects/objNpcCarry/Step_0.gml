@@ -7,21 +7,21 @@ if(room == rmValiburghInside)
 { 
 	if(objStats.findItem("Letter"))
 	{
-		dialog = global.dialog.carryFound;
-		global.quest.carryFound = true;
-		global.quest.carryTalked = false;
+		dialog = global.dialog.postinoFound;
+		global.quest.postinoFound = true;
+		global.quest.postinoTalked = false;
 	}
 
-	if(!global.quest.carryFound)
+	if(!global.quest.postinoFound)
 	{
-		dialog = global.dialog.carryHelp;
+		dialog = global.dialog.postinoHelp;
 	}
-	else if(global.quest.carryTalked){
-		dialog = global.dialog.carryChat;
+	else if(global.quest.postinoTalked){
+		dialog = global.dialog.postinoChat;
 	}
 	
 	
-	if(global.quest.carryTalked == false && global.quest.carryFound == true) {
-		dialog = global.dialog.carryFound;
+	if(global.quest.postinoTalked == false && global.quest.postinoFound == true) {
+		dialog = global.dialog.postinoFound;
 	}
 }

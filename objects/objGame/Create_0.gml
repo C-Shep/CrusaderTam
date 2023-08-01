@@ -34,8 +34,8 @@ global.respawnRoom = rmQuillbeach;
 global.quest = {
 	sofiaTalked : false,
 	sofiaGiven : false,
-	carryFound : false,
-	carryTalked : false,
+	postinoFound : false,
+	postinoTalked : false,
 }
 
 
