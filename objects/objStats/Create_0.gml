@@ -33,4 +33,17 @@ ds_list_add(inv,"Shield");
 ds_list_add(inv,"Sword");
 ds_list_add(inv,"Spear");
 ds_list_add(inv,"Chainmail");
-//ds_list_add(inv,"Amulet");
+//ds_list_add(inv,"Amulet");7
+*/
+//Functions
+findItem = function(item){
+	for(var i=0;i<invLength;i++)
+	{
+		var itemName = ds_list_find_value(inv, i);
+		if(itemName == item)
+		{
+			return true;
+		}
+	}
+	return false;
+}

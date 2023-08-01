@@ -37,7 +37,7 @@ function closeTextbox(endEvent_ = "None")
 		case "Carry Give Scarf":
 			ds_list_add(objStats.inv,"SwiftScarf");
 			global.quest.carryTalked = true;
-			break;
+			break; 
 		default:
 			//usually nothing
 	}

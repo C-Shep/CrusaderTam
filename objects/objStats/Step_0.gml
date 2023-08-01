@@ -101,14 +101,17 @@ if(playerStats.lvl >= 5)
 invLength = ds_list_size(inv);
 healCount = 0;
 
-for(var i=0;i<invLength;i++)
-{
-	var itemName = ds_list_find_value(inv, i);
-	if(itemName == "Herb") healCount++;
-}
+//for(var i=0;i<invLength;i++)
+//{
+//	var itemName = ds_list_find_value(inv, i);
+//	if(itemName == "Herb") 
+//}
+
+if(findItem("Herb")) healCount++;
 
 //DEBUG TAKE THIS OUT LATER
 if(keyboard_check_pressed(ord("F")))
 {
 	playerStats.lvl++;
 }
+
