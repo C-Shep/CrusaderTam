@@ -1,4 +1,4 @@
 if(global.quest.carryFound)
 {
-	instance_destroy();
+	//instance_destroy();
 }

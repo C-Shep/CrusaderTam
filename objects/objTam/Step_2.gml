@@ -94,7 +94,7 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 			case sofiaHouse:
 				if(!global.quest.sofiaGiven) endAction = "Sofia Give";
 			break;
-			case catoValiburgh:
+			case carryValiburgh:
 				if(global.quest.carryFound && !global.quest.carryTalked) endAction = "Carry Give Scarf";
 			break;
 		}

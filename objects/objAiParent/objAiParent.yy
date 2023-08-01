@@ -37,7 +37,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"moves","varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"minMoveTime","varType":1,"value":"150","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"maxMoveTime","varType":1,"value":"250","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"moveRange","varType":1,"value":"16","rangeEnabled":true,"rangeMin":16.0,"rangeMax":128.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"moveRange","varType":1,"value":"16","rangeEnabled":true,"rangeMin":0.0,"rangeMax":128.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {
