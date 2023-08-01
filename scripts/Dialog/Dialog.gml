@@ -4,6 +4,7 @@ var speakers = {
 	marv: "Marv",
 	lucy: "Lucy",
 	sign_: "Sign",
+	grave: "Grave",
 	gaz:"Gaz",
 	martine:"Martine",
 	lana:"Lana",
@@ -24,6 +25,15 @@ var speakers = {
 	margery:"Margery",
 	hilbert:"Hilbert",
 	postino:"Postino",
+	adam:"Adam",
+	bernard:"Bernard",
+	conrad:"Conrad",
+	diggory:"Diggory",
+	emma:"Emma",
+	juliana:"Juliana",
+	anne:"Anne",
+	helen:"Helen",
+	
 	
 }
 
@@ -31,6 +41,7 @@ global.dialog = {};
 
 #region Dialogue
 
+#region Quillbeach
 global.dialog.marvTalk = [
 	{
 		speaker: speakers.marv,
@@ -143,7 +154,159 @@ global.dialog.eliciaTalk = [
 		message_: "What a lovely town."
 	}
 ]
+#endregion
 
+#region Valiburgh Outside
+
+global.dialog.valiburgeGateSoldier1Talk = [
+	{
+		speaker: speakers.soldier,
+		message_: "AUGH!"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "oh, sorry mate i though you were the barghest for a moment!"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "Welcome to Valiburgh, City of Bravery"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "dont go causing any trouble ya hear!"
+	}
+]
+
+global.dialog.valiburgeGateSoldier2Talk = [
+	{
+		speaker: speakers.soldier,
+		message_: "Welcome to Valiburgh, City of Bravery"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "If you need a place to rest, my nan owns the local inn, the weary wyvern"
+	}
+]
+
+global.dialog.valiburgeSoldier1Talk = [
+	{
+		speaker: speakers.soldier,
+		message_: "We got attacked by the monster named the barghest a few days ago"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "Chopped up a couple of our best guards, real scary beast it was"
+	}
+]
+
+global.dialog.valiburgeSoldier2Talk = [
+	{
+		speaker: speakers.soldier,
+		message_: "King Wymar has increased the number of patrols in case the barghest comes knocking again"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "If it shows up, we'll be ready"
+	},
+]
+
+global.dialog.valiburgeSoldier3Talk = [
+	{
+		speaker: speakers.soldier,
+		message_: "King Wymar is looking for a brave hero"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "i'm pretty brave but i'm no hero!"
+	},
+]
+
+global.dialog.adamTalk = [
+	{
+		speaker: speakers.adam,
+		message_: "Have you heard about the Barghest?"
+	},
+	{
+		speaker: speakers.adam,
+		message_: "I heard it lives in a cave west of here and likes to eat people"
+	}
+]
+
+global.dialog.bernardTalk = [
+	{
+		speaker: speakers.bernard,
+		message_: "I just picked up a shield from gav's armour shop"
+	},
+	{
+		speaker: speakers.bernard,
+		message_: "you can never be too prepared in case the barghest attacks!"
+	}
+]
+
+global.dialog.conradTalk = [
+	{
+		speaker: speakers.conrad,
+		message_: "I'm training to be a guard"
+	},
+	{
+		speaker: speakers.conrad,
+		message_: "It's tough work but i've heard that the pay is good"
+	}
+]
+
+global.dialog.diggoryTalk = [
+	{
+		speaker: speakers.diggory,
+		message_: "Have you fought a Scarecrow at all?"
+	},
+	{
+		speaker: speakers.diggory,
+		message_: "They're pretty frail but can dish out quite the number if you can't keep up"
+	}
+]
+
+global.dialog.helenTalk = [
+	{
+		speaker: speakers.helen,
+		message_: "Theres a real ruckus going on at the castle at the moment"
+	},
+	{
+		speaker: speakers.helen,
+		message_: "They've even got more guards patrolling the place, wonder what thats about"
+	}
+]
+
+global.dialog.julianaTalk = [
+	{
+		speaker: speakers.juliana,
+		message_: "That mean old Barghest beastie is a right old piece of work"
+	},
+	{
+		speaker: speakers.juliana,
+		message_: "it showed up one day and made mincemeat of a few of the guards before running off"
+	},
+	{
+		speaker: speakers.juliana,
+		message_: "just thining about the thing gets me all shivery"
+	}
+]
+
+global.dialog.anneTalk = [
+	{
+		speaker: speakers.anne,
+		message_: "do you know any magic?"
+	},
+	{
+		speaker: speakers.anne,
+		message_: "i heard that the gods gave magic to humans so we could defend ourselves better"
+	}
+]
+
+
+
+#endregion
+
+#region Valiburgh Inside
 global.dialog.simonTalk = [
 	{
 		speaker: speakers.simon,
@@ -241,7 +404,7 @@ global.dialog.hilbertTalk = [
 		message_: "That's where me and my wife are from!"
 	},
 ]
-
+#endregion
 
 #endregion
 
@@ -401,6 +564,76 @@ global.dialog.wearyWyvernSign = [
 	{
 		speaker: speakers.sign_,
 		message_: "The Weary Wyvern Inn"
+	}
+]
+
+global.dialog.valiburghBarghestSign = [
+	{
+		speaker: speakers.sign_,
+		message_: "A mysterious giant wolf has attacked our town"
+	},
+	{
+		speaker: speakers.sign_,
+		message_: "any brave heroes willing to fight it, come to the castle at once!"
+	},
+	{
+		speaker: speakers.sign_,
+		message_: "- King Wymar"
+	},
+]
+
+global.dialog.valiburghGrave1Talk = [
+	{
+		speaker: speakers.grave,
+		message_: "Here Lies Squaa"
+	},
+	{
+		speaker: speakers.grave,
+		message_: "The Bravest Bird"
+	}
+]
+
+global.dialog.valiburghGrave2Talk = [
+	{
+		speaker: speakers.grave,
+		message_: "Here Lies Jim"
+	},
+	{
+		speaker: speakers.grave,
+		message_: "The Hungriest Swordsman"
+	}
+]
+
+global.dialog.valiburghGrave3Talk = [
+	{
+		speaker: speakers.grave,
+		message_: "Here Lies Gergnome"
+	},
+	{
+		speaker: speakers.grave,
+		message_: "The Smartest Gnome"
+	}
+]
+
+global.dialog.valiburghGrave4Talk = [
+	{
+		speaker: speakers.grave,
+		message_: "Here Lies LK"
+	},
+	{
+		speaker: speakers.grave,
+		message_: "The Buffest Bard"
+	}
+]
+
+global.dialog.valiburghGrave5Talk = [
+	{
+		speaker: speakers.grave,
+		message_: "Here Lies Mercathew"
+	},
+	{
+		speaker: speakers.grave,
+		message_: "Hero of Lucidia"
 	}
 ]
 

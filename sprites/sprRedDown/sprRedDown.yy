@@ -70,7 +70,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "RedMage",
-    "path": "folders/Sprites/Characters/RedMage.yy",
+    "name": "Postino",
+    "path": "folders/Sprites/Characters/Postino.yy",
   },
 }
