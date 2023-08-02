@@ -33,6 +33,9 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"shopkeep","varType":6,"value":"\"No\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "\"No\"",
         "\"Quillbeach\"",
+        "\"Valiburgh Weapon\"",
+        "\"Valiburgh Armour\"",
+        "\"Valiburgh Item\"",
       ],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"innkeep","varType":6,"value":"\"No\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "\"No\"",

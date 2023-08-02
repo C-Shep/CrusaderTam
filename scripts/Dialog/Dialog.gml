@@ -6,6 +6,9 @@ var speakers = {
 	sign_: "Sign",
 	grave: "Grave",
 	gaz:"Gaz",
+	gav:"Gav",
+	goz:"Goz",
+	guz:"Guz",
 	martine:"Martine",
 	lana:"Lana",
 	hario:"Hario",
@@ -161,7 +164,7 @@ global.dialog.eliciaTalk = [
 global.dialog.valiburgeGateSoldier1Talk = [
 	{
 		speaker: speakers.soldier,
-		message_: "AUGH!"
+		message_: "AAAGH!"
 	},
 	{
 		speaker: speakers.soldier,
@@ -299,6 +302,39 @@ global.dialog.anneTalk = [
 	{
 		speaker: speakers.anne,
 		message_: "i heard that the gods gave magic to humans so we could defend ourselves better"
+	}
+]
+
+global.dialog.gavTalk = [
+	{
+		speaker: speakers.gav,
+		message_: "You're gonna want some armour if that horrid beast comes back, lad"
+	},
+	{
+		speaker: speakers.gav,
+		message_: "thats why i'm here!"
+	}
+]
+
+global.dialog.gozTalk = [
+	{
+		speaker: speakers.goz,
+		message_: "You came here from Quillbeach? My brother has a shop there."
+	},
+	{
+		speaker: speakers.goz,
+		message_: "Tell him hi if you see him again will ya?"
+	}
+]
+
+global.dialog.guzTalk = [
+	{
+		speaker: speakers.guz,
+		message_: "The guards are always buying their provisions from here"
+	},
+	{
+		speaker: speakers.guz,
+		message_: "guess my stuff is better than whatever they get at the castle!"
 	}
 ]
 
@@ -618,7 +654,7 @@ global.dialog.valiburghGrave3Talk = [
 global.dialog.valiburghGrave4Talk = [
 	{
 		speaker: speakers.grave,
-		message_: "Here Lies LK"
+		message_: "Here Lies Deimos"
 	},
 	{
 		speaker: speakers.grave,
