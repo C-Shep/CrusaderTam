@@ -10,6 +10,7 @@ defaultEnemy = {
 	xp:1,
 	gld:1,
 	drop: "Herb",
+	weak:"None",
 	moves: ds_list_create()
 }
 	
@@ -27,6 +28,7 @@ goblin = {
 	xp:2,
 	gld:2,
 	drop: "Herb",
+	weak:"None",
 	moves: ds_list_create()
 }
 
@@ -46,6 +48,7 @@ evilgoat = {
 	xp:3,
 	gld:2,
 	drop: "Weed",
+	weak:"None",
 	moves: ds_list_create()
 }
 
@@ -65,6 +68,7 @@ scarecrow = {
 	xp:3,
 	gld:3,
 	drop: "Herb",
+	weak:"Fire",
 	moves: ds_list_create()
 }
 
@@ -84,6 +88,7 @@ wolf = {
 	xp:4,
 	gld:3,
 	drop: "Herb",
+	weak:"None",
 	moves: ds_list_create()
 }
 
@@ -104,12 +109,52 @@ nightcap = {
 	xp:5,
 	gld:6,
 	drop: "Weed",
+	weak:"None",
 	moves: ds_list_create()
 }
 
 //Nightcap Moves
 ds_list_add(nightcap.moves,"Spore");
 ds_list_add(nightcap.moves,"Attack");
+
+//Sycalmore -----------------------------
+sycalmore = {
+	name_: "Sycalmore",
+	sprite: sprSycalmore,
+	hp:10,
+	maxhp:10,
+	atk:5,
+	def:3
+	spd:20,
+	xp:6,
+	gld:5,
+	drop: "Herb",
+	weak:"Fire",
+	moves: ds_list_create()
+}
+
+//Sycalmore Moves
+ds_list_add(sycalmore.moves,"Attack");
+
+//Flying Snake -----------------------------
+sycalmore = {
+	name_: "Flying Snake",
+	sprite: sprFlyingSnake,
+	hp:10,
+	maxhp:10,
+	atk:5,
+	def:2
+	spd:50,
+	xp:5,
+	gld:5,
+	drop: "Knife",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Flying Snake Moves
+ds_list_add(sycalmore.moves,"Attack");
+
 
 //Groovedog -----------------------------
 groovedog = {
@@ -123,6 +168,7 @@ groovedog = {
 	xp:5,
 	gld:3,
 	drop: "Weed",
+	weak:"None",
 	moves: ds_list_create()
 }
 
@@ -141,6 +187,7 @@ thistleta = {
 	xp:10,
 	gld:5,
 	drop: "Herb",
+	weak:"None",
 	moves: ds_list_create()
 }
 
@@ -165,4 +212,14 @@ switch(global.area)
 	ds_list_add(list,wolf);
 	ds_list_add(list,wolf);
 		break;
+	case "Valiburgh Forest":
+	
+	break;
+	case "Valiburgh Hills":
+	
+	break;
+	case "Barghest Cave":
+	
+	break;
+	
 }

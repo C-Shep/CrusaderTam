@@ -1,3 +1,4 @@
 /// @desc 
 //Load();
-global.quest.carryFound = true;
+//global.quest.postinoFound = true;
+global.quest.barghestKilled = true;

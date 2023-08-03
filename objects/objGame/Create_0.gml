@@ -36,6 +36,9 @@ global.quest = {
 	sofiaGiven : false,
 	postinoFound : false,
 	postinoTalked : false,
+	barghestQuestAccepted : false,
+	barghestKilled : false,
+	allowedIntoCastle : false,
 }
 
 

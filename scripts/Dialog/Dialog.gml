@@ -519,6 +519,78 @@ global.dialog.sofiaChat = [
 	},
 ]
 
+global.dialog.guardBarghestFirstTalk = [
+	{
+		speaker: speakers.soldier,
+		message_: "Hm? Who's this then?"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "Ya want to get into the castle and talk to the king?"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "He's looking for a brave hero but was injured when the barghest showed up"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "if ya really are a brave hero, go do us a favour and deal with the barghest will ya?"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "ya do that, and we'll let ya into the castle, deal?"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "they say the barghests dwelling is just northwest from here, in the mountains"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "quick as ya please"
+	},
+]
+
+global.dialog.guardBarghestTalkAgain = [
+	{
+		speaker: speakers.soldier,
+		message_: "back already? if ya really are a brave hero then the barghest should be small potatoes for ya"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "just northwest of here, remember? he's in the mountains"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "quick as ya please"
+	},
+]
+
+global.dialog.guardBarghestDefeated = [
+	{
+		speaker: speakers.soldier,
+		message_: "ready to admit that yer not up to the challenge?"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "wait a mo... did you... really defeat the barghest?"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "well blimey indeed! you really saved valiburgh, mate! you must be a brave hero indeed"
+	},
+	{
+		speaker: speakers.soldier,
+		message_: "we'll let the king know of your arrival, thank you for your service"
+	},
+]
+
+global.dialog.guardBarghestDefeatedTalkAgain = [
+	{
+		speaker: speakers.soldier,
+		message_: "thank you for your service, brave hero!"
+	},
+]
+
 #endregion
 
 #region Side Quests

@@ -103,6 +103,17 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					}
 				}
 				if(global.quest.postinoFound && !global.quest.postinoTalked) endAction = "Postino Give Scarf";
+			case valiGuard1:
+			case valiGuard2:
+				if(!global.quest.barghestQuestAccepted)
+				{
+					endAction = "Barghest Quest Accept";
+				}else{
+					if(global.quest.barghestKilled)
+					{
+						endAction = "Let Into Castle";
+					}
+				}
 			break;
 		}
 		createTextbox(npc.dialog,endAction);

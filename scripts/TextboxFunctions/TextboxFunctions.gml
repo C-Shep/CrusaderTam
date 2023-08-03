@@ -39,6 +39,15 @@ function closeTextbox(endEvent_ = "None")
 			global.quest.postinoTalked = true;
 			break; 
 		default:
+		case "Barghest Quest Accept":
+			global.quest.barghestQuestAccepted = true;
+			break; 
+		case "Let Into Castle":
+			global.quest.allowedIntoCastle = true;
+			objNpcValiburghGuard.walk = true;
+			break; 
+		default:
+		default:
 			//usually nothing
 	}
 	
