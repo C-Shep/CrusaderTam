@@ -71,7 +71,7 @@
     {"id":{"name":"sprGrooveDog","path":"sprites/sprGrooveDog/sprGrooveDog.yy",},"order":5,},
     {"id":{"name":"fntMain","path":"fonts/fntMain/fntMain.yy",},"order":0,},
     {"id":{"name":"objBattle","path":"objects/objBattle/objBattle.yy",},"order":0,},
-    {"id":{"name":"sprSycalmore","path":"sprites/sprSycalmore/sprSycalmore.yy",},"order":7,},
+    {"id":{"name":"sprSicklemore","path":"sprites/sprSicklemore/sprSicklemore.yy",},"order":7,},
     {"id":{"name":"sprMargeryRight","path":"sprites/sprMargeryRight/sprMargeryRight.yy",},"order":0,},
     {"id":{"name":"objRoomManager","path":"objects/objRoomManager/objRoomManager.yy",},"order":1,},
     {"id":{"name":"TileEncounters","path":"scripts/TileEncounters/TileEncounters.yy",},"order":4,},

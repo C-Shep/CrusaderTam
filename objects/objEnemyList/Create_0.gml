@@ -118,9 +118,9 @@ ds_list_add(nightcap.moves,"Spore");
 ds_list_add(nightcap.moves,"Attack");
 
 //Sycalmore -----------------------------
-sycalmore = {
-	name_: "Sycalmore",
-	sprite: sprSycalmore,
+sicklemore = {
+	name_: "Sicklemore",
+	sprite: sprSicklemore,
 	hp:10,
 	maxhp:10,
 	atk:5,
@@ -133,8 +133,8 @@ sycalmore = {
 	moves: ds_list_create()
 }
 
-//Sycalmore Moves
-ds_list_add(sycalmore.moves,"Attack");
+//Sicklemore Moves
+ds_list_add(sicklemore.moves,"Attack");
 
 //Flying Snake -----------------------------
 flyingSnake = {
@@ -235,7 +235,7 @@ switch(global.area)
 	ds_list_add(list,wolf);
 	ds_list_add(list,deinonychus);
 	ds_list_add(list,flyingSnake);
-	ds_list_add(list,sycalmore);
+	ds_list_add(list,sicklemore);
 	break;
 	case "Valiburgh Hills":
 	ds_list_add(list,flyingSnake);
