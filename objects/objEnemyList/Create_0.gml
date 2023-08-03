@@ -124,7 +124,7 @@ sycalmore = {
 	hp:10,
 	maxhp:10,
 	atk:5,
-	def:3
+	def:3,
 	spd:20,
 	xp:6,
 	gld:5,
@@ -137,13 +137,13 @@ sycalmore = {
 ds_list_add(sycalmore.moves,"Attack");
 
 //Flying Snake -----------------------------
-sycalmore = {
-	name_: "Flying Snake",
+flyingSnake = {
+	name_: "Flysnake",
 	sprite: sprFlyingSnake,
 	hp:10,
 	maxhp:10,
 	atk:5,
-	def:2
+	def:2,
 	spd:50,
 	xp:5,
 	gld:5,
@@ -153,7 +153,26 @@ sycalmore = {
 }
 
 //Flying Snake Moves
-ds_list_add(sycalmore.moves,"Attack");
+ds_list_add(flyingSnake.moves,"Attack");
+
+//Deinonychus -----------------------------
+deinonychus = {
+	name_: "Deinonychus",
+	sprite: sprDeinonychus,
+	hp:12,
+	maxhp:12,
+	atk:5,
+	def:1,
+	spd:30,
+	xp:7,
+	gld:6,
+	drop: "Knife",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Deinonychus Moves
+ds_list_add(deinonychus.moves,"Attack");
 
 
 //Groovedog -----------------------------
@@ -213,9 +232,13 @@ switch(global.area)
 	ds_list_add(list,wolf);
 		break;
 	case "Valiburgh Forest":
-	
+	ds_list_add(list,wolf);
+	ds_list_add(list,deinonychus);
+	ds_list_add(list,flyingSnake);
+	ds_list_add(list,sycalmore);
 	break;
 	case "Valiburgh Hills":
+	ds_list_add(list,flyingSnake);
 	
 	break;
 	case "Barghest Cave":

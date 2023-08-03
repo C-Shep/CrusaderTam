@@ -39,6 +39,7 @@
     {"id":{"name":"objNpcHubert","path":"objects/objNpcHubert/objNpcHubert.yy",},"order":9,},
     {"id":{"name":"objNpcMan","path":"objects/objNpcMan/objNpcMan.yy",},"order":1,},
     {"id":{"name":"sprHubertDown","path":"sprites/sprHubertDown/sprHubertDown.yy",},"order":0,},
+    {"id":{"name":"sprDeinonychus","path":"sprites/sprDeinonychus/sprDeinonychus.yy",},"order":9,},
     {"id":{"name":"sprChest","path":"sprites/sprChest/sprChest.yy",},"order":0,},
     {"id":{"name":"sprNextArrow","path":"sprites/sprNextArrow/sprNextArrow.yy",},"order":0,},
     {"id":{"name":"sprDoor","path":"sprites/sprDoor/sprDoor.yy",},"order":3,},

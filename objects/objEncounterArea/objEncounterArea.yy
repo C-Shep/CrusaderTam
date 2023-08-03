@@ -31,6 +31,9 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"areaType","varType":6,"value":"\"Early Forest\"","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[
         "\"Early Forest\"",
         "\"Early Hills\"",
+        "\"Valiburgh Forest\"",
+        "\"Valiburgh Hills\"",
+        "\"Barghest Cave\"",
       ],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
