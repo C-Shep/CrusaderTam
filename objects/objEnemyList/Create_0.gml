@@ -174,6 +174,45 @@ deinonychus = {
 //Deinonychus Moves
 ds_list_add(deinonychus.moves,"Attack");
 
+//Hippogriff -----------------------------
+hippogriff = {
+	name_: "Hippogriff",
+	sprite: sprHippogriff,
+	hp:15,
+	maxhp:15,
+	atk:5,
+	def:2,
+	spd:20,
+	xp:9,
+	gld:7,
+	drop: "Weed",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Hippogriff Moves
+ds_list_add(hippogriff.moves,"Attack");
+//ds_list_add(hippogriff.moves,"Drain");
+
+//Peryton -----------------------------
+peryton = {
+	name_: "Peryton",
+	sprite: sprPeryton,
+	hp:14,
+	maxhp:14,
+	atk:5,
+	def:2,
+	spd:50,
+	xp:10,
+	gld:5,
+	drop: "Herb",
+	weak:"Fire",
+	moves: ds_list_create()
+}
+
+//Peryton Moves
+ds_list_add(peryton.moves,"Attack");
+
 
 //Groovedog -----------------------------
 groovedog = {
@@ -239,7 +278,9 @@ switch(global.area)
 	break;
 	case "Valiburgh Hills":
 	ds_list_add(list,flyingSnake);
-	
+	ds_list_add(list,peryton);
+	ds_list_add(list,hippogriff);
+	ds_list_add(list,deinonychus);
 	break;
 	case "Barghest Cave":
 	
