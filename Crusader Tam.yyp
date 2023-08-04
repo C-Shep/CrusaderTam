@@ -15,6 +15,7 @@
     {"id":{"name":"sprSofiaRight","path":"sprites/sprSofiaRight/sprSofiaRight.yy",},"order":5,},
     {"id":{"name":"sprHubertUp","path":"sprites/sprHubertUp/sprHubertUp.yy",},"order":2,},
     {"id":{"name":"objPosSaver","path":"objects/objPosSaver/objPosSaver.yy",},"order":3,},
+    {"id":{"name":"sprHaniwa","path":"sprites/sprHaniwa/sprHaniwa.yy",},"order":12,},
     {"id":{"name":"sprMan2Right","path":"sprites/sprMan2Right/sprMan2Right.yy",},"order":3,},
     {"id":{"name":"objBoxParent","path":"objects/objBoxParent/objBoxParent.yy",},"order":1,},
     {"id":{"name":"sprTamDown","path":"sprites/sprTamDown/sprTamDown.yy",},"order":0,},

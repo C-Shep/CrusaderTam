@@ -213,6 +213,25 @@ peryton = {
 //Peryton Moves
 ds_list_add(peryton.moves,"Attack");
 
+//Haniwa -----------------------------
+haniwa = {
+	name_: "Haniwa",
+	sprite: sprHaniwa,
+	hp:16,
+	maxhp:16,
+	atk:5,
+	def:4,
+	spd:50,
+	xp:10,
+	gld:5,
+	drop: "Herb",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Haniwa Moves
+ds_list_add(haniwa.moves,"Attack");
+
 
 //Groovedog -----------------------------
 groovedog = {
@@ -277,10 +296,11 @@ switch(global.area)
 	ds_list_add(list,sicklemore);
 	break;
 	case "Valiburgh Hills":
-	ds_list_add(list,flyingSnake);
+//	ds_list_add(list,flyingSnake);
 	ds_list_add(list,peryton);
 	ds_list_add(list,hippogriff);
-	ds_list_add(list,deinonychus);
+	//ds_list_add(list,deinonychus);
+	ds_list_add(list,haniwa);
 	break;
 	case "Barghest Cave":
 	
