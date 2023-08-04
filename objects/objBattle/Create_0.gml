@@ -21,6 +21,9 @@ messageY = 16;
 //Status
 sleep = false;
 
+//Elements
+attackElement = "Basic";
+
 //Initiative
 randomSpeedEnemy = irandom_range(0,99)+enemy.spd;
 randomSpeedPlayer = irandom_range(0,99)+player.spd;
@@ -107,8 +110,12 @@ combatMessage = function (msg){
 	colour,colour,colour,colour,1);
 }
 
-playerAttack = function (bonus,multi=1){
-	var dmg = max(ceil(((player.atk+bonus)*multi) - (floor(enemy.def/2))),1);
+playerAttack = function (bonus,multi=1,element_="None"){
+	
+	var elementMultiplier = 1;
+	if(element_ == enemy.weak) elementMultiplier = 1.3;
+	show_debug_message("Damage before defence:" + string(ceil(((player.atk+bonus)*multi))));
+	var dmg = max(ceil(((player.atk+bonus)*multi*elementMultiplier) - (floor(enemy.def/2))),1);
 	enemy.hp -= dmg;
 	alarm[1] = 60;
 	spellControl = false;

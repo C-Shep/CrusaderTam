@@ -290,7 +290,7 @@ global.dialog.julianaTalk = [
 	},
 	{
 		speaker: speakers.juliana,
-		message_: "just thining about the thing gets me all shivery"
+		message_: "just thinking about the thing gets me all shivery"
 	}
 ]
 

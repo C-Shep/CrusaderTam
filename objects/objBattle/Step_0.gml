@@ -44,13 +44,32 @@ if(!combatEnd)
 					case "Attack":
 						//actionMessage = dmg;
 						var chance = irandom(99);
+						
+						//default if no weapon
+						attackElement = "Basic";
+						
+						//get weapon element
+						for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
+						{
+							var e = objEquipment.equipment;
+							var eCurrent =  ds_list_find_value(e,j);
+							var eName = eCurrent.name_;
+							if(global.weaponE == eName)
+							{
+								attackElement = eCurrent.element;
+								break;
+							}
+						}
+						
+						show_debug_message(attackElement);
+						
 						if(chance == 0){
 							actionMessage = "You Missed!";
-						}else if(chance == 99){
-							var dmg = playerAttack(0,2);
+						}else if(chance >= (99-floor(player.spd/5))){
+							var dmg = playerAttack(0,2,attackElement);
 							actionMessage = "You crit the " + string(enemy.name_) + " for " + string(dmg) + " damage!";
 						}else{
-							var dmg = playerAttack(0);
+							var dmg = playerAttack(0,1,attackElement);
 							actionMessage = "You attack the " + string(enemy.name_) + " for " + string(dmg) + " damage!";
 						}
 						break;
@@ -126,7 +145,9 @@ if(!combatEnd)
 					case "Scorch":
 						if(player.mp >= 2)
 						{
-							var dmg = playerAttack(irandom_range(1,2));
+							attackElement = "Fire";
+							var rndBonus = irandom_range(1,2);
+							var dmg = playerAttack(rndBonus,1,attackElement);
 							actionMessage = "You burn the " + string(enemy.name_) + " for " + string(dmg) + " damage!";
 							player.mp -= 2;
 						}

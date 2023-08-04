@@ -10,6 +10,7 @@ sword = {
 	atk: 2,
 	def: 0,
 	spd: 0,
+	element: "Basic",
 }
 ds_list_add(equipment,sword);
 
@@ -20,6 +21,7 @@ spear = {
 	atk: 3,
 	def: 0,
 	spd: 0,
+	element: "Basic",
 }
 ds_list_add(equipment,spear);
 
@@ -30,8 +32,31 @@ knife = {
 	atk: 1,
 	def: 0,
 	spd: 0,
+	element: "Basic",
 }
 ds_list_add(equipment,knife);
+
+bronzeSpear = {
+	name_: "BronzeSpear",
+	type_: "Weapon",
+	desc : "A spear made from wood with an bronze tip.",
+	atk: 3,
+	def: 0,
+	spd: 0,
+	element: "Basic",
+}
+ds_list_add(equipment,bronzeSpear);
+
+flamberge = {
+	name_: "Flamberge",
+	type_: "Weapon",
+	desc : "Sword with an undulating type of blade. Deals fire damage.",
+	atk: 2,
+	def: 0,
+	spd: 0,
+	element: "Fire",
+}
+ds_list_add(equipment,flamberge);
 #endregion
 
 //Shields
@@ -44,7 +69,16 @@ shield = {
 	def: 2,
 	spd: 0,
 }
-ds_list_add(equipment,shield);
+
+woodShield = {
+	name_: "WoodShield",
+	type_: "Shield",
+	desc : "A repurposed pot lid",
+	atk: 0,
+	def: 1,
+	spd: 0,
+}
+ds_list_add(equipment,woodShield);
 #endregion
 
 //Armours
@@ -58,6 +92,26 @@ chainmail = {
 	spd: 0,
 }
 ds_list_add(equipment,chainmail);
+
+leatherArmour = {
+	name_: "LeathrArmr",
+	type_: "Armour",
+	desc : "Lightweight Armour made of leather",
+	atk: 0,
+	def: 2,
+	spd: 0,
+}
+ds_list_add(equipment,leatherArmour);
+
+silkCape = {
+	name_: "Silk Cape",
+	type_: "Armour",
+	desc : "speed increasing magical cape",
+	atk: 0,
+	def: 1,
+	spd: 5,
+}
+ds_list_add(equipment,silkCape);
 #endregion
 
 //Trinkets

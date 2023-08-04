@@ -34,6 +34,23 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 				ds_list_add(shop.stock,"Weed");
 				ds_list_add(shop.stock,"Knife");
 				break;
+			case "Valiburgh Weapon":
+				var shop = instance_create_layer(0,0,"UI",objShop)
+				ds_list_add(shop.stock,"Knife");
+				ds_list_add(shop.stock,"BronzeSpear");
+				ds_list_add(shop.stock,"Flamberge");
+				break;
+			case "Valiburgh Armour":
+				var shop = instance_create_layer(0,0,"UI",objShop)
+				ds_list_add(shop.stock,"WoodShield");
+				ds_list_add(shop.stock,"LeathrArmr");
+				ds_list_add(shop.stock,"Silk Cape");
+				break;
+			case "Valiburgh Item":
+				var shop = instance_create_layer(0,0,"UI",objShop)
+				ds_list_add(shop.stock,"Herb");
+				ds_list_add(shop.stock,"Weed");
+				break;
 		}
 		
 		//Innkeep

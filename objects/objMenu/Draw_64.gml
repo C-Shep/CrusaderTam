@@ -78,7 +78,7 @@ else if(equipControl)
 	draw_sprite_stretched(sprBox,0,menuX-16,menuY,384,menuHeight*8);
 	
 	//Draw weapon stats
-	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,192);
+	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,224);
 	
 	var equipmentNow = ds_list_find_value(equip,equipSelected);
 	var equipmentStatsMessage = "";

@@ -50,7 +50,9 @@ else if(buyControl)
 			//only need unique descriptions for items, equipment description is done in the equipment object
 			#region Items
 			case "Herb":
-				cost = 3;
+				if(room == rmQuillbeachInside)cost = 4;
+				else cost = 7;
+				
 				description = "Eat to heal 8 health";
 				break;
 			case "Weed":
@@ -62,21 +64,24 @@ else if(buyControl)
 			case "Knife":
 				cost = 10;
 				break;
-			case "Sword":
-				cost = 10;
+			case "BronzeSpear":
+				cost = 30;
 				break;
-			case "Spear":
-				cost = 11;
+			case "Flamberge":
+				cost = 28;
 				break;
 			#endregion
 			#region Shields
-			case "Shield":
-				cost = 5;
+			case "WoodShield":
+				cost = 18;
 				break;
 			#endregion
 			#region Armour
-			case "Chainmail":
-				cost = 10;
+			case "LeathrArmr":
+				cost = 32;
+				break;
+			case "Silk Cape":
+				cost = 25;
 				break;
 			#endregion
 			#region Trinkets
