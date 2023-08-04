@@ -3,28 +3,6 @@ equipment = ds_list_create();
 
 //Weapons
 #region Weapons
-sword = {
-	name_: "Sword",
-	type_: "Weapon",
-	desc : "A Steel Sword.",
-	atk: 2,
-	def: 0,
-	spd: 0,
-	element: "Basic",
-}
-ds_list_add(equipment,sword);
-
-spear = {
-	name_: "Spear",
-	type_: "Weapon",
-	desc : "A Steel Spear.",
-	atk: 3,
-	def: 0,
-	spd: 0,
-	element: "Basic",
-}
-ds_list_add(equipment,spear);
-
 knife = {
 	name_: "Knife",
 	type_: "Weapon",
@@ -37,7 +15,7 @@ knife = {
 ds_list_add(equipment,knife);
 
 bronzeSpear = {
-	name_: "BronzeSpear",
+	name_: "BrnzeSpear",
 	type_: "Weapon",
 	desc : "A spear made from wood with an bronze tip.",
 	atk: 3,

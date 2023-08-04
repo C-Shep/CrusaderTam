@@ -25,7 +25,7 @@ else if(buyControl)
 	#region// draw stock menu
 	
 	//Draw the description box
-	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,272);
+	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,336);
 	
 	//Draw Box
 	draw_sprite_stretched(sprBox,0,menuX-16,menuY,384,menuHeight*8);
@@ -64,7 +64,7 @@ else if(buyControl)
 			case "Knife":
 				cost = 10;
 				break;
-			case "BronzeSpear":
+			case "BrnzeSpear":
 				cost = 30;
 				break;
 			case "Flamberge":

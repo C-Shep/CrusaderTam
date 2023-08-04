@@ -37,7 +37,7 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 			case "Valiburgh Weapon":
 				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"Knife");
-				ds_list_add(shop.stock,"BronzeSpear");
+				ds_list_add(shop.stock,"BrnzeSpear");
 				ds_list_add(shop.stock,"Flamberge");
 				break;
 			case "Valiburgh Armour":
