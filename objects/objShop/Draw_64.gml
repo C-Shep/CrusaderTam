@@ -47,7 +47,7 @@ else if(buyControl)
 		
 		switch(selectedItem)
 		{
-			//only need unique descriptions for items, equipment description is done in the equipment object
+			//only need unique descriptions for items
 			#region Items
 			case "Herb":
 				if(room == rmQuillbeachInside)cost = 4;
@@ -60,44 +60,16 @@ else if(buyControl)
 				description = "Smoke to restore 10 magic";
 				break;
 			#endregion
-			#region Weapons
-			case "Knife":
-				cost = 10;
-				break;
-			case "BrnzeSpear":
-				cost = 30;
-				break;
-			case "Flamberge":
-				cost = 28;
-				break;
-			#endregion
-			#region Shields
-			case "WoodShield":
-				cost = 18;
-				break;
-			#endregion
-			#region Armour
-			case "LeathrArmr":
-				cost = 32;
-				break;
-			case "Silk Cape":
-				cost = 25;
-				break;
-			#endregion
-			#region Trinkets
-			case "Amulet":
-				cost = 5;
-				break;
-			#endregion
 		}
 		
-		//Descriptions for Equipment
+		//Costs and Descriptions for Equipment
 		for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 		{
 			var e = objEquipment.equipment;
 			var eName = ds_list_find_value(e,j).name_;
 			if(selectedItem == eName)
 			{
+				cost = ds_list_find_value(e,j).cost;
 				description = ds_list_find_value(e,j).desc;
 			}
 		}
@@ -157,32 +129,17 @@ else if(sellControl)
 				cost = 2;
 				break;
 			#endregion
-			#region Weapons
-			case "Knife":
-				cost = 10;
-				break;
-			case "Sword":
-				cost = 10;
-				break;
-			case "Spear":
-				cost = 11;
-				break;
-			#endregion
-			#region Shields
-			case "Shield":
-				cost = 5;
-				break;
-			#endregion
-			#region Armour
-			case "Chainmail":
-				cost = 10;
-				break;
-			#endregion
-			#region Trinkets
-			case "Amulet":
-				cost = 5;
-				break;
-			#endregion
+		}
+		
+		//Costs for Equipment
+		for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
+		{
+			var e = objEquipment.equipment;
+			var eName = ds_list_find_value(e,j).name_;
+			if(selectedItem == eName)
+			{
+				cost = (ds_list_find_value(e,j).cost)/2;
+			}
 		}
 		
 		//Draw the cost and descrpton

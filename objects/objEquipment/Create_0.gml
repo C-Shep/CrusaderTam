@@ -11,6 +11,7 @@ knife = {
 	def: 0,
 	spd: 0,
 	element: "Basic",
+	cost: 10,
 }
 ds_list_add(equipment,knife);
 
@@ -22,6 +23,7 @@ bronzeSpear = {
 	def: 0,
 	spd: 0,
 	element: "Basic",
+	cost: 30,
 }
 ds_list_add(equipment,bronzeSpear);
 
@@ -33,20 +35,13 @@ flamberge = {
 	def: 0,
 	spd: 0,
 	element: "Fire",
+	cost: 28,
 }
 ds_list_add(equipment,flamberge);
 #endregion
 
 //Shields
 #region Shields
-shield = {
-	name_: "Shield",
-	type_: "Shield",
-	desc : "A Steel Shield",
-	atk: 0,
-	def: 2,
-	spd: 0,
-}
 
 woodShield = {
 	name_: "WoodShield",
@@ -55,22 +50,13 @@ woodShield = {
 	atk: 0,
 	def: 1,
 	spd: 0,
+	cost: 18,
 }
 ds_list_add(equipment,woodShield);
 #endregion
 
 //Armours
 #region Armours
-chainmail = {
-	name_: "Chainmail",
-	type_: "Armour",
-	desc : "Armour made of Chains",
-	atk: 0,
-	def: 3,
-	spd: 0,
-}
-ds_list_add(equipment,chainmail);
-
 leatherArmour = {
 	name_: "LeathrArmr",
 	type_: "Armour",
@@ -78,6 +64,7 @@ leatherArmour = {
 	atk: 0,
 	def: 2,
 	spd: 0,
+	cost: 32,
 }
 ds_list_add(equipment,leatherArmour);
 
@@ -88,6 +75,7 @@ silkCape = {
 	atk: 0,
 	def: 1,
 	spd: 5,
+	cost: 25,
 }
 ds_list_add(equipment,silkCape);
 #endregion
@@ -101,6 +89,7 @@ amulet = {
 	atk: 1,
 	def: 1,
 	spd: 0,
+	cost: 10,
 }
 ds_list_add(equipment,amulet);
 
@@ -111,6 +100,7 @@ swiftscarf = {
 	atk: 0,
 	def: 0,
 	spd:7,
+	cost: 10,
 }
 ds_list_add(equipment,swiftscarf);
 #endregion
