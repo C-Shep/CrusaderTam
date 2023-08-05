@@ -119,6 +119,7 @@ else if(sellControl)
 		var currentItem = ds_list_find_value(inv,i);
 		var selectedItem = ds_list_find_value(inv,sellSelected);
 		
+		//for items
 		switch(selectedItem)
 		{
 			#region Items
