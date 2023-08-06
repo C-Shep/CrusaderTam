@@ -174,14 +174,14 @@ deinonychus = {
 //Deinonychus Moves
 ds_list_add(deinonychus.moves,"Attack");
 
-//Hippogriff -----------------------------
-hippogriff = {
-	name_: "Hippogriff",
+//Horsebird -----------------------------
+horsebird = {
+	name_: "Horsebird",
 	sprite: sprHippogriff,
-	hp:18,
-	maxhp:18,
+	hp:24,
+	maxhp:24,
 	atk:5,
-	def:2,
+	def:4,
 	spd:20,
 	xp:9,
 	gld:7,
@@ -190,8 +190,8 @@ hippogriff = {
 	moves: ds_list_create()
 }
 
-//Hippogriff Moves
-ds_list_add(hippogriff.moves,"Attack");
+//Horsebird Moves
+ds_list_add(horsebird.moves,"Attack");
 //ds_list_add(hippogriff.moves,"Drain");
 
 //Peryton -----------------------------
@@ -200,8 +200,8 @@ peryton = {
 	sprite: sprPeryton,
 	hp:19,
 	maxhp:19,
-	atk:5,
-	def:2,
+	atk:6,
+	def:5,
 	spd:50,
 	xp:10,
 	gld:5,
@@ -219,8 +219,8 @@ haniwa = {
 	sprite: sprHaniwa,
 	hp:20,
 	maxhp:20,
-	atk:5,
-	def:4,
+	atk:7,
+	def:7,
 	spd:10,
 	xp:9,
 	gld:8,
@@ -298,7 +298,7 @@ switch(global.area)
 	case "Valiburgh Hills":
 //	ds_list_add(list,flyingSnake);
 	ds_list_add(list,peryton);
-	ds_list_add(list,hippogriff);
+	ds_list_add(list,horsebird);
 	//ds_list_add(list,deinonychus);
 	ds_list_add(list,haniwa);
 	break;

@@ -10,6 +10,7 @@ function nextLevel(level)
 //Level up
 if(playerStats.currentXp > nextLevel(playerStats.lvl))
 {
+	show_debug_message(nextLevel(playerStats.lvl+1));
 	playerStats.baseAtk+=1;
 	playerStats.baseSpd+=1;
 	//Removed defence up, might find another solution later
