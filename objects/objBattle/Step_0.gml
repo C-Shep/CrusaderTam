@@ -262,6 +262,20 @@ if(!combatEnd)
 					}
 					
 				break;
+				case"Swoop": 	
+					enemyDamage = enemyBasicAttack();
+					enemy.def+=1;
+					actionMessage = (string(enemy.name_) + " rends you for " + string(enemyDamage) + " damage!");
+				break;
+				case"Drain": 	
+					enemyDamage = enemyBasicAttack(-1);
+					player.mp--;
+					actionMessage = (string(enemy.name_) + " drains your power for " + string(enemyDamage) + " dmg!");
+				break;
+				case"TriAttack": 	
+					enemyDamage = enemyBasicAttack(3);
+					actionMessage = (string(enemy.name_) + " slashes all around for " + string(enemyDamage) + " dmg!");
+				break;
 				default:
 					actionMessage = "???";
 			}

@@ -62,6 +62,7 @@ baseColour = c_white;
 hurtColour = c_orange;
 control = true;
 selected = 0;
+textSize = 1;
 
 //Battle Rewards
 rewardsGiven = false; //has the battle rewards like gold n shit been given yet?
@@ -103,10 +104,13 @@ checkForEnd = function (){
 }
 
 combatMessage = function (msg){
-	draw_text_colour(
+	draw_text_transformed_colour(
 	messageX,
 	messageY,
 	msg,
+	textSize,
+	textSize,
+	0,
 	colour,colour,colour,colour,1);
 }
 

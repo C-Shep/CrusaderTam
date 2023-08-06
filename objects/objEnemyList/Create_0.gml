@@ -192,7 +192,7 @@ horsebird = {
 
 //Horsebird Moves
 ds_list_add(horsebird.moves,"Attack");
-//ds_list_add(hippogriff.moves,"Drain");
+ds_list_add(horsebird.moves,"Drain");
 
 //Peryton -----------------------------
 peryton = {
@@ -201,7 +201,7 @@ peryton = {
 	hp:19,
 	maxhp:19,
 	atk:6,
-	def:5,
+	def:4,
 	spd:50,
 	xp:10,
 	gld:5,
@@ -212,6 +212,7 @@ peryton = {
 
 //Peryton Moves
 ds_list_add(peryton.moves,"Attack");
+ds_list_add(peryton.moves,"Swoop");
 
 //Haniwa -----------------------------
 haniwa = {
@@ -220,9 +221,9 @@ haniwa = {
 	hp:20,
 	maxhp:20,
 	atk:7,
-	def:7,
-	spd:10,
-	xp:9,
+	def:5,
+	spd:1,
+	xp:10,
 	gld:8,
 	drop: "Herb",
 	weak:"None",
@@ -231,6 +232,7 @@ haniwa = {
 
 //Haniwa Moves
 ds_list_add(haniwa.moves,"Attack");
+ds_list_add(haniwa.moves,"TriAttack");
 
 
 //Groovedog -----------------------------
