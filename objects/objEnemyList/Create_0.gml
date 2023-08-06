@@ -234,6 +234,65 @@ haniwa = {
 ds_list_add(haniwa.moves,"Attack");
 ds_list_add(haniwa.moves,"TriAttack");
 
+//Jorogumo -----------------------------
+jorogumo = {
+	name_: "Jorogumo",
+	sprite: sprJorogumo,
+	hp:20,
+	maxhp:20,
+	atk:7,
+	def:5,
+	spd:1,
+	xp:10,
+	gld:8,
+	drop: "Herb",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Haniwa Moves
+ds_list_add(jorogumo.moves,"Attack");
+ds_list_add(jorogumo.moves,"TriAttack");
+
+//Camabat -----------------------------
+camabat = {
+	name_: "Camabat",
+	sprite: sprCamabat,
+	hp:20,
+	maxhp:20,
+	atk:7,
+	def:5,
+	spd:1,
+	xp:10,
+	gld:8,
+	drop: "Herb",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Haniwa Moves
+ds_list_add(camabat.moves,"Attack");
+ds_list_add(camabat.moves,"TriAttack");
+
+//Skeleton -----------------------------
+skeleton = {
+	name_: "Skeleton",
+	sprite: sprSkeleton,
+	hp:20,
+	maxhp:20,
+	atk:7,
+	def:5,
+	spd:1,
+	xp:10,
+	gld:8,
+	drop: "Herb",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Haniwa Moves
+ds_list_add(skeleton.moves,"Attack");
+ds_list_add(skeleton.moves,"TriAttack");
 
 //Groovedog -----------------------------
 groovedog = {
@@ -298,13 +357,15 @@ switch(global.area)
 	ds_list_add(list,sicklemore);
 	break;
 	case "Valiburgh Hills":
-//	ds_list_add(list,flyingSnake);
 	ds_list_add(list,peryton);
 	ds_list_add(list,horsebird);
-	//ds_list_add(list,deinonychus);
 	ds_list_add(list,haniwa);
 	break;
 	case "Barghest Cave":
+	ds_list_add(list,haniwa);
+	ds_list_add(list,jorogumo);
+	ds_list_add(list,camabat);
+	ds_list_add(list,skeleton);
 	
 	break;
 	

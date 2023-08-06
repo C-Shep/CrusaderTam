@@ -169,6 +169,9 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetX","path":"objects/objDoor/objDoor.yy",},"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"value":"167",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetY","path":"objects/objDoor/objDoor.yy",},"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"value":"327",},
           ],"isDnd":false,"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1344.0,"y":416.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_244AFDC6","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"chestID","path":"objects/objChest/objChest.yy",},"objectId":{"name":"objChest","path":"objects/objChest/objChest.yy",},"value":"3",},
+          ],"isDnd":false,"objectId":{"name":"objChest","path":"objects/objChest/objChest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":592.0,"y":624.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Walls","tilesetId":{"name":"tlsCity","path":"tilesets/tlsCity/tlsCity.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":96,"SerialiseHeight":80,"TileCompressedData":[
 -41,0,-55,-2147483648,-41,0,-55,-2147483648,-41,0,-55,-2147483648,-10,0,-17,1,-14,0,-55,-2147483648,-10,0,1,1,-5,0,1,33,-5,0,5,1,0,0,48,1,-18,0,-51,-2147483648,-10,0,3,1,0,33,-12,0,2,49,1,-18,0,-5,-2147483648,-5,1,-3,-2147483648,-5,1,-33,-2147483648,-10,0,3,1,0,33,-9,0,5,1,0,0,33,1,-21,0,-2,-2147483648,1,1,-3,64,1,1,-3,-2147483648,5,1,80,16,80,1,-33,
@@ -229,6 +232,7 @@
     {"name":"inst_3A708433","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
     {"name":"inst_2E424D52","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
     {"name":"inst_4E46E1FC","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
+    {"name":"inst_244AFDC6","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
