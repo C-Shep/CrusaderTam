@@ -2,7 +2,7 @@
 inputX = 0;
 inputY = 0;
 
-moveSpd = 3;
+moveSpd = 1;
 
 moving = false;
 
