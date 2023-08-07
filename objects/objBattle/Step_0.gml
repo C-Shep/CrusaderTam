@@ -67,10 +67,10 @@ if(!combatEnd)
 							actionMessage = "You Missed!";
 						}else if(chance >= (99-floor(player.spd/5))){
 							var dmg = playerAttack(0,2,attackElement);
-							actionMessage = "You crit the " + string(enemy.name_) + " for " + string(dmg) + " damage!";
+							actionMessage = "You crit the " + string(enemy.name_) + " for " + string(dmg) + " dmg!";
 						}else{
 							var dmg = playerAttack(0,1,attackElement);
-							actionMessage = "You attack the " + string(enemy.name_) + " for " + string(dmg) + " damage!";
+							actionMessage = "You attack the " + string(enemy.name_) + " for " + string(dmg) + " dmg!";
 						}
 						break;
 					case "Spells":
@@ -148,7 +148,7 @@ if(!combatEnd)
 							attackElement = "Fire";
 							var rndBonus = irandom_range(1,2);
 							var dmg = playerAttack(rndBonus,1,attackElement);
-							actionMessage = "You burn the " + string(enemy.name_) + " for " + string(dmg) + " damage!";
+							actionMessage = "You burn the " + string(enemy.name_) + " for " + string(dmg) + " dmg!";
 							player.mp -= 2;
 						}
 						break;
@@ -229,15 +229,15 @@ if(!combatEnd)
 			{
 				case "Attack": 	
 					enemyDamage = enemyBasicAttack(0);
-					actionMessage = (string(enemy.name_) + " attacks you for " + string(enemyDamage) + " damage!");
+					actionMessage = (string(enemy.name_) + " attacks you for " + string(enemyDamage) + " dmg!");
 				break;
 				case "Stab": 	
 					enemyDamage = enemyBasicAttack(1);
-					actionMessage = (string(enemy.name_) + " stabs you for " + string(enemyDamage) + " damage!");
+					actionMessage = (string(enemy.name_) + " stabs you for " + string(enemyDamage) + " dmg!");
 				break;
 				case "Headbutt": 	
 					enemyDamage = enemyBasicAttack(1);
-					actionMessage = (string(enemy.name_) + " headbutts you for " + string(enemyDamage) + " damage!");
+					actionMessage = (string(enemy.name_) + " headbutts you for " + string(enemyDamage) + " dmg!");
 				break;
 				case "Sharpen": 	
 					enemy.atk+=1;
@@ -245,11 +245,11 @@ if(!combatEnd)
 				break;
 				case "Scratch": 	
 					enemyDamage = enemyBasicAttack(-2);
-					actionMessage = (string(enemy.name_) + " scratches you for " + string(enemyDamage) + " damage!");
+					actionMessage = (string(enemy.name_) + " scratches you for " + string(enemyDamage) + " dmg!");
 				break;
 				case "Ravage": 	
 					enemyDamage = enemyBasicAttack(1);
-					actionMessage = (string(enemy.name_) + " ravages you for " + string(enemyDamage) + " damage!");
+					actionMessage = (string(enemy.name_) + " ravages you for " + string(enemyDamage) + " dmg!");
 				break;
 				case "Spore": 	
 					if(!sleep)
@@ -275,6 +275,14 @@ if(!combatEnd)
 				case"TriAttack": 	
 					enemyDamage = enemyBasicAttack(3);
 					actionMessage = (string(enemy.name_) + " slashes all around for " + string(enemyDamage) + " dmg!");
+				break;
+				case"Wrap": 	
+					enemy.spd+=20;
+					actionMessage = (string(enemy.name_) + " wraps you up!");
+				break;
+				case"Kick": 	
+					enemyDamage = enemyBasicAttack(-1);
+					actionMessage = (string(enemy.name_) + " kicks you for " + string(enemyDamage) + " dmg!");
 				break;
 				default:
 					actionMessage = "???";

@@ -172,7 +172,9 @@ deinonychus = {
 }
 
 //Deinonychus Moves
+ds_list_add(deinonychus.moves,"Scratch");
 ds_list_add(deinonychus.moves,"Attack");
+ds_list_add(deinonychus.moves,"Ravage");
 
 //Horsebird -----------------------------
 horsebird = {
@@ -220,7 +222,7 @@ haniwa = {
 	sprite: sprHaniwa,
 	hp:20,
 	maxhp:20,
-	atk:7,
+	atk:6,
 	def:5,
 	spd:1,
 	xp:10,
@@ -232,27 +234,28 @@ haniwa = {
 
 //Haniwa Moves
 ds_list_add(haniwa.moves,"Attack");
+ds_list_add(haniwa.moves,"Attack");
 ds_list_add(haniwa.moves,"TriAttack");
 
 //Jorogumo -----------------------------
 jorogumo = {
 	name_: "Jorogumo",
 	sprite: sprJorogumo,
-	hp:20,
-	maxhp:20,
+	hp:24,
+	maxhp:24,
 	atk:7,
-	def:5,
-	spd:1,
+	def:3,
+	spd:20,
 	xp:10,
 	gld:8,
 	drop: "Herb",
-	weak:"None",
+	weak:"Fire",
 	moves: ds_list_create()
 }
 
-//Haniwa Moves
+//Jorogumo Moves
 ds_list_add(jorogumo.moves,"Attack");
-ds_list_add(jorogumo.moves,"TriAttack");
+ds_list_add(jorogumo.moves,"Wrap");
 
 //Camabat -----------------------------
 camabat = {
@@ -260,39 +263,62 @@ camabat = {
 	sprite: sprCamabat,
 	hp:20,
 	maxhp:20,
-	atk:7,
-	def:5,
-	spd:1,
-	xp:10,
+	atk:6,
+	def:1,
+	spd:50,
+	xp:8,
 	gld:8,
-	drop: "Herb",
+	drop: "Weed",
 	weak:"None",
 	moves: ds_list_create()
 }
 
 //Haniwa Moves
 ds_list_add(camabat.moves,"Attack");
-ds_list_add(camabat.moves,"TriAttack");
 
 //Skeleton -----------------------------
 skeleton = {
 	name_: "Skeleton",
 	sprite: sprSkeleton,
-	hp:20,
-	maxhp:20,
+	hp:25,
+	maxhp:25,
 	atk:7,
-	def:5,
+	def:3,
 	spd:1,
-	xp:10,
-	gld:8,
+	xp:11,
+	gld:5,
 	drop: "Herb",
 	weak:"None",
 	moves: ds_list_create()
 }
 
 //Haniwa Moves
+ds_list_add(skeleton.moves,"Kick");
 ds_list_add(skeleton.moves,"Attack");
-ds_list_add(skeleton.moves,"TriAttack");
+ds_list_add(skeleton.moves,"Stab");
+
+//Barghest -----------------------------
+barghest = {
+	name_: "Barghest",
+	sprite: sprBarghest,
+	hp:60,
+	maxhp:60,
+	atk:8,
+	def:3,
+	spd:10,
+	xp:25,
+	gld:20,
+	drop: "Herb",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Haniwa Moves
+ds_list_add(barghest.moves,"Scratch");
+ds_list_add(barghest.moves,"Attack");
+ds_list_add(barghest.moves,"Attack");
+ds_list_add(barghest.moves,"Bite");
+
 
 //Groovedog -----------------------------
 groovedog = {
@@ -338,35 +364,37 @@ list = ds_list_create();
 switch(global.area)
 {
 	case "Early Forest":
-	ds_list_add(list,goblin);
-	ds_list_add(list,evilgoat);
-	ds_list_add(list,scarecrow);
-	ds_list_add(list,wolf);
+		ds_list_add(list,goblin);
+		ds_list_add(list,evilgoat);
+		ds_list_add(list,scarecrow);
+		ds_list_add(list,wolf);
 		break;
 	case "Early Hills":
-	ds_list_add(list,nightcap);
-	ds_list_add(list,nightcap);
-	ds_list_add(list,evilgoat);
-	ds_list_add(list,wolf);
-	ds_list_add(list,wolf);
+		ds_list_add(list,nightcap);
+		ds_list_add(list,nightcap);
+		ds_list_add(list,evilgoat);
+		ds_list_add(list,wolf);
+		ds_list_add(list,wolf);
 		break;
 	case "Valiburgh Forest":
-	ds_list_add(list,wolf);
-	ds_list_add(list,deinonychus);
-	ds_list_add(list,flyingSnake);
-	ds_list_add(list,sicklemore);
-	break;
+		ds_list_add(list,wolf);
+		ds_list_add(list,deinonychus);
+		ds_list_add(list,flyingSnake);
+		ds_list_add(list,sicklemore);
+		break;
 	case "Valiburgh Hills":
-	ds_list_add(list,peryton);
-	ds_list_add(list,horsebird);
-	ds_list_add(list,haniwa);
-	break;
+		ds_list_add(list,peryton);
+		ds_list_add(list,horsebird);
+		ds_list_add(list,haniwa);
+		break;
 	case "Barghest Cave":
-	ds_list_add(list,haniwa);
-	ds_list_add(list,jorogumo);
-	ds_list_add(list,camabat);
-	ds_list_add(list,skeleton);
-	
-	break;
-	
+		ds_list_add(list,haniwa);
+		ds_list_add(list,jorogumo);
+		ds_list_add(list,camabat);
+		ds_list_add(list,skeleton);
+		break;
+	case "Barghest Boss":
+		ds_list_add(list,barghest);
+		break;
 }
+

@@ -36,7 +36,7 @@ var speakers = {
 	juliana:"Juliana",
 	anne:"Anne",
 	helen:"Helen",
-	
+	barghest: "Barghest",
 	
 }
 
@@ -588,6 +588,13 @@ global.dialog.guardBarghestDefeatedTalkAgain = [
 	{
 		speaker: speakers.soldier,
 		message_: "thank you for your service, brave hero!"
+	},
+]
+
+global.dialog.barghestGrowl = [
+	{
+		speaker: speakers.barghest,
+		message_: "GRRRRRRAWWWW!!!"
 	},
 ]
 

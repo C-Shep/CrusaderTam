@@ -63,6 +63,11 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"chestID","path":"objects/objChest/objChest.yy",},"objectId":{"name":"objChest","path":"objects/objChest/objChest.yy",},"value":"5",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"loot","path":"objects/objChest/objChest.yy",},"objectId":{"name":"objChest","path":"objects/objChest/objChest.yy",},"value":"WoodShield",},
           ],"isDnd":false,"objectId":{"name":"objChest","path":"objects/objChest/objChest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":176.0,"y":1120.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"npcBarghest","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moves","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"False",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"shouldTurn","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"False",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.barghestGrowl",},
+          ],"isDnd":false,"objectId":{"name":"objNpcBarghest","path":"objects/objNpcBarghest/objNpcBarghest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1056.0,"y":704.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Walls","tilesetId":{"name":"tlsCave","path":"tilesets/tlsCave/tlsCave.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":80,"SerialiseHeight":80,"TileCompressedData":[
 -1087,1,-5,0,-71,1,-9,0,-71,1,-9,0,-71,1,-9,0,-59,1,-14,0,-2,1,-5,0,-59,1,-14,0,-66,1,-2,0,-10,1,-2,0,-57,1,-11,0,-10,1,-2,0,-57,1,-11,0,-10,1,1,0,-58,1,-2,0,-7,1,-2,0,-69,1,1,0,-8,1,-2,0,-11,1,1,0,-66,1,-2,0,-10,1,-2,0,
@@ -77,7 +82,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_9EB35CA","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"areaType","path":"objects/objEncounterArea/objEncounterArea.yy",},"objectId":{"name":"objEncounterArea","path":"objects/objEncounterArea/objEncounterArea.yy",},"value":"\"Barghest Cave\"",},
           ],"isDnd":false,"objectId":{"name":"objEncounterArea","path":"objects/objEncounterArea/objEncounterArea.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":54.0,"scaleY":77.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":0.0,},
-      ],"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+      ],"visible":false,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Ground","tilesetId":{"name":"tlsCave","path":"tilesets/tlsCave/tlsCave.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":80,"SerialiseHeight":80,"TileCompressedData":[
 -1249,35,1,100,-2045,35,1,101,-24,35,1,101,-814,35,1,101,-200,35,1,100,-428,35,1,100,-507,35,-7,2,-73,35,-7,2,-73,35,-7,2,-73,35,-7,2,-73,35,-7,2,-73,35,-7,2,-73,35,-7,2,-19,35,1,101,-53,35,-7,2,-2,35,-14,2,-57,35,-7,2,-2,35,-14,2,-57,35,-7,2,-400,35,],},"visible":true,"depth":400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":null,"colour":4278190080,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":500,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
@@ -99,6 +104,7 @@
     {"name":"inst_631005D0","path":"rooms/rmBarghestCave/rmBarghestCave.yy",},
     {"name":"inst_2FFF8966","path":"rooms/rmBarghestCave/rmBarghestCave.yy",},
     {"name":"inst_9EB35CA","path":"rooms/rmBarghestCave/rmBarghestCave.yy",},
+    {"name":"npcBarghest","path":"rooms/rmBarghestCave/rmBarghestCave.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

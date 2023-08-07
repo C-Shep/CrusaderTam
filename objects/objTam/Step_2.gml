@@ -132,6 +132,10 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					}
 				}
 			break;
+			case npcBarghest:
+				global.area = "Barghest Boss";
+				endAction = "Begin Fight";
+			break;
 		}
 		createTextbox(npc.dialog,endAction);
 	}

@@ -46,7 +46,13 @@ function closeTextbox(endEvent_ = "None")
 			global.quest.allowedIntoCastle = true;
 			objNpcValiburghGuard.walk = true;
 			break; 
-		default:
+		case "Begin Fight":
+			//save the room
+			global.lastRoom = room;
+		
+			//start each room with a fade in
+			Fade(true,true,rmBattle);
+		break;
 		default:
 			//usually nothing
 	}
