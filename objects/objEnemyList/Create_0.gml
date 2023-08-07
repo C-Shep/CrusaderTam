@@ -316,8 +316,8 @@ barghest = {
 //Haniwa Moves
 ds_list_add(barghest.moves,"Scratch");
 ds_list_add(barghest.moves,"Attack");
-ds_list_add(barghest.moves,"Attack");
-ds_list_add(barghest.moves,"Bite");
+//ds_list_add(barghest.moves,"Attack");
+//ds_list_add(barghest.moves,"Ravage");
 
 
 //Groovedog -----------------------------

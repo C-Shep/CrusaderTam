@@ -113,7 +113,8 @@ healCount = 0;
 //	if(itemName == "Herb") 
 //}
 
-if(findItem("Herb")) healCount++;
+healCount = findItem("Herb");
+//if(findItem("Herb")) game_end();
 
 //DEBUG TAKE THIS OUT LATER
 if(keyboard_check_pressed(ord("F")))

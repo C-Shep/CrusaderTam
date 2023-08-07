@@ -125,6 +125,16 @@ if(!endMessages)
 				{
 					player.currentXp += enemy.xp;
 					player.currentGld += enemy.gld;
+					
+					//quest conditions met
+					switch(enemy.name_)
+					{
+						case "Barghest":
+							global.quest.barghestKilled = true;
+							break;
+						default:
+					}
+					
 				
 					//Random Drops
 					var willDrop = irandom(99)+1;

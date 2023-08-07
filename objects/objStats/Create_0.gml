@@ -38,13 +38,14 @@ ds_list_add(inv,"Chainmail");
 */
 //Functions
 findItem = function(item){
+	var numFound = 0;
 	for(var i=0;i<invLength;i++)
 	{
 		var itemName = ds_list_find_value(inv, i);
 		if(itemName == item)
 		{
-			return true;
+			numFound++;
 		}
 	}
-	return false;
+	return numFound;
 }

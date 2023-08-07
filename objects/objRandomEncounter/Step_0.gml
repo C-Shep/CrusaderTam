@@ -33,5 +33,5 @@ if(timer>=setTime)
 	
 	//Reset Random Encounter Timer
 	timer = 0;
-	setTime = irandom_range(2, 6);
+	setTime = irandom_range(minTime, maxTime);
 }
