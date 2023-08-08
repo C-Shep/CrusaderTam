@@ -34,11 +34,6 @@ function closeTextbox(endEvent_ = "None")
 			global.quest.sofiaGiven = true;
 			break;
 		default:
-		case "Postino Give Scarf":
-			ds_list_add(objStats.inv,"SwiftScarf");
-			global.quest.postinoTalked = true;
-			break; 
-		default:
 		case "Barghest Quest Accept":
 			global.quest.barghestQuestAccepted = true;
 			break; 
@@ -53,6 +48,22 @@ function closeTextbox(endEvent_ = "None")
 			//start each room with a fade in
 			Fade(true,true,rmBattle);
 		break;
+		case "Emma Asked":
+			global.quest.emmaAskHelp = true;
+			break; 
+		case "Emma Delivered":
+			global.quest.emmaChat = true;
+			ds_list_add(objStats.inv,"Herb");
+			ds_list_add(objStats.inv,"Herb");
+			ds_list_add(objStats.inv,"Herb");
+			break;
+		case "Postino Asked":
+			global.quest.postinoAskHelp = true;
+			break; 
+		case "Postino Delivered":
+			ds_list_add(objStats.inv,"SwiftScarf");
+			global.quest.postinoChat = true;
+			break;
 		default:
 			//usually nothing
 	}

@@ -25,7 +25,6 @@ global.openChestList = ds_list_create();
 ds_list_add(global.openChestList,0);
 
 //Death
-global.lastInn = "Quillbeach";
 global.respawnX = 264;
 global.respawnY = 264;
 global.respawnRoom = rmQuillbeach;
@@ -34,8 +33,12 @@ global.respawnRoom = rmQuillbeach;
 global.quest = {
 	sofiaTalked : false,
 	sofiaGiven : false,
-	postinoFound : false,
-	postinoTalked : false,
+	postinoAskHelp : false,
+	postinoDelivered : false,
+	postinoChat : false,
+	emmaAskHelp : false,
+	emmaDelivered : false,
+	emmaChat : false,
 	barghestQuestAccepted : false,
 	barghestKilled : false,
 	allowedIntoCastle : false,

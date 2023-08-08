@@ -1,4 +1,4 @@
-if(global.quest.postinoTalked)
+if(global.quest.postinoDelivered)
 {
 	instance_destroy();
 }

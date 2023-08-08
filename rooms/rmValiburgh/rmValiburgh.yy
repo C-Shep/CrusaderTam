@@ -65,7 +65,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_445ADAB","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.julianaTalk",},
           ],"isDnd":false,"objectId":{"name":"objNpcWoman","path":"objects/objNpcWoman/objNpcWoman.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":240.0,"y":320.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2959A138","properties":[],"isDnd":false,"objectId":{"name":"objNpcWoman","path":"objects/objNpcWoman/objNpcWoman.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":288.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"emma_","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.emmaAskHelp",},
+          ],"isDnd":false,"objectId":{"name":"objNpcWoman","path":"objects/objNpcWoman/objNpcWoman.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":288.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_620C5EA8","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moves","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"False",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.valiburghGrave4Talk",},
@@ -230,7 +232,7 @@
     {"name":"inst_5058F082","path":"rooms/rmValiburgh/rmValiburgh.yy",},
     {"name":"inst_59E8C561","path":"rooms/rmValiburgh/rmValiburgh.yy",},
     {"name":"inst_445ADAB","path":"rooms/rmValiburgh/rmValiburgh.yy",},
-    {"name":"inst_2959A138","path":"rooms/rmValiburgh/rmValiburgh.yy",},
+    {"name":"emma_","path":"rooms/rmValiburgh/rmValiburgh.yy",},
     {"name":"inst_620C5EA8","path":"rooms/rmValiburgh/rmValiburgh.yy",},
     {"name":"inst_FE18280","path":"rooms/rmValiburgh/rmValiburgh.yy",},
     {"name":"inst_4E0514C4","path":"rooms/rmValiburgh/rmValiburgh.yy",},

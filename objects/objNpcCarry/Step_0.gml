@@ -2,7 +2,7 @@
 // Inherit the parent event
 event_inherited();
 
-//change to repeat dialogue after giving scarf in Valiburgh
+/*/change to repeat dialogue after giving scarf in Valiburgh
 if(room == rmValiburghInside)
 { 
 	if(objStats.findItem("Letter"))

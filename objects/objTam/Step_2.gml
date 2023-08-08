@@ -112,14 +112,27 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 				if(!global.quest.sofiaGiven) endAction = "Sofia Give";
 			break;
 			case carryValiburgh:
-				for(var i=0;i<objStats.invLength;i++)
+				if(!global.quest.postinoAskHelp)
 				{
-					var itemName = ds_list_find_value(objStats.inv, i);
-					if(itemName == "Letter"){
-						ds_list_delete(objStats.inv,i);
+					npc.dialog = global.dialog.postinoAskHelp;
+					endAction = "Postino Asked";
+				}else{
+					if(objStats.turnInItem("Letter"))
+					{
+						global.quest.postinoDelivered = true;
+					}
+					
+					if(global.quest.postinoDelivered == true && global.quest.postinoChat == false)
+					{
+						npc.dialog = global.dialog.postinoDelivered;
+						endAction = "Postino Delivered";
+					}
+					
+					if(global.quest.postinoDelivered == true && global.quest.postinoChat == true)
+					{
+						npc.dialog = global.dialog.postinoChat;
 					}
 				}
-				if(global.quest.postinoFound && !global.quest.postinoTalked) endAction = "Postino Give Scarf";
 			case valiGuard1:
 			case valiGuard2:
 				if(!global.quest.barghestQuestAccepted)
@@ -135,6 +148,29 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 			case npcBarghest:
 				global.area = "Barghest Boss";
 				endAction = "Begin Fight";
+			break;
+			case emma_:
+				if(!global.quest.emmaAskHelp)
+				{
+					npc.dialog = global.dialog.emmaAskHelp;
+					endAction = "Emma Asked";
+				}else{
+					if(objStats.turnInItem("Mage Ash"))
+					{
+						global.quest.emmaDelivered = true;
+					}
+					
+					if(global.quest.emmaDelivered == true && global.quest.emmaChat == false)
+					{
+						npc.dialog = global.dialog.emmaDelivered;
+						endAction = "Emma Delivered";
+					}
+					
+					if(global.quest.emmaDelivered == true && global.quest.emmaChat == true)
+					{
+						npc.dialog = global.dialog.emmaChat;
+					}
+				}
 			break;
 		}
 		createTextbox(npc.dialog,endAction);

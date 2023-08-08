@@ -49,3 +49,16 @@ findItem = function(item){
 	}
 	return numFound;
 }
+
+turnInItem = function(item){
+	for(var i=0;i<invLength;i++)
+	{
+		var itemName = ds_list_find_value(inv, i);
+		if(itemName == item)
+		{
+			ds_list_delete(inv,i);
+			return true;
+		}
+	}
+	return false;
+}

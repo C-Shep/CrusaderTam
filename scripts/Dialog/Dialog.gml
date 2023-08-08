@@ -386,7 +386,7 @@ global.dialog.valiburghInnSoldier2Talk = [
 	},
 	{
 		speaker: speakers.soldier,
-		message_: "Something about mushrooms I think"
+		message_: "Something about magical ash I think"
 	},
 ]
 
@@ -602,7 +602,7 @@ global.dialog.barghestGrowl = [
 
 #region Side Quests
 
-global.dialog.postinoHelp = [
+global.dialog.postinoAskHelp = [
 	{
 		speaker: speakers.postino,
 		message_: "Oh no! oh no! oh no! This can't be!"
@@ -617,7 +617,7 @@ global.dialog.postinoHelp = [
 	},
 ]
 
-global.dialog.postinoFound = [
+global.dialog.postinoDelivered = [
 	{
 		speaker: speakers.postino,
 		message_: "How could I be so foolish!?"
@@ -654,6 +654,43 @@ global.dialog.postinoChat = [
 		message_: "I'll be going to Torgale to deliver this mail, I hope we meet again soon!"
 	}
 
+]
+
+global.dialog.emmaAskHelp = [
+	{
+		speaker: speakers.emma,
+		message_: "This garden is lovely, but it could always be better... *sigh*"
+	},
+	{
+		speaker: speakers.emma,
+		message_: "If only i had some mage ash, that would make a great compost for these plants to grow better"
+	},
+	{
+		speaker: speakers.emma,
+		message_: "I heard some can be found on the east coast past the mountains"
+	},
+]
+
+global.dialog.emmaDelivered = [
+	{
+		speaker: speakers.emma,
+		message_: "Is that... some mage ash?"
+	},
+	{
+		speaker: speakers.emma,
+		message_: "here, i'll give you these herbs for the ash, great deal right?"
+	},
+	{
+		speaker: speakers.emma,
+		message_: "thank you so much, brave hero! now the garden will look even better!"
+	},
+]
+
+global.dialog.emmaChat = [
+	{
+		speaker: speakers.emma,
+		message_: "This garden will look great thanks to you! Thank you so much"
+	},
 ]
 
 
