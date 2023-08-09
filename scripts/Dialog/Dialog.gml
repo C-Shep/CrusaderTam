@@ -161,6 +161,8 @@ global.dialog.eliciaTalk = [
 
 #region Valiburgh Outside
 
+#region Barghest Alive
+
 global.dialog.valiburgeGateSoldier1Talk = [
 	{
 		speaker: speakers.soldier,
@@ -305,40 +307,88 @@ global.dialog.anneTalk = [
 	}
 ]
 
-global.dialog.gavTalk = [
+#endregion
+
+#region Barghest Dead
+
+global.dialog.valiburgeGateSoldier1TalkBarghestDead = [
 	{
-		speaker: speakers.gav,
-		message_: "You're gonna want some armour if that horrid beast comes back, lad"
+		speaker: speakers.soldier,
+		message_: "Welcome to Valiburgh, City of Bravery"
 	},
 	{
-		speaker: speakers.gav,
-		message_: "thats why i'm here!"
+		speaker: speakers.soldier,
+		message_: "Don't go causing any trouble ya hear!"
 	}
 ]
 
-global.dialog.gozTalk = [
+global.dialog.valiburgeSoldier1TalkBarghestDead = [
 	{
-		speaker: speakers.goz,
-		message_: "You came here from Quillbeach? My brother has a shop there."
+		speaker: speakers.soldier,
+		message_: "Herbs are a mighty important thing to keep around, you know"
 	},
 	{
-		speaker: speakers.goz,
-		message_: "Tell him hi if you see him again will ya?"
+		speaker: speakers.soldier,
+		message_: "Pick some up at the item shop if you don't already have some!"
 	}
 ]
 
-global.dialog.guzTalk = [
+global.dialog.valiburgeSoldier2TalkBarghestDead = [
 	{
-		speaker: speakers.guz,
-		message_: "The guards are always buying their provisions from here"
+		speaker: speakers.soldier,
+		message_: "King Wymar is a great leader!"
 	},
 	{
-		speaker: speakers.guz,
-		message_: "guess my stuff is better than whatever they get at the castle!"
+		speaker: speakers.soldier,
+		message_: "He treat us denizens well"
+	},
+]
+
+global.dialog.adamTalkBarghestDead = [
+	{
+		speaker: speakers.adam,
+		message_: "It seems our great city is saved! Thank you, brave hero!"
+	},
+]
+
+global.dialog.bernardTalkBarghestDead = [
+	{
+		speaker: speakers.bernard,
+		message_: "My mate gav is the best blacksmith around"
+	},
+	{
+		speaker: speakers.bernard,
+		message_: "he makes all the best armour!"
 	}
 ]
 
+global.dialog.helenTalkBarghestDead = [
+	{
+		speaker: speakers.helen,
+		message_: "the castle's a bit quiet at the moment"
+	},
+	{
+		speaker: speakers.helen,
+		message_: "They've even lowered the patrols, wonder what that's about"
+	}
+]
 
+global.dialog.julianaTalkBarghestDead = [
+	{
+		speaker: speakers.juliana,
+		message_: "The monsters up north from here are mighty scary!"
+	},
+	{
+		speaker: speakers.juliana,
+		message_: "then again, so are the monsters all the way down south"
+	},
+	{
+		speaker: speakers.juliana,
+		message_: "tough choice for travellers like yourself, huh?"
+	}
+]
+
+#endregion
 
 #endregion
 
@@ -439,6 +489,39 @@ global.dialog.hilbertTalk = [
 		speaker: speakers.hilbert,
 		message_: "That's where me and my wife are from!"
 	},
+]
+
+global.dialog.gavTalk = [
+	{
+		speaker: speakers.gav,
+		message_: "You're gonna want some armour if that horrid beast comes back, lad"
+	},
+	{
+		speaker: speakers.gav,
+		message_: "thats why i'm here!"
+	}
+]
+
+global.dialog.gozTalk = [
+	{
+		speaker: speakers.goz,
+		message_: "You came here from Quillbeach? My brother has a shop there."
+	},
+	{
+		speaker: speakers.goz,
+		message_: "Tell him hi if you see him again will ya?"
+	}
+]
+
+global.dialog.guzTalk = [
+	{
+		speaker: speakers.guz,
+		message_: "The guards are always buying their provisions from here"
+	},
+	{
+		speaker: speakers.guz,
+		message_: "guess my stuff is better than whatever they get at the castle!"
+	}
 ]
 #endregion
 
@@ -727,6 +810,21 @@ global.dialog.valiburghBarghestSign = [
 	{
 		speaker: speakers.sign_,
 		message_: "any brave heroes willing to fight it, come to the castle at once!"
+	},
+	{
+		speaker: speakers.sign_,
+		message_: "- King Wymar"
+	},
+]
+
+global.dialog.valiburghBarghestDeadSign = [
+	{
+		speaker: speakers.sign_,
+		message_: "A brave hero has saved our town!"
+	},
+	{
+		speaker: speakers.sign_,
+		message_: "said hero must come to the castle at once!"
 	},
 	{
 		speaker: speakers.sign_,

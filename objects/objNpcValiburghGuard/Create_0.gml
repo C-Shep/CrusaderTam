@@ -8,7 +8,12 @@ states = {
 	down: sprSoldierDown
 }
 
-targetX = toRoom(toTile(x));
-targetY = toRoom(toTile(y));
+targetX_ = toRoom(toTile(x));
+targetY_ = toRoom(toTile(y));
 
 walk = false;
+
+if(global.quest.allowedIntoCastle)
+{
+	instance_destroy();	
+}

@@ -23,14 +23,15 @@ if(global.quest.barghestQuestAccepted == false)
 //Walk out of players way
 if(walk)
 {
-	moveToPoint(targetX,targetY);	
+	moveToPoint(targetX_,targetY_);	
 	objTam.playerControl = false;	
 }
 
-//destroy when at house
-if(x == targetX && y == targetY && walk)
+//stop walking
+if(x == toRoom(toTile(targetX_)) && y == toRoom(toTile(targetY_)) && walk)
 {
 	objTam.playerControl = true;
+	instance_destroy();
 	if(id == valiGuard1) moveDir = 0;
 	if(id == valiGuard2) moveDir = 180;
 	walk = false;
