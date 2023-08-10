@@ -37,6 +37,15 @@ var speakers = {
 	anne:"Anne",
 	helen:"Helen",
 	barghest: "Barghest",
+	steffan: "Stefan",
+	maria: "Maria",
+	jane: "Jane",
+	thoman : "Thoman",
+	lesley : "Lesley",
+	louis : "Louis",
+	vince : "Vince",
+	cirrus : "Cirrus",
+	
 	
 }
 
@@ -340,7 +349,7 @@ global.dialog.valiburgeSoldier2TalkBarghestDead = [
 	},
 	{
 		speaker: speakers.soldier,
-		message_: "He treat us denizens well"
+		message_: "He treats us all very well"
 	},
 ]
 
@@ -523,6 +532,107 @@ global.dialog.guzTalk = [
 		message_: "guess my stuff is better than whatever they get at the castle!"
 	}
 ]
+
+global.dialog.steffanTalk = [
+	{
+		speaker: speakers.steffan,
+		message_: "Those Haniwa monsters are a real threat to travellers!"
+	},
+	{
+		speaker: speakers.steffan,
+		message_: "They're slow as rocks though so running away is a breeze!"
+	}
+]
+
+global.dialog.mariaTalk = [
+	{
+		speaker: speakers.maria,
+		message_: "There once was a legendary hero called Mercathew"
+	},
+	{
+		speaker: speakers.maria,
+		message_: "He saved our world from a mightly demon lord, what a great guy!p"
+	}
+]
+
+global.dialog.janeTalk = [
+	{
+		speaker: speakers.jane,
+		message_: "Our king is really great"
+	},
+	{
+		speaker: speakers.jane,
+		message_: "I heard he got pretty injured when that blasted monster attacked, though!"
+	}
+]
+
+global.dialog.soldierSleepTalk = [
+	{
+		speaker: speakers.soldier,
+		message_: "zzz"
+	}
+]
+
+global.dialog.thomanTalk = [
+	{
+		speaker: speakers.thoman,
+		message_: "Have you ever been inside the castle?"
+	},
+	{
+		speaker: speakers.thoman,
+		message_: "I've always wanted to have a look inside but the guards won't let me"
+	}
+]
+
+global.dialog.lesleyTalk = [
+	{
+		speaker: speakers.lesley,
+		message_: "Fire can be a powerful tool in combat!"
+	},
+	{
+		speaker: speakers.lesley,
+		message_: "I heard Jorogumos and Perytons hate fire!"
+	}
+]
+
+global.dialog.vinceTalk = [
+	{
+		speaker: speakers.vince,
+		message_: "There is a cave northwest of here through the mountain pass"
+	},
+	{
+		speaker: speakers.vince,
+		message_: "It's full of scary monsters but there might also be treasure!"
+	}
+]
+
+global.dialog.louisTalk = [
+	{
+		speaker: speakers.louis,
+		message_: "Remember to rest at an Inn when you feel weary"
+	},
+	{
+		speaker: speakers.louis,
+		message_: "You'll wake up feeling completely refreshed"
+	}
+]
+
+global.dialog.cirrusTalk = [
+	{
+		speaker: speakers.cirrus,
+		message_: "Magic is a powerful tool, but remember not to overuse it"
+	},
+	{
+		speaker: speakers.cirrus,
+		message_: "You might feel your pool of magic running dry halfway though a dungeon"
+	},
+	{
+		speaker: speakers.cirrus,
+		message_: "You don't want that to happen, brave hero!"
+	}
+]
+
+
 #endregion
 
 #endregion
@@ -762,6 +872,10 @@ global.dialog.emmaDelivered = [
 	{
 		speaker: speakers.emma,
 		message_: "here, i'll give you these herbs for the ash, great deal right?"
+	},
+	{
+		speaker: speakers.none,
+		message_: "You recived three Herbs!"
 	},
 	{
 		speaker: speakers.emma,
