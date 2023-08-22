@@ -45,6 +45,9 @@ var speakers = {
 	louis : "Louis",
 	vince : "Vince",
 	cirrus : "Cirrus",
+	stratus : "Stratus",
+	elia : "Elia",
+	celrik : "Celrik",
 	
 	
 }
@@ -53,7 +56,7 @@ global.dialog = {};
 
 #region Dialogue
 
-#region Quillbeach
+	#region Quillbeach
 global.dialog.marvTalk = [
 	{
 		speaker: speakers.marv,
@@ -168,472 +171,690 @@ global.dialog.eliciaTalk = [
 ]
 #endregion
 
-#region Valiburgh Outside
+	#region Valiburgh Outside
 
-#region Barghest Alive
+	#region Barghest Alive
 
-global.dialog.valiburgeGateSoldier1Talk = [
-	{
-		speaker: speakers.soldier,
-		message_: "AAAGH!"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "oh, sorry mate i though you were the barghest for a moment!"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "Welcome to Valiburgh, City of Bravery"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "dont go causing any trouble ya hear!"
-	}
-]
+	global.dialog.valiburgeGateSoldier1Talk = [
+		{
+			speaker: speakers.soldier,
+			message_: "AAAGH!"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "oh, sorry mate i though you were the barghest for a moment!"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "Welcome to Valiburgh, City of Bravery"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "dont go causing any trouble ya hear!"
+		}
+	]
 
-global.dialog.valiburgeGateSoldier2Talk = [
-	{
-		speaker: speakers.soldier,
-		message_: "Welcome to Valiburgh, City of Bravery"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "If you need a place to rest, my nan owns the local inn, the weary wyvern"
-	}
-]
+	global.dialog.valiburgeGateSoldier2Talk = [
+		{
+			speaker: speakers.soldier,
+			message_: "Welcome to Valiburgh, City of Bravery"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "If you need a place to rest, my nan owns the local inn, the weary wyvern"
+		}
+	]
 
-global.dialog.valiburgeSoldier1Talk = [
-	{
-		speaker: speakers.soldier,
-		message_: "We got attacked by the monster named the barghest a few days ago"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "Chopped up a couple of our best guards, real scary beast it was"
-	}
-]
+	global.dialog.valiburgeSoldier1Talk = [
+		{
+			speaker: speakers.soldier,
+			message_: "We got attacked by the monster named the barghest a few days ago"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "Chopped up a couple of our best guards, real scary beast it was"
+		}
+	]
 
-global.dialog.valiburgeSoldier2Talk = [
-	{
-		speaker: speakers.soldier,
-		message_: "King Wymar has increased the number of patrols in case the barghest comes knocking again"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "If it shows up, we'll be ready"
-	},
-]
+	global.dialog.valiburgeSoldier2Talk = [
+		{
+			speaker: speakers.soldier,
+			message_: "King Wymar has increased the number of patrols in case the barghest comes knocking again"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "If it shows up, we'll be ready"
+		},
+	]
 
-global.dialog.valiburgeSoldier3Talk = [
-	{
-		speaker: speakers.soldier,
-		message_: "King Wymar is looking for a brave hero"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "i'm pretty brave but i'm no hero!"
-	},
-]
+	global.dialog.valiburgeSoldier3Talk = [
+		{
+			speaker: speakers.soldier,
+			message_: "King Wymar is looking for a brave hero"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "i'm pretty brave but i'm no hero!"
+		},
+	]
 
-global.dialog.adamTalk = [
-	{
-		speaker: speakers.adam,
-		message_: "Have you heard about the Barghest?"
-	},
-	{
-		speaker: speakers.adam,
-		message_: "I heard it lives in a cave west of here and likes to eat people"
-	}
-]
+	global.dialog.adamTalk = [
+		{
+			speaker: speakers.adam,
+			message_: "Have you heard about the Barghest?"
+		},
+		{
+			speaker: speakers.adam,
+			message_: "I heard it lives in a cave west of here and likes to eat people"
+		}
+	]
 
-global.dialog.bernardTalk = [
-	{
-		speaker: speakers.bernard,
-		message_: "I just picked up a shield from gav's armour shop"
-	},
-	{
-		speaker: speakers.bernard,
-		message_: "you can never be too prepared in case the barghest attacks!"
-	}
-]
+	global.dialog.bernardTalk = [
+		{
+			speaker: speakers.bernard,
+			message_: "I just picked up a shield from gav's armour shop"
+		},
+		{
+			speaker: speakers.bernard,
+			message_: "you can never be too prepared in case the barghest attacks!"
+		}
+	]
 
-global.dialog.conradTalk = [
-	{
-		speaker: speakers.conrad,
-		message_: "I'm training to be a guard"
-	},
-	{
-		speaker: speakers.conrad,
-		message_: "It's tough work but i've heard that the pay is good"
-	}
-]
+	global.dialog.conradTalk = [
+		{
+			speaker: speakers.conrad,
+			message_: "I'm training to be a guard"
+		},
+		{
+			speaker: speakers.conrad,
+			message_: "It's tough work but i've heard that the pay is good"
+		}
+	]
 
-global.dialog.diggoryTalk = [
-	{
-		speaker: speakers.diggory,
-		message_: "Have you fought a Scarecrow at all?"
-	},
-	{
-		speaker: speakers.diggory,
-		message_: "They're pretty frail but can dish out quite the number if you can't keep up"
-	}
-]
+	global.dialog.diggoryTalk = [
+		{
+			speaker: speakers.diggory,
+			message_: "Have you fought a Scarecrow at all?"
+		},
+		{
+			speaker: speakers.diggory,
+			message_: "They're pretty frail but can dish out quite the number if you can't keep up"
+		}
+	]
 
-global.dialog.helenTalk = [
-	{
-		speaker: speakers.helen,
-		message_: "Theres a real ruckus going on at the castle at the moment"
-	},
-	{
-		speaker: speakers.helen,
-		message_: "They've even got more guards patrolling the place, wonder what thats about"
-	}
-]
+	global.dialog.helenTalk = [
+		{
+			speaker: speakers.helen,
+			message_: "Theres a real ruckus going on at the castle at the moment"
+		},
+		{
+			speaker: speakers.helen,
+			message_: "They've even got more guards patrolling the place, wonder what thats about"
+		}
+	]
 
-global.dialog.julianaTalk = [
-	{
-		speaker: speakers.juliana,
-		message_: "That mean old Barghest beastie is a right old piece of work"
-	},
-	{
-		speaker: speakers.juliana,
-		message_: "it showed up one day and made mincemeat of a few of the guards before running off"
-	},
-	{
-		speaker: speakers.juliana,
-		message_: "just thinking about the thing gets me all shivery"
-	}
-]
+	global.dialog.julianaTalk = [
+		{
+			speaker: speakers.juliana,
+			message_: "That mean old Barghest beastie is a right old piece of work"
+		},
+		{
+			speaker: speakers.juliana,
+			message_: "it showed up one day and made mincemeat of a few of the guards before running off"
+		},
+		{
+			speaker: speakers.juliana,
+			message_: "just thinking about the thing gets me all shivery"
+		}
+	]
 
-global.dialog.anneTalk = [
-	{
-		speaker: speakers.anne,
-		message_: "do you know any magic?"
-	},
-	{
-		speaker: speakers.anne,
-		message_: "i heard that the gods gave magic to humans so we could defend ourselves better"
-	}
-]
+	global.dialog.anneTalk = [
+		{
+			speaker: speakers.anne,
+			message_: "do you know any magic?"
+		},
+		{
+			speaker: speakers.anne,
+			message_: "i heard that the gods gave magic to humans so we could defend ourselves better"
+		}
+	]
 
-#endregion
+	#endregion
 
-#region Barghest Dead
+	#region Barghest Dead
 
-global.dialog.valiburgeGateSoldier1TalkBarghestDead = [
-	{
-		speaker: speakers.soldier,
-		message_: "Welcome to Valiburgh, City of Bravery"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "Don't go causing any trouble ya hear!"
-	}
-]
+	global.dialog.valiburgeGateSoldier1TalkBarghestDead = [
+		{
+			speaker: speakers.soldier,
+			message_: "Welcome to Valiburgh, City of Bravery"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "Don't go causing any trouble ya hear!"
+		}
+	]
 
-global.dialog.valiburgeSoldier1TalkBarghestDead = [
-	{
-		speaker: speakers.soldier,
-		message_: "Herbs are a mighty important thing to keep around, you know"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "Pick some up at the item shop if you don't already have some!"
-	}
-]
+	global.dialog.valiburgeSoldier1TalkBarghestDead = [
+		{
+			speaker: speakers.soldier,
+			message_: "Herbs are a mighty important thing to keep around, you know"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "Pick some up at the item shop if you don't already have some!"
+		}
+	]
 
-global.dialog.valiburgeSoldier2TalkBarghestDead = [
-	{
-		speaker: speakers.soldier,
-		message_: "King Wymar is a great leader!"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "He treats us all very well"
-	},
-]
+	global.dialog.valiburgeSoldier2TalkBarghestDead = [
+		{
+			speaker: speakers.soldier,
+			message_: "King Wymar is a great leader!"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "He treats us all very well"
+		},
+	]
 
-global.dialog.adamTalkBarghestDead = [
-	{
-		speaker: speakers.adam,
-		message_: "It seems our great city is saved! Thank you, brave hero!"
-	},
-]
+	global.dialog.adamTalkBarghestDead = [
+		{
+			speaker: speakers.adam,
+			message_: "It seems our great city is saved! Thank you, brave hero!"
+		},
+	]
 
-global.dialog.bernardTalkBarghestDead = [
-	{
-		speaker: speakers.bernard,
-		message_: "My mate gav is the best blacksmith around"
-	},
-	{
-		speaker: speakers.bernard,
-		message_: "he makes all the best armour!"
-	}
-]
+	global.dialog.bernardTalkBarghestDead = [
+		{
+			speaker: speakers.bernard,
+			message_: "My mate gav is the best blacksmith around"
+		},
+		{
+			speaker: speakers.bernard,
+			message_: "he makes all the best armour!"
+		}
+	]
 
-global.dialog.helenTalkBarghestDead = [
-	{
-		speaker: speakers.helen,
-		message_: "the castle's a bit quiet at the moment"
-	},
-	{
-		speaker: speakers.helen,
-		message_: "They've even lowered the patrols, wonder what that's about"
-	}
-]
+	global.dialog.helenTalkBarghestDead = [
+		{
+			speaker: speakers.helen,
+			message_: "the castle's a bit quiet at the moment"
+		},
+		{
+			speaker: speakers.helen,
+			message_: "They've even lowered the patrols, wonder what that's about"
+		}
+	]
 
-global.dialog.julianaTalkBarghestDead = [
-	{
-		speaker: speakers.juliana,
-		message_: "The monsters up north from here are mighty scary!"
-	},
-	{
-		speaker: speakers.juliana,
-		message_: "then again, so are the monsters all the way down south"
-	},
-	{
-		speaker: speakers.juliana,
-		message_: "tough choice for travellers like yourself, huh?"
-	}
-]
+	global.dialog.julianaTalkBarghestDead = [
+		{
+			speaker: speakers.juliana,
+			message_: "The monsters up north from here are mighty scary!"
+		},
+		{
+			speaker: speakers.juliana,
+			message_: "then again, so are the monsters all the way down south"
+		},
+		{
+			speaker: speakers.juliana,
+			message_: "tough choice for travellers like yourself, huh?"
+		}
+	]
 
-#endregion
-
-#endregion
-
-#region Valiburgh Inside
-global.dialog.simonTalk = [
-	{
-		speaker: speakers.simon,
-		message_: "The drinks here are a little pricey but sure are worth it!"
-	}
-]
-
-global.dialog.susannahTalk = [
-	{
-		speaker: speakers.susannah,
-		message_: "Have you ever fought a nightcap?"
-	},
-	{
-		speaker: speakers.susannah,
-		message_: "They shake their spores about to put you to sleep then beat you up while you take a kip!"
-	}
-]
-
-global.dialog.gilbertTalk = [
-	{
-		speaker: speakers.gilbert,
-		message_: "The land down south is pretty dangerous"
-	},
-	{
-		speaker: speakers.gilbert,
-		message_: "Make sure that you're prepared when you travel all the way down there"
-	}
-]
-
-global.dialog.valiburghInnSoldier1Talk = [
-	{
-		speaker: speakers.soldier,
-		message_: "My father was a guard here, so was his father"
-	}
-]
-
-global.dialog.valiburghInnSoldier2Talk = [
-	{
-		speaker: speakers.soldier,
-		message_: "I think the Emma the gardener was looking for some new fancy compost"
-	},
-	{
-		speaker: speakers.soldier,
-		message_: "Something about magical ash I think"
-	},
-]
-
-global.dialog.valiburghInnSoldier3Talk = [
-	{
-		speaker: speakers.soldier,
-		message_: "We meet up here every day after our shift"
-	}
-]
-
-global.dialog.godfreyTalk = [
-	{
-		speaker: speakers.godfrey,
-		message_: "I'm travelling to Torgale at the moment, it's quite far away but I'll make it"
-	}
-]
-
-global.dialog.orielTalk = [
-	{
-		speaker: speakers.oriel,
-		message_: "It's a good idea to have a few herbs on you at all times"
-	},
-	{
-		speaker: speakers.oriel,
-		message_: "You never know when you might need them"
-	},
-]
-
-global.dialog.margeryTalk = [
-	{
-		speaker: speakers.margery,
-		message_: "Welcome to the weary wyvern, dearie!"
-	},
-	{
-		speaker: speakers.margery,
-		message_: "I'm sure an adventurer like yourself will find our beds comfy as can be!"
-	},
-	{
-		speaker: speakers.margery,
-		message_: "If you ever need anything, just ask me or my husband"
-	},
-]
-
-global.dialog.hilbertTalk = [
-	{
-		speaker: speakers.hilbert,
-		message_: "Torgale is a town on a mountain down south. They worship the great wyvern there."
-	},
-	{
-		speaker: speakers.hilbert,
-		message_: "That's where me and my wife are from!"
-	},
-]
-
-global.dialog.gavTalk = [
-	{
-		speaker: speakers.gav,
-		message_: "You're gonna want some armour if that horrid beast comes back, lad"
-	},
-	{
-		speaker: speakers.gav,
-		message_: "thats why i'm here!"
-	}
-]
-
-global.dialog.gozTalk = [
-	{
-		speaker: speakers.goz,
-		message_: "You came here from Quillbeach? My brother has a shop there."
-	},
-	{
-		speaker: speakers.goz,
-		message_: "Tell him hi if you see him again will ya?"
-	}
-]
-
-global.dialog.guzTalk = [
-	{
-		speaker: speakers.guz,
-		message_: "The guards are always buying their provisions from here"
-	},
-	{
-		speaker: speakers.guz,
-		message_: "guess my stuff is better than whatever they get at the castle!"
-	}
-]
-
-global.dialog.steffanTalk = [
-	{
-		speaker: speakers.steffan,
-		message_: "Those Haniwa monsters are a real threat to travellers!"
-	},
-	{
-		speaker: speakers.steffan,
-		message_: "They're slow as rocks though so running away is a breeze!"
-	}
-]
-
-global.dialog.mariaTalk = [
-	{
-		speaker: speakers.maria,
-		message_: "There once was a legendary hero called Mercathew"
-	},
-	{
-		speaker: speakers.maria,
-		message_: "He saved our world from a mightly demon lord, what a great guy!p"
-	}
-]
-
-global.dialog.janeTalk = [
-	{
-		speaker: speakers.jane,
-		message_: "Our king is really great"
-	},
-	{
-		speaker: speakers.jane,
-		message_: "I heard he got pretty injured when that blasted monster attacked, though!"
-	}
-]
-
-global.dialog.soldierSleepTalk = [
-	{
-		speaker: speakers.soldier,
-		message_: "zzz"
-	}
-]
-
-global.dialog.thomanTalk = [
-	{
-		speaker: speakers.thoman,
-		message_: "Have you ever been inside the castle?"
-	},
-	{
-		speaker: speakers.thoman,
-		message_: "I've always wanted to have a look inside but the guards won't let me"
-	}
-]
-
-global.dialog.lesleyTalk = [
-	{
-		speaker: speakers.lesley,
-		message_: "Fire can be a powerful tool in combat!"
-	},
-	{
-		speaker: speakers.lesley,
-		message_: "I heard Jorogumos and Perytons hate fire!"
-	}
-]
-
-global.dialog.vinceTalk = [
-	{
-		speaker: speakers.vince,
-		message_: "There is a cave northwest of here through the mountain pass"
-	},
-	{
-		speaker: speakers.vince,
-		message_: "It's full of scary monsters but there might also be treasure!"
-	}
-]
-
-global.dialog.louisTalk = [
-	{
-		speaker: speakers.louis,
-		message_: "Remember to rest at an Inn when you feel weary"
-	},
-	{
-		speaker: speakers.louis,
-		message_: "You'll wake up feeling completely refreshed"
-	}
-]
-
-global.dialog.cirrusTalk = [
-	{
-		speaker: speakers.cirrus,
-		message_: "Magic is a powerful tool, but remember not to overuse it"
-	},
-	{
-		speaker: speakers.cirrus,
-		message_: "You might feel your pool of magic running dry halfway though a dungeon"
-	},
-	{
-		speaker: speakers.cirrus,
-		message_: "You don't want that to happen, brave hero!"
-	}
-]
-
+	#endregion
 
 #endregion
+
+	#region Valiburgh Inside
+	global.dialog.simonTalk = [
+		{
+			speaker: speakers.simon,
+			message_: "The drinks here are a little pricey but sure are worth it!"
+		}
+	]
+
+	global.dialog.susannahTalk = [
+		{
+			speaker: speakers.susannah,
+			message_: "Have you ever fought a nightcap?"
+		},
+		{
+			speaker: speakers.susannah,
+			message_: "They shake their spores about to put you to sleep then beat you up while you take a kip!"
+		}
+	]
+
+	global.dialog.gilbertTalk = [
+		{
+			speaker: speakers.gilbert,
+			message_: "The land down south is pretty dangerous"
+		},
+		{
+			speaker: speakers.gilbert,
+			message_: "Make sure that you're prepared when you travel all the way down there"
+		}
+	]
+
+	global.dialog.valiburghInnSoldier1Talk = [
+		{
+			speaker: speakers.soldier,
+			message_: "My father was a guard here, so was his father"
+		}
+	]
+
+	global.dialog.valiburghInnSoldier2Talk = [
+		{
+			speaker: speakers.soldier,
+			message_: "I think the Emma the gardener was looking for some new fancy compost"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "Something about magical ash I think"
+		},
+	]
+
+	global.dialog.valiburghInnSoldier3Talk = [
+		{
+			speaker: speakers.soldier,
+			message_: "We meet up here every day after our shift"
+		}
+	]
+
+	global.dialog.godfreyTalk = [
+		{
+			speaker: speakers.godfrey,
+			message_: "I'm travelling to Torgale at the moment, it's quite far away but I'll make it"
+		}
+	]
+
+	global.dialog.orielTalk = [
+		{
+			speaker: speakers.oriel,
+			message_: "It's a good idea to have a few herbs on you at all times"
+		},
+		{
+			speaker: speakers.oriel,
+			message_: "You never know when you might need them"
+		},
+	]
+
+	global.dialog.margeryTalk = [
+		{
+			speaker: speakers.margery,
+			message_: "Welcome to the weary wyvern, dearie!"
+		},
+		{
+			speaker: speakers.margery,
+			message_: "I'm sure an adventurer like yourself will find our beds comfy as can be!"
+		},
+		{
+			speaker: speakers.margery,
+			message_: "If you ever need anything, just ask me or my husband"
+		},
+	]
+
+	global.dialog.hilbertTalk = [
+		{
+			speaker: speakers.hilbert,
+			message_: "Torgale is a town on a mountain down south. They worship the great wyvern there."
+		},
+		{
+			speaker: speakers.hilbert,
+			message_: "That's where me and my wife are from!"
+		},
+	]
+
+	global.dialog.gavTalk = [
+		{
+			speaker: speakers.gav,
+			message_: "You're gonna want some armour if that horrid beast comes back, lad"
+		},
+		{
+			speaker: speakers.gav,
+			message_: "thats why i'm here!"
+		}
+	]
+
+	global.dialog.gozTalk = [
+		{
+			speaker: speakers.goz,
+			message_: "You came here from Quillbeach? My brother has a shop there."
+		},
+		{
+			speaker: speakers.goz,
+			message_: "Tell him hi if you see him again will ya?"
+		}
+	]
+
+	global.dialog.guzTalk = [
+		{
+			speaker: speakers.guz,
+			message_: "The guards are always buying their provisions from here"
+		},
+		{
+			speaker: speakers.guz,
+			message_: "guess my stuff is better than whatever they get at the castle!"
+		}
+	]
+
+	global.dialog.steffanTalk = [
+		{
+			speaker: speakers.steffan,
+			message_: "Those Haniwa monsters are a real threat to travellers!"
+		},
+		{
+			speaker: speakers.steffan,
+			message_: "They're slow as rocks though so running away is a breeze!"
+		}
+	]
+
+	global.dialog.mariaTalk = [
+		{
+			speaker: speakers.maria,
+			message_: "There once was a legendary hero called Mercathew"
+		},
+		{
+			speaker: speakers.maria,
+			message_: "He saved our world from a mightly demon lord, what a great guy!p"
+		}
+	]
+
+	global.dialog.janeTalk = [
+		{
+			speaker: speakers.jane,
+			message_: "Our king is really great"
+		},
+		{
+			speaker: speakers.jane,
+			message_: "I heard he got pretty injured when that blasted monster attacked, though!"
+		}
+	]
+
+	global.dialog.soldierSleepTalk = [
+		{
+			speaker: speakers.soldier,
+			message_: "zzz"
+		}
+	]
+
+	global.dialog.thomanTalk = [
+		{
+			speaker: speakers.thoman,
+			message_: "Have you ever been inside the castle?"
+		},
+		{
+			speaker: speakers.thoman,
+			message_: "I've always wanted to have a look inside but the guards won't let me"
+		}
+	]
+
+	global.dialog.lesleyTalk = [
+		{
+			speaker: speakers.lesley,
+			message_: "Fire can be a powerful tool in combat!"
+		},
+		{
+			speaker: speakers.lesley,
+			message_: "I heard Jorogumos and Perytons hate fire!"
+		}
+	]
+
+	global.dialog.vinceTalk = [
+		{
+			speaker: speakers.vince,
+			message_: "There is a cave northwest of here through the mountain pass"
+		},
+		{
+			speaker: speakers.vince,
+			message_: "It's full of scary monsters but there might also be treasure!"
+		}
+	]
+
+	global.dialog.louisTalk = [
+		{
+			speaker: speakers.louis,
+			message_: "Remember to rest at an Inn when you feel weary"
+		},
+		{
+			speaker: speakers.louis,
+			message_: "You'll wake up feeling completely refreshed"
+		}
+	]
+
+	global.dialog.cirrusTalk = [
+		{
+			speaker: speakers.cirrus,
+			message_: "Magic is a powerful tool, but remember not to overuse it"
+		},
+		{
+			speaker: speakers.cirrus,
+			message_: "You might feel your pool of magic running dry halfway though a dungeon"
+		},
+		{
+			speaker: speakers.cirrus,
+			message_: "You don't want that to happen, brave hero!"
+		}
+	]
+
+
+	#endregion
+
+	#region Valiburgh Castle
+	
+	global.dialog.castleGuard1 = [
+		{
+			speaker: speakers.soldier,
+			message_: "The King is up these stairs"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "Show respect when talking to him!"
+		}
+	]
+	
+	global.dialog.castleGuard2 = [
+		{
+			speaker: speakers.soldier,
+			message_: "King Wymar is up these stairs"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "He is a jolly fellow but don't think him foolish!"
+		}
+	]
+	
+	global.dialog.castleGuardArmoury = [
+		{
+			speaker: speakers.soldier,
+			message_: "I've been tasked with polishing all the armour and weapons in the castle"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "I can polish yours if you want"
+		},
+		{
+			speaker: speakers.none,
+			message_: "Your armour gets polished!"
+		}
+	]
+	
+	global.dialog.castleGuardSleepingQuarters = [
+		{
+			speaker: speakers.soldier,
+			message_: "This is where us guards sleep"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "The beds are pretty comfy but there's not much privacy"
+		}
+	]
+	
+	global.dialog.castleGuard3 = [
+		{
+			speaker: speakers.soldier,
+			message_: "King Wymar tasked me with guarding this room in case any prisoners try escaping"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "Not like anyone's going to try escaping this mighty fortress!"
+		}
+	]
+	
+	global.dialog.castleGuard4 = [
+		{
+			speaker: speakers.soldier,
+			message_: "A very strange courier delivered me a parcel earlier"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "He was wearing red robes and a large hat..."
+		}
+	]
+	
+	global.dialog.castleGuard5 = [
+		{
+			speaker: speakers.soldier,
+			message_: "Some weapons are imbued with elemental effects"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "That means they are stronger agains certain monsters!"
+		}
+	]
+	
+	global.dialog.castleGuardDungeon = [
+		{
+			speaker: speakers.soldier,
+			message_: "I'm the warden of Valiburgh Jail"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "No one is escaping!"
+		}
+	]
+	
+	global.dialog.castleGuardVault = [
+		{
+			speaker: speakers.soldier,
+			message_: "This is the vault, it holds mighty treasures!"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "No funny business!"
+		}
+	]
+	
+	global.dialog.castleKingsGuard1 = [
+		{
+			speaker: speakers.soldier,
+			message_: "Always show respect when talking to the king!"
+		}
+	]
+
+	global.dialog.castleKingsGuard2 = [
+		{
+			speaker: speakers.soldier,
+			message_: "You'll find no safer place than valiburgh"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "All thanks to our great king and his watchful knights!"
+		}
+	]
+	
+	global.dialog.castleKingsGuard3 = [
+		{
+			speaker: speakers.soldier,
+			message_: "Valiburgh is known for it's hospitality"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "Troublemakers won't be tolerated, however"
+		}
+	]
+	
+	global.dialog.castleKingsGuard4 = [
+		{
+			speaker: speakers.soldier,
+			message_: "They say skeletons roam the cavern northweste of here"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "If you managed to beat them you must be a mighty warrior!"
+		}
+	]
+	
+	global.dialog.castleKingsGuard5 = [
+		{
+			speaker: speakers.soldier,
+			message_: "Hail, mighty hero! Your presence brings us many pleasures!"
+		}
+	]
+	
+	global.dialog.castleKingsGuard6 = [
+		{
+			speaker: speakers.soldier,
+			message_: "You carry the scent of adventure, mighty hero!"
+		},
+		{
+			speaker: speakers.soldier,
+			message_: "Best of luck with future battles!"
+		},
+	]
+	
+	global.dialog.stratusTalk = [
+		{
+			speaker: speakers.stratus,
+			message_: "Ho Ho Ho! hello brave hero!"
+		},
+		{
+			speaker: speakers.stratus,
+			message_: "Did you know that the more experienced you are in battle, the more magic you shall learn?"
+		},
+		{
+			speaker: speakers.stratus,
+			message_: "Ho Ho Ho! I'm sure that you will learn lots of spells by the end of your quest!"
+		},
+	]
+	
+	global.dialog.eliraTalk = [
+		{
+			speaker: speakers.none,
+			message_: "The woman is serving up some sort of stew"
+		},
+		{
+			speaker: speakers.elia,
+			message_: "A dash of passion and a sprinkle of creativity, ta da! Culinary Perfection!"
+		},
+		{
+			speaker: speakers.elia,
+			message_: "This is my iconic horsebird stew! Here, have some."
+		},
+		{
+			speaker: speakers.none,
+			message_: "You gain some stew!"
+		}
+	]
+	
+	global.dialog.celrikTalk = [
+		{
+			speaker: speakers.none,
+			message_: "The man is making a soup"
+		},
+		{
+			speaker: speakers.celrik,
+			message_: "In the kitchen, mistakes are simply opportunities for unexpected recipes. Watch and learn!"
+		},
+		{
+			speaker: speakers.celrik,
+			message_: "..."
+		},
+		{
+			speaker: speakers.celrik,
+			message_: "Nevermind, this is awful, i guess i'll have to start again"
+		},
+	]
+	
+	#endregion
 
 #endregion
 
