@@ -835,6 +835,21 @@ global.dialog.eliciaTalk = [
 		}
 	]
 	
+	global.dialog.eliraTalkAgain = [
+		{
+			speaker: speakers.none,
+			message_: "Elira is serving up some horsebird stew"
+		},
+		{
+			speaker: speakers.elia,
+			message_: "What do you think of my marvellous stew?"
+		},
+		{
+			speaker: speakers.elia,
+			message_: "Divine, is it not?"
+		}
+	]
+	
 	global.dialog.celrikTalk = [
 		{
 			speaker: speakers.none,

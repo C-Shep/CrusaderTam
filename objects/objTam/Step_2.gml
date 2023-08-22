@@ -107,10 +107,10 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 			case sofiaBeach:
 				playerControl = false;
 				endAction = "Sofia Walk";
-			break;
+				break;
 			case sofiaHouse:
 				if(!global.quest.sofiaGiven) endAction = "Sofia Give";
-			break;
+				break;
 			case carryValiburgh:
 				if(!global.quest.postinoAskHelp)
 				{
@@ -144,11 +144,11 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 						endAction = "Let Into Castle";
 					}
 				}
-			break;
+				break;
 			case npcBarghest:
 				global.area = "Barghest Boss";
 				endAction = "Begin Fight";
-			break;
+				break;
 			case emma_:
 				if(!global.quest.emmaAskHelp)
 				{
@@ -171,7 +171,16 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 						npc.dialog = global.dialog.emmaChat;
 					}
 				}
-			break;
+				break;
+			case chefElira:
+				if(!global.quest.stewReceived)
+				{
+					npc.dialog = global.dialog.eliraTalk;
+					endAction = "Get Stew";
+				}else{
+					npc.dialog = global.dialog.eliraTalkAgain;	
+				}
+				break;
 		}
 		createTextbox(npc.dialog,endAction);
 	}

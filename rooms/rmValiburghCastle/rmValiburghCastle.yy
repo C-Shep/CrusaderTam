@@ -129,7 +129,7 @@
           ],"isDnd":false,"objectId":{"name":"objNpcSoldier","path":"objects/objNpcSoldier/objNpcSoldier.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":304.0,"y":352.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EB6E62E","properties":[],"isDnd":false,"objectId":{"name":"objNpcMan","path":"objects/objNpcMan/objNpcMan.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":432.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_549616C3","properties":[],"isDnd":false,"objectId":{"name":"objNpcMan2","path":"objects/objNpcMan2/objNpcMan2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":208.0,"y":272.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_543749E5","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"chefElira","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.eliraTalk",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moves","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"False",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moveDir","path":"objects/objCharParent/objCharParent.yy",},"objectId":{"name":"objCharParent","path":"objects/objCharParent/objCharParent.yy",},"value":"90",},
@@ -227,7 +227,7 @@
     {"name":"inst_63D4FCDE","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
     {"name":"inst_7EB6E62E","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
     {"name":"inst_549616C3","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
-    {"name":"inst_543749E5","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
+    {"name":"chefElira","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
     {"name":"inst_4AF943E7","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
     {"name":"inst_1B67DB06","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
     {"name":"inst_7FD7542A","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},

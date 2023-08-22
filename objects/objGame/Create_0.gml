@@ -42,6 +42,8 @@ global.quest = {
 	barghestQuestAccepted : false,
 	barghestKilled : false,
 	allowedIntoCastle : false,
+	stewReceived : false,
+	
 }
 
 

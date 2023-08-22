@@ -200,6 +200,12 @@ else if(invControl)
 				actionMessage = "You restore " + string(restoreNum) + " magic!";
 				ds_list_delete(inv,invSelected);
 				break;
+			case "Stew":
+				var healNum = playerRestore(10);
+				var restoreNum = playerRestore(10);
+				actionMessage = "You heal " + string(healNum) + " hp and mp!";
+				ds_list_delete(inv,invSelected);
+				break;
 			default:
 				actionMessage = "Doesn't do anything";
 		}
