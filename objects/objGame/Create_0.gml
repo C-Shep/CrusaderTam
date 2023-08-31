@@ -43,7 +43,7 @@ global.quest = {
 	barghestKilled : false,
 	allowedIntoCastle : false,
 	stewReceived : false,
-	
+	kingTalkedOnce : false,
 }
 
 

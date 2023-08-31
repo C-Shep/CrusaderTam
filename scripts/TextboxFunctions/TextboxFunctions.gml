@@ -68,6 +68,9 @@ function closeTextbox(endEvent_ = "None")
 			ds_list_add(objStats.inv,"Stew");
 			global.quest.stewReceived = true;
 			break;
+		case "End Demo":
+			room_goto(rmEnd);
+			break;
 		default:
 			//usually nothing
 	}

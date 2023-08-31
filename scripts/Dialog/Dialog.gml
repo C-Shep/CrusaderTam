@@ -48,6 +48,9 @@ var speakers = {
 	stratus : "Stratus",
 	elia : "Elia",
 	celrik : "Celrik",
+	king : "KngWymar",
+	queen : "Queen Ela",
+	
 	
 	
 }
@@ -775,7 +778,7 @@ global.dialog.eliciaTalk = [
 	global.dialog.castleKingsGuard4 = [
 		{
 			speaker: speakers.soldier,
-			message_: "They say skeletons roam the cavern northweste of here"
+			message_: "They say skeletons roam the cavern northwest of here"
 		},
 		{
 			speaker: speakers.soldier,
@@ -867,6 +870,17 @@ global.dialog.eliciaTalk = [
 			speaker: speakers.celrik,
 			message_: "Nevermind, this is awful, i guess i'll have to start again"
 		},
+	]
+	
+	global.dialog.queenTalk = [
+		{
+			speaker: speakers.queen,
+			message_: "ah brave hero, you are truly a powerful warrior"
+		},
+		{
+			speaker: speakers.queen,
+			message_: "best of luck in wherever your travels take you!"
+		}
 	]
 	
 	#endregion
@@ -1024,6 +1038,61 @@ global.dialog.barghestGrowl = [
 	{
 		speaker: speakers.barghest,
 		message_: "GRRRRRRAWWWW!!!"
+	},
+]
+
+global.dialog.kingFirstTalk = [
+	{
+		speaker: speakers.king,
+		message_: "ah, you must be the brave hero who saved my kingdom from the barghest"
+	},
+	{
+		speaker: speakers.king,
+		message_: "many thanks, mighty adventurer! you have proven your might this day"
+	},
+	{
+		speaker: speakers.king,
+		message_: "with might like yours, surely you must be the one to restore balance to our world!"
+	},
+	{
+		speaker: speakers.king,
+		message_: "you see, there were once four great trees that kept the balance in our world"
+	},
+	{
+		speaker: speakers.king,
+		message_: "the tree of the earth which we walk"
+	},
+	{
+		speaker: speakers.king,
+		message_: "the tree of the oceans which we sail"
+	},
+	{
+		speaker: speakers.king,
+		message_: "the tree of the air which we breath"
+	},
+	{
+		speaker: speakers.king,
+		message_: "the tree of the fire which warms us"
+	},
+	{
+		speaker: speakers.king,
+		message_: "but one fateful day, the evil wizard helrath cut down all of the trees to gain their power"
+	},
+	{
+		speaker: speakers.king,
+		message_: "you must restore the four great trees and defeat helrath to save our world, brave hero!"
+	},
+	{
+		speaker: speakers.king,
+		message_: "seek the monks at the temple of lucidia to the north."
+	},
+	{
+		speaker: speakers.king,
+		message_: "they will provide you with the tools to restore the great trees"
+	},
+	{
+		speaker: speakers.king,
+		message_: "good luck, mighty hero! The world is counting on you!"
 	},
 ]
 

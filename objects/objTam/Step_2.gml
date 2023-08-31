@@ -181,6 +181,10 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					npc.dialog = global.dialog.eliraTalkAgain;	
 				}
 				break;
+			case kingWymar:
+				npc.dialog = global.dialog.kingFirstTalk;
+				endAction = "End Demo";
+				break;
 		}
 		createTextbox(npc.dialog,endAction);
 	}

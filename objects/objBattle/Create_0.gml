@@ -151,13 +151,18 @@ playerRestore = function (restoreNum){
 
 playerFlee = function()
 {
-	var randomFleeEnemy = irandom_range(0,99)+enemy.spd;
-	var randomFleePlayer = irandom_range(0,99)+player.spd;
-
-	if(randomFleePlayer >= randomFleeEnemy)
+	if(enemy.name_ != "Barghest")
 	{
-		isFleeing = true;
-		alarm[2] = 120;
+		var randomFleeEnemy = irandom_range(0,99)+enemy.spd;
+		var randomFleePlayer = irandom_range(0,99)+player.spd;
+
+		if(randomFleePlayer >= randomFleeEnemy)
+		{
+			isFleeing = true;
+			alarm[2] = 120;
+		}
+	}else{
+		isFleeing = false;	
 	}
 	
 	return isFleeing;
