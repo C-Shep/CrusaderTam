@@ -26,7 +26,11 @@ if(fadeToBlack)
 	if(image_alpha < 0.25) finalFade = 0.25;
 	else if(image_alpha < 0.5) finalFade = 0.5;
 	else if(image_alpha < 0.75) finalFade = 0.75;
-	else finalFade = 1;
+	else if(!restart){
+		finalFade = 1;
+	}else{
+		game_restart();	
+	}
 	
 }else{//fade from black
 	if(image_alpha > 0)

@@ -57,6 +57,14 @@ if(control)
 				mouse_clear(INTERACT);
 				instance_destroy();
 				break;
+			case "Exit":
+				SaveTam();
+				control = false;
+				selected = 0;
+				mouse_clear(INTERACT);
+				Fade(true,true,rmMenu,false,true);
+				//instance_destroy();
+				break;
 		}
 	}
 	#endregion

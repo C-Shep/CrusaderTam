@@ -11,6 +11,7 @@ if(keyboard_check_pressed(vk_tab))
 	spellControl = false;
 	invControl = false;
 	equipControl = false;
+	exitControl = false;
 	selected = 0;
 	objTam.playerControl = true;
 	keyboard_clear(vk_tab);
@@ -48,6 +49,7 @@ if(control)
 		spellControl = false;
 		invControl = false;
 		equipControl = false;
+		exitControl = false;
 		selected = 0;
 		instance_destroy();
 		

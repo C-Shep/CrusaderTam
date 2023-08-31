@@ -15,9 +15,15 @@ if(player.hp < oldHp)
 {
 	colour = c_red;
 }
-draw_text_colour(menuX,160,"hp: " + string(player.hp),colour,colour,colour,colour,1);
+
+var hpMsg = "hp: " + string(player.hp) + "/" + string(player.maxhp);
+var mpMsg = "mp: " + string(player.mp) + "/" + string(player.maxmp);
+
+
+draw_text_colour(menuX,160,hpMsg,colour,colour,colour,colour,1);
 colour = baseColour;
-draw_text_colour(menuX+64,160,"mp: " + string(player.mp),colour,colour,colour,colour,1);
+draw_text_colour(menuX+128,160,mpMsg,colour,colour,colour,colour,1);
+
 
 draw_sprite(sprGrassBG,0,middleX,middleY);
 #endregion

@@ -28,6 +28,11 @@ if(control)
 				messageY = (80-128);
 				description = "Shall I save your game for you?";
 				break;
+			case "Exit":
+				messageX = 416;
+				messageY = (80-128);
+				description = "Do you want to save and exit the game?";
+				break;
 		}
 		
 		//Draw the cost and descrpton	
@@ -37,9 +42,9 @@ if(control)
 		//Draw the stock list
 		if(i==selected)
 		{
-			draw_text_transformed_color(menuX,menuY+menuHeight,">" + string(currentSelection),textSize,textSize,0,colour,colour,colour,colour,1); 
+			draw_text_transformed_color(menuX,menuY+menuHeight+(64*(i)),">" + string(currentSelection),textSize,textSize,0,colour,colour,colour,colour,1); 
 		}else{
-			draw_text_transformed_color(menuX,menuY+menuHeight+64,string(currentSelection),textSize,textSize,0,colour,colour,colour,colour,1);
+			draw_text_transformed_color(menuX,menuY+menuHeight+(64*(i)),string(currentSelection),textSize,textSize,0,colour,colour,colour,colour,1);
 		}
 	}
 	#endregion

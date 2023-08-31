@@ -49,6 +49,11 @@ equipControl = false;
 //Stats
 statsControl = false;
 
+//Exit
+exitControl = false;
+exitChoice[0] = "Back to Game"
+exitChoice[1] = "Exit the Game"
+
 //Coords and Sizes
 menuX = 16;
 menuY = 16;

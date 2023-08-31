@@ -1,6 +1,7 @@
 //Normal Menu
 choice[0] = "Continue"
 choice[1] = "New Game"
+choice[2] = "Exit"
 choiceLength = array_length(choice);
 selected = 0;
 control = true;
