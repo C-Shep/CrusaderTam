@@ -116,6 +116,18 @@ healCount = 0;
 healCount = findItem("Herb");
 //if(findItem("Herb")) game_end();
 
+//Fullscreen Change
+if(keyboard_check_pressed(vk_f11))
+{
+	if(!window_get_fullscreen())
+	{
+		window_set_fullscreen(true);
+	}else{
+		window_set_fullscreen(false);	
+	}
+	
+}
+
 //DEBUG TAKE THIS OUT LATER
 if(keyboard_check_pressed(ord("F")))
 {
