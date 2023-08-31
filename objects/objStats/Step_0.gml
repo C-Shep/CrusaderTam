@@ -119,6 +119,6 @@ healCount = findItem("Herb");
 //DEBUG TAKE THIS OUT LATER
 if(keyboard_check_pressed(ord("F")))
 {
-	playerStats.lvl++;
+//	playerStats.lvl++;
 }
 
