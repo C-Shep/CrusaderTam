@@ -16,7 +16,7 @@ global.shieldPlace = noone;
 global.trinketPlace = noone;
 
 //For Multiple Rooms
-global.lastRoom = rmTest;
+global.lastRoom = rmEnd;
 global.lastX = 256;
 global.lastY = 256;
 

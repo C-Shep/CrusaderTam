@@ -269,7 +269,7 @@ if(!combatEnd)
 					
 				break;
 				case"Swoop": 	
-					enemyDamage = enemyBasicAttack();
+					enemyDamage = enemyBasicAttack(0);
 					enemy.def+=1;
 					actionMessage = (string(enemy.name_) + " rends you for " + string(enemyDamage) + " damage!");
 				break;

@@ -39,7 +39,7 @@ function closeTextbox(endEvent_ = "None")
 			break; 
 		case "Let Into Castle":
 			global.quest.allowedIntoCastle = true;
-			objNpcValiburghGuard.walk = true;
+			if(instance_exists(objNpcValiburghGuard)) objNpcValiburghGuard.walk = true;
 			break; 
 		case "Begin Fight":
 			//save the room

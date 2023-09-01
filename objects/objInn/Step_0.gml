@@ -4,12 +4,12 @@ if(global.paused)
 }
 
 #region //Close Menu
-if(keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_right))
-{
-	control = false;
-	selected = 0;
-	instance_destroy();
-}
+//f(keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_right))
+//{
+//	control = false;
+	//selected = 0;
+	//instance_destroy();
+//}
 #endregion
 
 if(control)

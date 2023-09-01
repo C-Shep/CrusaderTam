@@ -4,14 +4,14 @@ if(global.paused)
 }
 
 #region //Close Menu
-if(keyboard_check_pressed(vk_space))
-{
-	control = false;
-	sellControl = false;
-	buyControl = false;
-	selected = 0;
-	instance_destroy();
-}
+//if(keyboard_check_pressed(vk_space))
+//{
+//	control = false;
+//	sellControl = false;
+//	buyControl = false;
+//	selected = 0;
+//	instance_destroy();
+//}
 #endregion
 
 //set the size of the inventory & stock
