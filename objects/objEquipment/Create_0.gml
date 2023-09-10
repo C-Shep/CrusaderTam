@@ -1,5 +1,38 @@
 /// @desc 
 equipment = ds_list_create();
+items = ds_list_create();
+
+//Items
+#region Items
+herb = {
+	name_: "Herb",
+	desc : "A medicinal leaf that heals 8 hp."
+}
+ds_list_add(items,herb);
+
+weed = {
+	name_: "Weed",
+	desc : "A mystical plant that restores 10 mp."
+}
+ds_list_add(items,weed);
+
+
+#endregion
+
+//Quest Items
+#region Quest Items
+letter = {
+	name_: "Letter",
+	desc : "A letter addressed to the gaffer of Torgale."
+}
+ds_list_add(items,letter);
+
+mageAsh = {
+	name_: "Mage Ash",
+	desc : "Magical Ashes that makes plants grow faster."
+}
+ds_list_add(items,mageAsh);
+#endregion
 
 //Weapons
 #region Weapons

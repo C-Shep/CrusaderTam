@@ -57,10 +57,49 @@ else if(invControl)
 		draw_text_transformed_color(menuX+16,menuY+(menuHeight*7)+32,"<",textSize,textSize,90,colour,colour,colour,colour,1); 
 	}
 			
+	//Draw item descrptions
 	for(var i = 0; i < invLength; i++)
 	{
+		//the current item 
 		var currentInv = ds_list_find_value(inv,i);
-				
+		
+		//draw a box
+		draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,224);
+		
+		//the hovered item & default message
+		var invNow = ds_list_find_value(inv,invSelected);
+		var itemDescMessage = "";
+	
+		//equipment descs
+		for(var k = 0; k < ds_list_size(objEquipment.equipment);k++)
+		{
+			var e = objEquipment.equipment;
+			var eCurrent =  ds_list_find_value(e,k);
+			var eName = eCurrent.name_;
+			if(invNow == eName)
+			{		
+				//and description
+				itemDescMessage = eCurrent.desc;
+			}
+		}
+		
+		//items descs
+		for(var j = 0; j<ds_list_size(objEquipment.items);j++)
+		{
+			var equipItemList = objEquipment.items;
+			var eilCurrent =  ds_list_find_value(equipItemList,j);
+			var eilName = eilCurrent.name_;
+			if(invNow == eilName)
+			{		
+				//and description
+				itemDescMessage = eilCurrent.desc;
+			}
+		}
+
+		//draw the description
+		displayItemsDesc(itemDescMessage);
+			
+		//draw names list
 		if(i==invSelected)
 		{
 			draw_text_transformed_color(menuX,menuY+menuHeight,">" + string(currentInv),textSize,textSize,0,colour,colour,colour,colour,1); 

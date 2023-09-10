@@ -25,6 +25,7 @@ invControl = false;
 
 //Equip Menu
 equip = ds_list_create();
+itemDescList = ds_list_create();
 
 //check everything in the inv and see if they are equipment
 //then add them to a equipment list
@@ -40,7 +41,19 @@ for(var i=0;i<invLength;i++)
 			ds_list_add(equip,currentInvItem);
 		}
 	}
+	
+	for(var k = 0; k<ds_list_size(objEquipment.items);k++)
+	{
+		var currentInvItem = ds_list_find_value(inv,i);
+		var listOfItems = objEquipment.items;
+		var itemsName = ds_list_find_value(listOfItems,k).name_;
+		if(currentInvItem == itemsName)
+		{
+			ds_list_add(itemDescList,currentInvItem);
+		}
+	}
 }
+
 
 equipLength = ds_list_size(equip);
 equipSelected = 0;
@@ -93,6 +106,20 @@ displayEquipment = function(statMsg,descMsg)
 	0,
 	colour,colour,colour,colour,1);
 	
+	draw_text_ext_transformed_colour(
+	messageX,
+	messageY+48,
+	descMsg,
+	12,
+	200,
+	textSize,
+	textSize,
+	0,
+	colour,colour,colour,colour,1);
+}
+
+displayItemsDesc = function(descMsg)
+{	
 	draw_text_ext_transformed_colour(
 	messageX,
 	messageY+48,
