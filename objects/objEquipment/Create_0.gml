@@ -16,6 +16,12 @@ weed = {
 }
 ds_list_add(items,weed);
 
+stew = {
+	name_: "Stew",
+	desc : "A tasty stew that restores hp."
+}
+ds_list_add(items,stew);
+
 
 #endregion
 
