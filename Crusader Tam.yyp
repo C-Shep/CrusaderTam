@@ -153,6 +153,7 @@
     {"id":{"name":"sprMan1Left","path":"sprites/sprMan1Left/sprMan1Left.yy",},"order":1,},
     {"id":{"name":"sprWoman1Up","path":"sprites/sprWoman1Up/sprWoman1Up.yy",},"order":3,},
     {"id":{"name":"sprKingLeft","path":"sprites/sprKingLeft/sprKingLeft.yy",},"order":0,},
+    {"id":{"name":"rmOrchard","path":"rooms/rmOrchard/rmOrchard.yy",},"order":13,},
     {"id":{"name":"sprTamLeft","path":"sprites/sprTamLeft/sprTamLeft.yy",},"order":1,},
     {"id":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},"order":3,},
   ],
@@ -182,6 +183,7 @@
     {"roomId":{"name":"rmValiburghCastle","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},},
     {"roomId":{"name":"rmBarghestCave","path":"rooms/rmBarghestCave/rmBarghestCave.yy",},},
     {"roomId":{"name":"rmEnd","path":"rooms/rmEnd/rmEnd.yy",},},
+    {"roomId":{"name":"rmOrchard","path":"rooms/rmOrchard/rmOrchard.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
