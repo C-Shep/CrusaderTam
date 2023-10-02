@@ -50,6 +50,7 @@ var speakers = {
 	celrik : "Celrik",
 	king : "KngWymar",
 	queen : "Queen Ela",
+	orchard : "Appleman",
 	
 	
 	
@@ -1192,6 +1193,21 @@ global.dialog.emmaChat = [
 	{
 		speaker: speakers.emma,
 		message_: "This garden will look great thanks to you! Thank you so much"
+	},
+]
+
+global.dialog.orchardistAskHelp = [
+	{
+		speaker: speakers.orchard,
+		message_: "gah! im so angry right now! a sodding so and so went and nicked my prized tree!"
+	},
+	{
+		speaker: speakers.orchard,
+		message_: "I was growing some special healing apples on that tree..."
+	},
+	{
+		speaker: speakers.orchard,
+		message_: "I think that naughty sod ran off northwest of here!"
 	},
 ]
 
