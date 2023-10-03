@@ -1,11 +1,11 @@
 playerStats = {
-	hp:10,
-	maxhp:10,
+	hp:109,
+	maxhp:109,
 	mp:10,
 	maxmp:10,
 	lvl:1,
-	atk:1, //default 3
-	baseAtk:1,
+	atk:19, //default 3
+	baseAtk:19,
 	def:1,
 	baseDef:1,
 	spd:16,

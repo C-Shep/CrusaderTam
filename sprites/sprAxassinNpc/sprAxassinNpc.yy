@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sprBarghestNpc",
+  "name": "sprAxassinNpc",
   "bboxMode": 1,
   "collisionKind": 1,
   "type": 0,
@@ -29,12 +29,12 @@
   "gridY": 0,
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7af8c78b-d524-450c-bcd5-00ac0646fa2f",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c20e364d-9632-41d9-b3d7-ca387f5d1fcc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"d7349e38-3782-416c-a12e-a6207ce1f479",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sprBarghestNpc",
+    "name": "sprAxassinNpc",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 2.0,
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"478d85aa-e332-41af-ae12-7170a04562ab","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7af8c78b-d524-450c-bcd5-00ac0646fa2f","path":"sprites/sprBarghestNpc/sprBarghestNpc.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"3ef79bbd-b5ba-405a-9eb0-de2a4551cd7f","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c20e364d-9632-41d9-b3d7-ca387f5d1fcc","path":"sprites/sprBarghestNpc/sprBarghestNpc.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7743a94d-4aa2-4bf7-811e-5b71f67d20a5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7af8c78b-d524-450c-bcd5-00ac0646fa2f","path":"sprites/sprAxassinNpc/sprAxassinNpc.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"3b784cc2-ccc7-4c01-813a-a865eec560ae","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d7349e38-3782-416c-a12e-a6207ce1f479","path":"sprites/sprAxassinNpc/sprAxassinNpc.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -70,7 +70,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Barghest",
-    "path": "folders/Sprites/Characters/Enemy Npcs/Barghest.yy",
+    "name": "Axassin",
+    "path": "folders/Sprites/Characters/Enemy Npcs/Axassin.yy",
   },
 }

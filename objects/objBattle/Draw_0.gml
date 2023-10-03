@@ -138,6 +138,9 @@ if(!endMessages)
 						case "Barghest":
 							global.quest.barghestKilled = true;
 							break;
+						case "Axassin":
+							global.quest.orchardMonsterKilled = true;
+							break;
 						default:
 					}
 					

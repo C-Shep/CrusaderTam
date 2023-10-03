@@ -149,6 +149,10 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 				global.area = "Barghest Boss";
 				endAction = "Begin Fight";
 				break;
+			case npcAxassin:
+				global.area = "Axassin Boss";
+				endAction = "Begin Fight";
+				break;
 			case emma_:
 				if(!global.quest.emmaAskHelp)
 				{
@@ -184,6 +188,23 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 			case kingWymar:
 				npc.dialog = global.dialog.kingFirstTalk;
 				endAction = "End Demo";
+				break;
+			case orchardist:
+				if(!global.quest.orchardMonsterKilled)
+				{
+					npc.dialog = global.dialog.orchardistAskHelp;
+				}else{	
+					if(global.quest.orchardMonsterKilled == true && global.quest.orchardComplete == false)
+					{
+						npc.dialog = global.dialog.orchardistDelivered;
+						endAction = "Orchard Complete";
+					}
+					
+					if(global.quest.orchardMonsterKilled == true && global.quest.orchardComplete == true)
+					{
+						npc.dialog = global.dialog.orchardistChat;
+					}
+				}
 				break;
 		}
 		createTextbox(npc.dialog,endAction);

@@ -273,7 +273,7 @@ camabat = {
 	moves: ds_list_create()
 }
 
-//Haniwa Moves
+//Camabat Moves
 ds_list_add(camabat.moves,"Attack");
 
 //Skeleton -----------------------------
@@ -292,7 +292,7 @@ skeleton = {
 	moves: ds_list_create()
 }
 
-//Haniwa Moves
+//Skeleton Moves
 ds_list_add(skeleton.moves,"Kick");
 ds_list_add(skeleton.moves,"Attack");
 ds_list_add(skeleton.moves,"Stab");
@@ -313,12 +313,31 @@ barghest = {
 	moves: ds_list_create()
 }
 
-//Haniwa Moves
+//Barghest Moves
 ds_list_add(barghest.moves,"Scratch");
 ds_list_add(barghest.moves,"Attack");
 //ds_list_add(barghest.moves,"Attack");
 //ds_list_add(barghest.moves,"Ravage");
 
+//Axassin -----------------------------
+axassin = {
+	name_: "Axassin",
+	sprite: sprAxassin,
+	hp:80,
+	maxhp:80,
+	atk:10,
+	def:4,
+	spd:10,
+	xp:15,
+	gld:25,
+	drop: "Weed",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Barghest Moves
+ds_list_add(axassin.moves,"Kick");
+ds_list_add(axassin.moves,"Attack");
 
 //Groovedog -----------------------------
 groovedog = {
@@ -395,6 +414,9 @@ switch(global.area)
 		break;
 	case "Barghest Boss":
 		ds_list_add(list,barghest);
+		break;
+	case "Axassin Boss":
+		ds_list_add(list,axassin);
 		break;
 }
 

@@ -51,6 +51,8 @@ var speakers = {
 	king : "KngWymar",
 	queen : "Queen Ela",
 	orchard : "Appleman",
+	axassin : "Axassin",
+	
 	
 	
 	
@@ -1211,6 +1213,46 @@ global.dialog.orchardistAskHelp = [
 	},
 ]
 
+global.dialog.orchardistDelivered = [
+	{
+		speaker: speakers.orchard,
+		message_: "Oh my! Is that... my prized tree? Oh thank you brave hero!"
+	},
+	{
+		speaker: speakers.orchard,
+		message_: "I should be able to start selling my special apples now, thank you so much!"
+	}
+]
+
+global.dialog.orchardistChat = [
+	{
+		speaker: speakers.orchard,
+		message_: "My magic apples help cure ailments of all kinds."
+	},
+	{
+		speaker: speakers.orchard,
+		message_: "The only grow on my prized magic tree blessed by the Zaratan"
+	},
+	{
+		speaker: speakers.orchard,
+		message_: "He's the guardian of the earth tree!"
+	},
+]
+
+global.dialog.axassinTalk = [
+	{
+		speaker: speakers.axassin,
+		message_: "HAHA FOOL! YOU WANT MY MAGIC TREE? NEVER!"
+	},
+	{
+		speaker: speakers.axassin,
+		message_: "I SHALL CUT YOU DOWN WHERE YOU STAND!"
+	},
+	{
+		speaker: speakers.axassin,
+		message_: "TAKE THIS!"
+	},
+]
 
 #endregion
 

@@ -44,6 +44,9 @@ global.quest = {
 	allowedIntoCastle : false,
 	stewReceived : false,
 	kingTalkedOnce : false,
+	orchardQuestAccepted : false,
+	orchardMonsterKilled : false,
+	orchardComplete : false,
 }
 
 
