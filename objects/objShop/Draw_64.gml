@@ -45,19 +45,47 @@ else if(buyControl)
 		var currentStock = ds_list_find_value(stock,i);
 		var selectedItem = ds_list_find_value(stock,buySelected);
 		
+		//Single use items and unique shop items costs are declared here as their costs change per room.
 		switch(selectedItem)
 		{
-			//only need unique descriptions for items
+			//Single Use Item Costs
 			#region Items
 			case "Herb":
-				if(room == rmQuillbeachInside)cost = 4;
-				else cost = 7;
-				
-				description = "Eat to heal 8 health";
+				switch(room)
+				{
+					case rmQuillbeachInside:
+						cost = 4;
+						break;
+					case rmValiburghInside:
+						cost = 7;
+						break;
+					default:
+						cost = 10;
+				}
+
 				break;
 			case "Weed":
-				cost = 10;
-				description = "Smoke to restore 10 magic";
+				switch(room)
+				{
+					case rmQuillbeachInside:
+						cost = 10;
+						break;
+					case rmValiburghInside:
+						cost = 11;
+						break;
+					default:
+						cost = 12;
+				}
+				break;
+			case "Apple":
+				switch(room)
+				{
+					case rmOrchard:
+						cost = 11;
+						break;
+					default:
+						cost = 11;
+				}
 				break;
 			#endregion
 		}
@@ -74,10 +102,28 @@ else if(buyControl)
 			}
 		}
 		
+		var itemDescMessage = "";
+		
+		//Descriptions for Items
+		for(var j = 0; j<ds_list_size(objEquipment.items);j++)
+		{
+			var equipItemList = objEquipment.items;
+			var eilCurrent =  ds_list_find_value(equipItemList,j);
+			var eilName = eilCurrent.name_;
+			if(selectedItem == eilName)
+			{		
+				//and description
+				itemDescMessage = eilCurrent.desc;
+				description = itemDescMessage;
+			}
+		}
+		
+		
+		
 		//Draw the cost and descrpton
 		draw_text_transformed_colour(messageX,messageY,"Your gold: " + string(player.currentGld) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
 		draw_text_transformed_colour(messageX,messageY+64,string(cost) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
-		if(selectedItem == "Herb")
+		if(selectedItem == "Herb" || selectedItem == "Apple")
 		{
 			draw_text_ext_transformed_colour(messageX,messageY+128,string(objStats.healCount)+"/"+string(objStats.maxHeals)+" "+description,16,200,textSize,textSize,0,colour,colour,colour,colour,1);
 		}else{

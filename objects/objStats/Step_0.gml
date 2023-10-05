@@ -113,7 +113,7 @@ healCount = 0;
 //	if(itemName == "Herb") 
 //}
 
-healCount = findItem("Herb");
+healCount = findItem("Herb") + findItem("Apple");
 //if(findItem("Herb")) game_end();
 
 //Fullscreen Change

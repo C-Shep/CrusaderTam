@@ -80,5 +80,5 @@ function closeTextbox(endEvent_ = "None")
 	}
 	
 	//clear the interact button so you dont get stuck in dialog
-	mouse_clear(INTERACT);
+	objInput.inputClear();
 }

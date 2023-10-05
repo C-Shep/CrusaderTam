@@ -43,7 +43,7 @@ if(control)
 	
 	#region//Close Menu with Right Click
 			
-	if(mouse_check_button_pressed(mb_right))
+	if(objInput.cancel())
 	{
 		control = false;
 		spellControl = false;
@@ -58,7 +58,7 @@ if(control)
 	#endregion
 	
 	#region//Normal Control
-	if(mouse_check_button_pressed(mb_left))
+	if(objInput.interact())
 	{
 		switch(choice[selected])
 		{
@@ -112,7 +112,7 @@ if(control)
 	
 	#region//Go back to normal menu
 			
-	if(mouse_check_button_pressed(mb_right))
+	if(objInput.cancel())
 	{
 		spellSelected = 0;
 		spellControl = false;
@@ -122,7 +122,7 @@ if(control)
 	#endregion
 	
 	#region//Spell Control
-	if(mouse_check_button_pressed(mb_left) && !currentlyDisplaying)
+	if(objInput.interact() && !currentlyDisplaying)
 	{
 		switch(spell[spellSelected])
 		{
@@ -177,7 +177,7 @@ else if(invControl)
 			
 	#region//go back to normal menu
 			
-	if(mouse_check_button_pressed(mb_right))
+	if(objInput.cancel())
 	{
 		invSelected = 0;
 		invControl = false;
@@ -186,8 +186,8 @@ else if(invControl)
 			
 	#endregion
 			
-	#region//Inventory Control
-	if(mouse_check_button_pressed(mb_left))
+	#region//Inventory Control - Use items in your inventory
+	if(objInput.interact())
 	{
 		var selectedItem = ds_list_find_value(inv,invSelected);
 		switch(selectedItem)
@@ -203,9 +203,14 @@ else if(invControl)
 				ds_list_delete(inv,invSelected);
 				break;
 			case "Stew":
-				var healNum = playerRestore(10);
+				var healNum = playerHeal(10);
 				var restoreNum = playerRestore(10);
 				actionMessage = "You heal " + string(healNum) + " hp and mp!";
+				ds_list_delete(inv,invSelected);
+				break;
+			case "Apple":
+				var healNum = playerHeal(12);
+				actionMessage = "You heal " + string(healNum) + " health!";
 				ds_list_delete(inv,invSelected);
 				break;
 			default:
@@ -240,7 +245,7 @@ else if(equipControl)
 			
 	#region//Go back to normal menu
 			
-	if(mouse_check_button_pressed(mb_right))
+	if(objInput.cancel())
 	{
 		equipSelected = 0;
 		equipControl = false;
@@ -250,7 +255,7 @@ else if(equipControl)
 	#endregion
 			
 	#region//Equip Control
-	if(mouse_check_button_pressed(mb_left))
+	if(objInput.interact())
 	{
 		var selectedEquip = ds_list_find_value(equip,equipSelected);
 		
@@ -319,7 +324,7 @@ else if(statsControl)
 	
 	#region//Go back to normal menu
 			
-	if(mouse_check_button_pressed(mb_right))
+	if(objInput.cancel())
 	{
 		statsControl = false;
 		control = true;

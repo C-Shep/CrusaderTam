@@ -887,6 +887,17 @@ global.dialog.eliciaTalk = [
 	]
 	
 	#endregion
+	
+	#region Overworld
+	
+	global.dialog.skeletonNoReply = [
+	{
+		speaker: speakers.none,
+		message_: "No reply. It's just a corpse."
+	}
+	]
+	
+	#endregion
 
 #endregion
 

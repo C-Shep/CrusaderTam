@@ -37,7 +37,7 @@ if(control)
 	
 	#region//Close Menu with Right Click
 			
-	if(mouse_check_button_pressed(mb_right))
+	if(objInput.cancel())
 	{
 		control = false;
 		sellControl = false;
@@ -49,7 +49,7 @@ if(control)
 	#endregion
 	
 	#region//Normal Control
-	if(mouse_check_button_pressed(mb_left))
+	if(objInput.interact())
 	{
 		switch(choice[selected])
 		{
@@ -92,7 +92,7 @@ else if(buyControl)
 			
 	#region//go back to normal menu
 			
-	if(mouse_check_button_pressed(mb_right))
+	if(objInput.cancel())
 	{
 		buySelected = 0;
 		buyControl = false;
@@ -102,14 +102,14 @@ else if(buyControl)
 	#endregion
 			
 	#region//Inventory Control
-	if(mouse_check_button_pressed(mb_left))
+	if(objInput.interact())
 	{
 		var selectedItem = ds_list_find_value(stock,buySelected);
 		
 		//Buy the item
 		if(player.currentGld >= cost)
 		{
-			if((selectedItem == "Herb" && objStats.healCount < objStats.maxHeals) || selectedItem != "Herb" )
+			if((selectedItem == "Herb" || selectedItem == "Apple" && objStats.healCount < objStats.maxHeals) || selectedItem != "Herb" )
 			{
 				ds_list_add(objStats.inv,selectedItem);
 				player.currentGld -= cost;
@@ -144,7 +144,7 @@ else if(sellControl)
 			
 	#region//go back to normal menu
 			
-	if(mouse_check_button_pressed(mb_right))
+	if(objInput.cancel())
 	{
 		sellSelected = 0;
 		sellControl = false;
@@ -154,7 +154,7 @@ else if(sellControl)
 	#endregion
 			
 	#region//Inventory Control
-	if(mouse_check_button_pressed(mb_left))
+	if(objInput.interact())
 	{
 		ds_list_delete(inv,sellSelected);
 		player.currentGld += cost;

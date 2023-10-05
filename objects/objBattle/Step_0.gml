@@ -37,7 +37,7 @@ if(!combatEnd)
 			#endregion
 			
 			#region//Normal Control
-			if(mouse_check_button_pressed(mb_left))
+			if(objInput.interact())
 			{
 				switch(menu[selected])
 				{
@@ -120,7 +120,7 @@ if(!combatEnd)
 			
 			#region//go back to normal menu
 			
-			if(mouse_check_button_pressed(mb_right))
+			if(objInput.cancel())
 			{
 				spellSelected = 0;
 				spellControl = false;
@@ -130,7 +130,7 @@ if(!combatEnd)
 			#endregion
 	
 			#region//Spell Control
-			if(mouse_check_button_pressed(mb_left))
+			if(objInput.interact())
 			{
 				switch(spell[spellSelected])
 				{
@@ -178,7 +178,7 @@ if(!combatEnd)
 			
 			#region//go back to normal menu
 			
-			if(mouse_check_button_pressed(mb_right))
+			if(objInput.cancel())
 			{
 				invSelected = 0;
 				invControl = false;
@@ -188,7 +188,7 @@ if(!combatEnd)
 			#endregion
 			
 			#region//Inventory Control
-			if(mouse_check_button_pressed(mb_left))
+			if(objInput.interact())
 			{
 				var selectedItem = ds_list_find_value(inv,invSelected);
 				switch(selectedItem)
@@ -204,9 +204,14 @@ if(!combatEnd)
 						ds_list_delete(inv,invSelected);
 						break;
 					case "Stew":
-						var healNum = playerRestore(10);
+						var healNum = playerHeal(10);
 						var restoreNum = playerRestore(10);
 						actionMessage = "You heal " + string(healNum) + " hp and mp!";
+						ds_list_delete(inv,invSelected);
+						break;
+					case "Apple":
+						var healNum = playerHeal(12);
+						actionMessage = "You heal " + string(healNum) + " health!";
 						ds_list_delete(inv,invSelected);
 						break;
 				}

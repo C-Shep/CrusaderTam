@@ -28,7 +28,7 @@ if(control)
 				messageY = (80-128);
 				description = "Shall I save your game for you?";
 				break;
-			case "Exit":
+			case "Save&Exit":
 				messageX = 416;
 				messageY = (80-128);
 				description = "Do you want to save and exit the game?";

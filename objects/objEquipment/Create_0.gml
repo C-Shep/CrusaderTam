@@ -22,6 +22,12 @@ stew = {
 }
 ds_list_add(items,stew);
 
+stew = {
+	name_: "Apple",
+	desc : "A magic apple that restores 12 hp."
+}
+ds_list_add(items,stew);
+
 
 #endregion
 

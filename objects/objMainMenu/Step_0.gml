@@ -9,7 +9,7 @@ if(mouse_wheel_down() || keyboard_check_pressed(ord("S")))
 selected = clamp(selected, 0,choiceLength-1);
 
 #region//Normal Control
-if(mouse_check_button_pressed(mb_left))
+if(objInput.interact())
 {
 	switch(choice[selected])
 	{

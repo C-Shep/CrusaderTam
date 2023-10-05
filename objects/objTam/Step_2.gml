@@ -18,7 +18,7 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 	//only show speech icon for shopkeeps and innkeeps over counters
 	if(overCounterNpc.innkeep != "No" || overCounterNpc.shopkeep != "No") overCounterNpc.showMessageIcon = true;
 	
-	if(mouse_check_button_pressed(INTERACT))
+	if(objInput.interact())
 	{
 		//make npc face the player and display icon
 		if(overCounterNpc.shouldTurn) overCounterNpc.moveDir = point_direction(overCounterNpc.x,overCounterNpc.y,x,y);	
@@ -51,6 +51,10 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 				ds_list_add(shop.stock,"Herb");
 				ds_list_add(shop.stock,"Weed");
 				break;
+			case "Orchard":
+				var shop = instance_create_layer(0,0,"UI",objShop)
+				ds_list_add(shop.stock,"Apple");
+				break;
 		}
 		
 		//Innkeep
@@ -81,6 +85,7 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 }
 #endregion
 
+//For staring the game
 if(startAlarm > 0) startAlarm--// else playerControl = true;
 
 #region Normal Npcs
@@ -93,7 +98,7 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 	}
 	
 	//talk to npc
-	if(mouse_check_button_pressed(INTERACT) || startTalk)
+	if(objInput.interact() || startTalk)
 	{
 		startTalk = false;
 		//make npc face the player
@@ -219,7 +224,7 @@ var chest = instance_position(facingCellX,facingCellY,objChest);
 if(chest != noone && !instance_exists(objTextbox) && playerControl)
 {
 	//talk to npc
-	if(mouse_check_button_pressed(INTERACT) && !chest.open)// && !ds_list_find_value(objGame.openChestList, chest.id))
+	if(objInput.interact() && !chest.open)// && !ds_list_find_value(objGame.openChestList, chest.id))
 	{
 		ds_list_add(global.openChestList,chest.chestID);
 		lootGrabbed = chest.loot;

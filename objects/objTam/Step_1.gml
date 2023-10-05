@@ -3,9 +3,9 @@
 event_inherited();
 
 //Open Menu
-if(keyboard_check_pressed(vk_tab) && !instance_exists(objTextbox) && !instance_exists(objMenu) && !instance_exists(objShop) && !instance_exists(objInn) && room != rmMenu)
+if(objInput.menuOpen() && !instance_exists(objTextbox) && !instance_exists(objMenu) && !instance_exists(objShop) && !instance_exists(objInn) && room != rmMenu)
 {
-	instance_create_layer(0,0,"UI",objMenu)
+	instance_create_layer(0,0,"UI",objMenu);
 	keyboard_clear(vk_tab);
 }
 

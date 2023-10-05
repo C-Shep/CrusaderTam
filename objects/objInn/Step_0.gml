@@ -4,12 +4,12 @@ if(global.paused)
 }
 
 #region //Close Menu
-//f(keyboard_check_pressed(vk_space) || mouse_check_button_pressed(mb_right))
-//{
-//	control = false;
-	//selected = 0;
-	//instance_destroy();
-//}
+if(objInput.cancel())
+{
+	control = false;
+	selected = 0;
+	instance_destroy();
+}
 #endregion
 
 if(control)
@@ -33,7 +33,7 @@ if(control)
 	#endregion
 	
 	#region//Normal Control
-	if(mouse_check_button_pressed(mb_left))
+	if(objInput.interact())
 	{
 		switch(choice[selected])
 		{
@@ -46,7 +46,7 @@ if(control)
 					Fade(false,true,rmTest,true);
 					control = false;
 					selected = 0;
-					mouse_clear(INTERACT);
+					objInput.inputClear();
 					instance_destroy();
 				}
 				break;
@@ -54,14 +54,14 @@ if(control)
 				SaveTam();
 				control = false;
 				selected = 0;
-				mouse_clear(INTERACT);
+				objInput.inputClear();
 				instance_destroy();
 				break;
-			case "Exit":
+			case "Save&Exit":
 				SaveTam();
 				control = false;
 				selected = 0;
-				mouse_clear(INTERACT);
+				objInput.inputClear();
 				Fade(true,true,rmMenu,false,true);
 				//instance_destroy();
 				break;

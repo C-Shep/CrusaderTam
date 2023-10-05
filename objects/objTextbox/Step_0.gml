@@ -11,10 +11,10 @@ if(characters < string_length(message_))
 	characters += textSpeed;
 	
 	//skip text
-	if(mouse_check_button_pressed(INTERACT)) characters = string_length(message_);
+	if(objInput.interact()) characters = string_length(message_);
 }else{
 	//message finisjed
-	if(mouse_check_button_pressed(INTERACT))	
+	if(objInput.interact())	
 	{
 		if((messageIndex+1)<array_length(dialog))
 		{

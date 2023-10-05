@@ -4,7 +4,7 @@ player = objStats.playerStats;
 //normal menu
 choice[0] = "Rest"
 choice[1] = "Save"
-choice[2] = "Exit"
+choice[2] = "Save&Exit"
 choiceLength = array_length(choice);
 selected = 0;
 control = true;

@@ -49,5 +49,5 @@ global.quest = {
 	orchardComplete : false,
 }
 
-
+//Default go to menu
 room_goto(rmMenu);
