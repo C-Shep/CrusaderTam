@@ -297,6 +297,26 @@ ds_list_add(skeleton.moves,"Kick");
 ds_list_add(skeleton.moves,"Attack");
 ds_list_add(skeleton.moves,"Stab");
 
+//Cho -----------------------------
+cho = {
+	name_: "Cho",
+	sprite: sprCho,
+	hp:20,
+	maxhp:20,
+	atk:3,
+	def:5,
+	spd:30,
+	xp:30,
+	gld:20,
+	drop: "Weed",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Cho Moves
+ds_list_add(cho.moves,"Attack");
+ds_list_add(cho.moves,"Drain");
+
 //Barghest -----------------------------
 barghest = {
 	name_: "Barghest",
@@ -411,6 +431,17 @@ switch(global.area)
 		ds_list_add(list,jorogumo);
 		ds_list_add(list,camabat);
 		ds_list_add(list,skeleton);
+		break;
+	case "Ominous Cave":
+		ds_list_add(list,skeleton);
+		ds_list_add(list,skeleton);
+		ds_list_add(list,camabat);
+		ds_list_add(list,camabat);
+		ds_list_add(list,cho);
+		break;
+	case "East Continent Fields":
+		break;
+	case "East Continent North":
 		break;
 	case "Barghest Boss":
 		ds_list_add(list,barghest);
