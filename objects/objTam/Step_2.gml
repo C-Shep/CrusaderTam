@@ -8,6 +8,20 @@ var facingCellY = y+lengthdir_y(len,dir_);
 var facingCellXExtra = x+lengthdir_x(len*2,dir_);
 var facingCellYExtra = y+lengthdir_y(len*2,dir_);
 
+//Boat
+var boat = instance_position(facingCellX,facingCellY,objBoat);
+if(boat)
+{
+	global.boat = true;
+}
+
+if(global.boat)
+{
+	states = boatStates;	
+}else{
+	states = normalStates;
+}
+
 //Check for an npc
 var npc = instance_position(facingCellX,facingCellY,objNpcParent);
 var overCounterNpc = instance_position(facingCellXExtra,facingCellYExtra,objNpcParent)

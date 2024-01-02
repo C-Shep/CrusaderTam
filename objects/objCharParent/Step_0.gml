@@ -4,7 +4,6 @@
 //look in move dir
 sprite_index = getSprite(moveDir);
 
-
 //pause
 if(global.paused)
 {
@@ -31,6 +30,12 @@ if(inputX != 0 || inputY != 0)
 		{
 			moveSpd = 5;	
 		}else{
+			if(!col_ && global.boat)
+			{
+				instance_create_layer(x,y,"Instances",objBoat);
+				global.boat = false;
+			}
+
 			moveSpd = 1;
 		}
 		

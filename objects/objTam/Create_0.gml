@@ -6,12 +6,28 @@ x = floor(objPosSaver.xx/16)*16;
 y = floor(objPosSaver.yy/16)*16;
 
 //movement states for animation
-states = {
+
+
+boatLeftSprite = sprBoatLeft;
+boatLeftSprite = sprBoatLeft;
+boatLeftSprite = sprBoatLeft;
+boatLeftSprite = sprBoatLeft;
+
+normalStates = {
 	left: sprTamLeft,
 	right: sprTamRight,
 	up: sprTamUp,
 	down: sprTamDown
 }
+
+boatStates = {
+	left: sprBoatLeft,
+	right: sprBoatRight,
+	up: sprBoatUp,
+	down: sprBoatDown
+}
+
+states = normalStates;
 
 playerControl = true;
 

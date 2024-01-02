@@ -30,7 +30,7 @@ global.respawnY = 264;
 global.respawnRoom = rmQuillbeach;
 
 //Boat
-global.boat = true;
+global.boat = false;
 
 //Quests
 global.quest = {
