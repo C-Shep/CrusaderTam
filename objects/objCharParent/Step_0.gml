@@ -25,15 +25,17 @@ if(inputX != 0 || inputY != 0)
 		//collision
 		var col_ = collision(newTileX_, newTileY_);
 		
-		//water movespeed increase
+		//Boat Mechanics
 		if(IsOnWater(newTileX_,newTileY_))
 		{
-			moveSpd = 5;	
+			moveSpd = 5;		//Speed up on water
 		}else{
-			if(!col_ && global.boat)
+			//If not sailing into wall & on the boat & on the water
+			if(!col_ && global.boat && IsOnWater(toTile(x),toTile(y)))
 			{
+				//Create the boat to sit where you just were
 				instance_create_layer(x,y,"Instances",objBoat);
-				global.boat = false;
+				global.boat = false;	// Get off the boat
 			}
 
 			moveSpd = 1;

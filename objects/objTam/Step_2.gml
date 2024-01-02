@@ -10,12 +10,16 @@ var facingCellYExtra = y+lengthdir_y(len*2,dir_);
 
 //Boat
 var boat = instance_position(facingCellX,facingCellY,objBoat);
+
+var tileXX = toTile(x);
+var tileYY = toTile(y);
+
 if(boat)
 {
 	global.boat = true;
 }
 
-if(global.boat)
+if(IsOnWater(tileXX,tileYY))
 {
 	states = boatStates;	
 }else{
