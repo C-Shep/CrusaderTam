@@ -90,6 +90,7 @@
     {"id":{"name":"sprMargeryRight","path":"sprites/sprMargeryRight/sprMargeryRight.yy",},"order":0,},
     {"id":{"name":"sprQueenLeft","path":"sprites/sprQueenLeft/sprQueenLeft.yy",},"order":1,},
     {"id":{"name":"objRoomManager","path":"objects/objRoomManager/objRoomManager.yy",},"order":2,},
+    {"id":{"name":"IsOnWater","path":"scripts/IsOnWater/IsOnWater.yy",},"order":10,},
     {"id":{"name":"TileEncounters","path":"scripts/TileEncounters/TileEncounters.yy",},"order":4,},
     {"id":{"name":"objNpcGrave","path":"objects/objNpcGrave/objNpcGrave.yy",},"order":13,},
     {"id":{"name":"objCharParent","path":"objects/objCharParent/objCharParent.yy",},"order":0,},

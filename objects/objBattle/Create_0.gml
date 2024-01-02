@@ -28,11 +28,18 @@ attackElement = "Basic";
 randomSpeedEnemy = irandom_range(0,99)+enemy.spd;
 randomSpeedPlayer = irandom_range(0,99)+player.spd;
 
+beginMessage = "A " + string(enemy.name_) + " Approaches!";
+
 if(randomSpeedEnemy > randomSpeedPlayer)
 {
 	isEnemyTurn = true;	
 	control = false;
+	beginMessage = "Ambushed by " + enemy.name_ + "!";
 }
+
+startingMessages = true;
+
+alarm[3] = 120;
 
 //Defending
 isDefending = false;

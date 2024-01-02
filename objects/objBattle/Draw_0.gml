@@ -43,6 +43,11 @@ if(enemy.hp > 0)
 }
 #endregion
 
+if(startingMessages)
+{
+	combatMessage(beginMessage);
+}
+
 if(!endMessages)
 {
 	if(!isEnemyTurn)

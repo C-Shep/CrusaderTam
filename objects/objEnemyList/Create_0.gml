@@ -315,7 +315,7 @@ cho = {
 
 //Cho Moves
 ds_list_add(cho.moves,"Attack");
-ds_list_add(cho.moves,"Drain");
+ds_list_add(cho.moves,"ChoDrain");
 
 //Barghest -----------------------------
 barghest = {

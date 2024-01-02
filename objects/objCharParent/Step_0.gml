@@ -4,6 +4,7 @@
 //look in move dir
 sprite_index = getSprite(moveDir);
 
+
 //pause
 if(global.paused)
 {
@@ -24,6 +25,14 @@ if(inputX != 0 || inputY != 0)
 		
 		//collision
 		var col_ = collision(newTileX_, newTileY_);
+		
+		//water movespeed increase
+		if(IsOnWater(newTileX_,newTileY_))
+		{
+			moveSpd = 5;	
+		}else{
+			moveSpd = 1;
+		}
 		
 		if(!col_)
 		{

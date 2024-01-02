@@ -3,7 +3,7 @@ function collision(tileX,tileY){
 	var watermap_ = objRoomManager.waterTilemap;
 	
 	if(tilemap_get(tilemap_,tileX,tileY)) return true;
-	if(tilemap_get(watermap_,tileX,tileY)) return true;
+	if(tilemap_get(watermap_,tileX,tileY) && !global.boat) return true;
 	
 	//objects
 	var roomX_ = toRoom(tileX);

@@ -29,6 +29,9 @@ global.respawnX = 264;
 global.respawnY = 264;
 global.respawnRoom = rmQuillbeach;
 
+//Boat
+global.boat = true;
+
 //Quests
 global.quest = {
 	sofiaTalked : false,
