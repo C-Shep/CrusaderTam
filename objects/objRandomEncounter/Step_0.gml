@@ -16,7 +16,7 @@ if(timer>=setTime)
 
 	var currentArea_ = getArea(currentTileX_, currentTileY_);
 	
-	if(currentArea_ != noone)
+	if(currentArea_ != noone && !global.boat)
 	{
 		//Set current area
 		global.area = currentArea_.areaType;
