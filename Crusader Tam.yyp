@@ -226,6 +226,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sounds","folderPath":"folders/Sounds.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Characters","folderPath":"folders/Sprites/Characters.yy","order":3,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boat","folderPath":"folders/Sprites/Characters/Boat.yy","order":13,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Enemy Npcs","folderPath":"folders/Sprites/Characters/Enemy Npcs.yy","order":11,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Axassin","folderPath":"folders/Sprites/Characters/Enemy Npcs/Axassin.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Barghest","folderPath":"folders/Sprites/Characters/Enemy Npcs/Barghest.yy","order":1,},
@@ -249,7 +250,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tiles","folderPath":"folders/Sprites/Tiles.yy","order":6,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":7,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Boat","folderPath":"folders/Sprites/Characters/Boat.yy","order":13,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

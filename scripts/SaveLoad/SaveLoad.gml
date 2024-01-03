@@ -43,6 +43,8 @@ function SaveTam(){
 			respawnY : global.respawnY,
 			respawnRoom : global.respawnRoom,
 			quests : global.quest,
+			boatX : global.boatX,
+			boatY : global.boatY,
 		}
 
 		array_push(saveData,statsSaveEntity);
@@ -113,7 +115,8 @@ function Load(){
 						global.respawnY = loadEntity.respawnY;
 						global.respawnRoom = loadEntity.respawnRoom;
 						global.quest = loadEntity.quests;
-
+						global.boatX = loadEntity.boatX;
+						global.boatY = loadEntity.boatY;
 					}
 					break;
 			}			

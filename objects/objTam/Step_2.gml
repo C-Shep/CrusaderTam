@@ -11,8 +11,8 @@ var facingCellYExtra = y+lengthdir_y(len*2,dir_);
 //Boat
 var boat = instance_position(facingCellX,facingCellY,objBoat);
 
-var tileXX = toTile(x);
-var tileYY = toTile(y);
+var tileXX = toTile(x+8);	//The Center of the Player X
+var tileYY = toTile(y+8);	//The Center of the Player Y
 
 if(boat)
 {
