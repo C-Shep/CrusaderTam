@@ -68,12 +68,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_84E51E7","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.godfreyTalk",},
           ],"isDnd":false,"objectId":{"name":"objNpcMan","path":"objects/objNpcMan/objNpcMan.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":208.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"carryValiburgh","properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moveDir","path":"objects/objCharParent/objCharParent.yy",},"objectId":{"name":"objCharParent","path":"objects/objCharParent/objCharParent.yy",},"value":"0",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"minMoveTime","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"50",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"maxMoveTime","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"100",},
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.postinoAskHelp",},
-          ],"isDnd":false,"objectId":{"name":"objNpcCarry","path":"objects/objNpcCarry/objNpcCarry.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":80.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_273AE29E","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"chestID","path":"objects/objChest/objChest.yy",},"objectId":{"name":"objChest","path":"objects/objChest/objChest.yy",},"value":"2",},
           ],"isDnd":false,"objectId":{"name":"objChest","path":"objects/objChest/objChest.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":192.0,"y":128.0,},
@@ -215,6 +209,13 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.lesleyTalk",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moves","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"False",},
           ],"isDnd":false,"objectId":{"name":"objNpcWoman","path":"objects/objNpcWoman/objNpcWoman.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":816.0,"y":656.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"postValiburgh","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moveDir","path":"objects/objCharParent/objCharParent.yy",},"objectId":{"name":"objCharParent","path":"objects/objCharParent/objCharParent.yy",},"value":"0",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"minMoveTime","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"50",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"maxMoveTime","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"100",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.postValiburghAskHelp",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moveRange","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"16",},
+          ],"isDnd":false,"objectId":{"name":"objNpcPostino","path":"objects/objNpcPostino/objNpcPostino.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":80.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Walls","tilesetId":{"name":"tlsCity","path":"tilesets/tlsCity/tlsCity.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":96,"SerialiseHeight":80,"TileCompressedData":[
 -41,0,-55,-2147483648,-41,0,-55,-2147483648,-41,0,-55,-2147483648,-10,0,-17,1,-14,0,-55,-2147483648,-10,0,1,1,-5,0,1,33,-5,0,5,1,0,0,48,1,-18,0,-51,-2147483648,-10,0,3,1,0,33,-12,0,2,49,1,-18,0,-5,-2147483648,-5,1,-3,-2147483648,-5,1,-33,-2147483648,-10,0,3,1,0,33,-9,0,5,1,0,0,33,1,-21,0,-2,-2147483648,1,1,-3,64,1,1,-3,-2147483648,5,1,80,16,80,1,-33,
@@ -255,7 +256,6 @@
     {"name":"inst_13EC2828","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
     {"name":"inst_7C33FCD9","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
     {"name":"inst_84E51E7","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
-    {"name":"carryValiburgh","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
     {"name":"inst_273AE29E","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
     {"name":"inst_2144ADC5","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
     {"name":"inst_6E17FB2D","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
@@ -285,6 +285,7 @@
     {"name":"inst_6D55495B","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
     {"name":"inst_14275FF4","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
     {"name":"inst_66611D11","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
+    {"name":"postValiburgh","path":"rooms/rmValiburghInside/rmValiburghInside.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

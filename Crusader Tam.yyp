@@ -4,7 +4,7 @@
   "name": "Crusader Tam",
   "resources": [
     {"id":{"name":"sprMan2Down","path":"sprites/sprMan2Down/sprMan2Down.yy",},"order":0,},
-    {"id":{"name":"objNpcCarry","path":"objects/objNpcCarry/objNpcCarry.yy",},"order":7,},
+    {"id":{"name":"objNpcPostino","path":"objects/objNpcPostino/objNpcPostino.yy",},"order":7,},
     {"id":{"name":"sprMan2Left","path":"sprites/sprMan2Left/sprMan2Left.yy",},"order":1,},
     {"id":{"name":"sprBarghestNpc","path":"sprites/sprBarghestNpc/sprBarghestNpc.yy",},"order":0,},
     {"id":{"name":"sprScarecrow","path":"sprites/sprScarecrow/sprScarecrow.yy",},"order":2,},

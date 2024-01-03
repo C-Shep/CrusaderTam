@@ -154,28 +154,6 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 			case sofiaHouse:
 				if(!global.quest.sofiaGiven) endAction = "Sofia Give";
 				break;
-			case carryValiburgh:
-				if(!global.quest.postinoAskHelp)
-				{
-					npc.dialog = global.dialog.postinoAskHelp;
-					endAction = "Postino Asked";
-				}else{
-					if(objStats.turnInItem("Letter"))
-					{
-						global.quest.postinoDelivered = true;
-					}
-					
-					if(global.quest.postinoDelivered == true && global.quest.postinoChat == false)
-					{
-						npc.dialog = global.dialog.postinoDelivered;
-						endAction = "Postino Delivered";
-					}
-					
-					if(global.quest.postinoDelivered == true && global.quest.postinoChat == true)
-					{
-						npc.dialog = global.dialog.postinoChat;
-					}
-				}
 			case valiGuard1:
 			case valiGuard2:
 				if(!global.quest.barghestQuestAccepted)
@@ -216,6 +194,29 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					if(global.quest.emmaDelivered == true && global.quest.emmaChat == true)
 					{
 						npc.dialog = global.dialog.emmaChat;
+					}
+				}
+				break;
+			case postValiburgh:
+				if(!global.quest.postAskHelp)
+				{
+					npc.dialog = global.dialog.postValiburghAskHelp;
+					endAction = "Post Asked";
+				}else{
+					if(objStats.turnInItem("Letter"))
+					{
+						global.quest.postDelivered = true;
+					}
+					
+					if(global.quest.postDelivered == true && global.quest.postChat == false)
+					{
+						npc.dialog = global.dialog.postValiburghDelivered;
+						endAction = "Post Delivered";
+					}
+					
+					if(global.quest.postDelivered == true && global.quest.postChat == true)
+					{
+						npc.dialog = global.dialog.postValiburghChat;
 					}
 				}
 				break;

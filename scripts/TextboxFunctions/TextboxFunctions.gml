@@ -45,8 +45,9 @@ function closeTextbox(endEvent_ = "None")
 			//save the room
 			global.lastRoom = room;
 		
-			//start each room with a fade in
+			//Fade to battle room
 			Fade(true,true,rmBattle);
+			
 		break;
 		case "Emma Asked":
 			global.quest.emmaAskHelp = true;
@@ -56,6 +57,13 @@ function closeTextbox(endEvent_ = "None")
 			ds_list_add(objStats.inv,"Herb");
 			ds_list_add(objStats.inv,"Herb");
 			ds_list_add(objStats.inv,"Herb");
+			break;
+		case "Post Asked":
+			global.quest.postAskHelp = true;
+			break; 
+		case "Post Delivered":
+			global.quest.postChat = true;
+			ds_list_add(objStats.inv,"SwiftScarf");
 			break;
 		case "Postino Asked":
 			global.quest.postinoAskHelp = true;

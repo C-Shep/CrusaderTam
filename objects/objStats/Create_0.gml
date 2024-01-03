@@ -36,6 +36,9 @@ ds_list_add(inv,"Spear");
 ds_list_add(inv,"Chainmail");
 //ds_list_add(inv,"Amulet");7
 */
+ds_list_add(inv,"Letter");
+ds_list_add(inv,"Mage Ash");
+
 //Functions
 findItem = function(item){
 	var numFound = 0;

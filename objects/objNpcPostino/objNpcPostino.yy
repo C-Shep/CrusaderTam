@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objNpcCarry",
+  "name": "objNpcPostino",
   "spriteId": {
     "name": "sprRedDown",
     "path": "sprites/sprRedDown/sprRedDown.yy",
