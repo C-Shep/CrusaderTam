@@ -34,7 +34,9 @@ if(inputX != 0 || inputY != 0)
 			if(!col_ && global.boat && IsOnWater(toTile(x),toTile(y)))
 			{
 				//Create the boat to sit where you just were
-				instance_create_layer(x,y,"Instances",objBoat);
+				global.boatX = x;
+				global.boatY = y;
+				instance_create_layer(global.boatX,global.boatY,"Instances",objBoat);
 				global.boat = false;	// Get off the boat
 			}
 

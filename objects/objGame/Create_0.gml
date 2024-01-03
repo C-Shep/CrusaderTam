@@ -31,8 +31,9 @@ global.respawnRoom = rmQuillbeach;
 
 //Boat
 global.boat = false;
-global.boatX = 0;
-global.boatY = 0;
+global.boatX = 4772;
+global.boatY = 3268;
+global.canGetInBoat = false;
 
 //Quests
 global.quest = {

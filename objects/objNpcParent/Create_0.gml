@@ -3,3 +3,4 @@
 event_inherited();
 
 showMessageIcon = false;
+myMessageIcon = sprMessage;

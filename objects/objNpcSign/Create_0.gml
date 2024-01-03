@@ -7,3 +7,5 @@ states = {
 	up: sprSign,
 	down: sprSign
 }
+
+myMessageIcon = sprInteract;

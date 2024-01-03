@@ -7,3 +7,5 @@ states = {
 	up: sprGrave,
 	down: sprGrave
 }
+
+myMessageIcon = sprInteract;

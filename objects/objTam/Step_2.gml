@@ -14,10 +14,21 @@ var boat = instance_position(facingCellX,facingCellY,objBoat);
 var tileXX = toTile(x+8);	//The Center of the Player X
 var tileYY = toTile(y+8);	//The Center of the Player Y
 
-if(boat)
-{
-	global.boat = true;
-}
+//if(boat && alarm[1] == -1)
+//{
+//	global.canGetInBoat = true;
+//	alarm[1] = 1;
+//}else{
+//	global.canGetInBoat = false;
+//}	
+
+//if(boat && global.canGetInBoat && alarm[1] != 0)
+//{
+//	global.boat = true;
+
+//}else if(instance_exists(objBoat)){
+//	global.boat = false;
+//}
 
 if(IsOnWater(tileXX,tileYY))
 {
@@ -28,7 +39,19 @@ if(IsOnWater(tileXX,tileYY))
 
 //Check for an npc
 var npc = instance_position(facingCellX,facingCellY,objNpcParent);
-var overCounterNpc = instance_position(facingCellXExtra,facingCellYExtra,objNpcParent)
+var overCounterNpc = instance_position(facingCellXExtra,facingCellYExtra,objNpcParent);
+
+if(boat)
+{
+	boat.showMessageIcon = true;
+	if(objInput.interact())
+	{
+		global.boat = true;
+		x = boat.x;
+		y = boat.y;
+		instance_destroy(boat);
+	}
+}
 
 #region Shopping and Inns, talking over the counter
 if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && playerControl)
@@ -110,11 +133,8 @@ if(startAlarm > 0) startAlarm--// else playerControl = true;
 if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm <= 0 && startTalk)))
 {
 	//show message icon above npc
-	if(npc.sprite_index != sprSign && npc.sprite_index != sprGrave)
-	{
-		npc.showMessageIcon = true;
-	}
-	
+	npc.showMessageIcon = true;
+
 	//talk to npc
 	if(objInput.interact() || startTalk)
 	{
