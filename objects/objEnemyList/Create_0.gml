@@ -439,9 +439,26 @@ switch(global.area)
 		ds_list_add(list,camabat);
 		ds_list_add(list,cho);
 		break;
-	case "East Continent Fields":
+	case "Valiburgh Orchard":
 		break;
-	case "East Continent North":
+	case "Valiburgh North Fields":
+		break;
+	case "Valiburgh North Forest":
+		break;
+	case "Canalia Fields":
+		break;
+	case "Canalia Hills":
+		break;
+	case "Torgale North Field":
+			ds_list_add(list,horsebird);
+		break;
+	case "Torgale North Forest":
+		break;
+	case "Torgale South Field":
+		break;
+	case "Torgale South Forest":
+		break;
+	case "Torgale Hills":
 		break;
 	case "Barghest Boss":
 		ds_list_add(list,barghest);
