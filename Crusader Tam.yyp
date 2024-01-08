@@ -64,6 +64,7 @@
     {"id":{"name":"sprTextPlace","path":"sprites/sprTextPlace/sprTextPlace.yy",},"order":5,},
     {"id":{"name":"objNpcMan2","path":"objects/objNpcMan2/objNpcMan2.yy",},"order":2,},
     {"id":{"name":"sprSkeletonDown","path":"sprites/sprSkeletonDown/sprSkeletonDown.yy",},"order":0,},
+    {"id":{"name":"rmWorldBackup","path":"rooms/rmWorldBackup/rmWorldBackup.yy",},"order":15,},
     {"id":{"name":"objEnd","path":"objects/objEnd/objEnd.yy",},"order":8,},
     {"id":{"name":"sprBarghest","path":"sprites/sprBarghest/sprBarghest.yy",},"order":16,},
     {"id":{"name":"sprMessage","path":"sprites/sprMessage/sprMessage.yy",},"order":1,},
@@ -210,6 +211,7 @@
     {"roomId":{"name":"rmEnd","path":"rooms/rmEnd/rmEnd.yy",},},
     {"roomId":{"name":"rmOrchard","path":"rooms/rmOrchard/rmOrchard.yy",},},
     {"roomId":{"name":"rmOminousCave","path":"rooms/rmOminousCave/rmOminousCave.yy",},},
+    {"roomId":{"name":"rmWorldBackup","path":"rooms/rmWorldBackup/rmWorldBackup.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
