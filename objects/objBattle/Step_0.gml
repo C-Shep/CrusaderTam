@@ -303,6 +303,11 @@ if(!startingMessages)
 						enemyDamage = 0;
 						actionMessage = (string(enemy.name_) + " drains your magic by " + string(drainAmount) + "!");
 					break;
+					case"Magic": 	
+						var randDmg = irandom_range(-2,5);
+						enemyDamage = enemyBasicAttack(randDmg);
+						actionMessage = (string(enemy.name_) + " casts a spell for " + string(enemyDamage) + " dmg!");
+					break;
 					default:
 						actionMessage = "???";
 				}

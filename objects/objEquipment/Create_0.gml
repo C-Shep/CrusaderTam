@@ -83,6 +83,18 @@ flamberge = {
 	cost: 28,
 }
 ds_list_add(equipment,flamberge);
+
+waterWand = {
+	name_: "WaterWand",
+	type_: "Weapon",
+	desc : "Wand with a blue crystal on the end. Deals water damage.",
+	atk: 3,
+	def: 0,
+	spd: 0,
+	element: "Water",
+	cost: 40,
+}
+ds_list_add(equipment,waterWand);
 #endregion
 
 //Shields

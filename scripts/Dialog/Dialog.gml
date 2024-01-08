@@ -1335,6 +1335,18 @@ global.dialog.lanaSign = [
 	}
 ]
 
+global.dialog.torgaleWarning = [
+	{
+		speaker: speakers.sign_,
+		message_: "Warning! Do not venture south unless you are extremely well equipped!"
+	},
+		{
+		speaker: speakers.sign_,
+		message_: "The monsters roaming the path to Torgale are dangerous!"
+	}
+]
+
+
 global.dialog.wearyWyvernSign = [
 	{
 		speaker: speakers.sign_,

@@ -1,4 +1,5 @@
-/// @desc create enemies
+/// @desc The Enemies Stats
+//---------------------------------------------------------- Normal Enemies ----------------------------------------------------------
 defaultEnemy = {
 	name_: "Default",
 	sprite: sprGoblin,
@@ -317,6 +318,129 @@ cho = {
 ds_list_add(cho.moves,"Attack");
 ds_list_add(cho.moves,"ChoDrain");
 
+//Trolling -----------------------------
+trolling = {
+	name_: "Trolling",
+	sprite: sprTrolling,
+	hp:20,
+	maxhp:20,
+	atk:4,
+	def:3,
+	spd:30,
+	xp:10,
+	gld:3,
+	drop: "Herb",
+	weak:"Fire",
+	moves: ds_list_create()
+}
+
+//Trolling Moves
+ds_list_add(trolling.moves,"Attack");
+ds_list_add(trolling.moves,"Headbutt");
+
+//Troll -----------------------------
+troll = {
+	name_: "Troll",
+	sprite: sprTroll,
+	hp:30,
+	maxhp:30,
+	atk:8,
+	def:3,
+	spd:20,
+	xp:14,
+	gld:7,
+	drop: "BrnzeSpear",
+	weak:"Fire",
+	moves: ds_list_create()
+}
+
+//Troll Moves
+ds_list_add(troll.moves,"Attack");
+ds_list_add(troll.moves,"Headbutt");
+
+//Parakeet -----------------------------
+parakeet = {
+	name_: "Parakeet",
+	sprite: sprParakeet,
+	hp:20,
+	maxhp:20,
+	atk:6,
+	def:1,
+	spd:60,
+	xp:11,
+	gld:7,
+	drop: "Knife",
+	weak:"Water",
+	moves: ds_list_create()
+}
+
+//Parakeet Moves
+ds_list_add(parakeet.moves,"Attack");
+ds_list_add(parakeet.moves,"Swoop");
+ds_list_add(parakeet.moves,"Stab");
+
+//Bear -----------------------------
+bear = {
+	name_: "Bear",
+	sprite: sprBear,
+	hp:25,
+	maxhp:25,
+	atk:6,
+	def:3,
+	spd:30,
+	xp:12,
+	gld:8,
+	drop: "Herb",
+	weak:"Fire",
+	moves: ds_list_create()
+}
+
+//Bear Moves
+ds_list_add(bear.moves,"Attack");
+ds_list_add(bear.moves,"Ravage");
+
+//Aobozu -----------------------------
+aobozu = {
+	name_: "Aobozu",
+	sprite: sprAobozu,
+	hp:23,
+	maxhp:23,
+	atk:6,
+	def:4,
+	spd:20,
+	xp:12,
+	gld:8,
+	drop: "Herb",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Aobozu Moves
+ds_list_add(aobozu.moves,"Magic");
+
+//Redcap -----------------------------
+redcap = {
+	name_: "Redcap",
+	sprite: sprRedcap,
+	hp:22,
+	maxhp:22,
+	atk:7,
+	def:3,
+	spd:20,
+	xp:10,
+	gld:5,
+	drop: "Knife",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Redcap Moves
+ds_list_add(redcap.moves,"Kick");
+ds_list_add(redcap.moves,"Attack");
+ds_list_add(redcap.moves,"Stab");
+
+//---------------------------------------------------------- Bosses ----------------------------------------------------------
+
 //Barghest -----------------------------
 barghest = {
 	name_: "Barghest",
@@ -336,8 +460,8 @@ barghest = {
 //Barghest Moves
 ds_list_add(barghest.moves,"Scratch");
 ds_list_add(barghest.moves,"Attack");
-//ds_list_add(barghest.moves,"Attack");
-//ds_list_add(barghest.moves,"Ravage");
+ds_list_add(barghest.moves,"Attack");
+ds_list_add(barghest.moves,"Ravage");
 
 //Axassin -----------------------------
 axassin = {
@@ -355,9 +479,11 @@ axassin = {
 	moves: ds_list_create()
 }
 
-//Barghest Moves
+//Axassin Moves
 ds_list_add(axassin.moves,"Kick");
 ds_list_add(axassin.moves,"Attack");
+
+//---------------------------------------------------------- Secret Enemies ----------------------------------------------------------
 
 //Groovedog -----------------------------
 groovedog = {
@@ -435,6 +561,8 @@ switch(global.area)
 	case "Ominous Cave":
 		ds_list_add(list,skeleton);
 		ds_list_add(list,skeleton);
+		ds_list_add(list,skeleton);
+		ds_list_add(list,camabat);
 		ds_list_add(list,camabat);
 		ds_list_add(list,camabat);
 		ds_list_add(list,cho);
@@ -451,14 +579,25 @@ switch(global.area)
 		break;
 	case "Torgale North Field":
 			ds_list_add(list,horsebird);
+			ds_list_add(list,parakeet);
+			ds_list_add(list,trolling);
+			ds_list_add(list,aobozu);
+			ds_list_add(list,redcap);
 		break;
 	case "Torgale North Forest":
+			ds_list_add(list,bear);
+			ds_list_add(list,trolling);
+			ds_list_add(list,troll);
+			ds_list_add(list,redcap);
 		break;
 	case "Torgale South Field":
 		break;
 	case "Torgale South Forest":
 		break;
 	case "Torgale Hills":
+			ds_list_add(list,trolling);
+			ds_list_add(list,troll);
+			ds_list_add(list,redcap);
 		break;
 	case "Barghest Boss":
 		ds_list_add(list,barghest);
