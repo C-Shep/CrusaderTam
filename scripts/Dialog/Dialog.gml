@@ -501,7 +501,7 @@ global.dialog.eliciaTalk = [
 	global.dialog.hilbertTalk = [
 		{
 			speaker: speakers.hilbert,
-			message_: "Torgale is a town on a mountain down south. They worship the great wyvern there."
+			message_: "Torgale is a town on a mountain up north. They worship the great wyvern there."
 		},
 		{
 			speaker: speakers.hilbert,
@@ -964,7 +964,7 @@ global.dialog.sofiaGive = [
 global.dialog.sofiaChat = [
 	{
 		speaker: speakers.sofia,
-		message_: "Have you visited Valiburgh yet? It's just northwest of here"
+		message_: "Have you visited Valiburgh yet? It's just north of here along the path"
 	},
 	{
 		speaker: speakers.sofia,
@@ -1070,39 +1070,86 @@ global.dialog.kingFirstTalk = [
 	},
 	{
 		speaker: speakers.king,
-		message_: "you see, there were once four great trees that kept the balance in our world"
+		message_: "you see, there were four great crystals that kept the balance in our world"
 	},
 	{
 		speaker: speakers.king,
-		message_: "the tree of the earth which we walk"
+		message_: "the crystal of the earth which we walk"
 	},
 	{
 		speaker: speakers.king,
-		message_: "the tree of the oceans which we sail"
+		message_: "the crystal of the water which we sail"
 	},
 	{
 		speaker: speakers.king,
-		message_: "the tree of the air which we breath"
+		message_: "the crystal of the air which we breath"
 	},
 	{
 		speaker: speakers.king,
-		message_: "the tree of the fire which warms us"
+		message_: "the crystal of the fire which warms us"
 	},
 	{
 		speaker: speakers.king,
-		message_: "but one fateful day, the evil wizard helrath cut down all of the trees to gain their power"
+		message_: "but one fateful day, the evil wizard helrath corrupted all the crystals to gain their power"
 	},
 	{
 		speaker: speakers.king,
-		message_: "you must restore the four great trees and defeat helrath to save our world, brave hero!"
+		message_: "you must restore the four great crystals and defeat helrath to save our world, brave hero!"
 	},
 	{
 		speaker: speakers.king,
-		message_: "seek the monks at the temple of lucidia to the north."
+		message_: "the kingdom of torgale is north of here, it is a city on mount tempest."
 	},
 	{
 		speaker: speakers.king,
-		message_: "they will provide you with the tools to restore the great trees"
+		message_: "the crystal of air rests inside a temple there. I recommend you start there."
+	},
+	{
+		speaker: speakers.king,
+		message_: "good luck, mighty hero! The world is counting on you!"
+	},
+]
+
+global.dialog.kingNoCrystalsChat = [
+	{
+		speaker: speakers.king,
+		message_: "hello again brave hero, have you come seeking guidance?"
+	},
+	{
+		speaker: speakers.king,
+		message_: "remember, there were four great crystals that kept the balance in our world"
+	},
+	{
+		speaker: speakers.king,
+		message_: "the crystal of the earth which we walk"
+	},
+	{
+		speaker: speakers.king,
+		message_: "the crystal of the water which we sail"
+	},
+	{
+		speaker: speakers.king,
+		message_: "the crystal of the air which we breath"
+	},
+	{
+		speaker: speakers.king,
+		message_: "the crystal of the fire which warms us"
+	},
+	{
+		speaker: speakers.king,
+		message_: "but one fateful day, the evil wizard helrath corrupted all the crystals to gain their power"
+	},
+	{
+		speaker: speakers.king,
+		message_: "you must restore the four great crystals and defeat helrath to save our world, brave hero!"
+	},
+	{
+		speaker: speakers.king,
+		message_: "the kingdom of torgale is north of here, it is a city on mount tempest."
+	},
+	{
+		speaker: speakers.king,
+		message_: "the crystal of air rests inside a temple there. I recommend you start there."
 	},
 	{
 		speaker: speakers.king,
@@ -1338,7 +1385,7 @@ global.dialog.lanaSign = [
 global.dialog.torgaleWarning = [
 	{
 		speaker: speakers.sign_,
-		message_: "Warning! Do not venture south unless you are extremely well equipped!"
+		message_: "Warning! Do not venture north unless you are well equipped!"
 	},
 		{
 		speaker: speakers.sign_,
