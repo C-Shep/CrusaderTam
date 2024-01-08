@@ -251,7 +251,7 @@ global.dialog.eliciaTalk = [
 		},
 		{
 			speaker: speakers.adam,
-			message_: "I heard it lives in a cave west of here and likes to eat people"
+			message_: "I heard it lives in a cave east of here and likes to eat people"
 		}
 	]
 
@@ -398,11 +398,7 @@ global.dialog.eliciaTalk = [
 		},
 		{
 			speaker: speakers.juliana,
-			message_: "then again, so are the monsters all the way down south"
-		},
-		{
-			speaker: speakers.juliana,
-			message_: "tough choice for travellers like yourself, huh?"
+			message_: "then again, the mighty wyvern keeps the people up there safe"
 		}
 	]
 
@@ -432,11 +428,11 @@ global.dialog.eliciaTalk = [
 	global.dialog.gilbertTalk = [
 		{
 			speaker: speakers.gilbert,
-			message_: "The land down south is pretty dangerous"
+			message_: "The land up north is pretty dangerous"
 		},
 		{
 			speaker: speakers.gilbert,
-			message_: "Make sure that you're prepared when you travel all the way down there"
+			message_: "Make sure that you're prepared when you travel all the way up there"
 		}
 	]
 
@@ -607,7 +603,7 @@ global.dialog.eliciaTalk = [
 	global.dialog.vinceTalk = [
 		{
 			speaker: speakers.vince,
-			message_: "There is a cave northwest of here through the mountain pass"
+			message_: "There is a cave east of here through the mountain pass"
 		},
 		{
 			speaker: speakers.vince,
@@ -781,7 +777,7 @@ global.dialog.eliciaTalk = [
 	global.dialog.castleKingsGuard4 = [
 		{
 			speaker: speakers.soldier,
-			message_: "They say skeletons roam the cavern northwest of here"
+			message_: "They say skeletons roam the cavern east of here"
 		},
 		{
 			speaker: speakers.soldier,
@@ -814,11 +810,19 @@ global.dialog.eliciaTalk = [
 		},
 		{
 			speaker: speakers.stratus,
-			message_: "Did you know that the more experienced you are in battle, the more magic you shall learn?"
+			message_: "Have you heard of a cho?"
 		},
 		{
 			speaker: speakers.stratus,
-			message_: "Ho Ho Ho! I'm sure that you will learn lots of spells by the end of your quest!"
+			message_: "They are nimble little creatures rarely spotted about lucidia."
+		},
+		{
+			speaker: speakers.stratus,
+			message_: "They have a habit of draining you of your magic, but drop bountiful rewards when slain!"
+		},
+		{
+			speaker: speakers.stratus,
+			message_: "according to to this tome, there might be some in a small cave north of the torgale orachard."
 		},
 	]
 	
@@ -829,7 +833,7 @@ global.dialog.eliciaTalk = [
 		},
 		{
 			speaker: speakers.elia,
-			message_: "A dash of passion and a sprinkle of creativity, ta da! Culinary Perfection!"
+			message_: "A dash of passion... a sprinkle of creativity... ta da! Culinary Perfection!"
 		},
 		{
 			speaker: speakers.elia,

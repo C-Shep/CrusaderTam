@@ -79,6 +79,9 @@ function closeTextbox(endEvent_ = "None")
 		case "Orchard Complete":
 			global.quest.orchardComplete = true;
 			break;
+		case "Talked Once To King":
+			global.quest.kingTalkedToOnce = true;
+			break;
 		case "End Demo":
 			room_goto(rmEnd);
 			break;

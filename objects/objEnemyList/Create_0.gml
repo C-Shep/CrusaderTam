@@ -578,21 +578,22 @@ switch(global.area)
 	case "Canalia Hills":
 		break;
 	case "Torgale North Field":
+
+		break;
+	case "Torgale North Forest":
+		break;
+	case "Torgale South Field":
 			ds_list_add(list,horsebird);
 			ds_list_add(list,parakeet);
 			ds_list_add(list,trolling);
 			ds_list_add(list,aobozu);
 			ds_list_add(list,redcap);
 		break;
-	case "Torgale North Forest":
+	case "Torgale South Forest":
 			ds_list_add(list,bear);
 			ds_list_add(list,trolling);
 			ds_list_add(list,troll);
 			ds_list_add(list,redcap);
-		break;
-	case "Torgale South Field":
-		break;
-	case "Torgale South Forest":
 		break;
 	case "Torgale Hills":
 			ds_list_add(list,trolling);

@@ -56,3 +56,7 @@ if(!global.quest.sofiaTalked && room == rmQuillbeach)
 	startTalk = true;
 }
 
+function setNpcDialog(npc, newDialog)
+{
+	npc.dialog = newDialog;
+}

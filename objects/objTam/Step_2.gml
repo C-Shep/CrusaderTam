@@ -11,25 +11,11 @@ var facingCellYExtra = y+lengthdir_y(len*2,dir_);
 //Boat
 var boat = instance_position(facingCellX,facingCellY,objBoat);
 
+//Center of Sprite
 var tileXX = toTile(x+8);	//The Center of the Player X
 var tileYY = toTile(y+8);	//The Center of the Player Y
 
-//if(boat && alarm[1] == -1)
-//{
-//	global.canGetInBoat = true;
-//	alarm[1] = 1;
-//}else{
-//	global.canGetInBoat = false;
-//}	
-
-//if(boat && global.canGetInBoat && alarm[1] != 0)
-//{
-//	global.boat = true;
-
-//}else if(instance_exists(objBoat)){
-//	global.boat = false;
-//}
-
+//Change Sprite if on water
 if(IsOnWater(tileXX,tileYY))
 {
 	states = boatStates;	
@@ -187,20 +173,20 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					
 					if(global.quest.emmaDelivered == true && global.quest.emmaChat == false)
 					{
-						npc.dialog = global.dialog.emmaDelivered;
+						setNpcDialog(npc,global.dialog.emmaDelivered);
 						endAction = "Emma Delivered";
 					}
 					
 					if(global.quest.emmaDelivered == true && global.quest.emmaChat == true)
 					{
-						npc.dialog = global.dialog.emmaChat;
+						setNpcDialog(npc,global.dialog.emmaChat);
 					}
 				}
 				break;
 			case postValiburgh:
 				if(!global.quest.postAskHelp)
 				{
-					npc.dialog = global.dialog.postValiburghAskHelp;
+					setNpcDialog(npc,global.dialog.postValiburghAskHelp);
 					endAction = "Post Asked";
 				}else{
 					if(objStats.turnInItem("Letter"))
@@ -210,43 +196,49 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					
 					if(global.quest.postDelivered == true && global.quest.postChat == false)
 					{
-						npc.dialog = global.dialog.postValiburghDelivered;
+						setNpcDialog(npc,global.dialog.postValiburghDelivered);
 						endAction = "Post Delivered";
 					}
 					
 					if(global.quest.postDelivered == true && global.quest.postChat == true)
 					{
-						npc.dialog = global.dialog.postValiburghChat;
+						setNpcDialog(npc,global.dialog.postValiburghChat);
 					}
 				}
 				break;
 			case chefElira:
 				if(!global.quest.stewReceived)
 				{
-					npc.dialog = global.dialog.eliraTalk;
+					setNpcDialog(npc,global.dialog.eliraTalk);
 					endAction = "Get Stew";
 				}else{
-					npc.dialog = global.dialog.eliraTalkAgain;	
+					setNpcDialog(npc,global.dialog.eliraTalkAgain);
 				}
 				break;
 			case kingWymar:
-				npc.dialog = global.dialog.kingFirstTalk;
-				endAction = "End Demo";
+				if(!global.quest.kingTalkedToOnce)
+				{
+					setNpcDialog(npc,global.dialog.kingFirstTalk);
+					endAction = "Talked Once To King";
+				}else{
+					setNpcDialog(npc,global.dialog.kingNoCrystalsChat);
+				}
+
 				break;
 			case orchardist:
 				if(!global.quest.orchardMonsterKilled)
 				{
-					npc.dialog = global.dialog.orchardistAskHelp;
+					setNpcDialog(npc,global.dialog.orchardistAskHelp);
 				}else{	
 					if(global.quest.orchardMonsterKilled == true && global.quest.orchardComplete == false)
 					{
-						npc.dialog = global.dialog.orchardistDelivered;
+						setNpcDialog(npc,global.dialog.orchardistDelivered);
 						endAction = "Orchard Complete";
 					}
 					
 					if(global.quest.orchardMonsterKilled == true && global.quest.orchardComplete == true)
 					{
-						npc.dialog = global.dialog.orchardistChat;
+						setNpcDialog(npc,global.dialog.orchardistChat);
 					}
 				}
 				break;

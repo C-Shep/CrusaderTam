@@ -54,6 +54,7 @@ global.quest = {
 	stewReceived : false,
 	orchardMonsterKilled : false,
 	orchardComplete : false,
+	kingTalkedToOnce : false,
 }
 
 //Default go to menu

@@ -25,7 +25,7 @@ colour = baseColour;
 draw_text_colour(menuX+128,160,mpMsg,colour,colour,colour,colour,1);
 
 
-draw_sprite(sprGrassBG,0,middleX,middleY);
+draw_sprite(currentBG,0,middleX,middleY);
 #endregion
 
 #region draw enemy sprite

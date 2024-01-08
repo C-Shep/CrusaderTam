@@ -100,7 +100,19 @@ Fade(false,false,global.lastRoom);
 //Enemy Moves
 numberOfMoves = ds_list_size(enemy.moves);
 
-//Functions
+//Background
+currentBG = sprGrassBG;
+switch(global.lastRoom)
+{
+	case rmBarghestCave:
+	case rmOminousCave:
+		currentBG = sprCaveBG;
+	break;
+	default:
+		currentBG = sprGrassBG;
+}
+
+//----- Functions -----
 
 //player or enemy dead? end combat
 checkForEnd = function (){
