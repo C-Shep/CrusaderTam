@@ -44,6 +44,12 @@ mageAsh = {
 	desc : "Magical Ashes that makes plants grow faster."
 }
 ds_list_add(items,mageAsh);
+
+trollNote = {
+	name_: "Troll Note",
+	desc : "A letter from the troll king to wheatville's mayor."
+}
+ds_list_add(items,mageAsh);
 #endregion
 
 //Weapons
@@ -110,6 +116,17 @@ woodShield = {
 	cost: 18,
 }
 ds_list_add(equipment,woodShield);
+
+ironShield = {
+	name_: "IronShield",
+	type_: "Shield",
+	desc : "A sturdy, basic shield",
+	atk: 0,
+	def: 2,
+	spd: 0,
+	cost: 32,
+}
+ds_list_add(equipment,ironShield);
 #endregion
 
 //Armours

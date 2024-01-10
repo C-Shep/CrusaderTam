@@ -9,4 +9,3 @@ states = {
 }
 
 walkToHouse = false;
-amuletGiven = false;

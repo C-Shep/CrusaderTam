@@ -55,32 +55,38 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 		{
 			case "No":
 				break;
+				
+			var shop = instance_create_layer(0,0,"UI",objShop)
+			
 			case "Quillbeach":
-				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"Herb");
 				ds_list_add(shop.stock,"Weed");
 				ds_list_add(shop.stock,"Knife");
 				break;
 			case "Valiburgh Weapon":
-				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"Knife");
 				ds_list_add(shop.stock,"BrnzeSpear");
 				ds_list_add(shop.stock,"Flamberge");
 				break;
 			case "Valiburgh Armour":
-				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"WoodShield");
 				ds_list_add(shop.stock,"LeathrArmr");
 				ds_list_add(shop.stock,"Silk Cape");
 				break;
 			case "Valiburgh Item":
-				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"Herb");
 				ds_list_add(shop.stock,"Weed");
 				break;
 			case "Orchard":
-				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"Apple");
+				break;
+			case "Wheatville":
+				ds_list_add(shop.stock,"Herb");
+				ds_list_add(shop.stock,"Weed");
+				ds_list_add(shop.stock,"BrnzeSpear");
+				ds_list_add(shop.stock,"IronShield");
+				ds_list_add(shop.stock,"LeathrArmr");
+				ds_list_add(shop.stock,"Silk Cape");
 				break;
 		}
 		
@@ -88,14 +94,18 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 		switch(overCounterNpc.innkeep)
 		{
 			case "No":
-				break;
+				break;	//Not an inn
+			//Create inn
+			var inn = instance_create_layer(0,0,"UI",objInn)
 			case "Quillbeach":
-				var inn = instance_create_layer(0,0,"UI",objInn)
 				inn.cost = 5;
 				break;
 			case "Valiburgh":
-				var inn = instance_create_layer(0,0,"UI",objInn)
 				inn.cost = 7;
+				break;
+			case "Wheatville":
+				
+				inn.cost = 10;
 				break;
 		}	
 		

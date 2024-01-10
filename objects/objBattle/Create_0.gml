@@ -9,6 +9,8 @@ ds_list_clear(objEnemyList.list);
 player = objStats.playerStats;
 oldHp = player.hp;
 
+playerAgility = player.spd;
+
 //phases of combat
 isEnemyTurn = false;
 combatEnd = false;

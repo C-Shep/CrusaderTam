@@ -1,32 +1,41 @@
 var speakers = {
+	//Generic NPCs
 	none: "",
 	unknown:"???",
 	man:"Man",
 	woman:"Woman",
 	sign_: "Sign",
 	grave: "Grave",
+	soldier:"Soldier",
+	mayor: "Mayor",
+	
+	//Shopkeeps/Innkeeps
 	gaz:"Gaz",
 	gav:"Gav",
 	goz:"Goz",
 	guz:"Guz",
 	martine:"Martine",
 	lana:"Lana",
-	sofia:"Sofia",
-	soldier:"Soldier",
 	margery:"Margery",
 	hilbert:"Hilbert",
-	postino:"Postino",
-	emma:"Emma",
-	barghest: "Barghest",
-	cirrus : "Cirrus",
-	stratus : "Stratus",
+	
+	//Unique NPCs
 	elia : "Elia",
 	chef : "Chef",
-	king : "KngWymar",
-	queen : "Queen Ela",
+	cirrus : "Cirrus",
+	stratus : "Stratus",
+	
+	//Side Quest NPCs
 	orchard : "Appleman",
 	axassin : "Axassin",
+	postino:"Postino",
+	emma:"Emma",
 
+	//Main Quest NPCs
+	sofia:"Sofia",
+	king : "KngWymar",
+	queen : "Queen Ela",
+	barghest: "Barghest",
 }
 
 global.dialog = {};
@@ -889,7 +898,7 @@ global.dialog = {};
 		global.dialog.wheatvilleMan2 = [
 		{
 			speaker: speakers.man,
-			message_: "Torgale is north of here on mount tempest"
+			message_: "Torgale is north of 'ere on mount tempest"
 		},
 		{
 			speaker: speakers.man,
@@ -897,7 +906,7 @@ global.dialog = {};
 		}
 		]
 		
-		global.dialog.wheatvilleMan3 = [
+		global.dialog.wheatvilleMan3NoPostino = [
 		{
 			speaker: speakers.man,
 			message_: "Trollings are baby Trolls"
@@ -908,27 +917,153 @@ global.dialog = {};
 		}
 		]
 		
+		global.dialog.wheatvilleMan3Postino = [
+		{
+			speaker: speakers.man,
+			message_: "A wierd fellow came trotting through here. Said he was a postman off to torgale"
+		}
+		]
+		
 		global.dialog.wheatvilleWoman1 = [
 		{
 			speaker: speakers.woman,
-			message_: "Have you ever found a water wand? They are weapons that cast water spells"
+			message_: "'ave you ever found a water wand? They're weapons that cast water spells"
 		},
 		{
 			speaker: speakers.woman,
-			message_: "I hear they sometimes wash up on beaches"
+			message_: "I 'ear they sometimes wash up on beaches"
 		}
 		]
 		
 		global.dialog.wheatvilleWoman2 = [
 		{
 			speaker: speakers.woman,
-			message_: "Welcome to Wheatville. the bread baked here is delicious!"
+			message_: "Welcome to Wheatville. the bread baked here is proper delicious!"
 		}
 		]
 	#endregion
 	
 	#region Wheatville Inside
+		global.dialog.wheatvilleInsideWoman1 = [
+		{
+			speaker: speakers.woman,
+			message_: "What brings you round these parts? On your way to Torgale perhaps?"
+		}
+		]
+		
+		global.dialog.wheatvilleInnkeep = [
+		{
+			speaker: speakers.woman,
+			message_: "Fancy yerself a kip? My inn's the perfect place for some shut eye"
+		}
+		]
+		
+		global.dialog.wheatvilleWindmillWoman1 = [
+		{
+			speaker: speakers.woman,
+			message_: "Been here since i was a kipper. There's a bond between us and the mill"
+		},
+		{
+			speaker: speakers.woman,
+			message_: "Keeps us busy and the town alive!"
+		}
+		]
+		
+		global.dialog.wheatvilleWindmillWoman2 = [
+		{
+			speaker: speakers.woman,
+			message_: "Alright mate? We work the mill, keeping wheatville supplied with wheat"
+		},
+		{
+			speaker: speakers.woman,
+			message_: "Takes teamwork to keep this place tickin' don't it?"
+		},
+		]
+		
+		global.dialog.wheatvilleWife = [
+		{
+			speaker: speakers.woman,
+			message_: "Me 'usbands the mayor of wheatville, "
+		},
+		{
+			speaker: speakers.woman,
+			message_: "He cares 'bout this place more than anyone"
+		},
+		]
+		
+		global.dialog.wheatvilleInsideMan1 = [
+		{
+			speaker: speakers.man,
+			message_: "Never be afraid to turn tail if you've wandered into somewhere a stab above your pay grade"
+		},
+		{
+			speaker: speakers.man,
+			message_: "try training somewhere where you know you can survive"
+		},
+		]
+		
 	
+		global.dialog.wheatvilleInsideMan2 = [
+		{
+			speaker: speakers.man,
+			message_: "I'm a soldier from Valiburgh, sent by the king to make sure Wheatville is doing alright"
+		},
+		{
+			speaker: speakers.man,
+			message_: "Honestly though, I'm using this as a bit of a holiday."
+		},
+		{
+			speaker: speakers.man,
+			message_: "The whole barghest business had a wee bit shaken."
+		},
+		]
+		
+		global.dialog.wheatvilleInsideMan3 = [
+		{
+			speaker: speakers.man,
+			message_: "Beds here aren't too bad for a town in the middle of nowhere"
+		},
+		{
+			speaker: speakers.man,
+			message_: "Have you been to canalia? Its a beautiful place far north from here."
+		},
+		]
+		
+
+		
+		global.dialog.wheatvilleWindmillMan = [
+		{
+			speaker: speakers.man,
+			message_: "It's hard work in the mill, but it can be fairly peaceful"
+		},
+		{
+			speaker: speakers.man,
+			message_: "Plus the view aint at all half bad on a clear day"
+		},
+		]
+
+		global.dialog.wheatvilleMansionMan = [
+		{
+			speaker: speakers.man,
+			message_: "I'm making sure no half-inchin' wee beasties make their way to the mayor"
+		},
+		{
+			speaker: speakers.man,
+			message_: "I'm aiming for a raise ya know?"
+		},
+		]
+		
+		global.dialog.wheatvilleShopkeep = [
+		{
+			speaker: speakers.man,
+			message_: "How ya doin' guv? Need any bits and bobs?"
+		},
+		{
+			speaker: speakers.man,
+			message_: "I've got everything a traveller like you could need."
+		},
+		]
+		
 	#endregion
 	
 	#region Overworld
@@ -1405,6 +1540,104 @@ global.dialog.axassinTalk = [
 		speaker: speakers.axassin,
 		message_: "TAKE THIS!"
 	},
+]
+
+global.dialog.wheatvilleMayorSonTroll = [
+{
+	speaker: speakers.man,
+	message_: "My father always seems bothered by summit"
+},
+{
+	speaker: speakers.man,
+	message_: "You're an adventurer right? maybe you could help 'im?"
+},
+]
+		
+global.dialog.wheatvilleMayorSonDone = [
+{
+	speaker: speakers.man,
+	message_: "Ah, my father seems right as rain now! Ta for that"
+}
+]
+
+global.dialog.wheatvilleMayorAskHelpOnce = [
+{
+	speaker: speakers.mayor,
+	message_: "Alright? I'm quite busy at the moment."
+},
+{
+	speaker: speakers.mayor,
+	message_: "Hold up a mo... You seem the adventurin' sort. You are aint ya?"
+},
+{
+	speaker: speakers.mayor,
+	message_: "I'm worried that the town might be in a spot of bother at the moment."
+},
+{
+	speaker: speakers.mayor,
+	message_: "I've spotted some trolls to the east eyeing up our crops recently"
+},
+{
+	speaker: speakers.mayor,
+	message_: "Could you head over there and sort things out? I'd be happy to pay."
+},
+]
+
+global.dialog.wheatvilleMayorAskHelpAgain = [
+{
+	speaker: speakers.mayor,
+	message_: "Hello again mate, how's things?"
+},
+{
+	speaker: speakers.mayor,
+	message_: "Remember, i'd spotted some trolls to the east eyeing up our crops"
+},
+{
+	speaker: speakers.mayor,
+	message_: "Could you head there and sort things out? I reckon they've got a hideout by the coast."
+},
+]
+
+global.dialog.wheatvilleMayorDelivered = [
+{
+	speaker: speakers.mayor,
+	message_: "Hello again mate, have you dealt with the trolls?"
+},
+{
+	speaker: speakers.mayor,
+	message_: "whats that? a letter? i didn't know trolls could write. what's it say?"
+},
+{
+	speaker: speakers.mayor,
+	message_: "..."
+},
+{
+	speaker: speakers.mayor,
+	message_: "...i see"
+},
+{
+	speaker: speakers.mayor,
+	message_: "it appears they wish for some wheat to feed their young. but of course!"
+},
+{
+	speaker: speakers.mayor,
+	message_: "all they had to do is ask! i'll deliver some right away!"
+},
+{
+	speaker: speakers.mayor,
+	message_: "thank you for this, adventurer. here is your payment as promised"
+},
+]
+
+global.dialog.wheatvilleMayorChat = [
+{
+	speaker: speakers.mayor,
+	message_: "Hello mate, thanks to you the trolls wont bother us and we wont bother the trolls"
+},
+{
+	speaker: speakers.mayor,
+	message_: "a nice harmony wouldn't ya say?"
+},
 ]
 
 #endregion

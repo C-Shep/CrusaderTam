@@ -67,7 +67,7 @@ if(!startingMessages)
 						
 							if(chance == 0){
 								actionMessage = "You Missed!";
-							}else if(chance >= (99-floor(player.spd/5))){
+							}else if(chance >= (99-floor(playerAgility/5))){
 								var dmg = playerAttack(0,2,attackElement);
 								actionMessage = "You crit the " + string(enemy.name_) + " for " + string(dmg) + " dmg!";
 							}else{
@@ -290,7 +290,7 @@ if(!startingMessages)
 						actionMessage = (string(enemy.name_) + " slashes all around for " + string(enemyDamage) + " dmg!");
 					break;
 					case"Wrap": 	
-						enemy.spd+=20;
+						playerAgility -= 20;
 						actionMessage = (string(enemy.name_) + " wraps you up!");
 					break;
 					case"Kick": 	

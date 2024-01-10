@@ -101,7 +101,7 @@ else if(buyControl)
 			
 	#endregion
 			
-	#region//Inventory Control
+	#region//Buy Control
 	if(objInput.interact())
 	{
 		var selectedItem = ds_list_find_value(stock,buySelected);
@@ -153,7 +153,7 @@ else if(sellControl)
 			
 	#endregion
 			
-	#region//Inventory Control
+	#region//Sell Control
 	if(objInput.interact())
 	{
 		ds_list_delete(inv,sellSelected);
