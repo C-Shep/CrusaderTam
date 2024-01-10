@@ -1028,9 +1028,7 @@ global.dialog = {};
 			message_: "Have you been to canalia? Its a beautiful place far north from here."
 		},
 		]
-		
 
-		
 		global.dialog.wheatvilleWindmillMan = [
 		{
 			speaker: speakers.man,
