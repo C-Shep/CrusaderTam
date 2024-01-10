@@ -79,6 +79,8 @@ colour = c_white;
 //Messages
 messageX = 416;
 messageY = 80;
+useMessageX = 416;
+useMessageY = 336;
 actionMessage = "";
 currentlyDisplaying = false;
 startDisplayTimer = true;
@@ -86,8 +88,8 @@ startDisplayTimer = true;
 //Functions
 displayMessage = function (msg){
 	draw_text_transformed_colour(
-	messageX,
-	messageY,
+	useMessageX,
+	useMessageY,
 	msg,
 	textSize,
 	textSize,

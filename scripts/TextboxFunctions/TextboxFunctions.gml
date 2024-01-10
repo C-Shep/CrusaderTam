@@ -30,7 +30,7 @@ function closeTextbox(endEvent_ = "None")
 			objNpcSofia.walkToHouse = true;
 			break;
 		case "Sofia Give":
-			ds_list_add(objStats.inv,"Amulet");
+			ds_list_add(objStats.inv,"ShellAmulet");
 			global.quest.sofiaGiven = true;
 			break;
 		default:

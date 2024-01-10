@@ -236,7 +236,7 @@ if(currentlyDisplaying)
 	}
 	
 	//Draw message box
-	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,80);
+	draw_sprite_stretched(sprBox,0,useMessageX-16,useMessageY-16,832,80);
 	
 	//Display the actual text
 	displayMessage(actionMessage);

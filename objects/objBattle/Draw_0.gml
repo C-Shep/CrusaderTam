@@ -16,7 +16,7 @@ if(player.hp < oldHp)
 	colour = c_red;
 }
 
-var hpMsg = "hp: " + string(player.hp) + "/" + string(player.maxhp);
+var hpMsg = "hp: " + string(max(player.hp,player.maxhp)) + "/" + string(player.maxhp);
 var mpMsg = "mp: " + string(player.mp) + "/" + string(player.maxmp);
 
 

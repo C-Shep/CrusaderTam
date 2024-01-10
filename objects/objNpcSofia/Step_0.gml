@@ -22,7 +22,11 @@ if(x == targetX && y == targetY)
 }
 
 //change to repeat dialogue after giving amulet
-if(global.quest.sofiaGiven)
+if(global.quest.sofiaGiven && !global.quest.kingTalkedToOnce)
 {
 	dialog = global.dialog.sofiaChat;
+}else if(global.quest.kingTalkedToOnce){
+	dialog = global.dialog.sofiaAfterValiburgh;
 }
+
+

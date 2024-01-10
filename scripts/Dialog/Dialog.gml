@@ -1121,7 +1121,7 @@ global.dialog.sofiaGive = [
 	},
 	{
 		speaker: speakers.none,
-		message_: "You recived an Amulet!"
+		message_: "You recived a Shell Amulet!"
 	},
 	{
 		speaker: speakers.sofia,
@@ -1152,6 +1152,17 @@ global.dialog.sofiaChat = [
 	},
 ]
 
+global.dialog.sofiaAfterValiburgh = [
+	{
+		speaker: speakers.sofia,
+		message_: "How's your quest going? Don't strain yourself too much, you hear?"
+	},
+	{
+		speaker: speakers.sofia,
+		message_: "remember, you're always welcome in quillbeach"
+	}
+]
+
 global.dialog.guardBarghestFirstTalk = [
 	{
 		speaker: speakers.soldier,
@@ -1175,7 +1186,7 @@ global.dialog.guardBarghestFirstTalk = [
 	},
 	{
 		speaker: speakers.soldier,
-		message_: "they say the barghests dwelling is just northwest from here, in the mountains"
+		message_: "they say the barghests dwelling is east from here, in the mountains"
 	},
 	{
 		speaker: speakers.soldier,
@@ -1190,7 +1201,7 @@ global.dialog.guardBarghestTalkAgain = [
 	},
 	{
 		speaker: speakers.soldier,
-		message_: "just northwest of here, remember? he's in the mountains"
+		message_: "just east of here, remember? he's in the mountains"
 	},
 	{
 		speaker: speakers.soldier,

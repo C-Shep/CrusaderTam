@@ -157,9 +157,9 @@ ds_list_add(equipment,silkCape);
 //Trinkets
 #region Trinkets
 amulet = {
-	name_: "Amulet",
+	name_: "ShellAmulet",
 	type_: "Trinket",
-	desc : "An amulet made of some shells and string.",
+	desc : "An amulet made of some shells and string",
 	atk: 1,
 	def: 1,
 	spd: 0,
@@ -170,10 +170,21 @@ ds_list_add(equipment,amulet);
 swiftscarf = {
 	name_: "SwiftScarf",
 	type_: "Trinket",
-	desc : "An orange Scarf that increases speed.",
+	desc : "An orange Scarf that increases speed",
 	atk: 0,
 	def: 0,
-	spd:7,
+	spd:10,
+	cost: 10,
+}
+ds_list_add(equipment,swiftscarf);
+
+swiftscarf = {
+	name_: "QuickRing",
+	type_: "Trinket",
+	desc : "An ring that accentuates speed and defence",
+	atk: 0,
+	def: 1,
+	spd:5,
 	cost: 10,
 }
 ds_list_add(equipment,swiftscarf);
