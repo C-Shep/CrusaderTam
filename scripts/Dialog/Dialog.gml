@@ -1771,4 +1771,22 @@ global.dialog.valiburghGrave5Talk = [
 	}
 ]
 
+global.dialog.trollSign = [
+	{
+		speaker: speakers.sign,
+		message_: "troll proberty! go no furter!"
+	},
+	{
+		speaker: speakers.sign,
+		message_: "u arr trespasin!"
+	}
+]
+
+global.dialog.TrollGrave = [
+	{
+		speaker: speakers.grave,
+		message_: "Here Lies the first troll king"
+	}
+]
+
 #endregion

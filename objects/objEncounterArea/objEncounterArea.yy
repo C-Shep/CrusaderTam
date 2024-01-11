@@ -45,11 +45,12 @@
         "\"Torgale South Field\"",
         "\"Torgale South Forest\"",
         "\"Torgale Hills\"",
+        "\"Troll Cave\"",
       ],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Battles",
-    "path": "folders/Objects/Battles.yy",
+    "name": "Environment",
+    "path": "folders/Objects/Environment.yy",
   },
 }

@@ -474,7 +474,7 @@ axassin = {
 	spd:10,
 	xp:15,
 	gld:25,
-	drop: "Weed",
+	drop: "Greataxe",
 	weak:"None",
 	moves: ds_list_create()
 }
@@ -482,6 +482,27 @@ axassin = {
 //Axassin Moves
 ds_list_add(axassin.moves,"Kick");
 ds_list_add(axassin.moves,"Attack");
+
+//Troll King -----------------------------
+trollKing = {
+	name_: "Troll King",
+	sprite: sprAxassin,
+	hp:90,
+	maxhp:90,
+	atk:10,
+	def:4,
+	spd:10,
+	xp:20,
+	gld:25,
+	drop: "BrnzeSpear",
+	weak:"Fire",
+	moves: ds_list_create()
+}
+
+//Troll King Moves
+ds_list_add(trollKing.moves,"Kick");
+ds_list_add(trollKing.moves,"Attack");
+ds_list_add(trollKing.moves,"Headbutt");
 
 //---------------------------------------------------------- Secret Enemies ----------------------------------------------------------
 
@@ -599,6 +620,10 @@ switch(global.area)
 			ds_list_add(list,trolling);
 			ds_list_add(list,troll);
 			ds_list_add(list,redcap);
+		break;
+	case "Troll Ruins":
+			ds_list_add(list,trolling);
+			ds_list_add(list,troll);
 		break;
 	case "Barghest Boss":
 		ds_list_add(list,barghest);

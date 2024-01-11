@@ -269,11 +269,16 @@ var chest = instance_position(facingCellX,facingCellY,objChest);
 if(chest != noone && !instance_exists(objTextbox) && playerControl)
 {
 	//talk to npc
-	if(objInput.interact() && !chest.open)// && !ds_list_find_value(objGame.openChestList, chest.id))
+	if(objInput.interact() && !chest.open)
 	{
-		ds_list_add(global.openChestList,chest.chestID);
+		if(chest.loot != "Empty")
+		{
+			ds_list_add(objStats.inv,chest.loot);
+		}
+		
 		lootGrabbed = chest.loot;
-		ds_list_add(objStats.inv,chest.loot);
+		ds_list_add(global.openChestList,chest.chestID);
+
 		chest.image_index = 1;
 		chest.open = true;
 		alarm[0] = 120;

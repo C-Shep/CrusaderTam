@@ -101,6 +101,18 @@ waterWand = {
 	cost: 40,
 }
 ds_list_add(equipment,waterWand);
+
+greataxe = {
+	name_: "Greataxe",
+	type_: "Weapon",
+	desc : "A massive axe wielded by the Axassin. Deals earth damage",
+	atk: 5,
+	def: 0,
+	spd: 0,
+	element: "Earth",
+	cost: 30,
+}
+ds_list_add(equipment,greataxe);
 #endregion
 
 //Shields
@@ -173,19 +185,30 @@ swiftscarf = {
 	desc : "An orange Scarf that increases speed",
 	atk: 0,
 	def: 0,
-	spd:10,
+	spd:15,
 	cost: 10,
 }
 ds_list_add(equipment,swiftscarf);
 
-swiftscarf = {
+quickRing = {
 	name_: "QuickRing",
 	type_: "Trinket",
 	desc : "An ring that accentuates speed and defence",
 	atk: 0,
 	def: 1,
-	spd:5,
-	cost: 10,
+	spd:8,
+	cost: 15,
 }
-ds_list_add(equipment,swiftscarf);
+ds_list_add(equipment,quickRing);
+
+blueFlower = {
+	name_: "BlueFlower",
+	type_: "Trinket",
+	desc : "An azure rose that attracts trouble",
+	atk: 1,
+	def: 1,
+	spd:0,
+	cost: 20,
+}
+ds_list_add(equipment,blueFlower);
 #endregion
