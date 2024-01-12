@@ -90,15 +90,12 @@ function closeTextbox(endEvent_ = "None")
 			break; 
 		case "Wheat Mayor Delivered":
 			global.quest.wheatMayorChat = true;
-			ds_list_add(objStats.inv,"Herb");
-			ds_list_add(objStats.inv,"Herb");
-			ds_list_add(objStats.inv,"Herb");
+			objStats.currentGld += 50;
 			break;
 		case "Troll King Beat":
 			global.quest.trollKingChat = true;
 			ds_list_add(objStats.inv,"Troll Note");
 			break; 
-			
 		default:
 			//usually nothing
 	}

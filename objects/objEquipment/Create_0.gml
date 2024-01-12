@@ -49,7 +49,7 @@ trollNote = {
 	name_: "Troll Note",
 	desc : "A letter from the troll king to wheatville's mayor."
 }
-ds_list_add(items,mageAsh);
+ds_list_add(items,trollNote);
 #endregion
 
 //Weapons

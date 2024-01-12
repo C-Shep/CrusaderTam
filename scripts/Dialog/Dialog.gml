@@ -1641,6 +1641,10 @@ global.dialog.wheatvilleMayorDelivered = [
 	speaker: speakers.mayor,
 	message_: "thank you for this, adventurer. here is your payment as promised"
 },
+{
+	speaker: speakers.none,
+	message_: "you gain 50 gold!"
+},
 ]
 
 global.dialog.wheatvilleMayorChat = [
