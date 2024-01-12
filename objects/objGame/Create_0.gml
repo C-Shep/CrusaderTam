@@ -55,6 +55,12 @@ global.quest = {
 	orchardMonsterKilled : false,
 	orchardComplete : false,
 	kingTalkedToOnce : false,
+	wheatMayorAskHelp : false,
+	wheatMayorAskHelpAgain : false,
+	wheatMayorDelivered : false,
+	wheatMayorChat : false,
+	trollKingBeat : false,
+	trollKingChat : false,
 }
 
 //Default go to menu

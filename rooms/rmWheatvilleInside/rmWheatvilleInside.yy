@@ -60,7 +60,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moveRange","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"32",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.wheatvilleMansionMan",},
           ],"isDnd":false,"objectId":{"name":"objNpcSoldier","path":"objects/objNpcSoldier/objNpcSoldier.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":944.0,"y":1008.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6F056DF8","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"wheatMayor","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.wheatvilleMayorAskHelpOnce",},
           ],"isDnd":false,"objectId":{"name":"objNpcHubert","path":"objects/objNpcHubert/objNpcHubert.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":784.0,"y":1328.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7A55964C","properties":[
@@ -187,7 +187,7 @@
     {"name":"inst_10AF2542","path":"rooms/rmWheatvilleInside/rmWheatvilleInside.yy",},
     {"name":"inst_CFD6E89","path":"rooms/rmWheatvilleInside/rmWheatvilleInside.yy",},
     {"name":"inst_406F0E73","path":"rooms/rmWheatvilleInside/rmWheatvilleInside.yy",},
-    {"name":"inst_6F056DF8","path":"rooms/rmWheatvilleInside/rmWheatvilleInside.yy",},
+    {"name":"wheatMayor","path":"rooms/rmWheatvilleInside/rmWheatvilleInside.yy",},
     {"name":"inst_7A55964C","path":"rooms/rmWheatvilleInside/rmWheatvilleInside.yy",},
     {"name":"inst_738DC3F5","path":"rooms/rmWheatvilleInside/rmWheatvilleInside.yy",},
     {"name":"inst_2DF825C2","path":"rooms/rmWheatvilleInside/rmWheatvilleInside.yy",},

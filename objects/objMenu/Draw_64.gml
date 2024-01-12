@@ -212,7 +212,7 @@ if(control || spellControl || invControl || equipControl || statsControl)
 	draw_sprite_stretched(sprBox,0,0,h-72,256,64);
 
 	//Draw Stats
-	var hpMsg = "hp: " + string(player.hp) + "/" + string(player.maxhp);
+	var hpMsg = "hp: " + string(min(player.hp,player.maxhp)) + "/" + string(player.maxhp);
 	var mpMsg = "mp: " + string(player.mp) + "/" + string(player.maxmp);
 	var xpMsg = "xp: " + string(player.currentXp);
 	var gldMsg = "gld: " + string(player.currentGld);

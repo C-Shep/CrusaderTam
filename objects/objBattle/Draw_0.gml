@@ -16,7 +16,7 @@ if(player.hp < oldHp)
 	colour = c_red;
 }
 
-var hpMsg = "hp: " + string(max(player.hp,player.maxhp)) + "/" + string(player.maxhp);
+var hpMsg = "hp: " + string(min(player.hp,player.maxhp)) + "/" + string(player.maxhp);
 var mpMsg = "mp: " + string(player.mp) + "/" + string(player.maxmp);
 
 
@@ -145,6 +145,9 @@ if(!endMessages)
 							break;
 						case "Axassin":
 							global.quest.orchardMonsterKilled = true;
+							break;
+						case "Troll King":
+							global.quest.trollKingBeat = true;
 							break;
 						default:
 					}

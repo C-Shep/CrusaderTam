@@ -256,6 +256,53 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					}
 				}
 				break;
+		case wheatMayor:
+				if(!global.quest.wheatMayorAskHelp)
+				{
+					npc.dialog = global.dialog.wheatvilleMayorAskHelpOnce;
+					endAction = "Wheat Mayor Asked";
+				}else{
+					if(!global.quest.wheatMayorDelivered && !global.quest.wheatMayorChat)
+					{
+						setNpcDialog(npc,global.dialog.wheatvilleMayorAskHelpAgain);
+					}
+					
+					if(objStats.turnInItem("Troll Note"))
+					{
+						global.quest.wheatMayorDelivered = true;
+					}
+					
+					if(global.quest.wheatMayorDelivered == true && global.quest.wheatMayorChat == false)
+					{
+						setNpcDialog(npc,global.dialog.wheatvilleMayorDelivered);
+						endAction = "Wheat Mayor Delivered";
+					}
+					
+					if(global.quest.wheatMayorDelivered == true && global.quest.wheatMayorChat == true)
+					{
+						setNpcDialog(npc,global.dialog.wheatvilleMayorChat);
+					}
+				}
+				break;
+		case trollKing:
+				if(!global.quest.trollKingBeat)
+				{
+					npc.dialog = global.dialog.trollKingAttack;
+					global.area = "Troll Boss";
+					endAction = "Begin Fight";
+				}else{	
+					if(global.quest.trollKingBeat == true && global.quest.trollKingChat == false)
+					{
+						setNpcDialog(npc,global.dialog.trollKingPlead);
+						endAction = "Troll King Beat";
+					}
+					
+					if(global.quest.wheatMayorDelivered == true && global.quest.wheatMayorChat == true)
+					{
+						setNpcDialog(npc,global.dialog.trollKingChat);
+					}
+				}
+				break;
 		}
 		createTextbox(npc.dialog,endAction);
 	}

@@ -30,6 +30,7 @@ var speakers = {
 	axassin : "Axassin",
 	postino:"Postino",
 	emma:"Emma",
+	kingTroll:"TrollKng",
 
 	//Main Quest NPCs
 	sofia:"Sofia",
@@ -1626,7 +1627,11 @@ global.dialog.wheatvilleMayorDelivered = [
 },
 {
 	speaker: speakers.mayor,
-	message_: "it appears they wish for some wheat to feed their young. but of course!"
+	message_: "it's an apology! well thats all right then."
+},
+{
+	speaker: speakers.mayor,
+	message_: "it also appears they wish for some wheat to feed their young. but of course!"
 },
 {
 	speaker: speakers.mayor,
@@ -1646,6 +1651,35 @@ global.dialog.wheatvilleMayorChat = [
 {
 	speaker: speakers.mayor,
 	message_: "a nice harmony wouldn't ya say?"
+},
+]
+
+global.dialog.trollKingAttack = [
+{
+	speaker: speakers.kingTroll,
+	message_: "Garrr! An intruder? Foolish!"
+},
+{
+	speaker: speakers.kingTroll,
+	message_: "Were you sent here by the mayor? Prepare to be crushed!"
+},
+]
+
+global.dialog.trollKingPlead = [
+{
+	speaker: speakers.kingTroll,
+	message_: "I yield! you win! im sorry!"
+},
+{
+	speaker: speakers.kingTroll,
+	message_: "Please take this note to the mayor. we'll stay away from the town from now on"
+},
+]
+
+global.dialog.trollKingChat = [
+{
+	speaker: speakers.kingTroll,
+	message_: "We'll stay away from wheatville from now on"
 },
 ]
 
@@ -1773,11 +1807,11 @@ global.dialog.valiburghGrave5Talk = [
 
 global.dialog.trollSign = [
 	{
-		speaker: speakers.sign,
+		speaker: speakers.sign_,
 		message_: "troll proberty! go no furter!"
 	},
 	{
-		speaker: speakers.sign,
+		speaker: speakers.sign_,
 		message_: "u arr trespasin!"
 	}
 ]

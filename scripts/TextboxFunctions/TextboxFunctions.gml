@@ -85,6 +85,19 @@ function closeTextbox(endEvent_ = "None")
 		case "End Demo":
 			room_goto(rmEnd);
 			break;
+		case "Wheat Mayor Asked":
+			global.quest.wheatMayorAskHelp = true;
+			break; 
+		case "Wheat Mayor Delivered":
+			global.quest.wheatMayorChat = true;
+			ds_list_add(objStats.inv,"Herb");
+			ds_list_add(objStats.inv,"Herb");
+			ds_list_add(objStats.inv,"Herb");
+			break;
+		case "Troll King Beat":
+			global.quest.trollKingChat = true;
+			ds_list_add(objStats.inv,"Troll Note");
+			break; 
 			
 		default:
 			//usually nothing

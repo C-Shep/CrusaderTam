@@ -108,6 +108,7 @@ switch(global.lastRoom)
 {
 	case rmBarghestCave:
 	case rmOminousCave:
+	case rmTrollCave:
 		currentBG = sprCaveBG;
 	break;
 	default:

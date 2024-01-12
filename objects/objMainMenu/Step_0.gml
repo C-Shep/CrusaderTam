@@ -20,7 +20,7 @@ if(objInput.interact())
 		case "New Game":
 			control = false;
 			//room_goto(rmQuillbeach);
-			room_goto(rmValiburgh);
+			room_goto(rmWheatville);
 			break;
 		case "Exit":
 			control = false;

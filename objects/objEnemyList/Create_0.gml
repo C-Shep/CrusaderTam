@@ -484,9 +484,9 @@ ds_list_add(axassin.moves,"Kick");
 ds_list_add(axassin.moves,"Attack");
 
 //Troll King -----------------------------
-trollKing = {
+trollKing_ = {
 	name_: "Troll King",
-	sprite: sprAxassin,
+	sprite: sprTrollKing,
 	hp:90,
 	maxhp:90,
 	atk:10,
@@ -500,9 +500,9 @@ trollKing = {
 }
 
 //Troll King Moves
-ds_list_add(trollKing.moves,"Kick");
-ds_list_add(trollKing.moves,"Attack");
-ds_list_add(trollKing.moves,"Headbutt");
+ds_list_add(trollKing_.moves,"Kick");
+ds_list_add(trollKing_.moves,"Attack");
+ds_list_add(trollKing_.moves,"Headbutt");
 
 //---------------------------------------------------------- Secret Enemies ----------------------------------------------------------
 
@@ -621,7 +621,7 @@ switch(global.area)
 			ds_list_add(list,troll);
 			ds_list_add(list,redcap);
 		break;
-	case "Troll Ruins":
+	case "Troll Cave":
 			ds_list_add(list,trolling);
 			ds_list_add(list,troll);
 		break;
@@ -630,6 +630,9 @@ switch(global.area)
 		break;
 	case "Axassin Boss":
 		ds_list_add(list,axassin);
+		break;
+	case "Troll Boss":
+		ds_list_add(list,trollKing_);
 		break;
 }
 
