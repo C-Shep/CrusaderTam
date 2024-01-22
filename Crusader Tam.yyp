@@ -161,6 +161,7 @@
     {"id":{"name":"sprAxassin","path":"sprites/sprAxassin/sprAxassin.yy",},"order":18,},
     {"id":{"name":"sprBox","path":"sprites/sprBox/sprBox.yy",},"order":6,},
     {"id":{"name":"seqTextbox","path":"sequences/seqTextbox/seqTextbox.yy",},"order":0,},
+    {"id":{"name":"rmTorgale2","path":"rooms/rmTorgale2/rmTorgale2.yy",},"order":19,},
     {"id":{"name":"City","path":"sprites/City/City.yy",},"order":2,},
     {"id":{"name":"sprQueenUp","path":"sprites/sprQueenUp/sprQueenUp.yy",},"order":2,},
     {"id":{"name":"sprGrave","path":"sprites/sprGrave/sprGrave.yy",},"order":2,},
@@ -194,6 +195,7 @@
     {"id":{"name":"sprRedcap","path":"sprites/sprRedcap/sprRedcap.yy",},"order":26,},
     {"id":{"name":"sprWoman2Left","path":"sprites/sprWoman2Left/sprWoman2Left.yy",},"order":2,},
     {"id":{"name":"sprTamLeft","path":"sprites/sprTamLeft/sprTamLeft.yy",},"order":1,},
+    {"id":{"name":"rmTorgale","path":"rooms/rmTorgale/rmTorgale.yy",},"order":18,},
     {"id":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},"order":3,},
   ],
   "Options": [
@@ -232,6 +234,8 @@
     {"roomId":{"name":"rmWheatville","path":"rooms/rmWheatville/rmWheatville.yy",},},
     {"roomId":{"name":"rmWheatvilleInside","path":"rooms/rmWheatvilleInside/rmWheatvilleInside.yy",},},
     {"roomId":{"name":"rmTrollCave","path":"rooms/rmTrollCave/rmTrollCave.yy",},},
+    {"roomId":{"name":"rmTorgale","path":"rooms/rmTorgale/rmTorgale.yy",},},
+    {"roomId":{"name":"rmTorgale2","path":"rooms/rmTorgale2/rmTorgale2.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
