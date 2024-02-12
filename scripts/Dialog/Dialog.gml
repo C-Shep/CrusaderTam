@@ -1827,4 +1827,11 @@ global.dialog.TrollGrave = [
 	}
 ]
 
+global.dialog.torgaleSignHill = [
+	{
+		speaker: speakers.sign_,
+		message_: "<-- Torgale"
+	}
+]
+
 #endregion
