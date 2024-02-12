@@ -1687,6 +1687,63 @@ global.dialog.trollKingChat = [
 },
 ]
 
+global.dialog.postinoTorgaleAskHelp = [
+	{
+		speaker: speakers.postino,
+		message_: "Hm? oh hello!"
+	},
+	{
+		speaker: speakers.postino,
+		message_: "yeah i've got another problem... i dropped a parcel for the WATER CITY DUDE"
+	},
+	{
+		speaker: speakers.postino,
+		message_: "I went for a walk by the coast to the west earlier, i wonder if i dropped it there"
+	},
+	{
+		speaker: speakers.postino,
+		message_: "could you check there for me? I'll give you "
+	},
+]
+
+global.dialog.postinoTorgaleDelivered = [
+	{
+		speaker: speakers.postino,
+		message_: "How could I be so foolish!?"
+	},
+	{
+		speaker: speakers.postino,
+		message_: "Wait a minute...?"
+	},
+	{
+		speaker: speakers.postino,
+		message_: "That envelope you have, thats my letter!"
+	},
+	{
+		speaker: speakers.postino,
+		message_: "Here! I'll trade you my scarf for it!"
+	},
+	{
+		speaker: speakers.none,
+		message_: "You recived a Swift Scarf!"
+	},
+	{
+		speaker: speakers.postino,
+		message_: "Thank you so much, adventurer!"
+	},
+]
+
+global.dialog.postinoTorgaleChat = [
+	{
+		speaker: speakers.postino,
+		message_: "You really saved my behind, adventurer"
+	},
+	{
+		speaker: speakers.postino,
+		message_: "I'll be going to Torgale to deliver this mail, I hope we meet again soon!"
+	}
+]
+
 #endregion
 
 #region Signs
