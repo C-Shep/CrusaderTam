@@ -1,4 +1,4 @@
-/// @desc 
+/// @desc Debug
 //Load();
 //global.quest.postinoFound = true;
 //global.quest.barghestKilled = true;

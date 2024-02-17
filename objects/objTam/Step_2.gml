@@ -303,6 +303,29 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					}
 				}
 				break;
+			case postinoTorgale:
+				if(!global.quest.postinoTorgaleAskHelp)
+				{
+					setNpcDialog(npc,global.dialog.postinoTorgaleAskHelp);
+					endAction = "Post Torgale Asked";
+				}else{
+					if(objStats.turnInItem("BlueParcel"))
+					{
+						global.quest.postinoTorgaleDelivered = true;
+					}
+					
+					if(global.quest.postinoTorgaleDelivered == true && global.quest.postinoTorgaleChat == false)
+					{
+						setNpcDialog(npc,global.dialog.postinoTorgaleDelivered);
+						endAction = "Post Torgale Delivered";
+					}
+					
+					if(global.quest.postinoTorgaleDelivered == true && global.quest.postinoTorgaleChat == true)
+					{
+						setNpcDialog(npc,global.dialog.postinoTorgaleChat);
+					}
+				}
+				break;
 		}
 		createTextbox(npc.dialog,endAction);
 	}

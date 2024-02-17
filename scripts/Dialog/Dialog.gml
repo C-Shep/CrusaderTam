@@ -1690,7 +1690,7 @@ global.dialog.trollKingChat = [
 global.dialog.postinoTorgaleAskHelp = [
 	{
 		speaker: speakers.postino,
-		message_: "Hm? oh hello!"
+		message_: "Hm? oh hello again!"
 	},
 	{
 		speaker: speakers.postino,
@@ -1702,45 +1702,45 @@ global.dialog.postinoTorgaleAskHelp = [
 	},
 	{
 		speaker: speakers.postino,
-		message_: "could you check there for me? I'll give you "
+		message_: "could you check there for me? I'll give you my old shield as thanks"
 	},
 ]
 
 global.dialog.postinoTorgaleDelivered = [
 	{
 		speaker: speakers.postino,
-		message_: "How could I be so foolish!?"
+		message_: "...i really need to stop dropping things..."
 	},
 	{
 		speaker: speakers.postino,
-		message_: "Wait a minute...?"
+		message_: "oh hello, did you find the parcel?"
 	},
 	{
 		speaker: speakers.postino,
-		message_: "That envelope you have, thats my letter!"
+		message_: "Ah! you did! amazing work, friend. You've saved me some real bother."
 	},
 	{
 		speaker: speakers.postino,
-		message_: "Here! I'll trade you my scarf for it!"
+		message_: "Here, as promised, my old shield. I won't be needing it anymore."
 	},
 	{
 		speaker: speakers.none,
-		message_: "You recived a Swift Scarf!"
+		message_: "You recived a RedShield!"
 	},
 	{
 		speaker: speakers.postino,
-		message_: "Thank you so much, adventurer!"
+		message_: "Thank you again, i hope we meet again!"
 	},
 ]
 
 global.dialog.postinoTorgaleChat = [
 	{
 		speaker: speakers.postino,
-		message_: "You really saved my behind, adventurer"
+		message_: "I'm off to WATER TOWN after this."
 	},
 	{
 		speaker: speakers.postino,
-		message_: "I'll be going to Torgale to deliver this mail, I hope we meet again soon!"
+		message_:  "Good luck out there, friend."
 	}
 ]
 

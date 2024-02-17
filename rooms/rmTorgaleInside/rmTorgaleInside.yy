@@ -82,10 +82,10 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetX","path":"objects/objDoor/objDoor.yy",},"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"value":"327",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetY","path":"objects/objDoor/objDoor.yy",},"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"value":"182",},
           ],"isDnd":false,"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":368.0,"y":800.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_73105B30","properties":[
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"postinoTorgale","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moves","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"False",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moveDir","path":"objects/objCharParent/objCharParent.yy",},"objectId":{"name":"objCharParent","path":"objects/objCharParent/objCharParent.yy",},"value":"0",},
-          ],"isDnd":false,"objectId":{"name":"objNpcPostino","path":"objects/objNpcPostino/objNpcPostino.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":336.0,"y":544.0,},
+          ],"isDnd":false,"objectId":{"name":"objNpcPostino","path":"objects/objNpcPostino/objNpcPostino.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":336.0,"y":544.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_55935356","properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moves","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"False",},
           ],"isDnd":false,"objectId":{"name":"objNpcHubert","path":"objects/objNpcHubert/objNpcHubert.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":320.0,"y":464.0,},
@@ -154,7 +154,7 @@
     {"name":"inst_7EF33ACE","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
     {"name":"inst_32BD0D2D","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
     {"name":"inst_4ADD2CCE","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
-    {"name":"inst_73105B30","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
+    {"name":"postinoTorgale","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
     {"name":"inst_55935356","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
     {"name":"inst_6F32FB44","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
     {"name":"inst_3332DA58","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},

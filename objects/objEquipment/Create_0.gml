@@ -39,6 +39,12 @@ letter = {
 }
 ds_list_add(items,letter);
 
+blueParcel = {
+	name_: "BlueParcel",
+	desc : "A parcel that a certain courier dropped."
+}
+ds_list_add(items,blueParcel);
+
 mageAsh = {
 	name_: "Mage Ash",
 	desc : "Magical Ashes that makes plants grow faster."
@@ -139,6 +145,28 @@ ironShield = {
 	cost: 32,
 }
 ds_list_add(equipment,ironShield);
+
+steelShield = {
+	name_: "SteelShield",
+	type_: "Shield",
+	desc : "A sturdy, strong shield",
+	atk: 0,
+	def: 3,
+	spd: 0,
+	cost: 40,
+}
+ds_list_add(equipment,steelShield);
+
+redShield = {
+	name_: "RedShield",
+	type_: "Shield",
+	desc : "A crimson shield gifted from postino",
+	atk: 0,
+	def: 3,
+	spd: 10,
+	cost: 30,
+}
+ds_list_add(equipment,redShield);
 #endregion
 
 //Armours

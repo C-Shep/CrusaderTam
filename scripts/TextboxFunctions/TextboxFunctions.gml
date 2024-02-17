@@ -72,6 +72,13 @@ function closeTextbox(endEvent_ = "None")
 			ds_list_add(objStats.inv,"SwiftScarf");
 			global.quest.postinoChat = true;
 			break;
+		case "Post Torgale Asked":
+			global.quest.postinoTorgaleAskHelp = true;
+			break; 
+		case "Post Torgale Delivered":
+			ds_list_add(objStats.inv,"RedShield");
+			global.quest.postinoTorgaleChat = true;
+			break; 
 		case "Get Stew":
 			ds_list_add(objStats.inv,"Stew");
 			global.quest.stewReceived = true;

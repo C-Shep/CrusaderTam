@@ -10,7 +10,7 @@ tam = objTam;
 //encounter based on tile
 var currentTileX_ = toTile(tam.x);
 var currentTileY_ = toTile(tam.y);
-		
+
 if(timer>=setTime)
 {
 

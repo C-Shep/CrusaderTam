@@ -46,7 +46,7 @@ global.quest = {
 	emmaDelivered : false,
 	emmaChat : false,
 	postAskHelp : false,
-	postDelivered : false,
+	postDelivered : true,//DEBUG
 	postChat : false,
 	barghestQuestAccepted : false,
 	barghestKilled : false,
@@ -56,11 +56,13 @@ global.quest = {
 	orchardComplete : false,
 	kingTalkedToOnce : false,
 	wheatMayorAskHelp : false,
-	wheatMayorAskHelpAgain : false,
 	wheatMayorDelivered : false,
 	wheatMayorChat : false,
 	trollKingBeat : false,
 	trollKingChat : false,
+	postinoTorgaleAskHelp : false,
+	postinoTorgaleDelivered : false,
+	postinoTorgaleChat : false,
 }
 
 //Default go to menu
