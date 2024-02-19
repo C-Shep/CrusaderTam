@@ -115,6 +115,11 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moveDir","path":"objects/objCharParent/objCharParent.yy",},"objectId":{"name":"objCharParent","path":"objects/objCharParent/objCharParent.yy",},"value":"90",},
           ],"isDnd":false,"objectId":{"name":"objNpcSoldier","path":"objects/objNpcSoldier/objNpcSoldier.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1168.0,"y":352.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7F52EE1C","properties":[],"isDnd":false,"objectId":{"name":"objNpcMan","path":"objects/objNpcMan/objNpcMan.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":272.0,"y":800.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2C6DB63D","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetRoom","path":"objects/objDoor/objDoor.yy",},"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"value":"rmTorgale",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetX","path":"objects/objDoor/objDoor.yy",},"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"value":"328",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"targetY","path":"objects/objDoor/objDoor.yy",},"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"value":"407",},
+          ],"isDnd":false,"objectId":{"name":"objDoor","path":"objects/objDoor/objDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":288.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Walls","tilesetId":{"name":"tlsCity","path":"tilesets/tlsCity/tlsCity.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":96,"SerialiseHeight":80,"TileCompressedData":[
 -83,0,-13,-2147483648,-876,0,-12,1,-84,0,2,1,48,-8,0,2,48,1,-45,0,-9,1,-30,0,12,1,0,0,49,1,0,0,1,49,0,0,1,-14,0,-7,1,-24,0,3,1,103,0,-5,98,1,1,-30,0,-5,1,-2,0,-5,1,-14,0,7,1,0,0,162,0,48,1,-32,0,1,1,-30,0,1,1,-6,0,5,1,48,0,162,1,-14,0,1,1,-5,0,1,1,-32,0,1,
@@ -172,6 +177,7 @@
     {"name":"inst_3AF1343A","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
     {"name":"inst_F580DED","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
     {"name":"inst_7F52EE1C","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
+    {"name":"inst_2C6DB63D","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

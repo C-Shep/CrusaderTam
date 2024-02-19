@@ -175,50 +175,26 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 				endAction = "Begin Fight";
 				break;
 			case emma_:
-				if(!global.quest.emmaAskHelp)
-				{
-					npc.dialog = global.dialog.emmaAskHelp;
-					endAction = "Emma Asked";
-				}else{
-					if(objStats.turnInItem("Mage Ash"))
-					{
-						global.quest.emmaDelivered = true;
-					}
-					
-					if(global.quest.emmaDelivered == true && global.quest.emmaChat == false)
-					{
-						setNpcDialog(npc,global.dialog.emmaDelivered);
-						endAction = "Emma Delivered";
-					}
-					
-					if(global.quest.emmaDelivered == true && global.quest.emmaChat == true)
-					{
-						setNpcDialog(npc,global.dialog.emmaChat);
-					}
-				}
+				endAction = fetchQuest("MageAsh",		//item
+				global.dialog.emmaAskHelp,		//ask dialog
+				global.dialog.emmaDelivered,	//deliver dialog
+				global.dialog.emmaChat,		//chat dialog
+				global.quest.emmaAskHelp,				//ask quest
+				global.quest.emmaDelivered,				//deliver quest
+				global.quest.emmaChat,					//chat quest
+				"Emma Asked",							//ask end action
+				"Emma Delivered");						//deliver end action
 				break;
 			case postValiburgh:
-				if(!global.quest.postAskHelp)
-				{
-					setNpcDialog(npc,global.dialog.postValiburghAskHelp);
-					endAction = "Post Asked";
-				}else{
-					if(objStats.turnInItem("Letter"))
-					{
-						global.quest.postDelivered = true;
-					}
-					
-					if(global.quest.postDelivered == true && global.quest.postChat == false)
-					{
-						setNpcDialog(npc,global.dialog.postValiburghDelivered);
-						endAction = "Post Delivered";
-					}
-					
-					if(global.quest.postDelivered == true && global.quest.postChat == true)
-					{
-						setNpcDialog(npc,global.dialog.postValiburghChat);
-					}
-				}
+				endAction = fetchQuest("Letter",		//item
+				global.dialog.postValiburghAskHelp,		//ask dialog
+				global.dialog.postValiburghDelivered,	//deliver dialog
+				global.dialog.postValiburghChat,		//chat dialog
+				global.quest.postAskHelp,				//ask quest
+				global.quest.postDelivered,				//deliver quest
+				global.quest.postChat,					//chat quest
+				"Post Asked",							//ask end action
+				"Post Delivered");						//deliver end action
 				break;
 			case chefElira:
 				if(!global.quest.stewReceived)
