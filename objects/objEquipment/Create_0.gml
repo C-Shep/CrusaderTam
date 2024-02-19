@@ -46,16 +46,28 @@ blueParcel = {
 ds_list_add(items,blueParcel);
 
 mageAsh = {
-	name_: "Mage Ash",
+	name_: "MageAsh",
 	desc : "Magical Ashes that makes plants grow faster."
 }
 ds_list_add(items,mageAsh);
 
 trollNote = {
-	name_: "Troll Note",
+	name_: "TrollNote",
 	desc : "A letter from the troll king to wheatville's mayor."
 }
 ds_list_add(items,trollNote);
+
+valiburghKey = {
+	name_: "ValiburghKey",
+	desc : "A key that opens the valiburgh castle vault."
+}
+ds_list_add(items,valiburghKey);
+
+torgaleKey = {
+	name_: "TorgaleKey",
+	desc : "A key that opens the locked door in torgale."
+}
+ds_list_add(items,torgaleKey);
 #endregion
 
 //Weapons

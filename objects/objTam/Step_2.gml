@@ -24,7 +24,7 @@ if(IsOnWater(tileXX,tileYY))
 }
 
 //Check for an npc
-var npc = instance_position(facingCellX,facingCellY,objNpcParent);
+npc = instance_position(facingCellX,facingCellY,objNpcParent);
 var overCounterNpc = instance_position(facingCellXExtra,facingCellYExtra,objNpcParent);
 
 if(boat)
@@ -304,27 +304,21 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 				}
 				break;
 			case postinoTorgale:
-				if(!global.quest.postinoTorgaleAskHelp)
-				{
-					setNpcDialog(npc,global.dialog.postinoTorgaleAskHelp);
-					endAction = "Post Torgale Asked";
-				}else{
-					if(objStats.turnInItem("BlueParcel"))
-					{
-						global.quest.postinoTorgaleDelivered = true;
-					}
-					
-					if(global.quest.postinoTorgaleDelivered == true && global.quest.postinoTorgaleChat == false)
-					{
-						setNpcDialog(npc,global.dialog.postinoTorgaleDelivered);
-						endAction = "Post Torgale Delivered";
-					}
-					
-					if(global.quest.postinoTorgaleDelivered == true && global.quest.postinoTorgaleChat == true)
-					{
-						setNpcDialog(npc,global.dialog.postinoTorgaleChat);
-					}
-				}
+				endAction = fetchQuest("BlueParcel",	//item
+				global.dialog.postinoTorgaleAskHelp,	//ask dialog
+				global.dialog.postinoTorgaleDelivered,	//deliver dialog
+				global.dialog.postinoTorgaleChat,		//chat dialog
+				global.quest.postinoTorgaleAskHelp,		//ask quest
+				global.quest.postinoTorgaleDelivered,	//deliver quest
+				global.quest.postinoTorgaleChat,		//chat quest
+				"Post Torgale Asked",					//ask end action
+				"Post Torgale Delivered");				//deliver end action
+				break;
+			case torgaleDoor:
+					endAction = openLockedDoor("TorgaleKey",global.quest.torgaleDoorOpen);
+				break;
+			case valiburghDoor:
+					endAction = openLockedDoor("ValiburghKey",global.quest.valiburghDoorOpen);
 				break;
 		}
 		createTextbox(npc.dialog,endAction);

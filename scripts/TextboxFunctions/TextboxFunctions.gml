@@ -103,6 +103,9 @@ function closeTextbox(endEvent_ = "None")
 			global.quest.trollKingChat = true;
 			ds_list_add(objStats.inv,"Troll Note");
 			break; 
+		case "Destroy":
+			instance_destroy(objTam.npc);
+			break; 
 		default:
 			//usually nothing
 	}

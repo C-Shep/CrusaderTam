@@ -24,7 +24,7 @@ invLength = ds_list_size(inv);
 //Max Healing
 healCount = 0;
 maxHeals = 5;
-
+//ds_list_add(inv,"TorgaleKey");//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa
 /*
 ds_list_add(inv,"Herb");
 ds_list_add(inv,"Herb");
@@ -34,7 +34,7 @@ ds_list_add(inv,"Shield");
 ds_list_add(inv,"Sword");
 ds_list_add(inv,"Spear");
 ds_list_add(inv,"Chainmail");
-//ds_list_add(inv,"Amulet");7
+//ds_list_add(inv,"Amulet");
 */
 
 //Functions

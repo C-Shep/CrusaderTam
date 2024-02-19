@@ -63,6 +63,8 @@ global.quest = {
 	postinoTorgaleAskHelp : false,
 	postinoTorgaleDelivered : false,
 	postinoTorgaleChat : false,
+	torgaleDoorOpen : false,
+	valiburghDoorOpen : false,
 }
 
 //Default go to menu

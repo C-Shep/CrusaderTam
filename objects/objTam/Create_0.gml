@@ -6,7 +6,7 @@ x = floor(objPosSaver.xx/16)*16;
 y = floor(objPosSaver.yy/16)*16;
 
 //movement states for animation
-
+npc = noone;
 
 boatLeftSprite = sprBoatLeft;
 boatLeftSprite = sprBoatLeft;
@@ -60,3 +60,85 @@ function setNpcDialog(npc, newDialog)
 {
 	npc.dialog = newDialog;
 }
+
+function openLockedDoor(item, doorQuest)
+{
+	//Check for key, if no key, say locked
+	if(objStats.turnInItem(item))
+	{
+		doorQuest = true;
+	}else{
+		setNpcDialog(npc,global.dialog.locked);
+	}
+				
+	//if Key, open
+	if(doorQuest)
+	{
+		setNpcDialog(npc,global.dialog.itOpened);
+		return "Destroy";
+	}
+	
+	return "None";
+}
+
+function fetchQuest(item, askDialog, deliverDialog, chatDialog, askQuest, deliveredQuest, chatQuest, askEndAction, deliverEndAction)
+{
+	if(!askQuest)
+	{
+		setNpcDialog(npc,askDialog);
+		return askEndAction;
+	}else{
+		if(objStats.turnInItem(item))
+		{
+			deliveredQuest = true;
+		}
+					
+		if(deliveredQuest == true && chatQuest == false)
+		{
+			setNpcDialog(npc,deliverDialog);
+			return deliverEndAction;
+		}
+					
+		if(deliveredQuest == true && chatQuest == true)
+		{
+			setNpcDialog(npc,chatDialog);
+		}
+	}
+}
+
+	/*/Check for key, if no key, say locked
+	if(objStats.turnInItem("TorgaleKey"))
+	{
+		global.quest.torgaleDoorOpen = true;
+	}else{
+		setNpcDialog(npc,global.dialog.locked);
+	}
+				
+	//if Key, open
+	if(global.quest.torgaleDoorOpen)
+	{
+		setNpcDialog(npc,global.dialog.itOpened);
+		endAction = "Destroy";
+	}
+	
+				if(!global.quest.postinoTorgaleAskHelp)
+				{
+					setNpcDialog(npc,global.dialog.postinoTorgaleAskHelp);
+					endAction = "Post Torgale Asked";
+				}else{
+					if(objStats.turnInItem("BlueParcel"))
+					{
+						global.quest.postinoTorgaleDelivered = true;
+					}
+					
+					if(global.quest.postinoTorgaleDelivered == true && global.quest.postinoTorgaleChat == false)
+					{
+						setNpcDialog(npc,global.dialog.postinoTorgaleDelivered);
+						endAction = "Post Torgale Delivered";
+					}
+					
+					if(global.quest.postinoTorgaleDelivered == true && global.quest.postinoTorgaleChat == true)
+					{
+						setNpcDialog(npc,global.dialog.postinoTorgaleChat);
+					}
+				}

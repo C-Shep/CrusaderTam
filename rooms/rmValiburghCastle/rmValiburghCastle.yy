@@ -171,7 +171,10 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moves","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"False",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"dialog","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"global.dialog.queenTalk",},
           ],"isDnd":false,"objectId":{"name":"objNpcQueen","path":"objects/objNpcQueen/objNpcQueen.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":272.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4EB6CC36","properties":[],"isDnd":false,"objectId":{"name":"objNpcLockedDoor","path":"objects/objNpcLockedDoor/objNpcLockedDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1040.0,"y":400.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"valiburghDoor","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"moves","path":"objects/objAiParent/objAiParent.yy",},"objectId":{"name":"objAiParent","path":"objects/objAiParent/objAiParent.yy",},"value":"False",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"shouldTurn","path":"objects/objNpcParent/objNpcParent.yy",},"objectId":{"name":"objNpcParent","path":"objects/objNpcParent/objNpcParent.yy",},"value":"False",},
+          ],"isDnd":false,"objectId":{"name":"objNpcLockedDoor","path":"objects/objNpcLockedDoor/objNpcLockedDoor.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1040.0,"y":400.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Walls","tilesetId":{"name":"tlsCity","path":"tilesets/tlsCity/tlsCity.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":80,"SerialiseHeight":80,"TileCompressedData":[
 -41,0,-39,-2147483648,-41,0,-39,-2147483648,-41,0,-39,-2147483648,-41,0,-39,-2147483648,-74,0,-6,-2147483648,-74,0,-6,-2147483648,-74,0,-6,-2147483648,-74,0,-6,-2147483648,-74,0,-6,-2147483648,-74,0,-6,-2147483648,-74,0,-6,-2147483648,-74,0,-6,-2147483648,-32,0,-14,1,-28,0,-6,-2147483648,-32,0,1,1,-12,0,1,1,-28,0,-6,-2147483648,-9,0,-14,1,-9,0,4,1,0,0,103,-6,
@@ -245,7 +248,7 @@
     {"name":"inst_5354D700","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
     {"name":"kingWymar","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
     {"name":"inst_7F4C84ED","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
-    {"name":"inst_4EB6CC36","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
+    {"name":"valiburghDoor","path":"rooms/rmValiburghCastle/rmValiburghCastle.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

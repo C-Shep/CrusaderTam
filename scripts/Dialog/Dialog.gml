@@ -8,6 +8,7 @@ var speakers = {
 	grave: "Grave",
 	soldier:"Soldier",
 	mayor: "Mayor",
+	chef : "Chef",
 	
 	//Shopkeeps/Innkeeps
 	gaz:"Gaz",
@@ -21,7 +22,6 @@ var speakers = {
 	
 	//Unique NPCs
 	elia : "Elia",
-	chef : "Chef",
 	cirrus : "Cirrus",
 	stratus : "Stratus",
 	
@@ -1891,4 +1891,20 @@ global.dialog.torgaleSignHill = [
 	}
 ]
 
+#endregion
+
+#region Doors
+global.dialog.locked = [
+	{
+		speaker: speakers.none,
+		message_: "locked"
+	}
+]
+
+global.dialog.itOpened = [
+	{
+		speaker: speakers.none,
+		message_: "it opened!"
+	}
+]
 #endregion
