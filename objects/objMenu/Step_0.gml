@@ -197,7 +197,7 @@ else if(invControl)
 				actionMessage = "You heal for " + string(healNum) + " health!";
 				ds_list_delete(inv,invSelected);
 				break;
-			case "Weed":
+			case "Honey":
 				var restoreNum = playerRestore(10);
 				actionMessage = "You restore " + string(restoreNum) + " magic!";
 				ds_list_delete(inv,invSelected);

@@ -6,27 +6,45 @@ items = ds_list_create();
 #region Items
 herb = {
 	name_: "Herb",
-	desc : "A medicinal leaf that heals 8 hp."
+	desc : "A medicinal leaf that heals 8 hp.",
+	cost : 7,
 }
 ds_list_add(items,herb);
 
-weed = {
-	name_: "Weed",
-	desc : "A mystical plant that restores 10 mp."
+strongHerb = {
+	name_: "StrongHerb",
+	desc : "A strong medicinal leaf that heals 16 hp.",
+	cost : 16,
 }
-ds_list_add(items,weed);
+ds_list_add(items,strongHerb);
+
+honey = {
+	name_: "Honey",
+	desc : "A magical syrup that restores 10 mp.",
+	cost : 15,
+}
+ds_list_add(items,honey);
+
+tea = {
+	name_: "Tea",
+	desc : "A magical, relaxing drink that restores 18 mp.",
+	cost : 25,
+}
+ds_list_add(items,tea);
 
 stew = {
 	name_: "Stew",
-	desc : "A tasty stew that restores hp."
+	desc : "A tasty stew that restores hp.",
+	cost : 10,
 }
 ds_list_add(items,stew);
 
-stew = {
+apple = {
 	name_: "Apple",
-	desc : "A magic apple that restores 12 hp."
+	desc : "A magic apple that restores 16 hp.",
+	cost : 10,
 }
-ds_list_add(items,stew);
+ds_list_add(items,apple);
 
 
 #endregion
@@ -35,37 +53,43 @@ ds_list_add(items,stew);
 #region Quest Items
 letter = {
 	name_: "Letter",
-	desc : "A letter addressed to the gaffer of Torgale."
+	desc : "A letter addressed to the gaffer of Torgale.",
+	cost : 1,
 }
 ds_list_add(items,letter);
 
 blueParcel = {
 	name_: "BlueParcel",
-	desc : "A parcel that a certain courier dropped."
+	desc : "A parcel that a certain courier dropped.",
+	cost : 1,
 }
 ds_list_add(items,blueParcel);
 
 mageAsh = {
 	name_: "MageAsh",
-	desc : "Magical Ashes that makes plants grow faster."
+	desc : "Magical Ashes that makes plants grow faster.",
+	cost : 1,
 }
 ds_list_add(items,mageAsh);
 
 trollNote = {
 	name_: "TrollNote",
-	desc : "A letter from the troll king to wheatville's mayor."
+	desc : "A letter from the troll king to wheatville's mayor.",
+	cost : 1,
 }
 ds_list_add(items,trollNote);
 
 valiburghKey = {
 	name_: "ValiburghKey",
-	desc : "A key that opens the valiburgh castle vault."
+	desc : "A key that opens the valiburgh castle vault.",
+	cost : 1,
 }
 ds_list_add(items,valiburghKey);
 
 torgaleKey = {
 	name_: "TorgaleKey",
-	desc : "A key that opens the locked door in torgale."
+	desc : "A key that opens the locked door in torgale.",
+	cost : 1,
 }
 ds_list_add(items,torgaleKey);
 #endregion

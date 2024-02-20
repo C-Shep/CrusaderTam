@@ -92,16 +92,17 @@ function fetchQuest(item, askDialog, deliverDialog, chatDialog, askQuest, delive
 		{
 			deliveredQuest = true;
 		}
+		
+		if(chatQuest == true)
+		{
+			setNpcDialog(npc,chatDialog);
+			return "None";
+		}
 					
 		if(deliveredQuest == true && chatQuest == false)
 		{
 			setNpcDialog(npc,deliverDialog);
 			return deliverEndAction;
-		}
-					
-		if(deliveredQuest == true && chatQuest == true)
-		{
-			setNpcDialog(npc,chatDialog);
 		}
 	}
 }

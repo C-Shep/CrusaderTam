@@ -58,7 +58,7 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 			case "Quillbeach":
 				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"Herb");
-				ds_list_add(shop.stock,"Weed");
+				ds_list_add(shop.stock,"Honey");
 				ds_list_add(shop.stock,"Knife");
 				break;
 			case "Valiburgh Weapon":
@@ -76,7 +76,7 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 			case "Valiburgh Item":
 				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"Herb");
-				ds_list_add(shop.stock,"Weed");
+				ds_list_add(shop.stock,"Honey");
 				break;
 			case "Orchard":
 				var shop = instance_create_layer(0,0,"UI",objShop)
@@ -85,11 +85,25 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 			case "Wheatville":
 				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"Herb");
-				ds_list_add(shop.stock,"Weed");
+				ds_list_add(shop.stock,"Honey");
 				ds_list_add(shop.stock,"BrnzeSpear");
 				ds_list_add(shop.stock,"IronShield");
 				ds_list_add(shop.stock,"LeathrArmr");
 				ds_list_add(shop.stock,"Silk Cape");
+				break;
+			case "Torgale Armour":
+				var shop = instance_create_layer(0,0,"UI",objShop)
+				ds_list_add(shop.stock,"IronShield");
+				break;
+			case "Torgale Weapon":
+				var shop = instance_create_layer(0,0,"UI",objShop)
+				ds_list_add(shop.stock,"BrnzeSpear");
+				break;
+			case "Torgale Item":
+				var shop = instance_create_layer(0,0,"UI",objShop)
+				ds_list_add(shop.stock,"Herb");
+				ds_list_add(shop.stock,"StrongHerb");
+				ds_list_add(shop.stock,"Honey");
 				break;
 		}
 		
@@ -110,6 +124,10 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 			case "Wheatville":
 				var inn = instance_create_layer(0,0,"UI",objInn)
 				inn.cost = 10;
+				break;
+			case "Torgale":
+				var inn = instance_create_layer(0,0,"UI",objInn)
+				inn.cost = 12;
 				break;
 		}	
 		

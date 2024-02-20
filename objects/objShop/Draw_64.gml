@@ -25,7 +25,7 @@ else if(buyControl)
 	#region// draw stock menu
 	
 	//Draw the description box
-	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,336);
+	draw_sprite_stretched(sprBox,0,messageX-16,messageY-16,832,464);
 	
 	//Draw Box
 	draw_sprite_stretched(sprBox,0,menuX-16,menuY,384,menuHeight*8);
@@ -44,59 +44,33 @@ else if(buyControl)
 	{
 		var currentStock = ds_list_find_value(stock,i);
 		var selectedItem = ds_list_find_value(stock,buySelected);
-		
-		//Single use items and unique shop items costs are declared here as their costs change per room.
-		switch(selectedItem)
-		{
-			//Single Use Item Costs
-			#region Items
-			case "Herb":
-				switch(room)
-				{
-					case rmQuillbeachInside:
-						cost = 4;
-						break;
-					case rmValiburghInside:
-						cost = 7;
-						break;
-					default:
-						cost = 10;
-				}
 
-				break;
-			case "Weed":
-				switch(room)
-				{
-					case rmQuillbeachInside:
-						cost = 10;
-						break;
-					case rmValiburghInside:
-						cost = 11;
-						break;
-					default:
-						cost = 12;
-				}
-				break;
-			case "Apple":
-				switch(room)
-				{
-					case rmOrchard:
-						cost = 11;
-						break;
-					default:
-						cost = 11;
-				}
-				break;
-			#endregion
-		}
+		var equipmentStatsMessage = "";
 		
 		//Costs and Descriptions for Equipment
 		for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 		{
 			var e = objEquipment.equipment;
-			var eName = ds_list_find_value(e,j).name_;
+			var eCurrent = ds_list_find_value(e,j)
+			var eName = eCurrent.name_;
 			if(selectedItem == eName)
 			{
+				//Display equipment stats
+				if(eCurrent.atk != 0)
+				{
+					equipmentStatsMessage += "Atk:" + string(eCurrent.atk) + "  ";
+				}
+				
+				if(eCurrent.def != 0)
+				{
+					equipmentStatsMessage += "Def:" + string(eCurrent.def) + "  ";
+				}
+				
+				if(eCurrent.spd != 0)
+				{
+					equipmentStatsMessage += "Spd:" + string(eCurrent.spd) + "  ";
+				}
+				
 				cost = ds_list_find_value(e,j).cost;
 				description = ds_list_find_value(e,j).desc;
 			}
@@ -104,7 +78,7 @@ else if(buyControl)
 		
 		var itemDescMessage = "";
 		
-		//Descriptions for Items
+		//Costs & Descriptions for Items
 		for(var j = 0; j<ds_list_size(objEquipment.items);j++)
 		{
 			var equipItemList = objEquipment.items;
@@ -112,7 +86,8 @@ else if(buyControl)
 			var eilName = eilCurrent.name_;
 			if(selectedItem == eilName)
 			{		
-				//and description
+				//description
+				cost = eilCurrent.cost;
 				itemDescMessage = eilCurrent.desc;
 				description = itemDescMessage;
 			}
@@ -123,17 +98,19 @@ else if(buyControl)
 		//Draw the cost and descrpton
 		draw_text_transformed_colour(messageX,messageY,"Your gold: " + string(player.currentGld) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
 		draw_text_transformed_colour(messageX,messageY+64,string(cost) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
-		if(selectedItem == "Herb" || selectedItem == "Apple")
+		if(selectedItem == "Herb" || selectedItem == "StrongHerb" || selectedItem == "Apple")
 		{
 			draw_text_ext_transformed_colour(messageX,messageY+128,string(objStats.healCount)+"/"+string(objStats.maxHeals)+" "+description,16,200,textSize,textSize,0,colour,colour,colour,colour,1);
 		}else{
 			draw_text_ext_transformed_colour(messageX,messageY+128,description,16,200,textSize,textSize,0,colour,colour,colour,colour,1);
+			draw_text_transformed_color(messageX,messageY+384,equipmentStatsMessage,textSize,textSize,0,colour,colour,colour,colour,1); 
 		}
 		
 		//Draw the stock list
 		if(i==buySelected)
 		{
 			draw_text_transformed_color(menuX,menuY+menuHeight,">" + string(currentStock),textSize,textSize,0,colour,colour,colour,colour,1); 
+
 		}else if(i <= buySelected + 5 && i > buySelected){
 			draw_text_transformed_color(menuX,menuY+menuHeight*(i - (buySelected-1)),string(currentStock),textSize,textSize,0,colour,colour,colour,colour,1);
 		}
@@ -170,20 +147,31 @@ else if(sellControl)
 		{
 			#region Items
 			case "Herb":
-				cost = 1;
+			//	cost = 1;
 				break;
-			case "Weed":
-				cost = 2;
+			case "Honey":
+			//	cost = 2;
 				break;
 			#endregion
 		}
 		
-		//Costs for Equipment
+		//Sell Costs for Equipment
 		for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 		{
 			var e = objEquipment.equipment;
 			var eName = ds_list_find_value(e,j).name_;
 			if(selectedItem == eName)
+			{
+				cost = (ds_list_find_value(e,j).cost)/2;
+			}
+		}
+		
+		//Sell Costs for Items
+		for(var j = 0; j<ds_list_size(objEquipment.items);j++)
+		{
+			var itemList = objEquipment.items;
+			var iName = ds_list_find_value(itemList,j).name_;
+			if(selectedItem == iName)
 			{
 				cost = (ds_list_find_value(e,j).cost)/2;
 			}

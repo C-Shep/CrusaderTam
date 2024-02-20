@@ -48,7 +48,7 @@ evilgoat = {
 	spd:30,
 	xp:3,
 	gld:2,
-	drop: "Weed",
+	drop: "Honey",
 	weak:"None",
 	moves: ds_list_create()
 }
@@ -109,7 +109,7 @@ nightcap = {
 	spd:10,
 	xp:5,
 	gld:6,
-	drop: "Weed",
+	drop: "Honey",
 	weak:"None",
 	moves: ds_list_create()
 }
@@ -188,7 +188,7 @@ horsebird = {
 	spd:20,
 	xp:9,
 	gld:7,
-	drop: "Weed",
+	drop: "Honey",
 	weak:"None",
 	moves: ds_list_create()
 }
@@ -269,7 +269,7 @@ camabat = {
 	spd:50,
 	xp:8,
 	gld:8,
-	drop: "Weed",
+	drop: "Honey",
 	weak:"None",
 	moves: ds_list_create()
 }
@@ -309,7 +309,7 @@ cho = {
 	spd:30,
 	xp:30,
 	gld:20,
-	drop: "Weed",
+	drop: "Honey",
 	weak:"None",
 	moves: ds_list_create()
 }
@@ -390,7 +390,7 @@ bear = {
 	spd:30,
 	xp:12,
 	gld:8,
-	drop: "Herb",
+	drop: "Honey",
 	weak:"Fire",
 	moves: ds_list_create()
 }
@@ -410,7 +410,7 @@ aobozu = {
 	spd:20,
 	xp:12,
 	gld:8,
-	drop: "Herb",
+	drop: "WaterWand",
 	weak:"None",
 	moves: ds_list_create()
 }
@@ -452,7 +452,7 @@ barghest = {
 	spd:10,
 	xp:25,
 	gld:20,
-	drop: "Herb",
+	drop: "StrongHerb",
 	weak:"None",
 	moves: ds_list_create()
 }
@@ -517,7 +517,7 @@ groovedog = {
 	spd:30,
 	xp:5,
 	gld:3,
-	drop: "Weed",
+	drop: "Honey",
 	weak:"None",
 	moves: ds_list_create()
 }
