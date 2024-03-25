@@ -98,6 +98,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2D14FFA8","properties":[],"isDnd":false,"objectId":{"name":"objNpcWoman2","path":"objects/objNpcWoman2/objNpcWoman2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":368.0,"y":432.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7D1B5B9D","properties":[],"isDnd":false,"objectId":{"name":"objNpcMargery","path":"objects/objNpcMargery/objNpcMargery.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":112.0,"y":464.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_41CA4C96","properties":[],"isDnd":false,"objectId":{"name":"objNpcMan2","path":"objects/objNpcMan2/objNpcMan2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":304.0,"y":464.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_61862338","properties":[],"isDnd":false,"objectId":{"name":"objNpcWoman2","path":"objects/objNpcWoman2/objNpcWoman2.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":96.0,"y":224.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":16,"gridY":16,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":"none","properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Walls","tilesetId":{"name":"tlsCity","path":"tilesets/tlsCity/tlsCity.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":40,"SerialiseHeight":40,"TileCompressedData":[
 -225,121,-2,9,-37,121,-4,9,-2,121,1,0,-30,121,3,0,121,121,-4,9,1,121,-3,0,-28,121,-3,0,6,121,9,0,0,9,121,-3,0,-28,121,-4,
@@ -146,6 +147,7 @@
     {"name":"inst_2D14FFA8","path":"rooms/rmTorgale/rmTorgale.yy",},
     {"name":"inst_7D1B5B9D","path":"rooms/rmTorgale/rmTorgale.yy",},
     {"name":"inst_41CA4C96","path":"rooms/rmTorgale/rmTorgale.yy",},
+    {"name":"inst_61862338","path":"rooms/rmTorgale/rmTorgale.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

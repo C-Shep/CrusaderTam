@@ -39,6 +39,7 @@ var speakers = {
 	barghest: "Barghest",
 }
 
+//Define dialog as a struct
 global.dialog = {};
 
 #region Dialogue
@@ -1063,6 +1064,57 @@ global.dialog = {};
 		},
 		]
 		
+	#endregion
+	
+	#region Torgale Outside
+		global.dialog.torgaleMan1 = [
+		{
+			speaker: speakers.man,
+			message_: "The last people to go to the air temple never came back"
+		},
+		{
+			speaker: speakers.man,
+			message_: "i hope nothing bad happened to them..."
+		}
+		]
+	
+	
+		global.dialog.torgaleMan2 = [
+		{
+			speaker: speakers.man,
+			message_: "The great wyvern used to protect this city"
+		},
+		{
+			speaker: speakers.man,
+			message_: "but now it's disappeared! gone without a word!"
+		},
+		{
+			speaker: speakers.man,
+			message_: "we've not had a sunny day here for months!"
+		}
+		]
+		
+		global.dialog.torgaleWoman3 = [
+		{
+			speaker: speakers.man,
+			message_: "We used to climb the mountain every year to bring gifts to the great wyvern"
+		},
+		{
+			speaker: speakers.man,
+			message_: "but with the wyvern gone, there's not much point in going anymore"
+		},
+		{
+			speaker: speakers.man,
+			message_: "i hope nothing bad happened to it..."
+		}
+		]
+		
+		
+
+	#endregion
+	
+	#region Torgale Inside
+	
 	#endregion
 	
 	#region Overworld
