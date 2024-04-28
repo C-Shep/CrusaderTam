@@ -219,7 +219,7 @@ leatherArmour = {
 ds_list_add(equipment,leatherArmour);
 
 silkCape = {
-	name_: "Silk Cape",
+	name_: "SilkCape",
 	type_: "Armour",
 	desc : "speed increasing magical cape",
 	atk: 0,
