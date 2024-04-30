@@ -98,6 +98,7 @@
     {"id":{"name":"sprWoman2Down","path":"sprites/sprWoman2Down/sprWoman2Down.yy",},"order":0,},
     {"id":{"name":"sprKingUp","path":"sprites/sprKingUp/sprKingUp.yy",},"order":2,},
     {"id":{"name":"sprPeryton","path":"sprites/sprPeryton/sprPeryton.yy",},"order":11,},
+    {"id":{"name":"rmMountTempest","path":"rooms/rmMountTempest/rmMountTempest.yy",},"order":21,},
     {"id":{"name":"sprTamUp","path":"sprites/sprTamUp/sprTamUp.yy",},"order":3,},
     {"id":{"name":"sprWizardLeft","path":"sprites/sprWizardLeft/sprWizardLeft.yy",},"order":0,},
     {"id":{"name":"objNpcSoldier","path":"objects/objNpcSoldier/objNpcSoldier.yy",},"order":6,},
@@ -240,6 +241,7 @@
     {"roomId":{"name":"rmTorgale","path":"rooms/rmTorgale/rmTorgale.yy",},},
     {"roomId":{"name":"rmTorgaleInside","path":"rooms/rmTorgaleInside/rmTorgaleInside.yy",},},
     {"roomId":{"name":"rmTorgaleCastle","path":"rooms/rmTorgaleCastle/rmTorgaleCastle.yy",},},
+    {"roomId":{"name":"rmMountTempest","path":"rooms/rmMountTempest/rmMountTempest.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
