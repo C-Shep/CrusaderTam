@@ -40,7 +40,7 @@ if(inputX != 0 || inputY != 0)
 				global.boat = false;	// Get off the boat
 			}
 
-			moveSpd = 5;
+			moveSpd = 8;
 		}
 		
 		if(!col_)

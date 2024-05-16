@@ -4,7 +4,7 @@ playerStats = {
 	mp:10,
 	maxmp:10,
 	lvl:1,
-	atk:19, //default 3
+	atk:50, //default 3
 	baseAtk:19,
 	def:1,
 	baseDef:1,
@@ -24,7 +24,7 @@ invLength = ds_list_size(inv);
 //Max Healing
 healCount = 0;
 maxHeals = 5;
-//ds_list_add(inv,"TorgaleKey");//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa
+//ds_list_add(inv,"TorgaleKey");//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAagh
 /*
 ds_list_add(inv,"Herb");
 ds_list_add(inv,"Herb");

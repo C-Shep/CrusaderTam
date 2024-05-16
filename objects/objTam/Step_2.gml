@@ -144,8 +144,8 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 }
 #endregion
 
-//For staring the game
-if(startAlarm > 0) startAlarm--// else playerControl = true;
+//For auto talking
+if(startAlarm > 0) startAlarm--;// else playerControl = true;
 
 #region Normal Npcs
 if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm <= 0 && startTalk)))
@@ -156,11 +156,14 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 	//talk to npc
 	if(objInput.interact() || startTalk)
 	{
-		startTalk = false;
 		//make npc face the player
 		if(npc.shouldTurn) npc.moveDir = point_direction(npc.x,npc.y,x,y);
 		
 		var endAction = "None";
+	
+		//if autotalking, stop
+		startTalk = false;
+		startAlarm = -1;
 	
 		//talk to the npc
 		switch(npc.id)//quest npcs
@@ -285,7 +288,7 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					global.area = "Troll Boss";
 					endAction = "Begin Fight";
 				}else{	
-					if(global.quest.trollKingBeat == true && global.quest.trollKingChat == false)
+					if(global.quest.trollKingBeat == true && global.quest.wheatMayorChat == false)
 					{
 						setNpcDialog(npc,global.dialog.trollKingPlead);
 						endAction = "Troll King Beat";
@@ -315,7 +318,10 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					endAction = openLockedDoor("ValiburghKey",global.quest.valiburghDoorOpen);
 				break;
 		}
+		
+		//create the textbox for the dialog
 		createTextbox(npc.dialog,endAction);
+
 	}
 }
 #endregion

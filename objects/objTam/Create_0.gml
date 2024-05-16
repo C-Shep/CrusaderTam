@@ -2,17 +2,14 @@
 // Inherit the parent event
 event_inherited();
 
+//set correct position from battle, door or whatever
 x = floor(objPosSaver.xx/16)*16;
 y = floor(objPosSaver.yy/16)*16;
 
 //movement states for animation
 npc = noone;
 
-boatLeftSprite = sprBoatLeft;
-boatLeftSprite = sprBoatLeft;
-boatLeftSprite = sprBoatLeft;
-boatLeftSprite = sprBoatLeft;
-
+//states for land and sea
 normalStates = {
 	left: sprTamLeft,
 	right: sprTamRight,
@@ -45,16 +42,31 @@ if(me.hp <= 0)
 	me.mp = me.maxmp;
 }
 
-//starting position
+// ----- Auto talk -----
+
+//Talk as soon as spawning
 startTalk = false;
 startAlarm = 2;
 
+//talk to sofia when the game starts
 if(!global.quest.sofiaTalked && room == rmQuillbeach)
 {
 	playerControl = false;
 	moveDir = 90;
 	startTalk = true;
 }
+
+//if in troll cave and just beat the king
+if(global.quest.trollKingBeat && room == rmTrollCave && !global.autoTalks.trollKingAutoTalked)
+{
+	playerControl = false;
+	moveDir = 90;
+	startTalk = true;
+}
+
+
+
+// ----- Functions -----
 
 function setNpcDialog(npc, newDialog)
 {

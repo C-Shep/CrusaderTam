@@ -1,4 +1,5 @@
 /// @desc
+//random encounter times, in seconds
 minTime = 2;
 maxTime = 6;
 

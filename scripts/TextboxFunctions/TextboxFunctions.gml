@@ -97,11 +97,16 @@ function closeTextbox(endEvent_ = "None")
 			break; 
 		case "Wheat Mayor Delivered":
 			global.quest.wheatMayorChat = true;
-			objStats.currentGld += 50;
+			objStats.playerStats.currentGld += 50;
 			break;
 		case "Troll King Beat":
 			global.quest.trollKingChat = true;
-			ds_list_add(objStats.inv,"Troll Note");
+			objTam.playerControl = true;
+			global.autoTalks.trollKingAutoTalked = true;
+			if(objStats.findItem("Troll Note") == false)
+			{
+				ds_list_add(objStats.inv,"Troll Note");	
+			}
 			break; 
 		case "Destroy":
 			instance_destroy(objTam.npc);

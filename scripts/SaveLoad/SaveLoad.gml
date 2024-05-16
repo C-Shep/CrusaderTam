@@ -45,6 +45,7 @@ function SaveTam(){
 			quests : global.quest,
 			boatX : global.boatX,
 			boatY : global.boatY,
+			autoTalk : global.autoTalks,
 		}
 
 		array_push(saveData,statsSaveEntity);
@@ -117,6 +118,7 @@ function Load(){
 						global.quest = loadEntity.quests;
 						global.boatX = loadEntity.boatX;
 						global.boatY = loadEntity.boatY;
+						global.autoTalks = loadEntity.autoTalk;
 					}
 					break;
 			}			

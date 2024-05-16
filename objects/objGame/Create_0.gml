@@ -35,6 +35,11 @@ global.boatX = 4772;
 global.boatY = 3268;
 global.canGetInBoat = false;
 
+//Auto talk variables
+global.autoTalks = {
+	trollKingAutoTalked : false,
+}
+
 //Quests
 global.quest = {
 	sofiaTalked : false,

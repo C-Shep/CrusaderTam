@@ -148,6 +148,8 @@ if(!endMessages)
 							break;
 						case "Troll King":
 							global.quest.trollKingBeat = true;
+							objPosSaver.xx = 983;
+							objPosSaver.yy = 359;
 							break;
 						default:
 					}
