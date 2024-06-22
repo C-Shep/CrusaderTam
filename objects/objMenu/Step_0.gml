@@ -197,8 +197,18 @@ else if(invControl)
 				actionMessage = "You heal for " + string(healNum) + " health!";
 				ds_list_delete(inv,invSelected);
 				break;
+			case "StrongHerb":
+				var healNum = playerHeal(16);
+				actionMessage = "You heal for " + string(healNum) + " health!";
+				ds_list_delete(inv,invSelected);
+				break;
 			case "Honey":
 				var restoreNum = playerRestore(10);
+				actionMessage = "You restore " + string(restoreNum) + " magic!";
+				ds_list_delete(inv,invSelected);
+				break;
+			case "Tea":
+				var restoreNum = playerRestore(18);
 				actionMessage = "You restore " + string(restoreNum) + " magic!";
 				ds_list_delete(inv,invSelected);
 				break;

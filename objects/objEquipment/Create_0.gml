@@ -144,6 +144,30 @@ waterWand = {
 }
 ds_list_add(equipment,waterWand);
 
+ironSword = {
+	name_: "IronSword",
+	type_: "Weapon",
+	desc : "A broad sword made with sturdy metal.",
+	atk: 4,
+	def: 0,
+	spd: 0,
+	element: "None",
+	cost: 50,
+}
+ds_list_add(equipment,ironSword);
+
+airSword = {
+	name_: "AirSword",
+	type_: "Weapon",
+	desc : "A thin blade imbued with wind magic. Deals air damage",
+	atk: 5,
+	def: 0,
+	spd: 0,
+	element: "Air",
+	cost: 50,
+}
+ds_list_add(equipment,airSword);
+
 greataxe = {
 	name_: "Greataxe",
 	type_: "Weapon",

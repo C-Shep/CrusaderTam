@@ -200,8 +200,18 @@ if(!startingMessages)
 							actionMessage = "You heal for " + string(healNum) + " health!";
 							ds_list_delete(inv,invSelected);
 							break;
+						case "StrongHerb":
+							var healNum = playerHeal(18)
+							actionMessage = "You heal for " + string(healNum) + " health!";
+							ds_list_delete(inv,invSelected);
+							break;
 						case "Honey":
 							var restoreNum = playerRestore(10)
+							actionMessage = "You restore  " + string(restoreNum) + " magic!";
+							ds_list_delete(inv,invSelected);
+							break;
+						case "Tea":
+							var restoreNum = playerRestore(18)
 							actionMessage = "You restore  " + string(restoreNum) + " magic!";
 							ds_list_delete(inv,invSelected);
 							break;
@@ -306,6 +316,10 @@ if(!startingMessages)
 						var randDmg = irandom_range(-2,5);
 						enemyDamage = enemyBasicAttack(randDmg);
 						actionMessage = (string(enemy.name_) + " casts a spell for " + string(enemyDamage) + " dmg!");
+					break;
+					case"Blow": 	
+						playerAgility -= 30;
+						actionMessage = (string(enemy.name_) + " blows you back!");
 					break;
 					default:
 						actionMessage = "???";

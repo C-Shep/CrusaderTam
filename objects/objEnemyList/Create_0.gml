@@ -288,7 +288,7 @@ skeleton = {
 	spd:1,
 	xp:11,
 	gld:5,
-	drop: "Herb",
+	drop: "IronSword",
 	weak:"None",
 	moves: ds_list_create()
 }
@@ -438,6 +438,66 @@ redcap = {
 ds_list_add(redcap.moves,"Kick");
 ds_list_add(redcap.moves,"Attack");
 ds_list_add(redcap.moves,"Stab");
+
+//Dapperling -----------------------------
+dapperling = {
+	name_: "Dapperling",
+	sprite: sprDapperling,
+	hp:22,
+	maxhp:22,
+	atk:5,
+	def:3,
+	spd:20,
+	xp:12,
+	gld:7,
+	drop: "Strongherb",
+	weak:"Fire",
+	moves: ds_list_create()
+}
+
+//Dapperling Moves
+ds_list_add(dapperling.moves,"Spore");
+ds_list_add(dapperling.moves,"Attack");
+
+//Zombie -----------------------------
+zombie = {
+	name_: "Zombie",
+	sprite: sprZombie,
+	hp:29,
+	maxhp:29,
+	atk:5,
+	def:0,
+	spd:10,
+	xp:13,
+	gld:6,
+	drop: "IronShield",
+	weak:"Fire",
+	moves: ds_list_create()
+}
+
+//Dapperling Moves
+ds_list_add(zombie.moves,"Kick");
+ds_list_add(zombie.moves,"Attack");
+
+//AirElemental -----------------------------
+airElemental = {
+	name_: "AirElemental",
+	sprite: sprAirElemental,
+	hp:20,
+	maxhp:20,
+	atk:6,
+	def:0,
+	spd:70,
+	xp:15,
+	gld:6,
+	drop: "AirSword",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//AirElemental Moves
+ds_list_add(airElemental.moves,"Attack");
+ds_list_add(airElemental.moves,"Blow");
 
 //---------------------------------------------------------- Bosses ----------------------------------------------------------
 
@@ -619,6 +679,12 @@ switch(global.area)
 	case "Torgale Hills":
 			ds_list_add(list,trolling);
 			ds_list_add(list,troll);
+			ds_list_add(list,redcap);
+		break;
+	case "Mount Tempest":
+			ds_list_add(list,dapperling);
+			ds_list_add(list,zombie);
+			ds_list_add(list,airElemental);
 			ds_list_add(list,redcap);
 		break;
 	case "Troll Cave":

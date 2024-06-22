@@ -46,6 +46,7 @@
         "\"Torgale South Forest\"",
         "\"Torgale Hills\"",
         "\"Troll Cave\"",
+        "\"Mount Tempest\"",
       ],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
