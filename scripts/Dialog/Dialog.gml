@@ -1310,31 +1310,15 @@ global.dialog.kingFirstTalk = [
 	},
 	{
 		speaker: speakers.king,
-		message_: "you see, there were four great crystals that kept the balance in our world"
+		message_: "you see, the evil wizard helrath sent out his four evil knights across the land"
 	},
 	{
 		speaker: speakers.king,
-		message_: "the crystal of the earth which we walk"
+		message_: "i ask you, brave knight, to seek out these knights and put an end to their terror"
 	},
 	{
 		speaker: speakers.king,
-		message_: "the crystal of the water which we sail"
-	},
-	{
-		speaker: speakers.king,
-		message_: "the crystal of the air which we breath"
-	},
-	{
-		speaker: speakers.king,
-		message_: "the crystal of the fire which warms us"
-	},
-	{
-		speaker: speakers.king,
-		message_: "but one fateful day, the evil wizard helrath corrupted all the crystals to gain their power"
-	},
-	{
-		speaker: speakers.king,
-		message_: "you must restore the four great crystals and defeat helrath to save our world, brave hero!"
+		message_: "then journey to helrath's castle and defeat him to save the world!"
 	},
 	{
 		speaker: speakers.king,
@@ -1342,7 +1326,7 @@ global.dialog.kingFirstTalk = [
 	},
 	{
 		speaker: speakers.king,
-		message_: "the crystal of air rests inside a temple there. I recommend you start there."
+		message_: "i have heard that one of the knight resides in the temple on top of the mountain"
 	},
 	{
 		speaker: speakers.king,
@@ -1350,38 +1334,22 @@ global.dialog.kingFirstTalk = [
 	},
 ]
 
-global.dialog.kingNoCrystalsChat = [
+global.dialog.kingNoKnightsChat = [
 	{
 		speaker: speakers.king,
 		message_: "hello again brave hero, have you come seeking guidance?"
 	},
 	{
 		speaker: speakers.king,
-		message_: "remember, there were four great crystals that kept the balance in our world"
+		message_: "remember, the evil wizard helrath sent out his four evil knights across the land"
 	},
 	{
 		speaker: speakers.king,
-		message_: "the crystal of the earth which we walk"
+		message_: "i ask you, brave knight, to seek out these knights and put an end to their terror"
 	},
 	{
 		speaker: speakers.king,
-		message_: "the crystal of the water which we sail"
-	},
-	{
-		speaker: speakers.king,
-		message_: "the crystal of the air which we breath"
-	},
-	{
-		speaker: speakers.king,
-		message_: "the crystal of the fire which warms us"
-	},
-	{
-		speaker: speakers.king,
-		message_: "but one fateful day, the evil wizard helrath corrupted all the crystals to gain their power"
-	},
-	{
-		speaker: speakers.king,
-		message_: "you must restore the four great crystals and defeat helrath to save our world, brave hero!"
+		message_: "then journey to helrath's castle and defeat him to save the world!"
 	},
 	{
 		speaker: speakers.king,
@@ -1389,13 +1357,15 @@ global.dialog.kingNoCrystalsChat = [
 	},
 	{
 		speaker: speakers.king,
-		message_: "the crystal of air rests inside a temple there. I recommend you start there."
+		message_: "i have heard that one of the knight resides in the temple on top of the mountain"
 	},
 	{
 		speaker: speakers.king,
 		message_: "good luck, mighty hero! The world is counting on you!"
 	},
 ]
+
+
 
 #endregion
 

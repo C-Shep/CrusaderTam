@@ -237,7 +237,7 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 					setNpcDialog(npc,global.dialog.kingFirstTalk);
 					endAction = "Talked Once To King";
 				}else{
-					setNpcDialog(npc,global.dialog.kingNoCrystalsChat);
+					setNpcDialog(npc,global.dialog.kingNoKnightsChat);
 				}
 
 				break;
