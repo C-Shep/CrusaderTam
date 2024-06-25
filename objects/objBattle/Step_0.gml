@@ -64,10 +64,12 @@ if(!startingMessages)
 							}
 						
 							show_debug_message(attackElement);
-						
+							
+							var critDenominator = 5;
+							
 							if(chance == 0){
 								actionMessage = "You Missed!";
-							}else if(chance >= (99-floor(playerAgility/5))){
+							}else if(chance >= (99-floor(playerAgility/critDenominator))){
 								var dmg = playerAttack(0,2,attackElement);
 								actionMessage = "You crit" + The + string(enemy.name_) + " for " + string(dmg) + " dmg!";
 							}else{

@@ -568,7 +568,7 @@ ds_list_add(trollKing_.moves,"Headbutt");
 sirOcco = {
 	name_: "Sir Occo",
 	sprite: sprSirOcco,
-	hp:10,
+	hp:100,
 	maxhp:100,
 	atk:10,
 	def:5,
