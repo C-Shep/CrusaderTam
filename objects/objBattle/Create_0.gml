@@ -26,13 +26,27 @@ sleep = false;
 //Elements
 attackElement = "Basic";
 
+//Boss Fight?
+isFightingBoss = false; 
+if(enemy.name_ == "Barghest" || enemy.name_ == "Axassin" || enemy.name_ == "Troll King" || enemy.name_ == "Sir Occo" ) isFightingBoss = true;
+
 //Initiative
 randomSpeedEnemy = irandom_range(0,99)+enemy.spd;
 randomSpeedPlayer = irandom_range(0,99)+player.spd;
 
-beginMessage = "A " + string(enemy.name_) + " Approaches!";
+//A and The Text
+var aText = "";
+The = "";
 
-if(randomSpeedEnemy > randomSpeedPlayer)
+if(!isFightingBoss)
+{
+	aText = "A ";
+	The = "the ";
+}
+
+beginMessage = aText + string(enemy.name_) + " Approaches!";
+
+if(randomSpeedEnemy > randomSpeedPlayer || !isFightingBoss)
 {
 	isEnemyTurn = true;	
 	control = false;
@@ -101,10 +115,6 @@ Fade(false,false,global.lastRoom);
 
 //Enemy Moves
 numberOfMoves = ds_list_size(enemy.moves);
-
-//Boss Fight?
-isFightingBoss = false; 
-if(enemy.name_ == "Barghest" || enemy.name_ == "Axassin" || enemy.name_ == "Troll King" || enemy.name_ == "Sir Occo" ) isFightingBoss = true;
 
 //Background
 currentBG = sprGrassBG;

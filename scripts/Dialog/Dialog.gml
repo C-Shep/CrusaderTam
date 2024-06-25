@@ -1435,7 +1435,7 @@ global.dialog.emmaAskHelp = [
 	},
 	{
 		speaker: speakers.emma,
-		message_: "I heard some can be found on the east coast past the mountains"
+		message_: "I heard some can be found near the mountains to the south east"
 	},
 ]
 

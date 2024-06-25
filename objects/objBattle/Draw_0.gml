@@ -160,18 +160,14 @@ if(!endMessages)
 					show_debug_message(willDrop);
 					if(willDrop <= dropChance)
 					{
-						if((objStats.healCount < objStats.maxHeals && enemy.drop == "Herb") || enemy.drop != "Herb")
-						{
-							ds_list_add(objStats.inv,enemy.drop);
-							dropDropped = true;
-						}
+						ds_list_add(objStats.inv,enemy.drop);
+						dropDropped = true;
 					}
-				
 					rewardsGiven = true;
 				}
 				#endregion
 			
-				combatMessage("You defeated the " + string(enemy.name_) + "!");
+				combatMessage("You defeated " + The + string(enemy.name_) + "!");
 			}else if(messageCounter == 1){	//Xp message
 				combatMessage("You gain " + string(enemy.xp) + " xp");
 			}else if(messageCounter == 2){	//Gold Message
@@ -179,7 +175,7 @@ if(!endMessages)
 			}else if(messageCounter == 3){	//Item Message / Level Message
 				if(dropDropped)
 				{	
-					combatMessage("The " + string(enemy.name_) + " dropped a " + string(enemy.drop));
+					combatMessage(The + string(enemy.name_) + " dropped a " + string(enemy.drop));
 				}else if(global.hasLevelled){
 					combatMessage("You levelled up!");
 				}
