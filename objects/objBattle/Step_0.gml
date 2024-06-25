@@ -321,6 +321,18 @@ if(!startingMessages)
 						playerAgility -= 30;
 						actionMessage = (string(enemy.name_) + " blows you back!");
 					break;
+					case"ShieldBash": 	
+						enemyDamage = enemyBasicAttack(-1)
+						actionMessage = (string(enemy.name_) + " shield bashes you for " + string(enemyDamage) + " dmg!");
+					break;
+					case"Upslice": 	
+						enemyDamage = enemyBasicAttack(1)
+						actionMessage = (string(enemy.name_) + " slices upwards for " + string(enemyDamage) + " dmg!");
+					break;
+					case"Gale": 	
+						enemyDamage = enemyBasicAttack(2)
+						actionMessage = (string(enemy.name_) + " wind blasts you for " + string(enemyDamage) + " dmg!");
+					break;
 					default:
 						actionMessage = "???";
 				}

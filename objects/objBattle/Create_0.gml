@@ -102,6 +102,10 @@ Fade(false,false,global.lastRoom);
 //Enemy Moves
 numberOfMoves = ds_list_size(enemy.moves);
 
+//Boss Fight?
+isFightingBoss = false; 
+if(enemy.name_ == "Barghest" || enemy.name_ == "Axassin" || enemy.name_ == "Troll King" || enemy.name_ == "Sir Occo" ) isFightingBoss = true;
+
 //Background
 currentBG = sprGrassBG;
 switch(global.lastRoom)
@@ -174,7 +178,7 @@ playerRestore = function (restoreNum){
 
 playerFlee = function()
 {
-	if(enemy.name_ != "Barghest")
+	if(!isFightingBoss)
 	{
 		var randomFleeEnemy = irandom_range(0,99)+enemy.spd;
 		var randomFleePlayer = irandom_range(0,99)+player.spd;

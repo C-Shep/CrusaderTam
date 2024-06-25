@@ -564,6 +564,29 @@ ds_list_add(trollKing_.moves,"Kick");
 ds_list_add(trollKing_.moves,"Attack");
 ds_list_add(trollKing_.moves,"Headbutt");
 
+//Sir Occo -----------------------------
+sirOcco = {
+	name_: "Sir Occo",
+	sprite: sprTrollKing,
+	hp:100,
+	maxhp:100,
+	atk:10,
+	def:5,
+	spd:10,
+	xp:30,
+	gld:35,
+	drop: "AirSword",
+	weak:"None",
+	moves: ds_list_create()
+}
+
+//Troll King Moves
+ds_list_add(sirOcco.moves,"Blow");
+ds_list_add(sirOcco.moves,"ShieldBash");
+ds_list_add(sirOcco.moves,"Attack");
+ds_list_add(sirOcco.moves,"Upslice");
+ds_list_add(sirOcco.moves,"Gale");
+
 //---------------------------------------------------------- Secret Enemies ----------------------------------------------------------
 
 //Groovedog -----------------------------
@@ -682,10 +705,11 @@ switch(global.area)
 			ds_list_add(list,redcap);
 		break;
 	case "Mount Tempest":
-			ds_list_add(list,dapperling);
-			ds_list_add(list,zombie);
-			ds_list_add(list,airElemental);
-			ds_list_add(list,redcap);
+		//	ds_list_add(list,dapperling);
+		//	ds_list_add(list,zombie);
+			//ds_list_add(list,airElemental);
+			//ds_list_add(list,redcap);
+			ds_list_add(list,sirOcco);
 		break;
 	case "Troll Cave":
 			ds_list_add(list,trolling);

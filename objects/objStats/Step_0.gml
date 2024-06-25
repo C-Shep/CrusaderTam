@@ -107,14 +107,8 @@ if(playerStats.lvl >= 15)
 invLength = ds_list_size(inv);
 healCount = 0;
 
-//for(var i=0;i<invLength;i++)
-//{
-//	var itemName = ds_list_find_value(inv, i);
-//	if(itemName == "Herb") 
-//}
-
+//Set heal count to number of buyable healing items
 healCount = findItem("Herb") + findItem("Apple") + findItem("StrongHerb");
-//if(findItem("Herb")) game_end();
 
 //Fullscreen Change
 if(keyboard_check_pressed(vk_f11))
