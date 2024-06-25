@@ -6,42 +6,42 @@ items = ds_list_create();
 #region Items
 herb = {
 	name_: "Herb",
-	desc : "A medicinal leaf that heals 8 hp.",
+	desc : "A medicinal leaf that heals 8 hp",
 	cost : 7,
 }
 ds_list_add(items,herb);
 
 strongHerb = {
 	name_: "StrongHerb",
-	desc : "A strong medicinal leaf that heals 16 hp.",
+	desc : "A strong medicinal leaf that heals 16 hp",
 	cost : 16,
 }
 ds_list_add(items,strongHerb);
 
 honey = {
 	name_: "Honey",
-	desc : "A magical syrup that restores 10 mp.",
+	desc : "A magical syrup that restores 10 mp",
 	cost : 15,
 }
 ds_list_add(items,honey);
 
 tea = {
 	name_: "Tea",
-	desc : "A magical, relaxing drink that restores 18 mp.",
+	desc : "A magical, relaxing drink that restores 18 mp",
 	cost : 25,
 }
 ds_list_add(items,tea);
 
 stew = {
 	name_: "Stew",
-	desc : "A tasty stew that restores hp.",
+	desc : "A tasty stew that restores hp",
 	cost : 10,
 }
 ds_list_add(items,stew);
 
 apple = {
 	name_: "Apple",
-	desc : "A magic apple that restores 16 hp.",
+	desc : "A magic apple that restores 16 hp",
 	cost : 10,
 }
 ds_list_add(items,apple);
@@ -53,42 +53,42 @@ ds_list_add(items,apple);
 #region Quest Items
 letter = {
 	name_: "Letter",
-	desc : "A letter addressed to the gaffer of Torgale.",
+	desc : "A letter addressed to the gaffer of Torgale",
 	cost : 1,
 }
 ds_list_add(items,letter);
 
 blueParcel = {
 	name_: "BlueParcel",
-	desc : "A parcel that a certain courier dropped.",
+	desc : "A parcel that a certain courier dropped",
 	cost : 1,
 }
 ds_list_add(items,blueParcel);
 
 mageAsh = {
 	name_: "MageAsh",
-	desc : "Magical Ashes that makes plants grow faster.",
+	desc : "Magical Ashes that makes plants grow faster",
 	cost : 1,
 }
 ds_list_add(items,mageAsh);
 
 trollNote = {
 	name_: "TrollNote",
-	desc : "A letter from the troll king to wheatville's mayor.",
+	desc : "A letter from the troll king to wheatville's mayor",
 	cost : 1,
 }
 ds_list_add(items,trollNote);
 
 valiburghKey = {
 	name_: "ValiburghKey",
-	desc : "A key that opens the valiburgh castle vault.",
+	desc : "A key that opens the valiburgh castle vault",
 	cost : 1,
 }
 ds_list_add(items,valiburghKey);
 
 torgaleKey = {
 	name_: "TorgaleKey",
-	desc : "A key that opens the locked door in torgale.",
+	desc : "A key that opens the locked door in torgale",
 	cost : 1,
 }
 ds_list_add(items,torgaleKey);
@@ -99,7 +99,7 @@ ds_list_add(items,torgaleKey);
 knife = {
 	name_: "Knife",
 	type_: "Weapon",
-	desc : "A Knife made of copper.",
+	desc : "A Knife made of copper",
 	atk: 1,
 	def: 0,
 	spd: 0,
@@ -111,7 +111,7 @@ ds_list_add(equipment,knife);
 bronzeSpear = {
 	name_: "BrnzeSpear",
 	type_: "Weapon",
-	desc : "A spear made from wood with an bronze tip.",
+	desc : "A spear made from wood with an bronze tip",
 	atk: 3,
 	def: 0,
 	spd: 0,
@@ -123,7 +123,7 @@ ds_list_add(equipment,bronzeSpear);
 flamberge = {
 	name_: "Flamberge",
 	type_: "Weapon",
-	desc : "Sword with an undulating type of blade. Deals fire damage.",
+	desc : "Sword with an undulating type of blade. Deals fire damage",
 	atk: 2,
 	def: 0,
 	spd: 0,
@@ -135,7 +135,7 @@ ds_list_add(equipment,flamberge);
 waterWand = {
 	name_: "WaterWand",
 	type_: "Weapon",
-	desc : "Wand with a blue crystal on the end. Deals water damage.",
+	desc : "Wand with a blue crystal on the end. Deals water damage",
 	atk: 3,
 	def: 0,
 	spd: 0,
@@ -147,7 +147,7 @@ ds_list_add(equipment,waterWand);
 ironSword = {
 	name_: "IronSword",
 	type_: "Weapon",
-	desc : "A broad sword made with sturdy metal.",
+	desc : "A broad sword made with sturdy metal",
 	atk: 4,
 	def: 0,
 	spd: 0,
@@ -155,6 +155,18 @@ ironSword = {
 	cost: 50,
 }
 ds_list_add(equipment,ironSword);
+
+epee = {
+	name_: "Epee",
+	type_: "Weapon",
+	desc : "A thin sword made for fencing. Increases speed",
+	atk: 3,
+	def: 0,
+	spd: 8,
+	element: "None",
+	cost: 40,
+}
+ds_list_add(equipment,epee);
 
 airSword = {
 	name_: "AirSword",
@@ -252,6 +264,28 @@ silkCape = {
 	cost: 25,
 }
 ds_list_add(equipment,silkCape);
+
+ironArmour = {
+	name_: "IronArmour",
+	type_: "Armour",
+	desc : "Chestplate made from study iron.",
+	atk: 0,
+	def: 3,
+	spd: 0,
+	cost: 40,
+}
+ds_list_add(equipment,ironArmour);
+
+heavyArmr = {
+	name_: "HeavyArmr",
+	type_: "Armour",
+	desc : "Thick armour that shrugs off attacks. Decreases speed",
+	atk: 0,
+	def: 4,
+	spd: -10,
+	cost: 50,
+}
+ds_list_add(equipment,heavyArmr);
 #endregion
 
 //Trinkets

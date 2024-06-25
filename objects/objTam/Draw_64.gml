@@ -26,3 +26,5 @@ if(alarm[0] > -1)
 		0,
 		colour,colour,colour,colour,1);
 }
+
+draw_text(16,16,objStats.healCount);

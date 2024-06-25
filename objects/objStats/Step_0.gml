@@ -83,22 +83,22 @@ if(playerStats.lvl >= 1)
 	playerSpell[0] = "Heal";
 }
 
-if(playerStats.lvl >= 2)
+if(playerStats.lvl >= 3)
 {
 	playerSpell[1] = "Scorch";
 }
 
-if(playerStats.lvl >= 3)
+if(playerStats.lvl >= 6)
 {
 	playerSpell[2] = "Freeze";
 }
 
-if(playerStats.lvl >= 4)
+if(playerStats.lvl >= 10)
 {
 	playerSpell[3] = "Counter";
 }
 
-if(playerStats.lvl >= 5)
+if(playerStats.lvl >= 15)
 {
 	playerSpell[4] = "Crucify";
 }
@@ -113,7 +113,7 @@ healCount = 0;
 //	if(itemName == "Herb") 
 //}
 
-healCount = findItem("Herb") + findItem("Apple");
+healCount = findItem("Herb") + findItem("Apple") + findItem("StrongHerb");
 //if(findItem("Herb")) game_end();
 
 //Fullscreen Change

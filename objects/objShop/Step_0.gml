@@ -109,7 +109,10 @@ else if(buyControl)
 		//Buy the item
 		if(player.currentGld >= cost)
 		{
-			if((selectedItem == "Herb" || selectedItem == "Apple" && objStats.healCount < objStats.maxHeals) || selectedItem != "Herb" )
+			var healItemSelected = false;
+			if(selectedItem == "Herb" || selectedItem == "Apple" || selectedItem == "StrongHerb") healItemSelected = true;
+			
+			if((healItemSelected && objStats.healCount < objStats.maxHeals) || !healItemSelected)
 			{
 				ds_list_add(objStats.inv,selectedItem);
 				player.currentGld -= cost;

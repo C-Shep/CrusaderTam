@@ -11,7 +11,7 @@ playerStats = {
 	spd:16,
 	baseSpd:16,
 	currentXp:0,
-	currentGld:20
+	currentGld:200
 }
 
 //Player learns heal at lvl 1

@@ -109,6 +109,7 @@ switch(global.lastRoom)
 	case rmBarghestCave:
 	case rmOminousCave:
 	case rmTrollCave:
+	case rmMountTempest:
 		currentBG = sprCaveBG;
 	break;
 	default:

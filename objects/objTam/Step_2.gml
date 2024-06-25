@@ -94,10 +94,15 @@ if(overCounterNpc != noone && moveDir == 90 && !instance_exists(objTextbox) && p
 			case "Torgale Armour":
 				var shop = instance_create_layer(0,0,"UI",objShop)
 				ds_list_add(shop.stock,"IronShield");
+				ds_list_add(shop.stock,"SteelShield");
+				ds_list_add(shop.stock,"IronArmour");
+				ds_list_add(shop.stock,"HeavyArmr");
 				break;
 			case "Torgale Weapon":
 				var shop = instance_create_layer(0,0,"UI",objShop)
-				ds_list_add(shop.stock,"BrnzeSpear");
+				ds_list_add(shop.stock,"IronSword");
+				ds_list_add(shop.stock,"Epee");
+				ds_list_add(shop.stock,"TorgaleKey");
 				break;
 			case "Torgale Item":
 				var shop = instance_create_layer(0,0,"UI",objShop)
@@ -313,6 +318,10 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 				break;
 			case torgaleDoor:
 					endAction = openLockedDoor("TorgaleKey",global.quest.torgaleDoorOpen);
+					if(endAction == "Destroy")
+					{
+						global.quest.torgaleDoorOpen = true;
+					}
 				break;
 			case valiburghDoor:
 					endAction = openLockedDoor("ValiburghKey",global.quest.valiburghDoorOpen);
