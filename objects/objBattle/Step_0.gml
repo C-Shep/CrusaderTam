@@ -69,10 +69,10 @@ if(!startingMessages)
 								actionMessage = "You Missed!";
 							}else if(chance >= (99-floor(playerAgility/5))){
 								var dmg = playerAttack(0,2,attackElement);
-								actionMessage = "You crit the " + string(enemy.name_) + " for " + string(dmg) + " dmg!";
+								actionMessage = "You crit" + The + string(enemy.name_) + " for " + string(dmg) + " dmg!";
 							}else{
 								var dmg = playerAttack(0,1,attackElement);
-								actionMessage = "You attack the " + string(enemy.name_) + " for " + string(dmg) + " dmg!";
+								actionMessage = "You attack " + The + string(enemy.name_) + " for " + string(dmg) + " dmg!";
 							}
 							break;
 						case "Spells":
@@ -321,9 +321,9 @@ if(!startingMessages)
 						playerAgility -= 30;
 						actionMessage = (string(enemy.name_) + " blows you back!");
 					break;
-					case"ShieldBash": 	
+					case"Pommel": 	
 						enemyDamage = enemyBasicAttack(-1)
-						actionMessage = (string(enemy.name_) + " shield bashes you for " + string(enemyDamage) + " dmg!");
+						actionMessage = (string(enemy.name_) + " pommel strikes you for " + string(enemyDamage) + " dmg!");
 					break;
 					case"Upslice": 	
 						enemyDamage = enemyBasicAttack(1)
@@ -332,6 +332,10 @@ if(!startingMessages)
 					case"Gale": 	
 						enemyDamage = enemyBasicAttack(2)
 						actionMessage = (string(enemy.name_) + " wind blasts you for " + string(enemyDamage) + " dmg!");
+					break;
+					case"DoubleSlash": 	
+						enemyDamage = enemyBasicAttack(3)
+						actionMessage = (string(enemy.name_) + " double slashes you for " + string(enemyDamage) + " dmg!");
 					break;
 					default:
 						actionMessage = "???";

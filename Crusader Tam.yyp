@@ -83,6 +83,7 @@
     {"id":{"name":"sprBarghest","path":"sprites/sprBarghest/sprBarghest.yy",},"order":16,},
     {"id":{"name":"sprMessage","path":"sprites/sprMessage/sprMessage.yy",},"order":1,},
     {"id":{"name":"objBoxMessage","path":"objects/objBoxMessage/objBoxMessage.yy",},"order":3,},
+    {"id":{"name":"sprSirOcco","path":"sprites/sprSirOcco/sprSirOcco.yy",},"order":30,},
     {"id":{"name":"tlsWorld","path":"tilesets/tlsWorld/tlsWorld.yy",},"order":1,},
     {"id":{"name":"sprZombie","path":"sprites/sprZombie/sprZombie.yy",},"order":28,},
     {"id":{"name":"sprEncounter","path":"sprites/sprEncounter/sprEncounter.yy",},"order":4,},

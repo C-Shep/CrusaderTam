@@ -29,16 +29,19 @@ draw_sprite(currentBG,0,middleX,middleY);
 #endregion
 
 #region draw enemy sprite
+var enemySpriteBuffer = 16;
+if(isFightingBoss) enemySpriteBuffer = 24;
+
 if(enemy.hp > 0)
 {
 	if(hitEnemy > 0)
 	{
 		gpu_set_fog(true,c_red,0,0);
-		draw_sprite(enemy.sprite,0,middleX-16,middleY-16);
+		draw_sprite(enemy.sprite,0,middleX-enemySpriteBuffer,middleY-enemySpriteBuffer);
 		gpu_set_fog(false,c_red,0,0);
 		hitEnemy--;
 	}else{
-		draw_sprite(enemy.sprite,0,middleX-16,middleY-16);
+		draw_sprite(enemy.sprite,0,middleX-enemySpriteBuffer,middleY-enemySpriteBuffer);
 	}
 }
 #endregion
