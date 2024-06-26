@@ -154,6 +154,9 @@ if(!endMessages)
 							objPosSaver.xx = 983;
 							objPosSaver.yy = 359;
 							break;
+						case "Sir Occo":
+							global.quest.sirOccoKilled = true;
+							break;
 						default:
 					}
 					

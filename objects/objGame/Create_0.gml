@@ -70,6 +70,7 @@ global.quest = {
 	postinoTorgaleChat : false,
 	torgaleDoorOpen : false,
 	valiburghDoorOpen : false,
+	sirOccoKilled : false,
 }
 
 //Default go to menu

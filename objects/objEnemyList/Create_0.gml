@@ -306,8 +306,8 @@ cho = {
 	maxhp:20,
 	atk:3,
 	def:5,
-	spd:30,
-	xp:30,
+	spd:80,
+	xp:35,
 	gld:20,
 	drop: "Honey",
 	weak:"None",
@@ -586,6 +586,7 @@ ds_list_add(sirOcco.moves,"Pommel");
 ds_list_add(sirOcco.moves,"Attack");
 ds_list_add(sirOcco.moves,"Upslice");
 ds_list_add(sirOcco.moves,"Gale");
+ds_list_add(sirOcco.moves,"DoubleSlash");
 
 //---------------------------------------------------------- Secret Enemies ----------------------------------------------------------
 
@@ -671,20 +672,17 @@ switch(global.area)
 		ds_list_add(list,camabat);
 		ds_list_add(list,cho);
 		break;
-	case "Valiburgh Orchard":
-		break;
-	case "Valiburgh North Fields":
-		break;
-	case "Valiburgh North Forest":
-		break;
 	case "Canalia Fields":
+	
 		break;
 	case "Canalia Hills":
+	
 		break;
 	case "Torgale North Field":
 
 		break;
 	case "Torgale North Forest":
+	
 		break;
 	case "Torgale South Field":
 			ds_list_add(list,horsebird);
@@ -705,24 +703,26 @@ switch(global.area)
 			ds_list_add(list,redcap);
 		break;
 	case "Mount Tempest":
-		//	ds_list_add(list,dapperling);
-		//	ds_list_add(list,zombie);
+			ds_list_add(list,dapperling);
+			ds_list_add(list,zombie);
 			ds_list_add(list,airElemental);
-			//ds_list_add(list,redcap);
-			ds_list_add(list,sirOcco);
+			ds_list_add(list,redcap);
 		break;
 	case "Troll Cave":
 			ds_list_add(list,trolling);
 			ds_list_add(list,troll);
 		break;
 	case "Barghest Boss":
-		ds_list_add(list,barghest);
+			ds_list_add(list,barghest);
 		break;
 	case "Axassin Boss":
-		ds_list_add(list,axassin);
+			ds_list_add(list,axassin);
 		break;
 	case "Troll Boss":
-		ds_list_add(list,trollKing_);
+			ds_list_add(list,trollKing_);
+		break;
+	case "Sir Occo Boss":
+			ds_list_add(list,sirOcco);
 		break;
 }
 

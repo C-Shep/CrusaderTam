@@ -326,6 +326,10 @@ if(npc != noone && !instance_exists(objTextbox) && (playerControl || (startAlarm
 			case valiburghDoor:
 					endAction = openLockedDoor("ValiburghKey",global.quest.valiburghDoorOpen);
 				break;
+			case SirOccoNpc:
+				global.area = "Sir Occo Boss";
+				endAction = "Begin Fight";
+				break;
 		}
 		
 		//create the textbox for the dialog
