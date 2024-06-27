@@ -54,42 +54,42 @@ ds_list_add(items,apple);
 letter = {
 	name_: "Letter",
 	desc : "A letter addressed to the gaffer of Torgale",
-	cost : 1,
+	cost : 0,
 }
 ds_list_add(items,letter);
 
 blueParcel = {
 	name_: "BlueParcel",
 	desc : "A parcel that a certain courier dropped",
-	cost : 1,
+	cost : 0,
 }
 ds_list_add(items,blueParcel);
 
 mageAsh = {
 	name_: "MageAsh",
 	desc : "Magical Ashes that makes plants grow faster",
-	cost : 1,
+	cost : 0,
 }
 ds_list_add(items,mageAsh);
 
 trollNote = {
 	name_: "TrollNote",
 	desc : "A letter from the troll king to wheatville's mayor",
-	cost : 1,
+	cost : 0,
 }
 ds_list_add(items,trollNote);
 
 valiburghKey = {
 	name_: "ValiburghKey",
 	desc : "A key that opens the valiburgh castle vault",
-	cost : 1,
+	cost : 0,
 }
 ds_list_add(items,valiburghKey);
 
 torgaleKey = {
 	name_: "TorgaleKey",
 	desc : "A key that opens the locked door in torgale",
-	cost : 1,
+	cost : 0,
 }
 ds_list_add(items,torgaleKey);
 #endregion

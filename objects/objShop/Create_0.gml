@@ -21,6 +21,7 @@ stockLength = ds_list_size(stock);
 //Description Message
 cost = 0;
 description = "";
+sellCost = 0;
 
 //Other Control Bools
 buyControl = false;

@@ -142,19 +142,6 @@ else if(sellControl)
 		var currentItem = ds_list_find_value(inv,i);
 		var selectedItem = ds_list_find_value(inv,sellSelected);
 		
-		//for items
-		switch(selectedItem)
-		{
-			#region Items
-			case "Herb":
-			//	cost = 1;
-				break;
-			case "Honey":
-			//	cost = 2;
-				break;
-			#endregion
-		}
-		
 		//Sell Costs for Equipment
 		for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 		{
@@ -162,7 +149,8 @@ else if(sellControl)
 			var eName = ds_list_find_value(e,j).name_;
 			if(selectedItem == eName)
 			{
-				cost = (ds_list_find_value(e,j).cost)/2;
+				cost = floor((ds_list_find_value(e,j).cost)/2);
+				sellCost = cost;
 			}
 		}
 		
@@ -173,15 +161,17 @@ else if(sellControl)
 			var iName = ds_list_find_value(itemList,j).name_;
 			if(selectedItem == iName)
 			{
-				cost = (ds_list_find_value(e,j).cost)/2;
+				cost = floor((ds_list_find_value(itemList,j).cost)/2);
+				sellCost = cost;
 			}
 		}
 		
+		
 		//Draw the cost and descrpton
 		draw_text_transformed_colour(messageX,messageY,"Your gold: " + string(player.currentGld) + "g",textSize,textSize,0,colour,colour,colour,colour,1);
-		draw_text_transformed_colour(messageX,messageY+64,"Sells for " + string(cost) + "g",textSize,textSize,0,colour,colour,colour,colour,1);		
+		draw_text_transformed_colour(messageX,messageY+64,"Sells for " + string(sellCost) + "g",textSize,textSize,0,colour,colour,colour,colour,1);		
 		
-		//Draw the stock list
+		//Draw the players items list
 		if(i==sellSelected)
 		{
 			draw_text_transformed_color(menuX,menuY+menuHeight,">" + string(currentItem),textSize,textSize,0,colour,colour,colour,colour,1); 

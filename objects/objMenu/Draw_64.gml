@@ -126,7 +126,7 @@ else if(equipControl)
 	for(var j = 0; j<ds_list_size(objEquipment.equipment);j++)
 	{
 		var e = objEquipment.equipment;
-		var eCurrent =  ds_list_find_value(e,j);
+		var eCurrent = ds_list_find_value(e,j);
 		var eName = eCurrent.name_;
 		if(equipmentNow == eName)
 			{

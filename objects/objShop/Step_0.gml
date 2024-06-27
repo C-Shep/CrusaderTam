@@ -157,10 +157,11 @@ else if(sellControl)
 	#endregion
 			
 	#region//Sell Control
-	if(objInput.interact())
+	
+	if(objInput.interact() && sellCost != 0)
 	{
 		ds_list_delete(inv,sellSelected);
-		player.currentGld += cost;
+		player.currentGld += sellCost;
 
 	}
 	#endregion

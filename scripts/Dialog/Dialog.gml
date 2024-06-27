@@ -37,6 +37,8 @@ var speakers = {
 	king : "KngWymar",
 	queen : "Queen Ela",
 	barghest: "Barghest",
+	sirOcco: "SirOcco",
+	torgaleGaffer : "Gaffer",
 }
 
 //Define dialog as a struct
@@ -1764,6 +1766,25 @@ global.dialog.postinoTorgaleChat = [
 		speaker: speakers.postino,
 		message_:  "Good luck out there, friend."
 	}
+]
+
+global.dialog.sirOccoAttack = [
+{
+	speaker: speakers.sirOcco,
+	message_: "Hmph? What do you think you're doing here?"
+},
+{
+	speaker: speakers.sirOcco,
+	message_: "You come from the city below? With the goal of beating me?"
+},
+{
+	speaker: speakers.sirOcco,
+	message_: "hahahaha! no mortal has ever beaten me in combat!"
+},
+{
+	speaker: speakers.sirOcco,
+	message_: "I am the mighty Helrath's great knight of Air, Sir Occo! Face Me!"
+},
 ]
 
 #endregion
